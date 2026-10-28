@@ -114,6 +114,11 @@
 | `examples/` | 端到端样例：`001-empty-subway.md` |
 | `outputs/` | 单次交付物落盘处（不进 git） |
 
+> **关于 `.workbuddy/skills`**：这是软链，已随仓库提交，用于技能发现。
+> 若 clone 后未生效（Windows 常见 —— git 默认不创建符号链接），手动重建：
+> - macOS / Linux：`ln -s ../skills .workbuddy/skills`
+> - Windows：开启「开发者模式」后重新 clone，或在 `.workbuddy/` 下执行 `mklink /D skills ..\skills`
+
 ## 两个角色
 
 | 角色 | 管什么 | 不管什么 |

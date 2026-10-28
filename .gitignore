@@ -1,16 +1,26 @@
-# 系统与编辑器
+# === 系统与编辑器 ===
 .DS_Store
 Thumbs.db
 *.swp
+*.swo
 .idea/
 .vscode/
 
-# 依赖与运行时
+# === 依赖与运行时 ===
 node_modules/
 __pycache__/
+*.pyc
 .venv/
 venv/
 
-# 产出物：保留目录，不追踪单次生成结果
+# === WorkBuddy 本地数据 ===
+# .workbuddy 存放会话缓存、设备相关数据与个人工作记忆，不进版本库。
+# 例外：skills 软链是技能发现路径，必须随仓库分发，否则 clone 后角色无法被唤起。
+.workbuddy/*
+!.workbuddy/skills
+
+# === 产出物 ===
+# 单次生成结果属于使用痕迹，不追踪；仅保留目录占位。
+# 想把某次产出留作样例，请移入 examples/。
 outputs/*
 !outputs/.gitkeep
