@@ -176,28 +176,49 @@
 
 **Style of Music — 直接粘贴**
 ```
-dream pop, indie pop, melancholic, empty subway station at 2am, hopeful ending, female vocals, breathy, intimate, electric piano, muted bass, brush drums, string pads, 85 BPM, warm analog, building
+dream pop, empty subway station at 2am, female alto, breathy, close-mic, felt piano, muted upright bass, brush snare, chamber strings, 70s tape saturation, 85 BPM, sparse intro, dynamic contrast
 ```
+（12 个标签 / 194 字符，单行，可直接粘贴）
 
 **中文说明**
 
 | 标签 | 作用 |
 | --- | --- |
-| `dream pop` | 主风格，定混响与音色基调 |
-| `indie pop` | 唯一辅助风格，避免过于电子化 |
-| `melancholic` | 主情绪 |
-| `empty subway station at 2am` | 场景化情绪词，比单独写 lonely 有效得多 |
-| `hopeful ending` | 锁住"结尾要有希望" |
-| `female vocals` / `breathy` / `intimate` | 女声 + 气声 + 近讲私密感 |
-| `electric piano` `muted bass` `brush drums` `string pads` | 4 件核心乐器，冷色调 |
+| `dream pop` | 唯一主风格，定混响与音色基调 |
+| `empty subway station at 2am` | **场景化情绪词**，替代裸情绪词 `melancholic`（黑名单词） |
+| `female alto` | 女声中低音区 —— 比 `female vocals` 多一个音区决定 |
+| `breathy` | 气声，贴合疲惫感 |
+| `close-mic` | 近讲，耳边私密感（**空间**质感） |
+| `felt piano` | **专属锚点**：呢垫钢琴，闷而软，不是通用 `piano` |
+| `muted upright bass` | 闷音立式贝斯，冷且克制 |
+| `brush snare` | 刷鼓，避免军鼓的"打点感" |
+| `chamber strings` | 室内乐四重奏编制 —— 比 `strings` 亲密得多，不会变罐头弦乐 |
+| `70s tape saturation` | **年代 + 质感**，一个标签给两个维度 |
 | `85 BPM` | 慢速，贴合疲惫感 |
-| `warm analog` | 抵消数字冷硬，保留温度 |
-| `building` | 情绪递进，配合双副歌结构 |
+| `sparse intro` | 事件一：引子极简 |
+| `dynamic contrast` | 事件二：动态对比（配合歌词里的 `[Breakdown]`） |
 
 **Exclude Styles**
 ```
-no autotune, no distortion, no choir, no rap, no heavy reverb, no saxophone
+no autotune, no vocoder, no choir, no saxophone, no four-on-the-floor
 ```
+
+> **为什么 Exclude 是这五个**：都市抒情 dream pop 最可能的失败形态是——被做成 auto-tune 电音抒情、
+> 加合唱煽情、加萨克斯廉价煽情、或变成四踩舞曲。排除的是"它最可能塌成的样子"，不是随便写几个。
+
+**编曲事件的落点**：Suno 的 Style 字段写不下长句，事件分两处承载——
+
+| 载体 | 内容 |
+| --- | --- |
+| Style 字段 | 只放动态词：`sparse intro`、`dynamic contrast` |
+| **歌词结构标签** | 真正的事件落点：`[Intro]`（12 秒纯器乐）、`[Bridge]`（抽掉节奏组）、`[Outro]`（渐退）。<br>若要进一步强调断崖感，可把 `[Bridge]` 换成 `[Breakdown]` |
+
+⚠️ 把"副歌前抽掉鼓"直接写进 Style 字段是常见错误 —— Suno 读不懂长句。
+
+**字符预算的真实取舍**：`sub bass drone`（地铁在地下的低频嗡鸣）是最贴题的反差音色，
+但加上会超 200 字符上限。取舍结果：**反差元素放到秒响版与歌词结构标签承载**，
+Suno 版用「演奏法器材（`felt piano`）+ 质感设定（`70s tape saturation`）」满足锚点要求。
+这比硬塞进 200 字符更稳。
 
 ---
 
@@ -205,29 +226,81 @@ no autotune, no distortion, no choir, no rap, no heavy reverb, no saxophone
 
 **中文版 — 直接粘贴**
 ```
-现代都市抒情流行，略带 dream pop 质感，成年女声，中低音区为主，副歌可上行至真声高音。
+现代都市抒情流行，略带 dream pop 质感，成年女声中低音区，副歌可上行至真声高音；
 气声起句，咬字轻，句尾收音干净不拖泥带水；主歌接近独白，副歌转为舒展的实声。
-电钢琴铺底，闷音贝斯，brush 军鼓，第二段副歌起加入弦乐 pad 垫底。
-旋律以级进为主，副歌首句跳进后逐级回落，句尾不做装饰音。
-约 85 BPM，前 12 秒纯电钢琴引子，第二段副歌后留 8 秒纯器乐桥段，尾奏人声渐弱至气声收尾。
-录音室近声，带轻微空间混响，整体情绪由清冷转向微暖。完整旋律演唱，不要电音，不要 auto-tune，不要合唱。
+呢垫电钢琴铺底，闷音立式贝斯，brush 军鼓，弦乐为室内乐四重奏编制、从第二段副歌才进入。
+旋律以级进为主，副歌首句跳进后逐级回落，句尾不做装饰音。约 85 BPM。
+前 12 秒只有电钢琴与低频持续音（地铁在地下的嗡鸣），人声第 12 秒进入；
+主歌鼓组半速进入；桥段抽掉全部节奏乐器，留 4 秒纯人声干声、只留低频持续音垫底，
+再全员进入最后一次副歌；尾奏逐层退去，最后一句气声收尾。
+录音质感：单支铝带麦克风同期录制，70 年代磁带饱和，房间混响很短，保留一点录音室的空气声。
+整体由清冷转向微暖。完整旋律演唱，不要 auto-tune，不要电音人声，不要合唱，不要萨克斯。
 ```
 
 **English 说明（对照，非逐句翻译）**
 
-Modern urban pop ballad with a dream-pop sheen. Adult female vocal, mostly low-mid register, rising to full-voice high notes in the chorus. Breathy phrase openings, light diction, clean phrase endings. Verses near-spoken; chorus opens into sustained full voice. Electric piano bed, muted bass, brush snare, string pads entering from the second chorus. Melody moves mostly stepwise; the chorus opening line leaps then falls back stepwise. Around 85 BPM. 12-second solo electric-piano intro, 8-second instrumental break after the second chorus, outro vocal fading to breath. Close-mic studio sound with light room reverb; overall mood shifts from cold to faintly warm. Full melodic vocal. No electronic vocal effects, no autotune, no choir.
+Modern urban pop ballad with a dream-pop sheen. Adult female vocal, low-mid register, rising to full-voice high notes in the chorus. Breathy phrase openings, light diction, clean phrase endings; verses near-spoken, chorus opening into sustained full voice. Felt piano bed, muted upright bass, brush snare, chamber string quartet entering only from the second chorus. Melody mostly stepwise; the chorus opening line leaps then falls back stepwise. Around 85 BPM. First 12 seconds are piano and a low-frequency drone only (the hum of a subway underground), vocal entering at 0:12; drums enter half-time in the verses; the bridge strips all rhythm instruments for 4 seconds of dry solo vocal over the drone, then everything returns for the final chorus; the outro deconstructs layer by layer, last line on breath. Recorded live with a single ribbon mic, 70s tape saturation, very short room reverb, a little studio air retained. Shifts from cold to faintly warm. Full melodic vocal. No autotune, no electronic vocal effects, no choir, no saxophone.
+
+**为什么秒响版比 Suno 版具体这么多**：秒响接受中文长句，**时间轴指令可以直接写**。
+"第 12 秒入声""桥段抽掉节奏组留 4 秒"这类事件在 Suno 里只能靠结构标签暗示，在秒响里能明说。
+这是秒响相对 Suno 最大的优势区，不用白不用。
 
 ---
 
 ## 第 8 步：设计说明 + 待确认
 
+### 差异化自检（`production-antislop` 10 条）
+
+| 检测项 | 本例如何满足 |
+| --- | --- |
+| 裸情绪词 ≤ 2 个 | **0 个**。`melancholic` 换成 `empty subway station at 2am` |
+| 无安全词黑名单词汇 | 已剔除 `dreamy` `ethereal` `intimate` `warm analog` 等泛词 |
+| **≥ 1 条编曲事件** | 前 12 秒纯器乐入声 / 主歌鼓组半速 / 桥段抽空 4 秒 / 尾奏渐退 |
+| **≥ 1 个专属锚点** | `felt piano`（器材）+ `70s tape saturation`（质感）+ 低频持续音（反差） |
+| 质感 ≥ 2 项 | 空间 `close-mic` + 年代介质 `70s tape saturation` + 录音方式（秒响版：单支铝带麦克风同期） |
+| 乐器全带演奏法/器材 | 呢垫电钢琴 / 闷音立式贝斯 / brush 军鼓 / 室内乐弦乐 |
+| 能量曲线有落点 | sparse intro → 主歌半速 → 副歌全员 → **桥段断崖** → 末次副歌顶点 → 渐退 |
+| Exclude 有针对性 | 针对"都市抒情最可能塌成的样子"：auto-tune / 合唱 / 萨克斯 / 四踩 |
+| 秒响人声四项齐全 | 音区（中低音）+ 发声（气声起句）+ 咬字（轻）+ 句尾（干净收音） |
+| 换掉任一标签会不同 | 换掉 `felt piano` 就变成通用钢琴抒情；换掉 `chamber strings` 就变罐头弦乐 |
+
+**10/10 通过**。
+
+### 对照：安全词写法长什么样
+
+同样的需求，按"安全模板"写会变成：
+
+```
+dream pop, indie pop, melancholic, dreamy, ethereal, female vocals, breathy,
+intimate, piano, bass, drums, strings, 85 BPM, warm, beautiful
+```
+
+差在哪：
+
+| 安全词版 | 本例 | 差别 |
+| --- | --- | --- |
+| `melancholic dreamy ethereal` | `empty subway station at 2am` | 三个通胀情绪词 → 一个场景 |
+| `female vocals` | `female alto` | 只给性别 → 给性别 + 音区 |
+| `piano bass drums strings` | `felt piano, muted upright bass, brush snare, chamber strings` | 类别名 → 演奏法 + 编制 |
+| `warm` | `70s tape saturation, close-mic` | 形容词 → 可执行的年代 + 空间 + 录音方式 |
+| `beautiful` | —— | 主观评价，不是音乐参数，删掉 |
+| 无 | `sparse intro, dynamic contrast` + `[Breakdown]` | 零事件 → 有能量曲线 |
+| `no autotune, no distortion, no rap` | `no autotune, no vocoder, no choir, no saxophone, no four-on-the-floor` | 随便排除 → 针对失败形态 |
+
+**差的不是标签数量，是每个标签的信息量。** 安全词版 15 个标签，有效信息约等于本例的 5 个。
+
+---
+
 **为什么这么选韵**：中东辙鼻音收尾自带冷感，且"声/重/醒/空/灯/程"这一族同时有冷调与光亮面，能承载清冷→微暖的转折，不需要换辙。
 
-**为什么这么配器**：电钢琴 + 闷音贝斯 + brush 军鼓 = 冷色调且克制；弦乐 pad 从第二段副歌才进入，制造"希望慢慢渗进来"的听感，而不是一开始就温暖。
+**为什么这么配器**：呢垫电钢琴 + 闷音立式贝斯 + brush 军鼓 = 冷色调且克制；室内乐弦乐从第二段副歌才进入，制造"希望慢慢渗进来"的听感，而不是一开始就温暖。
+
+**这首歌区别于同类的是什么**：桥段那 4 秒 —— 抽掉全部节奏乐器，只剩干声人声压在地铁低频嗡鸣上。
+留白之后的爆发，比一路堆满有力得多，也是这首最不像"罐头抒情"的地方。
 
 **最需要试听后确认的两点**：
 1. **85 BPM 是否偏慢** —— 若觉得拖，可提到 95–100 BPM，但气声质感会减弱
-2. **女声音区** —— 中低音区更贴"疲惫"，若想要更抓耳可整体上移一个调
+2. **低频持续音的强度** —— 若掩盖人声，就把它限制在引子与桥段，不进主歌
 
 ---
 

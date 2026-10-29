@@ -23,10 +23,12 @@
 ① AI 歌词助手（agents/ai-lyricist.md）
    ├─ 中文 → skills/lyric-zh
    ├─ 英文 → skills/lyric-en
-   └─ 卡韵 / 缺画面 → skills/lyric-imagery-rhyme
+   ├─ 卡韵 / 缺画面 → skills/lyric-imagery-rhyme
+   └─ "太 AI 了" → skills/lyric-naturalness
    ↓ 产出：带 Suno 英文结构标签的歌词
 ② AI 歌曲生成助手（agents/ai-song-producer.md）
-   └─ skills/song-prompt-builder → Suno 英文标签串 + 秒响中文长句，各配中英说明
+   ├─ skills/song-prompt-builder → Suno 英文标签串 + 秒响中文长句，各配中英说明
+   └─ "都一个样" → skills/production-antislop
    ↓
 ③ 迭代：定向修改，不整首重写
 ```
@@ -37,9 +39,9 @@
 
 ### 1. 开新会话
 
-在**这个项目目录**下开新会话（工作区 = `ai_music_studio`）。会话启动时 `AGENTS.md` 自动进入上下文，技能列表里出现 6 个可用技能：
+在**这个项目目录**下开新会话（工作区 = `ai_music_studio`）。会话启动时 `AGENTS.md` 自动进入上下文，技能列表里出现 8 个可用技能：
 
-`ai-lyricist`、`ai-song-producer`、`lyric-zh`、`lyric-en`、`lyric-imagery-rhyme`、`song-prompt-builder`
+`ai-lyricist`、`ai-song-producer`、`lyric-zh`、`lyric-en`、`lyric-imagery-rhyme`、`lyric-naturalness`、`song-prompt-builder`、`production-antislop`
 
 ### 2. 唤起角色：三种方式
 
@@ -55,6 +57,8 @@
 | 找意象 / 押韵字 | "给我一些深夜城市相关的意象""一七辙能押哪些字" |
 | 只要提示词 | "给这段歌写 Suno 提示词""秒响要怎么写" |
 | 调整生成结果 | "编曲太素了""人声不对，想要气声""BPM 太快" |
+| 歌词太 AI | "这段太 AI 了""不够自然""像模板""没画面" |
+| 出歌雷同 | "出来的歌都一个样""太套路""没特点""像别人的歌" |
 
 **② 点名角色**
 
@@ -98,7 +102,7 @@
 
 ### 5. 首次使用，验证一下
 
-新开一个会话，确认技能列表里有那 6 项。如果没出现，说明当前版本的技能发现路径不是 `skills/` 或 `.workbuddy/skills/`，需要换到 `~/.workbuddy/skills/`（但那就跨项目生效了，与本项目的"仅项目内"约定冲突）。
+新开一个会话，确认技能列表里有那 8 项。如果没出现，说明当前版本的技能发现路径不是 `skills/` 或 `.workbuddy/skills/`，需要换到 `~/.workbuddy/skills/`（但那就跨项目生效了，与本项目的"仅项目内"约定冲突）。
 
 ---
 
@@ -108,9 +112,9 @@
 | --- | --- |
 | `AGENTS.md` | **给 AI 读**：会话对齐入口，定义角色边界、skill 清单、硬性约定 |
 | `agents/` | 两个助理角色的定义本体与职责边界 |
-| `skills/` | 七个可加载 skill：2 个角色入口 + 作词 ×4 + 作曲 ×1 |
+| `skills/` | 八个可加载 skill：2 个角色入口 + 作词 ×4 + 作曲 ×2 |
 | `.workbuddy/skills` | 软链 → `../skills`，保证技能被发现（勿删） |
-| `references/` | 去 AI 味词库、韵字表、Suno 标签库、秒响规范等静态参考 |
+| `references/` | 去 AI 味词库、编曲差异化词库、韵字表、Suno 标签库、秒响规范等静态参考 |
 | `examples/` | 端到端样例：`001-empty-subway.md` |
 | `outputs/` | 单次交付物落盘处（不进 git） |
 
@@ -128,13 +132,16 @@
 
 一句话仲裁：**说"这句不顺"归作词，说"编曲太素"归作曲。**
 
-## 四条不可违反的约定
+## 五条不可违反的约定
 
 1. **结构标签一律英文**：`[Verse]` `[Chorus]` `[Bridge]`，中文歌词也一样
 2. **提示词必须中英双语**：哪怕只要一个平台
 3. **Suno 与秒响不互译**：Suno = 英文标签串；秒响 = 中文长句。形态不同，各写各的
-4. **反平均化**：AI 味的病根是"谁都能写出来"。歌词必须有可拍照的细节、当代生活物件，
+4. **反平均化（作词）**：AI 味的病根是"谁都能写出来"。歌词必须有可拍照的细节、当代生活物件，
    以及至少一句"只有这个人会说"的话。判据见 `skills/lyric-naturalness/SKILL.md` 的 10 条检测清单
+5. **反同质化（作曲）**：出歌雷同的病根是"安全词组合"（`dreamy ethereal melancholic` 这类词被用烂，
+   模型响应已收敛到平均值）。提示词必须有**编曲事件**、**专属锚点**、**录音质感**。
+   判据见 `skills/production-antislop/SKILL.md` 的 10 条检测清单
 
 ## 平台支持
 
@@ -147,6 +154,8 @@
 | --- | --- |
 | AI 味黑名单 / 具象替换词 | `references/anti-ai-lexicon.md` |
 | 新的自然度判据 | `skills/lyric-naturalness/SKILL.md` |
+| 安全词黑名单 / 演奏法 / 质感 / 反差配方 | `references/production-lexicon.md` |
+| 新的差异化判据 | `skills/production-antislop/SKILL.md` |
 | 新曲风的标签 | `references/suno-tags.md` |
 | 新的韵字 / 韵族 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |

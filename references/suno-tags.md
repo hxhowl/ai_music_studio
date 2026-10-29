@@ -2,6 +2,10 @@
 
 > 供 `skills/song-prompt-builder/SKILL.md` 第 2 步取标签使用。
 > **Style of Music 字段硬约束**：≤ 15 个标签、≤ 200 字符、主风格唯一、乐器 3–5 件。
+>
+> **取词优先级**：能用**演奏法 / 器材**就不用类别名（`brush snare` > `drums`）。
+> 演奏法、质感、反差配方、编曲事件句库见 **`references/production-lexicon.md`**；
+> 安全词黑名单（`dreamy` `ethereal` 等）同见该文件第一节。
 
 ---
 
@@ -50,7 +54,9 @@
 | 唱法 | `belting` `whisper` `spoken word` `rap` `chant` `operatic` `vibrato` `ad-libs` `harmonies` `layered vocals` |
 | 语言 | `mandarin` `cantonese` `english` `japanese` `korean` `mixed language` |
 
-### ④ 乐器（只点 3–5 件）
+### ④ 乐器（只点 3–5 件，**每件优先写演奏法或器材**）
+
+> 更多演奏法见 `references/production-lexicon.md` 第二节。
 
 | 类别 | 标签 |
 | --- | --- |

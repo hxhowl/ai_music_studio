@@ -36,10 +36,12 @@ ai_music_studio/
 │   ├── lyric-en/SKILL.md              ← 英文语境歌词创作
 │   ├── lyric-imagery-rhyme/SKILL.md   ← 意象关联词组 + 押韵推荐字
 │   ├── lyric-naturalness/SKILL.md     ← 自然度打磨 / 去 AI 味
-│   └── song-prompt-builder/SKILL.md   ← Suno / 秒响 生成提示词（中英双语）
-├── .workbuddy/skills -> ../skills     ← 项目级技能目录软链，保证 7 个技能可被发现
+│   ├── song-prompt-builder/SKILL.md   ← Suno / 秒响 生成提示词（中英双语）
+│   └── production-antislop/SKILL.md   ← 编曲反套路 / 去同质化
+├── .workbuddy/skills -> ../skills     ← 项目级技能目录软链，保证 8 个技能可被发现
 ├── references/
 │   ├── anti-ai-lexicon.md             ← 去 AI 味词库：黑名单 + 具象替换对照表
+│   ├── production-lexicon.md          ← 编曲差异化词库：安全词黑名单、演奏法、质感、反差配方、事件句库
 │   ├── suno-tags.md                   ← Suno 标签体系速查
 │   ├── platform-miaoxiang.md          ← 秒响（Sway）提示词规范
 │   ├── rhyme-zh.md                    ← 中文十三辙 + 常用韵字表
@@ -75,6 +77,7 @@ ai_music_studio/
 - 输入可以是用户原话，也可以是角色一定稿的歌词 + 风格方向
 - 调用 `song-prompt-builder`，**必须同时给出中文与英文两份提示词**
 - 平台差异必须显式区分：Suno 用**逗号分隔的英文标签串**，秒响用**中文长句描述**（两者不是翻译关系，见 `references/platform-miaoxiang.md`）
+- 出歌雷同时调用 `production-antislop` 做差异化改写；取词用 `references/production-lexicon.md`
 
 ### 边界仲裁规则
 
@@ -129,6 +132,7 @@ ai_music_studio/
 | `lyric-imagery-rhyme` | 缺画面感、押韵卡壳、想换韵 | 意象关联词组矩阵 + 押韵推荐字表 |
 | `lyric-naturalness` | "太 AI 了""不够自然""像模板"、交付前自检 | 自然度诊断 + 改写 + 10 条检测清单 |
 | `song-prompt-builder` | 需要 Suno / 秒响 提示词 | 中文 + 英文两份可粘贴提示词 |
+| `production-antislop` | "出来的歌都一个样""太套路""没特点"、提示词交付前自检 | 差异化诊断 + 改写 + 10 条检测清单 |
 
 调用顺序不是固定的：`lyric-imagery-rhyme` 可以在写词任何阶段被反复调用。
 
@@ -139,11 +143,13 @@ ai_music_studio/
 1. **结构标签一律用 Suno 通用英文格式**：`[Intro]` `[Verse]` `[Pre-Chorus]` `[Chorus]` `[Bridge]` `[Outro]` 等。中文歌词也用英文标签，标签内不写中文。
 2. **提示词必须中英双语**。哪怕用户只要一个平台，也同时给出中文版与英文版，并标明各自适配的平台。
 3. **Suno 与秒响不互译**。Suno = 精简英文标签串（重点在密度与互斥性）；秒响 = 中文长句描述（重点在人声细节与演唱处理）。把英文标签直译成中文丢给秒响，效果会塌。
-4. **不堆砌标签**。Suno 风格字段控制在 15 个标签以内、200 字符以内；乐器只点 3–5 件核心的。
+4. **不堆砌标签**。Suno 风格字段控制在 15 个标签以内、200 字符以内；乐器只点 3–5 件核心的，**且每件带演奏法或器材**（写 `brush snare`，不写 `drums`）。
 5. **不用歌手姓名代替风格**。写"中国风 + R&B + 说唱段落"，不写"像周杰伦"。
 6. **迭代是定向修改**。用户说"副歌第二句改一下"，就只改那一句并重读上下文韵脚，不重出整首。
 7. **交付物落盘**到 `outputs/`，文件名格式 `YYYYMMDD-{歌曲名}-{类型}.md`。
-8. **反平均化**。AI 味的病根是"平均化"——谁都能写出来的句子，谁也不属于。歌词必须包含**可拍照的具体细节**、**当代生活物件**、以及**至少一句"只有这个人会说"的话**；交付前过一遍 `lyric-naturalness` 的 10 条检测清单，"私人口吻"一项不过关即判不合格。
+8. **反平均化（作词）**。AI 味的病根是"平均化"——谁都能写出来的句子，谁也不属于。歌词必须包含**可拍照的具体细节**、**当代生活物件**、以及**至少一句"只有这个人会说"的话**；交付前过一遍 `lyric-naturalness` 的 10 条检测清单，"私人口吻"一项不过关即判不合格。
+9. **反同质化（作曲）**。出歌雷同的病根是"安全词组合"——`dreamy ethereal melancholic` 这类词被用烂，模型响应已收敛到平均值，写进去等于没写。提示词必须包含**至少 1 条编曲事件（时间轴指令）**、**至少 1 个专属锚点**（反差音色 / 演奏法器材 / 质感设定，三选一）、以及**明确的录音质感**（年代 / 录音方式 / 空间，至少两项）；裸情绪词 ≤ 2 个。交付前过一遍 `production-antislop` 的 10 条检测清单，"专属锚点"一项不过关即判不合格。
+   - **事件的载体因平台而异**：Suno 的 Style 字段写不下长句，事件必须落在**歌词结构标签**（`[Intro]` `[Breakdown]` `[Drop]` `[whisper]`）+ Style 里的动态词（`sparse intro` `dynamic contrast`）；秒响可直接写中文时间轴。把长句塞进 Suno 的 Style 字段是常见错误。
 
 ---
 
@@ -157,7 +163,8 @@ ai_music_studio/
 - [ ] 确认目标平台（Suno / 秒响 / 两者都要）
 - [ ] 若关键信息缺失，一次问清（≤3 问，带推荐默认值），不要分批追问
 - [ ] 交付前自查第 7 节全部硬性约定
-- [ ] 过一遍 `lyric-naturalness` 的自然度检测清单（≥8 项，且"私人口吻"必须过）
+- [ ] 涉及歌词：过一遍 `lyric-naturalness` 的自然度检测清单（≥8 项，且"私人口吻"必须过）
+- [ ] 涉及提示词：过一遍 `production-antislop` 的差异化检测清单（≥8 项，且"专属锚点"必须过）
 
 ---
 
