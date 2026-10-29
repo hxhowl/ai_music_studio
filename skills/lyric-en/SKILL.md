@@ -150,7 +150,22 @@ English is stress-timed. Align **both**:
 
 ---
 
-## 7. Self-Check Before Delivery
+## 7. Naturalness Red Lines (prevent while drafting)
+
+**The root cause of AI-sounding lyrics is averaging** — if anyone could have written it, it belongs to no one. Hold these at the drafting stage; don't leave it for a post-write fix.
+
+- **Three questions per line**: can a camera film it? would it still work in a different song? is there one detail nobody else would write?
+- **≥ 3 concrete nouns per verse**; **≤ 3 abstract emotion words** in the whole song
+- **≥ 1 contemporary object**: 12% battery, a delivery note, a read receipt, the last train, a locker pickup code
+- **Generic imagery must be qualified**: not "rain" — "the kind of rain that flips your umbrella"
+- **Vary line length**: keep the opening lines aligned, then let **one line (usually the last)** run clearly longer or shorter as a landing line. Never all lines equal (fake), never all over the place (unsingable)
+- **Heavier emotion, lighter wording**: not "I miss you till I cry" — "your toothbrush is still in the cup"
+
+Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow: `skills/lyric-naturalness/SKILL.md`.
+
+---
+
+## 8. Self-Check Before Delivery
 
 - [ ] Tags are Suno-standard English, bracketed
 - [ ] Chorus rhyme family consistent; verse scheme stated
@@ -160,6 +175,6 @@ English is stress-timed. Align **both**:
 - [ ] No artist names, brands, or unpronounceable proper nouns
 - [ ] Hook is at the opening of the chorus
 
-## 8. Output
+## 9. Output
 
 Save to `outputs/YYYYMMDD-{song}-lyrics.md`, following the output format in `agents/ai-lyricist.md`.

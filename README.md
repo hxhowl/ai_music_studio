@@ -108,9 +108,9 @@
 | --- | --- |
 | `AGENTS.md` | **给 AI 读**：会话对齐入口，定义角色边界、skill 清单、硬性约定 |
 | `agents/` | 两个助理角色的定义本体与职责边界 |
-| `skills/` | 六个可加载 skill：2 个角色入口 + 作词 ×3 + 作曲 ×1 |
+| `skills/` | 七个可加载 skill：2 个角色入口 + 作词 ×4 + 作曲 ×1 |
 | `.workbuddy/skills` | 软链 → `../skills`，保证技能被发现（勿删） |
-| `references/` | 韵字表、Suno 标签库、秒响规范等静态参考 |
+| `references/` | 去 AI 味词库、韵字表、Suno 标签库、秒响规范等静态参考 |
 | `examples/` | 端到端样例：`001-empty-subway.md` |
 | `outputs/` | 单次交付物落盘处（不进 git） |
 
@@ -128,11 +128,13 @@
 
 一句话仲裁：**说"这句不顺"归作词，说"编曲太素"归作曲。**
 
-## 三条不可违反的约定
+## 四条不可违反的约定
 
 1. **结构标签一律英文**：`[Verse]` `[Chorus]` `[Bridge]`，中文歌词也一样
 2. **提示词必须中英双语**：哪怕只要一个平台
 3. **Suno 与秒响不互译**：Suno = 英文标签串；秒响 = 中文长句。形态不同，各写各的
+4. **反平均化**：AI 味的病根是"谁都能写出来"。歌词必须有可拍照的细节、当代生活物件，
+   以及至少一句"只有这个人会说"的话。判据见 `skills/lyric-naturalness/SKILL.md` 的 10 条检测清单
 
 ## 平台支持
 
@@ -143,6 +145,8 @@
 
 | 想加 | 放哪 |
 | --- | --- |
+| AI 味黑名单 / 具象替换词 | `references/anti-ai-lexicon.md` |
+| 新的自然度判据 | `skills/lyric-naturalness/SKILL.md` |
 | 新曲风的标签 | `references/suno-tags.md` |
 | 新的韵字 / 韵族 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |

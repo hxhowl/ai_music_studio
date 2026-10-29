@@ -35,9 +35,11 @@ ai_music_studio/
 │   ├── lyric-zh/SKILL.md              ← 中文语境歌词创作
 │   ├── lyric-en/SKILL.md              ← 英文语境歌词创作
 │   ├── lyric-imagery-rhyme/SKILL.md   ← 意象关联词组 + 押韵推荐字
+│   ├── lyric-naturalness/SKILL.md     ← 自然度打磨 / 去 AI 味
 │   └── song-prompt-builder/SKILL.md   ← Suno / 秒响 生成提示词（中英双语）
-├── .workbuddy/skills -> ../skills     ← 项目级技能目录软链，保证 6 个技能可被发现
+├── .workbuddy/skills -> ../skills     ← 项目级技能目录软链，保证 7 个技能可被发现
 ├── references/
+│   ├── anti-ai-lexicon.md             ← 去 AI 味词库：黑名单 + 具象替换对照表
 │   ├── suno-tags.md                   ← Suno 标签体系速查
 │   ├── platform-miaoxiang.md          ← 秒响（Sway）提示词规范
 │   ├── rhyme-zh.md                    ← 中文十三辙 + 常用韵字表
@@ -125,6 +127,7 @@ ai_music_studio/
 | `lyric-zh` | 中文歌词创作、打磨、改词 | 带英文结构标签的完整中文歌词 |
 | `lyric-en` | 英文歌词创作、打磨、改词 | 带英文结构标签的完整英文歌词 |
 | `lyric-imagery-rhyme` | 缺画面感、押韵卡壳、想换韵 | 意象关联词组矩阵 + 押韵推荐字表 |
+| `lyric-naturalness` | "太 AI 了""不够自然""像模板"、交付前自检 | 自然度诊断 + 改写 + 10 条检测清单 |
 | `song-prompt-builder` | 需要 Suno / 秒响 提示词 | 中文 + 英文两份可粘贴提示词 |
 
 调用顺序不是固定的：`lyric-imagery-rhyme` 可以在写词任何阶段被反复调用。
@@ -140,6 +143,7 @@ ai_music_studio/
 5. **不用歌手姓名代替风格**。写"中国风 + R&B + 说唱段落"，不写"像周杰伦"。
 6. **迭代是定向修改**。用户说"副歌第二句改一下"，就只改那一句并重读上下文韵脚，不重出整首。
 7. **交付物落盘**到 `outputs/`，文件名格式 `YYYYMMDD-{歌曲名}-{类型}.md`。
+8. **反平均化**。AI 味的病根是"平均化"——谁都能写出来的句子，谁也不属于。歌词必须包含**可拍照的具体细节**、**当代生活物件**、以及**至少一句"只有这个人会说"的话**；交付前过一遍 `lyric-naturalness` 的 10 条检测清单，"私人口吻"一项不过关即判不合格。
 
 ---
 
@@ -153,6 +157,7 @@ ai_music_studio/
 - [ ] 确认目标平台（Suno / 秒响 / 两者都要）
 - [ ] 若关键信息缺失，一次问清（≤3 问，带推荐默认值），不要分批追问
 - [ ] 交付前自查第 7 节全部硬性约定
+- [ ] 过一遍 `lyric-naturalness` 的自然度检测清单（≥8 项，且"私人口吻"必须过）
 
 ---
 
