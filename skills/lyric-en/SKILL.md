@@ -285,6 +285,14 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 - [ ] Revisions wrote a **new file** with a version number; the original was not overwritten
 - [ ] New version states what changed, what didn't, and the previous file path
 
+**Pass mark**
+
+- **Craft, Line count and Format groups must pass in full** — these are errors, not scores.
+  There is no "mostly fine": a Chinese tag, validation at the template BPM, or an overwritten
+  file is wrong, full stop
+- **Naturalness**: pass **≥ 8 of 10** on `skills/lyric-naturalness/SKILL.md`, and the
+  **private-voice** item is a veto — fail it and the lyric fails regardless of the rest
+
 ---
 
 ## 8. Formatting (hard rules)
