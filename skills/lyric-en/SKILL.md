@@ -162,6 +162,24 @@ English is stress-timed. Align **both**:
 **Syllables move with BPM too**: the table above assumes ~85 BPM. The real constraint is one breath —
 at 120–140 BPM cap lines at **6–9 syllables**, at 160+ at **5–7**. Full table: `references/song-structure.md` §2.
 
+### Mixed language
+
+Lines of another language inside an English lyric are common, but **structure follows the main
+singing language**.
+
+| Question | Rule |
+| --- | --- |
+| Which skill | Follow the **main singing language**: English-led → this skill; Chinese-led → `lyric-zh` |
+| Counting | English parts by syllable; a **whole Chinese line** by characters (1 character ≈ 1 syllable) |
+| Rhyme | English parts follow their rhyme family; Chinese words don't join it — **don't expect cross-language rhymes** |
+| Placement | Hook, the last chorus line, or the pre-chorus lift — the spot must be **fixed and repeat 2–3 times** |
+| Singability | Chinese parts still need **tone-to-melody** care (see `lyric-zh` on 倒字), or the meaning gets misheard |
+
+⚠️ Three traps:
+1. **No full foreign-language sections** — it breaks syllable alignment and rhyme density
+2. **Don't add a language for flavour** — the borrowed line must say something English can't
+3. **Section tags are unaffected** — they stay English regardless
+
 **Rule of thumb**: within a section, corresponding lines must match syllable count within ±2 AND stress position.
 **Long-line styles: check total syllables, not lines** — target **45–90 syllables in the chorus**.
 
