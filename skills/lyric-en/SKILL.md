@@ -159,6 +159,9 @@ English is stress-timed. Align **both**:
 - ✅ "I **walk** a**lone** at **mid**night" — stress lands on beats
 - ❌ "A**lone** I **walk** in the **night**" — fights the pulse unless intended
 
+**Syllables move with BPM too**: the table above assumes ~85 BPM. The real constraint is one breath —
+at 120–140 BPM cap lines at **6–9 syllables**, at 160+ at **5–7**. Full table: `references/song-structure.md` §2.
+
 **Rule of thumb**: within a section, corresponding lines must match syllable count within ±2 AND stress position.
 **Long-line styles: check total syllables, not lines** — target **45–90 syllables in the chorus**.
 
