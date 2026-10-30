@@ -216,6 +216,18 @@ V1 sets the scene, V2 advances it — shift the time ("three days later"), shift
 (from "I" to "you"), or let an object planted in V1 change by V2 (V1: "phone at 4%" → V2: "it died").
 ⚠️ Just rephrasing V1 is exactly what `lyric-naturalness` check #9 catches as "repetition in new words".
 
+**How to build a hook** (having one isn't enough — it has to be memorable and singable):
+
+| Point | Rule |
+| --- | --- |
+| **Placement** | **First line of the chorus** (heard first), then repeated at the last line or in `[Post-Chorus]` to close the loop |
+| **Length** | **Shorter than the surrounding lines** — if the chorus runs 8 syllables, make the hook 5–6 |
+| **Open vowels** | Prefer open vowels (ah / ay / oh); closed ones (ee / oo) don't carry and get swallowed |
+| **Repetition** | Repeat verbatim 2–3 times, **unchanged**; vary lines 2–3 instead, never the hook |
+| **Content** | It's the title or a near-paraphrase of it; **no abstract emotion words** ("it'll be okay" doesn't stick) |
+
+⚠️ A hook that changes all three times is no hook. Leave the variation to the middle lines.
+
 ---
 
 ## 5. Common failure modes
