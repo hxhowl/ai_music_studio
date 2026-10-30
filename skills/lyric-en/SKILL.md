@@ -36,16 +36,37 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 
 ## 2. Structure Templates
 
-| Template | Structure (numbers = **line counts**) | Best for |
-| --- | --- | --- |
-| **Ballad** | Intro - V1(4) - PC(2) - C(6) - V2(4) - PC(2) - C(6) - B(4) - C(6) - Outro(3) | Slow, emotional build |
-| **Standard Pop** | Intro - V1(6) - PC(3) - C(6) - V2(6) - PC(3) - C(6) - B(4) - C(6) - Outro(3) | Mainstream, hook-forward |
-| **Story Folk** | V1(6) - V2(6) - C(4) - V3(6) - C(4) - B(5) - C(4) - Outro(3) | Narrative, verse-heavy |
-| **Build** | Intro - V1(4) - C(6) - V2(4) - C(6) - B(4) - C(6) - C(8) - Outro(3) | Emotional escalation |
-| **Short-form** | Intro - V(4) - PC(2) - C(4) - C(4) - Outro(2) | 60–90s, social clips |
-| **Rap-led** | Intro - V1(16) - C(4) - V2(16) - C(4) - B(6) - C(8) - Outro(4) | Multi-syllabic rhyme in verses |
+> Durations are computed at each template's **typical BPM** (running everything at 85 BPM badly
+> underestimates fast templates). ※ = narrative-tag / short-line-repeat chorus; it may run
+> under 15 sec (see the exception in §4).
 
-Line counts are decided in §4, not copied blindly.
+| # | Template | Structure (numbers = **line counts**) | Typical BPM | Chorus | Whole song | Best for |
+| --- | --- | --- | --- | --- | --- | --- |
+| **T1** | Ballad | Intro - V1(4) - PC(2) - C(6) - V2(4) - PC(2) - C(6) - B(4) - C(6) - Outro(3) | 85 | 16.9s | ≈ 1:56 | Slow, short verse / long chorus |
+| **T2** | Standard Pop | Intro - V1(6) - PC(3) - C(6) - V2(6) - PC(3) - C(6) - B(4) - C(6) - Outro(3) | 95 | 15.2s | ≈ 2:10 | Mainstream, hook-forward |
+| **T3** | Story Folk | V1(8) - V2(8) - C(4) - V3(8) - C(4) - B(5) - C(4) - Outro(3) | 90 | 10.7s※ | ≈ 2:09 | Narrative, verse-heavy |
+| **T4** | Build | Intro - V1(4) - C(6) - V2(4) - C(6) - B(4) - C(6) - **C(8)** - Outro(3) | 85 | 16.9→22.6s | ≈ 2:07 | Final chorus extended to a peak |
+| **T5** | Short-form | Intro - V1(4) - PC(2) - C(6) - C(6) - Outro(2) | 100 | 14.4s | ≈ 1:08 | 60–90s, social clips |
+| **T6** | Rap-led | Intro - V1(16) - C(4) - V2(16) - C(4) - B(6) - C(8) - Outro(4) | 90 | 10.7s※ | ≈ 2:46 | Multi-syllabic rhyme in verses |
+| **T7** | Long-line | Intro - V1(4) - PC(2) - C(4) - V2(4) - PC(2) - C(4) - B(4) - C(4) - Outro(2) | 90 | 21.3s | ≈ 2:36 | Long lines (2 bars each), few lines / many words |
+| **T8** | EDM / Dance | Intro - V1(4) - PC(2) - Drop(4) - Br - V2(4) - PC(2) - Drop(4) - Drop(6) - Outro(2) | 128 | 7.5s※ | ≈ 2:19 | Instrumental-heavy (vocals only 0:52) |
+| **T9** | R&B / Neo-soul | Intro - V1(6) - PC(2) - C(8) - V2(6) - PC(2) - C(8) - B(4) - C(8) - Outro(3) | 92 | 20.9s | ≈ 2:24 | Long chorus, runs and melisma |
+
+### How to pick (**don't just take the familiar one**)
+
+Offering nine templates with no selection rule means the first one gets picked — the same failure
+mode as "given a range, take the minimum." Narrow it down in four steps:
+
+1. **Target length**: 60–90 sec → **T5 only**; 2:00–3:30 → the rest
+2. **What carries the song**: chorus-led (emotional, cathartic) → T1/T4/T9; verse-led (narrative, rap) → T3/T6; balanced → T2; instrumental-led → T8
+3. **How many choruses, and do they vary**: three with variation → chorus of 6; final one must peak → extend to 8 (T4); chorus only restates the title → 4
+4. **Genre overrides**: long-line / Chinese-style → T7; EDM → T8; R&B → T9; rap → T6
+
+**Don't add every optional section by default**: Pre-Chorus may be dropped in T3/T4/T5;
+Bridge can be replaced by an instrumental break in T5/T6; `[Instrumental Break]` is the carrier
+for arrangement events — add it only when you need a solo or an emptied-out contrast.
+
+State **why** you chose this template. Line counts are decided in §4, not copied blindly.
 
 ---
 
@@ -119,6 +140,7 @@ English is stress-timed. Align **both**:
 | Chorus | 7–12 |
 | Bridge | 6–10 |
 | Outro | 4–8 |
+| **Long-line styles** (Chinese-style, ambient) | **14–20** — one line spans 2 bars; **use fewer lines** (see long-line check below) |
 
 **Stress check**: read the line aloud and tap the beat. The natural word stress must land on the beat.
 - ✅ "I **walk** a**lone** at **mid**night" — stress lands on beats
@@ -144,6 +166,12 @@ lines = target seconds ÷ seconds per line
 
 Example: 85 BPM + 18-sec chorus → 18 ÷ 2.82 ≈ **6 lines**. 120 BPM + 16 sec → **8 lines**.
 
+> **Exception: a narrative-tag chorus may run under 15 sec.** In folk and rap the chorus often
+> only restates the title (4 lines ≈ 10–12 sec). It builds memory through **how many times it
+> arrives** (4×, 40+ sec of total exposure), not through one long statement.
+> The 15–22 sec band is for **build-type choruses**, where the emotion has to climb inside a
+> single pass.
+
 ### Step 2 — chorus length by emotional job (outranks genre)
 
 | Chorus job | Lines |
@@ -159,15 +187,48 @@ Example: 85 BPM + 18-sec chorus → 18 ÷ 2.82 ≈ **6 lines**. 120 BPM + 16 sec
 | Ratio | Use |
 | --- | --- |
 | Verse 4 / Chorus 6 | Ballad — short story, long feeling |
-| Verse 6 / Chorus 6 | Standard pop |
+| Verse 6 / Chorus 6 | **Standard pop only** (the sole exception — contrast comes from the Pre-Chorus and energy, not line count) |
 | Verse 8 / Chorus 4 | Folk narrative, rap |
 | Verse 4 / Chorus 8 | Catharsis, rock |
 
-**Adjacent sections must not have equal line counts.**
+⚠️ The axis is **function**, not position:
 
-Full tables (BPM lookup, genre × line count, template library): **`references/song-structure.md`**.
+| Relation | Line count | Why |
+| --- | --- | --- |
+| **Repeats of the same function** (V1↔V2, C1↔C2↔C3, PC1↔PC2) | **Must be equal** | Same melody, same phrase — different counts make it unsingable |
+| **Verse ↔ chorus ↔ pre-chorus** | **Should differ** | Each owns a melody; the same count everywhere = structural "AI symmetry" |
+| Bridge / outro | **May match the above** | One-off sections with their own melody — no need to force a difference |
 
-**State at delivery**: how many lines per section, and why (BPM + emotional job + duration check).
+> Don't write "adjacent sections must not have equal line counts." Followed literally it makes
+> V1 and V2 differ — but both verses share one melody, so they can't.
+
+### Long-line styles: check total syllables, not lines
+
+A 14-syllable line spans 2 bars, so 4 lines is not 11 sec but ~21 sec.
+**The real constraint is total duration (or total syllables), not line count.**
+
+| Chorus shape | Total syllables | Verdict |
+| --- | --- | --- |
+| 4 × 7 = 28 | 28 | Short — only for fast songs / one-punch attitude |
+| 6 × 9 = 54 | 54 | Comfort zone — standard ballad |
+| 8 × 8 = 64 | 64 | Catharsis / stacking |
+| 4 × 14 = 56 | 56 | Long-line — few lines, plenty of syllables; equally valid |
+
+Target: **chorus ≈ 45–90 syllables total**.
+
+### Inside a 6-line chorus
+
+```
+Line 1    hook at the opening, sets the memory      (same all 3 times)
+Line 2    expands the hook                          (same all 3 times)
+Line 3    push / give an image                      (same all 3 times)
+Line 4    ★ VARIATION SLOT: emotional state shifts  (different each time)
+Lines 5-6 landing / scene closes                    (same all 3 times; scene doesn't follow mood)
+```
+
+Full tables (BPM lookup, genre × line count, template library, how to pick): **`references/song-structure.md`**.
+
+**State at delivery**: which template (T1–T9) and why; lines per section and why (BPM + emotional job + duration check).
 
 ---
 
@@ -176,8 +237,8 @@ Full tables (BPM lookup, genre × line count, template library): **`references/s
 ```
 ① Nail the premise — one concrete sentence, not an abstract mood word
 ② Set BPM (if unknown, use the genre default — it drives line count)
-③ Set line counts per section: §4 three-step (BPM → emotional job → section variance)
-   Output a table: lines per section, target seconds, why
+③ Pick a template (T1–T9, §2 four steps) + set line counts: §4 three-step (BPM → emotional job → section variance)
+   Output a table: which template, lines per section, target seconds, why
 ④ Pick rhyme family for chorus; lock it
 ⑤ Call lyric-imagery-rhyme for image clusters + rhyme word bank
 ⑥ Verse — concrete nouns + verbs, no commentary
@@ -237,8 +298,8 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 **Line count (§4)**
 - [ ] **Not every section is 4 lines** — counts derived from BPM + emotional job, not the minimum
 - [ ] Chorus runs 15–22 sec; whole song 2:00–3:30
-- [ ] **Adjacent sections have different line counts**
-- [ ] Delivery states lines per section and why
+- [ ] **Repeats of the same function have equal line counts** (V1=V2, C1=C2); verse and chorus differ
+- [ ] Delivery states which template, lines per section, and why
 
 **Format & versioning (§9, §10)**
 - [ ] Lyrics inside a code block, one line per lyric line, **no blank lines between lines**, one blank line between sections
@@ -278,7 +339,7 @@ second lyric line
 ### Delivery document
 
 ```markdown
-# Lyrics · "{Title}" v{N}      ← no version on v1; label from v2 on
+# Lyrics · "{Title}" v1        ← v1 is explicit; no "first version omits it" special case
 
 > Version note: what changed vs. previous; path to previous file
 
