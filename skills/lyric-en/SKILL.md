@@ -193,6 +193,11 @@ at 120–140 BPM cap lines at **6–9 syllables**, at 160+ at **5–7**. Full ta
 
 **Division of labour**: verse = **images** (concrete nouns, actions); chorus = **attitude** (emotion + repetition); bridge = **the turn** (what verse and chorus never said).
 
+**V2 must move one step beyond V1**: equal line counts (same melody) don't mean the content may repeat.
+V1 sets the scene, V2 advances it — shift the time ("three days later"), shift the perspective
+(from "I" to "you"), or let an object planted in V1 change by V2 (V1: "phone at 4%" → V2: "it died").
+⚠️ Just rephrasing V1 is exactly what `lyric-naturalness` check #9 catches as "repetition in new words".
+
 ---
 
 ## 5. Common failure modes
