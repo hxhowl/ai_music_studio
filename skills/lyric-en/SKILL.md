@@ -107,7 +107,7 @@ State **why** you chose this template.
 
 ## 3. Line count & meter — never default to 4 lines
 
-Given a range with no selection rule, the model picks the minimum. Result: every section is 4 lines — the whole song runs ~1:38 (a third shorter than a standard pop song), the chorus arrives and leaves in 11 seconds, **so the emotion never has time to land**. Equal line counts across sections is structural "AI symmetry." **Line count is calculated, not guessed.**
+Given a range with no selection rule, the model picks the minimum. Result: every section is 4 lines — the whole song runs ~1:51 (below the 2:00 floor), the chorus arrives and leaves in 11 seconds, **so the emotion never has time to land**. Equal line counts across sections is structural "AI symmetry." **Line count is calculated, not guessed.**
 
 ### Decision flow
 
@@ -283,8 +283,9 @@ second lyric line
                               ← actual BPM and its source (user-specified / template default)
                               ← if it differs from the template typical BPM, what changed
 ## 3. Rhyme Check
-## 4. Design Notes
-## 5. Self-Check
+## 4. Imagery & Rhyme Design   ← image cluster + why this family (write it when lyric-imagery-rhyme was used)
+## 5. Design Notes
+## 6. Self-Check
 ```
 
 ---

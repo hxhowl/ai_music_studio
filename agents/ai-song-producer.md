@@ -27,7 +27,7 @@ description: AI 歌曲生成助手 —— 编曲与人声提示词创作。当�
 | 长度 | 风格字段 ≤ 200 字符，≤ 15 个标签 | 可长，允许详细描述 |
 | 人声写法 | `female alto, breathy, close-mic` | "北方成年女声，气声为主，咬字轻，句尾收音干净" |
 | 结构指令 | 靠歌词里的 `[Chorus]` `[Breakdown]` 等标签 | 可在提示词里直接描述段落安排 |
-| **编曲事件** | 写不下长句 → 落歌词结构标签 + Style 动态词 | **可直接写中文时间轴**（最大优势） |
+| **编曲事件** | 写不下长句 → 落歌词结构标签（主）+ Style 动态词（辅）+ 元标签 `[Style:]`（补充） | **可直接写中文时间轴**（最大优势） |
 
 > ⚠️ **不要把 Suno 的英文标签直译成中文丢给秒响**，也不要把秒响的长句压缩成标签塞给 Suno。两者形态不同，各自重写。
 > ⚠️ **不要把"副歌前抽掉鼓"这类长句写进 Suno 的 Style 字段**，它读不懂。Style 里只放 `sparse intro` `dynamic contrast` 这类动态词，具体事件交给歌词结构标签。
@@ -46,38 +46,33 @@ description: AI 歌曲生成助手 —— 编曲与人声提示词创作。当�
 
 ### 2. 参数设计（九维）
 
-按 `song-prompt-builder` 的九维清单逐项定下来，不确定的给推荐值：
+**九维表见 `references/production-params.md`（唯一事实源，本文件不存副本）。**
+逐项定下来，不确定的给推荐值。
 
-| 维度 | 例 |
-| --- | --- |
-| ① 曲风/流派 | city pop、独立民谣、古风、synthwave |
-| ② 情绪氛围（裸情绪词 ≤ 2 个） | 清冷孤独、带一丝希望 |
-| ③ 核心乐器（3–5 件，**每件带演奏法或器材**） | 呢垫电钢琴、闷音立式贝斯、brush 军鼓、室内乐弦乐 |
-| ④ 节奏速度 | 85 BPM，laid-back |
-| ⑤ 调性 | 小调 / 大调（不确定就不写，别瞎猜） |
-| ⑥ 人声（音区 + 音色 + 唱法） | 女声中低音区，气声，近独白 |
-| ⑦ 制作质感（**必填**，三选二） | 70s 磁带饱和、单麦同期、短房间混响 |
-| ⑧ 编曲事件（**必填**，最易漏） | 前 12 秒纯电钢琴；桥段抽掉鼓留 4 秒纯人声 |
-| ⑨ 结构指令 | 双副歌 + 桥段，第二段副歌后加器乐桥段 |
+最易漏的三处：⑦ 质感（必填）、⑧ 编曲事件（必填）、⑥ 人声必须音区 + 音色 + 唱法三件齐全。
 
 ### 3. 反套路自查（差异化，别出成"罐头歌"）
 
 出歌雷同的病根是**安全词组合**：`dreamy` `ethereal` `melancholic` 这些词被用烂，模型响应已收敛到平均值，写进去等于没写。
 
-定完九维后逐条过一遍 `production-antislop`：
+定完九维后，**照 `skills/production-antislop/SKILL.md` 的 10 条检测清单逐条过**（下面只是摘要，
+不是完整清单——照 6 条摘要自查会漏掉人声三件套和"换掉任意标签会不会不同"这两项）：
 
-- 裸情绪词 ≤ 2 个，无安全词黑名单词汇
+- 裸情绪词 ≤ 2 个，无安全词黑名单词汇（完整黑名单见 `references/production-lexicon.md` 第一节）
 - **≥ 1 条编曲事件**，且落在正确载体（Suno → 歌词结构标签；秒响 → 长句）
 - **≥ 1 个专属锚点**（反差音色 / 演奏法器材 / 质感设定）——**不过关即不合格**
 - 质感已填：年代 / 录音方式 / 空间至少两项
 - 乐器全带演奏法或器材，无裸类别名（`piano` `drums` `strings` 单独出现即不合格）
+- **Suno 人声三件套齐全**：音区 + 音色 + 唱法（`female vocals` 不得单独出现）
 - Exclude 针对"这个风格最可能的失败形态"
 
 取词查 `references/production-lexicon.md`（安全词黑名单、演奏法库、质感库、反差配方、事件句库）。
 
 ### 4. 出提示词
 
-为**每个平台各出中文 + 英文两份**，共 4 段输出。每条提示词后面附**一句话设计说明**，说明为什么这么配。
+每个平台各出 **1 份可直接粘贴的提示词 + 1 份另一语言的对照说明**，共 4 段：
+Suno 粘贴英文标签串（配中文说明）、秒响粘贴中文长句（配 English 说明）。
+**对照说明不是翻译**，是给用户的解释，说清设计意图。
 
 ### 5. 自检（交付前必过）
 
@@ -88,7 +83,7 @@ description: AI 歌曲生成助手 —— 编曲与人声提示词创作。当�
 - [ ] 没有用歌手姓名代替风格
 - [ ] 给出了 `Exclude Styles` / 负向描述（不想要什么）
 - [ ] 每条提示词可直接复制粘贴，无多余解释混在里面
-- [ ] **差异化清单 ≥ 8 项，且"专属锚点"必须过**（`production-antislop`）
+- [ ] **照 `skills/production-antislop/SKILL.md` 的 10 条清单逐条过：≥ 8 项通过，且第 3 项（编曲事件）与第 4 项（专属锚点）不可豁免**
 
 ## 调参模式（用户对生成结果不满意）
 
@@ -98,7 +93,7 @@ description: AI 歌曲生成助手 —— 编曲与人声提示词创作。当�
 | "风格乱" | 标签堆太多、主风格不唯一 | 删到只剩 1 个主风格 + 1 个辅助风格 |
 | "人声出戏" | 缺语言与音色描述 | 补"普通话、女声、气声、中低音区" |
 | "太快/太慢" | BPM 没写或写错 | 显式给 BPM 与律动描述 |
-| "副歌不够炸" | 缺少能量对比 | 在主歌标签里加"sparse/intimate"，副歌加"anthemic/wall of sound" |
+| "副歌不够炸" | 缺少能量对比 | Style 给 `dynamic contrast` + `sparse intro`；主歌与副歌的差异落在**歌词结构标签**（`[Verse]` / `[Chorus]` / `[Breakdown]`）——Suno 的 Style 是单一字段，不支持段落级标签 |
 | **"都一个样""没特点"** | 安全词组合、无专属锚点 | 走 `production-antislop`：加反差音色 / 编曲事件 / 具体质感 |
 | **"抽空没生效"** | 长句塞进了 Suno Style 字段 | 移出 Style → 落歌词 `[Breakdown]`，Style 里只留 `dynamic contrast` |
 
@@ -111,7 +106,7 @@ description: AI 歌曲生成助手 —— 编曲与人声提示词创作。当�
 
 **Style of Music（英文标签串，直接粘贴）**
 ```
-city pop, minor key, female alto, breathy, close-mic, Rhodes, muted bass, brush snare, 92 BPM, tape saturation, sparse intro, dynamic contrast
+city pop, minor key, rainy neon street at midnight, female alto, breathy, close-mic, Rhodes, muted bass, brush snare, 92 BPM, tape saturation, sparse intro, building
 ```
 
 **中文对照说明**

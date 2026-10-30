@@ -21,6 +21,7 @@
 | `female vocals` 单独出现 | 等于没描述 | 必配音区 + 音色 + 唱法（见下） |
 | `piano` `guitar` `drums` `strings` | 类别名，不是音色 | 换成**演奏法 + 器材**（见第二节） |
 | `80s` `retro` `vintage` 单用 | 太宽泛 | 写明器材：`analog synth`, `gated reverb drums`, `tape saturation` |
+| `warm` `intimate` 单用 | 形容不出是什么，不带器材 | **带器材时有效且推荐**：`warm analog`, `intimate close-mic`。判据：它描述的是"这张唱片怎么录的"（有效）还是"听起来感觉如何"（无效） |
 
 **判据**：把这个标签换成同义词，出来的歌会不同吗？不会，就是安全词。
 
@@ -76,7 +77,7 @@
 
 | 写法 | 听感 |
 | --- | --- |
-| `brush drums` / `brushed snare` | 刷鼓， jazz、安静 |
+| `brush snare` / `brush drums` / `brushed snare` | 刷鼓，jazz、安静 |
 | `rimshot` | 打边，干、紧 |
 | `gated reverb drums` | 门混响鼓，80 年代标志音 |
 | `four-on-the-floor` | 每拍底鼓，舞曲 |
