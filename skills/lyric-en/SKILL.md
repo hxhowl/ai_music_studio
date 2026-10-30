@@ -36,13 +36,16 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 
 ## 2. Structure Templates
 
-| Template | Structure | Best for |
+| Template | Structure (numbers = **line counts**) | Best for |
 | --- | --- | --- |
-| **Standard Pop** | Intro - V1 - PC - C - V2 - PC - C - B - C - Outro | Mainstream, hook-forward |
-| **Story Folk** | V1 - V2 - C - V3 - C - B - C - Outro | Narrative, verse-heavy |
-| **Build** | Intro - V1 - C - V2 - C - B - C - C - Outro | Emotional escalation |
-| **Short-form** | Intro - V - PC - C - C - Outro | 60–90s, social clips |
-| **Rap-led** | Intro - V1(rap) - C - V2(rap) - C - B - C - Outro | Multi-syllabic rhyme in verses |
+| **Ballad** | Intro - V1(4) - PC(2) - C(6) - V2(4) - PC(2) - C(6) - B(4) - C(6) - Outro(3) | Slow, emotional build |
+| **Standard Pop** | Intro - V1(6) - PC(3) - C(6) - V2(6) - PC(3) - C(6) - B(4) - C(6) - Outro(3) | Mainstream, hook-forward |
+| **Story Folk** | V1(6) - V2(6) - C(4) - V3(6) - C(4) - B(5) - C(4) - Outro(3) | Narrative, verse-heavy |
+| **Build** | Intro - V1(4) - C(6) - V2(4) - C(6) - B(4) - C(6) - C(8) - Outro(3) | Emotional escalation |
+| **Short-form** | Intro - V(4) - PC(2) - C(4) - C(4) - Outro(2) | 60–90s, social clips |
+| **Rap-led** | Intro - V1(16) - C(4) - V2(16) - C(4) - B(6) - C(8) - Outro(4) | Multi-syllabic rhyme in verses |
+
+Line counts are decided in §4, not copied blindly.
 
 ---
 
@@ -95,17 +98,27 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 
 ---
 
-## 4. Meter: Syllables + Stress
+## 4. Line Count & Meter — **never default to 4 lines**
+
+### ⚠️ Common failure
+
+**Given a range with no selection rule, the model picks the minimum.** Result: every section is 4 lines —
+the whole song runs ~1:38 (a third shorter than a standard pop song), the chorus arrives and leaves in 11 seconds,
+**so the emotion never has time to land**. And equal line counts across sections is structural "AI symmetry."
+
+**Line count is calculated, not guessed.**
+
+### Syllables & stress
 
 English is stress-timed. Align **both**:
 
-| Section | Syllables / line | Lines |
-| --- | --- | --- |
-| Verse | 8–12 | 4–8 |
-| Pre-Chorus | 5–8 | 2–4 |
-| Chorus | 7–12 | 4–6 |
-| Bridge | 6–10 | 2–4 |
-| Outro | 4–8 | 2–4 |
+| Section | Syllables / line |
+| --- | --- |
+| Verse | 8–12 |
+| Pre-Chorus | 5–8 |
+| Chorus | 7–12 |
+| Bridge | 6–10 |
+| Outro | 4–8 |
 
 **Stress check**: read the line aloud and tap the beat. The natural word stress must land on the beat.
 - ✅ "I **walk** a**lone** at **mid**night" — stress lands on beats
@@ -113,21 +126,66 @@ English is stress-timed. Align **both**:
 
 **Rule of thumb**: within a section, corresponding lines must match syllable count within ±2 AND stress position.
 
+### Step 1 — derive from BPM
+
+```
+seconds per line ≈ 240 ÷ BPM        (4/4 time, one line ≈ one bar; long lines = 2 bars)
+lines = target seconds ÷ seconds per line
+```
+
+| Section | Target |
+| --- | --- |
+| **Chorus** | **15–22 sec** (below this = "the emotion doesn't land") |
+| Verse | 10–20 sec (ballads may take the lower end) |
+| Pre-Chorus | 6–10 sec |
+| Bridge | 10–16 sec |
+| Outro | 8–15 sec |
+| **Whole song** | **2:00–3:30** |
+
+Example: 85 BPM + 18-sec chorus → 18 ÷ 2.82 ≈ **6 lines**. 120 BPM + 16 sec → **8 lines**.
+
+### Step 2 — chorus length by emotional job (outranks genre)
+
+| Chorus job | Lines |
+| --- | --- |
+| **Build** (heartbreak, confession, anthemic) | **6–8** |
+| **One punch** (attitude, punchline, snark) | 4 |
+| **Narrative tag** (folk; chorus only restates the title) | 4 |
+| **Atmosphere** (dream pop; timbre over information) | 4–6 (long lines) |
+| **Needs 3-verse variation** | **6** |
+
+### Step 3 — vary line counts between sections
+
+| Ratio | Use |
+| --- | --- |
+| Verse 4 / Chorus 6 | Ballad — short story, long feeling |
+| Verse 6 / Chorus 6 | Standard pop |
+| Verse 8 / Chorus 4 | Folk narrative, rap |
+| Verse 4 / Chorus 8 | Catharsis, rock |
+
+**Adjacent sections must not have equal line counts.**
+
+Full tables (BPM lookup, genre × line count, template library): **`references/song-structure.md`**.
+
+**State at delivery**: how many lines per section, and why (BPM + emotional job + duration check).
+
 ---
 
 ## 5. Writing Flow
 
 ```
 ① Nail the premise — one concrete sentence, not an abstract mood word
-② Pick structure template
-③ Pick rhyme family for chorus; lock it
-④ Call lyric-imagery-rhyme for image clusters + rhyme word bank
-⑤ Verse — concrete nouns + verbs, no commentary
-⑥ Pre-Chorus — shorter lines, rising
-⑦ Chorus — hook at line OPENING, high repetition, wording fixed
-⑧ Bridge — switch rhyme family / perspective, say the real thing
-⑨ Outro — fewer words, fade
-⑩ Self-check
+② Set BPM (if unknown, use the genre default — it drives line count)
+③ Set line counts per section: §4 three-step (BPM → emotional job → section variance)
+   Output a table: lines per section, target seconds, why
+④ Pick rhyme family for chorus; lock it
+⑤ Call lyric-imagery-rhyme for image clusters + rhyme word bank
+⑥ Verse — concrete nouns + verbs, no commentary
+⑦ Pre-Chorus — shorter lines, rising
+⑧ Chorus — hook at line OPENING, written to the line count decided in ③, leave a variation slot
+⑨ Bridge — switch rhyme family / perspective, say the real thing
+⑩ Outro — fewer words, fade
+⑪ Self-check (includes line count + duration)
 ```
 
 **Division of labour**:
@@ -167,6 +225,7 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 ## 8. Self-Check Before Delivery
 
+**Craft**
 - [ ] Tags are Suno-standard English, bracketed
 - [ ] Chorus rhyme family consistent; verse scheme stated
 - [ ] Syllable + **stress** aligned within sections
@@ -175,6 +234,86 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 - [ ] No artist names, brands, or unpronounceable proper nouns
 - [ ] Hook is at the opening of the chorus
 
-## 9. Output
+**Line count (§4)**
+- [ ] **Not every section is 4 lines** — counts derived from BPM + emotional job, not the minimum
+- [ ] Chorus runs 15–22 sec; whole song 2:00–3:30
+- [ ] **Adjacent sections have different line counts**
+- [ ] Delivery states lines per section and why
 
-Save to `outputs/YYYYMMDD-{song}-lyrics.md`, following the output format in `agents/ai-lyricist.md`.
+**Format & versioning (§9, §10)**
+- [ ] Lyrics inside a code block, one line per lyric line, **no blank lines between lines**, one blank line between sections
+- [ ] Revisions wrote a **new file** with a version number; the original was not overwritten
+- [ ] New version states what changed, what didn't, and the previous file path
+
+## 9. Formatting (hard rules)
+
+### Lyric block
+
+**Always inside a code fence** — so it can be copied in one action.
+
+```
+[Intro]
+
+[Verse 1]
+first lyric line
+second lyric line
+third lyric line
+
+[Chorus]
+first lyric line
+second lyric line
+```
+
+| Item | Rule |
+| --- | --- |
+| Section tag | Own line, English, bracketed, **no punctuation** |
+| **Each lyric line** | **Own line, no blank line between lines** |
+| Between sections | **One** blank line (exactly one) |
+| Delivery tags | `[whisper]` `[falsetto]` on their own line, before the section |
+| Empty sections | Instrumental-only (`[Intro]`, `[Instrumental Break]`) — tag only, then one blank line |
+
+> ⚠️ **Never put a blank line between every lyric line** — that's paragraph format, not lyric format,
+> and it pastes into Suno full of empty lines.
+
+### Delivery document
+
+```markdown
+# Lyrics · "{Title}" v{N}      ← no version on v1; label from v2 on
+
+> Version note: what changed vs. previous; path to previous file
+
+## 1. Lyrics                   ← code block, copy-paste ready
+## 2. Structure & Line Count   ← lines per section, why (BPM + job + duration)
+## 3. Rhyme Check
+## 4. Design Notes
+## 5. Self-Check
+```
+
+## 10. Versioning & Output
+
+### Naming
+
+| Case | Filename |
+| --- | --- |
+| First delivery | `outputs/YYYYMMDD-{song}-lyrics.md` |
+| 2nd and later | `outputs/YYYYMMDD-{song}-v{N}-lyrics.md` (N starts at **2**) |
+
+- Date = **the day of the revision**, not the first version's date
+- Version numbers increment; never reused
+
+### Hard rule: never overwrite
+
+Revisions always create a **new file**. Reasons:
+
+1. Iteration is trial and error — the user may want to go back ("v2's chorus was better")
+2. Overwriting kills A/B comparison
+3. The version chain *is* the song's creative record
+
+### Every new version must state
+
+- What changed vs. the previous version (a per-item table is best)
+- **Path to the previous file**
+- **What did NOT change** (so the user doesn't think the whole song was rewritten)
+- Why this change, plus **options considered and rejected** and why
+
+See `outputs/20261030-士多门口-v3-lyrics.md` for the reference format.

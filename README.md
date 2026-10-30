@@ -114,9 +114,9 @@
 | `agents/` | 两个助理角色的定义本体与职责边界 |
 | `skills/` | 八个可加载 skill：2 个角色入口 + 作词 ×4 + 作曲 ×2 |
 | `.workbuddy/skills` | 软链 → `../skills`，保证技能被发现（勿删） |
-| `references/` | 去 AI 味词库、编曲差异化词库、韵字表、Suno 标签库、秒响规范等静态参考 |
+| `references/` | 去 AI 味词库、编曲差异化词库、结构与句数决策库、韵字表、Suno 标签库、秒响规范等静态参考 |
 | `examples/` | 端到端样例：`001-empty-subway.md` |
-| `outputs/` | 单次交付物落盘处（不进 git） |
+| `outputs/` | 交付物落盘处（**带版本号，不覆盖**；不进 git） |
 
 > **关于 `.workbuddy/skills`**：这是软链，已随仓库提交，用于技能发现。
 > 若 clone 后未生效（Windows 常见 —— git 默认不创建符号链接），手动重建：
@@ -132,16 +132,32 @@
 
 一句话仲裁：**说"这句不顺"归作词，说"编曲太素"归作曲。**
 
-## 五条不可违反的约定
+## 八条不可违反的约定
 
 1. **结构标签一律英文**：`[Verse]` `[Chorus]` `[Bridge]`，中文歌词也一样
 2. **提示词必须中英双语**：哪怕只要一个平台
 3. **Suno 与秒响不互译**：Suno = 英文标签串；秒响 = 中文长句。形态不同，各写各的
-4. **反平均化（作词）**：AI 味的病根是"谁都能写出来"。歌词必须有可拍照的细节、当代生活物件，
+4. **版本化**：调整一律**生成新文件**（`-v2` `-v3`…），绝不覆盖上一版。
+   迭代是试错，你可能想回退；覆盖后也没法 A/B 对比
+5. **歌词排版**：正文放代码块，**一句一行，句间不留空行**，段落间空一行。
+   每句之间都空行是段落格式，粘进 Suno 会带一堆空行
+6. **句数不是默认 4 句**：给范围不选规则，模型就取最小值——结果全首只有 1:38、副歌 11 秒，
+   情绪根本堆不起来。句数按 **BPM 倒推**（副歌目标 15–22 秒）+ **情绪功能**（堆积 6–8 句 /
+   一击即中 4 句）+ **段落间要有差异** 三步定。见 `references/song-structure.md`
+7. **反平均化（作词）**：AI 味的病根是"谁都能写出来"。歌词必须有可拍照的细节、当代生活物件，
    以及至少一句"只有这个人会说"的话。判据见 `skills/lyric-naturalness/SKILL.md` 的 10 条检测清单
-5. **反同质化（作曲）**：出歌雷同的病根是"安全词组合"（`dreamy ethereal melancholic` 这类词被用烂，
+8. **反同质化（作曲）**：出歌雷同的病根是"安全词组合"（`dreamy ethereal melancholic` 这类词被用烂，
    模型响应已收敛到平均值）。提示词必须有**编曲事件**、**专属锚点**、**录音质感**。
    判据见 `skills/production-antislop/SKILL.md` 的 10 条检测清单
+
+## 交付物命名
+
+| 情况 | 文件名 |
+| --- | --- |
+| 首次 | `outputs/YYYYMMDD-{歌曲名}-lyrics.md` |
+| 第 2 次起 | `outputs/YYYYMMDD-{歌曲名}-v{N}-lyrics.md`（N 从 2 起，日期用修改当天） |
+
+新版本文件里要写明：改了什么、**没改什么**、上一版路径、为什么这么改。
 
 ## 平台支持
 
@@ -156,6 +172,7 @@
 | 新的自然度判据 | `skills/lyric-naturalness/SKILL.md` |
 | 安全词黑名单 / 演奏法 / 质感 / 反差配方 | `references/production-lexicon.md` |
 | 新的差异化判据 | `skills/production-antislop/SKILL.md` |
+| BPM / 句数 / 段落模板 | `references/song-structure.md` |
 | 新曲风的标签 | `references/suno-tags.md` |
 | 新的韵字 / 韵族 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |
