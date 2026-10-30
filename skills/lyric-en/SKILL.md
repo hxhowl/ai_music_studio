@@ -291,15 +291,35 @@ second lyric line
 
 ## 10. Versioning & Output
 
+### Folder layout
+
+One folder per song; both lyrics and prompts live inside it:
+
+```
+outputs/{song}/
+  {song}-lyrics-v1-20261030.md
+  {song}-prompts-v1-20261030.md
+  {song}-lyrics-v2-20261031.md
+  ...
+```
+
 ### Naming
 
-| Case | Filename |
+| Type | Filename |
 | --- | --- |
-| First delivery | `outputs/YYYYMMDD-{song}-lyrics.md` |
-| 2nd and later | `outputs/YYYYMMDD-{song}-v{N}-lyrics.md` (N starts at **2**) |
+| Lyrics | `outputs/{song}/{song}-lyrics-v{N}-YYYYMMDD.md` |
+| Prompts | `outputs/{song}/{song}-prompts-v{N}-YYYYMMDD.md` |
 
-- Date = **the day of the revision**, not the first version's date
-- Version numbers increment; never reused
+- **v1 is explicit** — no special case where the first file omits the version
+- Lyrics and prompts **each increment independently**; numbers are globally unique, never reset or reused
+- Date = **the day of the revision**, not the first version's date. Date goes last so files sort by type + version
+- A prompt file must state **which lyrics version it was built from** (by path) in its header — that link lives in the header, not the filename
+
+> Do not embed the lyrics version in the prompt filename (e.g. `-lyrics-v1-prompts-v1-`).
+> The two iterate at different rates (changing BPM or tone doesn't touch the lyrics, so one
+> lyrics version may carry prompts v1–v5), and a wording-only lyrics revision often needs no
+> prompt change at all. Embedding two versions also creates two "prompts-v1" files, so every
+> version reference would need a prefix to stay unambiguous.
 
 ### Hard rule: never overwrite
 
@@ -316,4 +336,5 @@ Revisions always create a **new file**. Reasons:
 - **What did NOT change** (so the user doesn't think the whole song was rewritten)
 - Why this change, plus **options considered and rejected** and why
 
-See `outputs/20261030-士多门口-v3-lyrics.md` for the reference format.
+See `examples/002-versioning.md` for the header + "changed / not changed" table format.
+(`outputs/` is git-ignored — never reference a specific file inside it from a committed file; the link breaks after clone.)

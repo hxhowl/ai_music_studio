@@ -219,4 +219,12 @@ close-mic, Rhodes, muted bass, brush snare, 92 BPM, tape saturation, sparse intr
 
 ## 产出落盘
 
-`outputs/YYYYMMDD-{歌曲名}-prompts.md`
+```
+outputs/{歌曲名}/{歌曲名}-prompts-v{N}-YYYYMMDD.md
+```
+
+- 每首歌一个文件夹，与歌词放同一目录下
+- 版本号**独立递增**（不跟歌词走）：调 BPM、换音色、改人声都算新版，歌词没动也算
+- 文件头必须写明**对应哪一版歌词**（写完整路径）—— 歌词结构变了（句数 / 段落）才需要新建提示词
+- 绝不覆盖旧版；新版本写明改了什么、**没改什么**、上一版路径、为什么这么改
+- 范本见 `examples/002-versioning.md`

@@ -349,4 +349,4 @@ intimate, piano, bass, drums, strings, 85 BPM, warm, beautiful
 
 ---
 
-**落盘**：歌词 → `outputs/20261028-空车厢-lyrics.md`；提示词 → `outputs/20261028-空车厢-prompts.md`
+**落盘**：歌词 → `outputs/空车厢/空车厢-lyrics-v1-20261028.md`；提示词 → `outputs/空车厢/空车厢-prompts-v1-20261028.md`
