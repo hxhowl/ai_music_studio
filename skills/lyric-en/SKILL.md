@@ -66,6 +66,24 @@ mode as "given a range, take the minimum." Narrow it down in four steps:
 Bridge can be replaced by an instrumental break in T5/T6; `[Instrumental Break]` is the carrier
 for arrangement events — add it only when you need a solo or an emptied-out contrast.
 
+### ⚠️ A template gives the skeleton; line counts are not fixed
+
+Every number in the table was calculated **at that template's typical BPM**. Change the BPM and you must recalculate.
+
+Measured: copy T2's 6-line chorus but raise BPM to 120 → 6 × 2.0 = **12 sec**, below the 15-sec floor.
+And 120 BPM is an entirely ordinary tempo. **"Standard pop at 120 BPM" copied straight off the template produces a failing chorus.**
+
+Worse: if you then validate using the template's 95 BPM, you get 15.2 sec and a green light —
+**the check is bypassed and returns a false pass.**
+
+| A template gives | A template does not give |
+| --- | --- |
+| Which sections, in what order, how many repeats | Line counts (they move with BPM) |
+| Advice on optional sections | BPM (it moves with the user's request) |
+| A typical BPM as the **default** | Total runtime (it moves with actual BPM) |
+
+Rule: **user-specified BPM beats the template's typical BPM**; recalculate line counts with the **actual** BPM.
+
 State **why** you chose this template. Line counts are decided in §4, not copied blindly.
 
 ---
@@ -166,21 +184,52 @@ lines = target seconds ÷ seconds per line
 
 Example: 85 BPM + 18-sec chorus → 18 ÷ 2.82 ≈ **6 lines**. 120 BPM + 16 sec → **8 lines**.
 
-> **Exception: a narrative-tag chorus may run under 15 sec.** In folk and rap the chorus often
+⚠️ **BPM here means the ACTUAL BPM, not the template's typical BPM.** If the user gave one, use it.
+If not, take the template's typical value and say so. Validating against the typical value is not validating.
+
+> **Exception 1: a narrative-tag chorus may run under 15 sec.** In folk and rap the chorus often
 > only restates the title (4 lines ≈ 10–12 sec). It builds memory through **how many times it
 > arrives** (4×, 40+ sec of total exposure), not through one long statement.
 > The 15–22 sec band is for **build-type choruses**, where the emotion has to climb inside a
 > single pass.
+>
+> **Exception 2: at high BPM the seconds floor relaxes, but the line floor does not.**
+> 15–22 sec is an empirical band measured at 85 BPM, not a constant. At 120 BPM, 6 lines is 12 sec —
+> and that is fine, because fast songs carry more information per second.
+> **Do not cut lines to hit the seconds target** — that destroys information and fixes the wrong thing.
+> Add time with a `[Post-Chorus]` tag or another repeat instead.
 
 ### Step 2 — chorus length by emotional job (outranks genre)
 
-| Chorus job | Lines |
+> These are **floors**: the minimum number of lines needed to say the emotion.
+> At high BPM, keep the line count and let the seconds fall short.
+
+| Chorus job | Lines (floor) |
 | --- | --- |
 | **Build** (heartbreak, confession, anthemic) | **6–8** |
 | **One punch** (attitude, punchline, snark) | 4 |
 | **Narrative tag** (folk; chorus only restates the title) | 4 |
 | **Atmosphere** (dream pop; timbre over information) | 4–6 (long lines) |
 | **Needs 3-verse variation** | **6** |
+
+### When actual BPM differs from the template's typical BPM
+
+**Recalculate the chorus** (the verse usually stays — see below).
+
+| BPM | Sec/line | Chorus lines (build-type) | Duration |
+| --- | --- | --- | --- |
+| 70 | 3.43s | 5 | 17.1s |
+| 80–85 | 3.00–2.82s | 6 | 18.0–16.9s |
+| 90–100 | 2.67–2.40s | 7 | 18.7–16.8s |
+| 110 | 2.18s | 8 | 17.5s |
+| 120 | 2.00s | **8 + `[Post-Chorus]` tag** | 16.0s + tag |
+| 128+ | ≤1.88s | 8–10, add time via repeats/tag | — |
+
+⚠️ At 120 BPM you need 9 lines to reach 18 sec, but a 9-line chorus is overlong for pop.
+**Better: 8 lines + Post-Chorus** — buy the time with repetition, not with chorus length.
+
+**The verse usually does not change**: its target band is wide (10–20 sec), so 6 lines fits
+everywhere from 70 to 140 BPM. Only below 70 BPM (6 lines = 20.6s, over the ceiling) drop to 5.
 
 ### Step 3 — vary line counts between sections
 
@@ -237,7 +286,8 @@ Full tables (BPM lookup, genre × line count, template library, how to pick): **
 ```
 ① Nail the premise — one concrete sentence, not an abstract mood word
 ② Set BPM (if unknown, use the genre default — it drives line count)
-③ Pick a template (T1–T9, §2 four steps) + set line counts: §4 three-step (BPM → emotional job → section variance)
+③ Pick a template (T1–T9, §2 four steps, **skeleton only**) + set line counts: §4 (ACTUAL BPM → emotional job → section variance)
+   ⚠️ If actual BPM ≠ template typical BPM, recalculate the chorus — do not copy the template's line counts
    Output a table: which template, lines per section, target seconds, why
 ④ Pick rhyme family for chorus; lock it
 ⑤ Call lyric-imagery-rhyme for image clusters + rhyme word bank
@@ -297,9 +347,11 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 **Line count (§4)**
 - [ ] **Not every section is 4 lines** — counts derived from BPM + emotional job, not the minimum
-- [ ] Chorus runs 15–22 sec; whole song 2:00–3:30
+- [ ] **Did not copy the template's line counts**: when actual BPM ≠ template typical BPM, the chorus was recalculated
+- [ ] **Validation used the ACTUAL BPM, not the template's typical BPM** (typical-BPM validation returns a false pass)
+- [ ] Chorus meets the line floor for its job; under the 22-sec ceiling; whole song 2:00–3:30
 - [ ] **Repeats of the same function have equal line counts** (V1=V2, C1=C2); verse and chorus differ
-- [ ] Delivery states which template, lines per section, and why
+- [ ] Delivery states template, actual BPM and its source, lines per section, and any adjustment vs the template
 
 **Format & versioning (§9, §10)**
 - [ ] Lyrics inside a code block, one line per lyric line, **no blank lines between lines**, one blank line between sections
@@ -344,7 +396,9 @@ second lyric line
 > Version note: what changed vs. previous; path to previous file
 
 ## 1. Lyrics                   ← code block, copy-paste ready
-## 2. Structure & Line Count   ← lines per section, why (BPM + job + duration)
+## 2. Structure & Line Count   ← lines per section, why (ACTUAL BPM + job + duration)
+                              ← actual BPM and its source (user-specified / template default)
+                              ← if it differs from the template typical BPM, what changed
 ## 3. Rhyme Check
 ## 4. Design Notes
 ## 5. Self-Check
