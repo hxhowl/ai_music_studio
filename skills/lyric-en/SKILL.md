@@ -172,11 +172,17 @@ at 120–140 BPM cap lines at **6–9 syllables**, at 160+ at **5–7**. Full ta
 ## 4. Writing flow
 
 ```
+⓪ **Lock the scene boundary** (before writing anything): what time / where / what the person is
+   doing / what objects actually exist there
+   e.g. not "lonely" — "00:47, last train, three people in the carriage, phone at 4%"
+   This decides the material for the whole song. Skip it and you write lines that fit any song,
+   which then has to be fixed afterwards by `lyric-naturalness`.
+   Detail: `lyric-imagery-rhyme` mode A step 1
 ① Nail the premise — one concrete sentence, not an abstract mood word
 ② Pick a template (T1–T9, §1 four steps, **skeleton only**) → set the actual BPM → set line counts (§3)
    Output a table: which template, actual BPM and its source, lines per section, target seconds, why
 ③ Pick rhyme family for the chorus; lock it
-④ Call lyric-imagery-rhyme for image clusters + rhyme word bank
+④ Take images and rhyme candidates **within the ⓪ boundary** (call `lyric-imagery-rhyme`)
 ⑤ Verse — concrete nouns + verbs, no commentary
 ⑥ Pre-Chorus — shorter lines, rising
 ⑦ Chorus — hook at line OPENING, written to the line count decided in ②, leave a variation slot
