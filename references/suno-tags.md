@@ -1,6 +1,7 @@
 # Suno 标签速查库
 
 > 供 `skills/song-prompt-builder/SKILL.md` 第 2 步取标签使用。
+> **结构标签（第一节）是 `lyric-zh` / `lyric-en` 的唯一事实源**，两个 skill 不再各存一份副本。
 > **Style of Music 字段硬约束**：≤ 15 个标签、≤ 200 字符、主风格唯一、乐器 3–5 件。
 >
 > **取词优先级**：能用**演奏法 / 器材**就不用类别名（`brush snare` > `drums`）。
@@ -11,11 +12,27 @@
 
 ## 一、结构标签（写在歌词里，不是 Style 字段）
 
-`[Intro]` `[Verse]` `[Verse 1]` `[Pre-Chorus]` `[Chorus]` `[Post-Chorus]` `[Bridge]` `[Hook]` `[Refrain]` `[Instrumental Break]` `[Guitar Solo]` `[Solo]` `[Breakdown]` `[Drop]` `[Outro]` `[End]`
+| 标签 | 含义 | 常用度 |
+| --- | --- | --- |
+| `[Intro]` | 引子 | ★★★ |
+| `[Verse]` / `[Verse 1]` | 主歌 | ★★★ |
+| `[Pre-Chorus]` | 预副歌，情绪爬升 | ★★★ |
+| `[Chorus]` | 副歌，记忆点 | ★★★ |
+| `[Post-Chorus]` | 副歌尾缀 | ★★ |
+| `[Bridge]` | 桥段，转折 / 升华 | ★★★ |
+| `[Instrumental Break]` | 纯器乐间奏 | ★★ |
+| `[Guitar Solo]` / `[Solo]` | 独奏段 | ★ |
+| `[Hook]` / `[Refrain]` | 反复句 | ★★ |
+| `[Breakdown]` / `[Drop]` | 电子乐段落 | ★ |
+| `[Outro]` | 尾奏 | ★★★ |
+| `[End]` | 结束标记 | ★ |
 
-**元标签**：`[Style: ...]` `[Exclude: ...]` `[Title: ...]`
+**元标签**（写在歌词开头或段落内）：`[Style: ...]` `[Exclude: ...]` `[Title: ...]`
 **演唱指示**：`[whisper]` `[falsetto]` `[rap]` `[spoken]` `[chant]` `[ad-lib]`
 **和声**：`[harmony]` `[background vocals]` `[backing vocals]`
+
+> ⚠️ `[Breakdown]` `[Drop]` `[whisper]` `[falsetto]` 不只是结构标记——
+> 它们是 **Suno 里编曲事件唯一的落点**（Style 字段读不懂长句）。见 `production-antislop` 法则 2。
 
 ---
 
@@ -38,9 +55,15 @@
 | 乡村 | `country` `country pop` `bluegrass` |
 | 影视 | `film score` `epic orchestral` `trailer music` `hybrid orchestral` |
 
-### ② 情绪 / 氛围（选 2–3）
+### ② 情绪 / 氛围（裸情绪词 ≤ 2 个）
 
-`melancholic` `dreamy` `ethereal` `nostalgic` `bittersweet` `hopeful` `uplifting` `euphoric` `triumphant` `heroic` `tense` `suspenseful` `dark` `brooding` `mysterious` `haunting` `intimate` `warm` `cozy` `tender` `yearning` `longing` `lonely` `wistful` `angry` `aggressive` `intense` `playful` `whimsical` `romantic` `sensual` `serene` `meditative` `epic` `grand` `cinematic` `anthemic`
+**可用的**：`nostalgic` `bittersweet` `hopeful` `uplifting` `euphoric` `triumphant` `heroic` `tense` `suspenseful` `dark` `brooding` `mysterious` `haunting` `tender` `yearning` `longing` `lonely` `wistful` `angry` `aggressive` `intense` `playful` `whimsical` `romantic` `sensual` `serene` `meditative` `epic` `grand` `anthemic`
+
+> ⚠️ **不要用（安全词黑名单）**：`dreamy` `ethereal` `melancholic` `beautiful` `emotional` `catchy`
+> `amazing` `warm` `intimate` `cinematic`*
+> —— 这些词被用到烂，模型响应已收敛到平均值，写进去等于没写。
+> 替换方向见 **`references/production-lexicon.md` 第一节**（每个都给了可执行的替代写法）。
+> *`cinematic` 只在影视/氛围类里有效，流行歌里是泛词。
 
 > **具体化技巧**：`lonely` → `lonely, empty subway station at 2am`（情绪词后接场景，效果显著更好）
 

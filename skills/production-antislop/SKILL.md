@@ -222,4 +222,4 @@ yangqin, xiao, muted upright bass, 808 sub bass, 76 BPM, sparse, dark
 | 取替换词 | `references/production-lexicon.md` |
 | 取标签 | `references/suno-tags.md` |
 
-**不要等写完才想起差异化。** 八维定参时第 ③⑦⑧ 项就该带演奏法和质感，本 skill 主要负责事后诊断与补救。
+**不要等写完才想起差异化。** 九维定参时第 ③⑦⑧ 项就该带演奏法和质感，本 skill 主要负责事后诊断与补救。

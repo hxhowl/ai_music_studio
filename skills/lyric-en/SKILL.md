@@ -15,22 +15,16 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 
 ## 1. Section Tag Library (Suno standard)
 
-| Tag | Use |
-| --- | --- |
-| `[Intro]` | Opening |
-| `[Verse]` / `[Verse 1]` | Story, imagery |
-| `[Pre-Chorus]` | Build / lift |
-| `[Chorus]` | Payoff, hook |
-| `[Post-Chorus]` | Hook tail |
-| `[Bridge]` | Turn / reveal |
-| `[Instrumental Break]` | Instrumental section |
-| `[Guitar Solo]` / `[Solo]` | Solo section |
-| `[Hook]` / `[Refrain]` | Repeated line |
-| `[Breakdown]` / `[Drop]` | Electronic sections |
-| `[Outro]` | Closing |
-| `[End]` | End marker |
+**Full table (with frequency ratings, meta tags, delivery tags): `references/suno-tags.md` §1** —
+that is the single source; both lyric skills read from it, so don't keep a second copy here.
 
-**Meta / delivery tags**: `[Style: ...]`, `[Exclude: ...]`, `[harmony]`, `[background vocals]`, `[backing vocals]`, `[whisper]`, `[falsetto]`, `[rap]`, `[spoken]`, `[chant]`, `[ad-lib]`
+Three things to remember while writing:
+
+1. **Tags are English, bracketed, on their own line**: `[Intro]` `[Verse]` `[Pre-Chorus]`
+   `[Chorus]` `[Post-Chorus]` `[Bridge]` `[Instrumental Break]` `[Outro]` `[End]`
+2. **`[Breakdown]` `[Drop]` `[whisper]` `[falsetto]` are where arrangement events land**,
+   not just structural markers (Suno's Style field can't parse sentences)
+3. **Instrumental-only sections carry the tag and nothing else** — no prose underneath
 
 ---
 
@@ -39,6 +33,9 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 > Durations are computed at each template's **typical BPM** (running everything at 85 BPM badly
 > underestimates fast templates). ※ = narrative-tag / short-line-repeat chorus; it may run
 > under 15 sec (see the exception in §4).
+> Full calculations and selection rules: `references/song-structure.md` §6, §7.
+> ⚠️ **Line counts in the table hold at that template's typical BPM — they are not fixed.**
+> Change the BPM and you must recalculate (see §4).
 
 | # | Template | Structure (numbers = **line counts**) | Typical BPM | Chorus | Whole song | Best for |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -66,15 +63,7 @@ mode as "given a range, take the minimum." Narrow it down in four steps:
 Bridge can be replaced by an instrumental break in T5/T6; `[Instrumental Break]` is the carrier
 for arrangement events — add it only when you need a solo or an emptied-out contrast.
 
-### ⚠️ A template gives the skeleton; line counts are not fixed
-
-Every number in the table was calculated **at that template's typical BPM**. Change the BPM and you must recalculate.
-
-Measured: copy T2's 6-line chorus but raise BPM to 120 → 6 × 2.0 = **12 sec**, below the 15-sec floor.
-And 120 BPM is an entirely ordinary tempo. **"Standard pop at 120 BPM" copied straight off the template produces a failing chorus.**
-
-Worse: if you then validate using the template's 95 BPM, you get 15.2 sec and a green light —
-**the check is bypassed and returns a false pass.**
+### What a template gives and doesn't give
 
 | A template gives | A template does not give |
 | --- | --- |
@@ -82,9 +71,9 @@ Worse: if you then validate using the template's 95 BPM, you get 15.2 sec and a 
 | Advice on optional sections | BPM (it moves with the user's request) |
 | A typical BPM as the **default** | Total runtime (it moves with actual BPM) |
 
-Rule: **user-specified BPM beats the template's typical BPM**; recalculate line counts with the **actual** BPM.
+**How to arbitrate and recalculate: §4** (includes the measured 120 BPM case and its fix).
 
-State **why** you chose this template. Line counts are decided in §4, not copied blindly.
+State **why** you chose this template.
 
 ---
 
@@ -147,137 +136,66 @@ the whole song runs ~1:38 (a third shorter than a standard pop song), the chorus
 
 **Line count is calculated, not guessed.**
 
+### Decision flow (four steps)
+
+> Every lookup table, template library and conversion table lives in **`references/song-structure.md`**
+> (single source of truth). This section holds only the flow and the hard constraints —
+> **go read the relevant section there when you set line counts**; don't work from memory.
+> Section numbers in the table below all refer to **`references/song-structure.md`**.
+
+| Step | What | Where (in `song-structure.md`) |
+| --- | --- | --- |
+| ① Pick template | Narrow to T1–T9 in four steps; **don't take the familiar one** | §7 |
+| ② Set BPM | Use the user's if given; else take the template typical value **and say so** | §8 |
+| ③ Count lines | `sec/line ≈ 240 ÷ ACTUAL BPM`; chorus floor then comes from its emotional job | §2, §4 |
+| ④ Validate | Chorus duration, whole-song duration, line-count relations | §2, §5, §8 |
+
+### Three hard constraints
+
+**① A template gives the skeleton; recalculate line counts at the actual BPM.**
+Template line counts are valid **at that template's typical BPM**, not universally.
+Measured: T2's 6-line chorus at 120 BPM = 12 sec, below the floor.
+⚠️ **Validate with the actual BPM too** — checking against the template's 95 BPM returns 15.2 sec
+and a false pass. At 120 BPM the fix is **8 lines + `[Post-Chorus]`**, not 9 lines
+(a 9-line chorus is overlong for pop).
+The verse usually stays: 6 lines fits the 10–20 sec band from 70 to 140 BPM.
+
+**② Chorus 15–22 sec, whole song 2:00–3:30 — but the two constraints are asymmetric.**
+- **The line floor is hard**: build 6–8, one-punch 4, needs-3-variations 6
+  (full table: `references/song-structure.md` §4)
+- **The seconds floor is soft**: 15 sec is an empirical band measured at 85 BPM.
+  At high BPM **keep the lines and let the seconds fall short** — cutting lines to hit seconds
+  destroys information and fixes the wrong thing. Buy time with `[Post-Chorus]` or another repeat
+- A narrative-tag chorus (folk, rap) may run as short as 10 sec; it builds memory through repetitions
+
+**③ Line-count relations go by function, not position.**
+- **Repeats of the same function must be equal** (V1=V2, C1=C2, PC1=PC2) — same melody; unequal counts are unsingable
+- **Verse ↔ pre-chorus ↔ chorus should differ** — the same count everywhere is structural "AI symmetry"
+- Bridge / outro **may match** those (one-off sections with their own melody)
+- ⚠️ Never write "adjacent sections must not have equal line counts" — followed literally, V1 and V2
+  end up different, but they share one melody and can't be
+
 ### Syllables & stress
 
 English is stress-timed. Align **both**:
 
 | Section | Syllables / line |
 | --- | --- |
-| Verse | 8–12 |
-| Pre-Chorus | 5–8 |
-| Chorus | 7–12 |
+| Verse / Chorus | 8–12 / 7–12 |
+| Pre-Chorus / Outro | 5–8 / 4–8 |
 | Bridge | 6–10 |
-| Outro | 4–8 |
-| **Long-line styles** (Chinese-style, ambient) | **14–20** — one line spans 2 bars; **use fewer lines** (see long-line check below) |
+| **Long-line styles** (Chinese-style, ambient) | **14–20** — one line spans 2 bars; use fewer lines |
 
 **Stress check**: read the line aloud and tap the beat. The natural word stress must land on the beat.
 - ✅ "I **walk** a**lone** at **mid**night" — stress lands on beats
 - ❌ "A**lone** I **walk** in the **night**" — fights the pulse unless intended
 
 **Rule of thumb**: within a section, corresponding lines must match syllable count within ±2 AND stress position.
+**Long-line styles: check total syllables, not lines** — target **45–90 syllables in the chorus**.
 
-### Step 1 — derive from BPM
-
-```
-seconds per line ≈ 240 ÷ BPM        (4/4 time, one line ≈ one bar; long lines = 2 bars)
-lines = target seconds ÷ seconds per line
-```
-
-| Section | Target |
-| --- | --- |
-| **Chorus** | **15–22 sec** (below this = "the emotion doesn't land") |
-| Verse | 10–20 sec (ballads may take the lower end) |
-| Pre-Chorus | 6–10 sec |
-| Bridge | 10–16 sec |
-| Outro | 8–15 sec |
-| **Whole song** | **2:00–3:30** |
-
-Example: 85 BPM + 18-sec chorus → 18 ÷ 2.82 ≈ **6 lines**. 120 BPM + 16 sec → **8 lines**.
-
-⚠️ **BPM here means the ACTUAL BPM, not the template's typical BPM.** If the user gave one, use it.
-If not, take the template's typical value and say so. Validating against the typical value is not validating.
-
-> **Exception 1: a narrative-tag chorus may run under 15 sec.** In folk and rap the chorus often
-> only restates the title (4 lines ≈ 10–12 sec). It builds memory through **how many times it
-> arrives** (4×, 40+ sec of total exposure), not through one long statement.
-> The 15–22 sec band is for **build-type choruses**, where the emotion has to climb inside a
-> single pass.
->
-> **Exception 2: at high BPM the seconds floor relaxes, but the line floor does not.**
-> 15–22 sec is an empirical band measured at 85 BPM, not a constant. At 120 BPM, 6 lines is 12 sec —
-> and that is fine, because fast songs carry more information per second.
-> **Do not cut lines to hit the seconds target** — that destroys information and fixes the wrong thing.
-> Add time with a `[Post-Chorus]` tag or another repeat instead.
-
-### Step 2 — chorus length by emotional job (outranks genre)
-
-> These are **floors**: the minimum number of lines needed to say the emotion.
-> At high BPM, keep the line count and let the seconds fall short.
-
-| Chorus job | Lines (floor) |
-| --- | --- |
-| **Build** (heartbreak, confession, anthemic) | **6–8** |
-| **One punch** (attitude, punchline, snark) | 4 |
-| **Narrative tag** (folk; chorus only restates the title) | 4 |
-| **Atmosphere** (dream pop; timbre over information) | 4–6 (long lines) |
-| **Needs 3-verse variation** | **6** |
-
-### When actual BPM differs from the template's typical BPM
-
-**Recalculate the chorus** (the verse usually stays — see below).
-
-| BPM | Sec/line | Chorus lines (build-type) | Duration |
-| --- | --- | --- | --- |
-| 70 | 3.43s | 5 | 17.1s |
-| 80–85 | 3.00–2.82s | 6 | 18.0–16.9s |
-| 90–100 | 2.67–2.40s | 7 | 18.7–16.8s |
-| 110 | 2.18s | 8 | 17.5s |
-| 120 | 2.00s | **8 + `[Post-Chorus]` tag** | 16.0s + tag |
-| 128+ | ≤1.88s | 8–10, add time via repeats/tag | — |
-
-⚠️ At 120 BPM you need 9 lines to reach 18 sec, but a 9-line chorus is overlong for pop.
-**Better: 8 lines + Post-Chorus** — buy the time with repetition, not with chorus length.
-
-**The verse usually does not change**: its target band is wide (10–20 sec), so 6 lines fits
-everywhere from 70 to 140 BPM. Only below 70 BPM (6 lines = 20.6s, over the ceiling) drop to 5.
-
-### Step 3 — vary line counts between sections
-
-| Ratio | Use |
-| --- | --- |
-| Verse 4 / Chorus 6 | Ballad — short story, long feeling |
-| Verse 6 / Chorus 6 | **Standard pop only** (the sole exception — contrast comes from the Pre-Chorus and energy, not line count) |
-| Verse 8 / Chorus 4 | Folk narrative, rap |
-| Verse 4 / Chorus 8 | Catharsis, rock |
-
-⚠️ The axis is **function**, not position:
-
-| Relation | Line count | Why |
-| --- | --- | --- |
-| **Repeats of the same function** (V1↔V2, C1↔C2↔C3, PC1↔PC2) | **Must be equal** | Same melody, same phrase — different counts make it unsingable |
-| **Verse ↔ chorus ↔ pre-chorus** | **Should differ** | Each owns a melody; the same count everywhere = structural "AI symmetry" |
-| Bridge / outro | **May match the above** | One-off sections with their own melody — no need to force a difference |
-
-> Don't write "adjacent sections must not have equal line counts." Followed literally it makes
-> V1 and V2 differ — but both verses share one melody, so they can't.
-
-### Long-line styles: check total syllables, not lines
-
-A 14-syllable line spans 2 bars, so 4 lines is not 11 sec but ~21 sec.
-**The real constraint is total duration (or total syllables), not line count.**
-
-| Chorus shape | Total syllables | Verdict |
-| --- | --- | --- |
-| 4 × 7 = 28 | 28 | Short — only for fast songs / one-punch attitude |
-| 6 × 9 = 54 | 54 | Comfort zone — standard ballad |
-| 8 × 8 = 64 | 64 | Catharsis / stacking |
-| 4 × 14 = 56 | 56 | Long-line — few lines, plenty of syllables; equally valid |
-
-Target: **chorus ≈ 45–90 syllables total**.
-
-### Inside a 6-line chorus
-
-```
-Line 1    hook at the opening, sets the memory      (same all 3 times)
-Line 2    expands the hook                          (same all 3 times)
-Line 3    push / give an image                      (same all 3 times)
-Line 4    ★ VARIATION SLOT: emotional state shifts  (different each time)
-Lines 5-6 landing / scene closes                    (same all 3 times; scene doesn't follow mood)
-```
-
-Full tables (BPM lookup, genre × line count, template library, how to pick): **`references/song-structure.md`**.
-
-**State at delivery**: which template (T1–T9) and why; lines per section and why (BPM + emotional job + duration check).
+**State at delivery**: which template (T1–T9) and why; **the actual BPM and its source**
+(user-specified / template default); lines per section and why (ACTUAL BPM + emotional job + duration check);
+**if it differs from the template typical BPM, what changed**.
 
 ---
 
