@@ -103,6 +103,21 @@ State **why** you chose this template.
 - **Multi-syllabic rhyme** reads as high craft; use in rap or the final verse
 - Avoid forcing: "the **light** of my **sight**" is filler
 
+**Rhyme density** (state your choice; don't drift into it):
+
+| Section | Default | Lines that may go unrhymed | Where |
+| --- | --- | --- | --- |
+| **Verse** | ABAB / ABCB (every other line) is fine in English — stress carries the pulse | up to 1 extra | not the last line |
+| **Chorus** | lock the family; **no unrhymed line** | 0 (slant ≤ 1) | — |
+| Pre-chorus | either; an unrhymed last line makes a good lift | 1 | last line |
+| Bridge | may switch family; density may loosen | up to 1/3 | at the switch |
+| Outro | a broken rhyme to close is allowed | — | last line |
+
+⚠️ English and Chinese differ here on purpose: Chinese defaults to **rhyming every line** because it
+doesn't lean on word stress to hold the pulse; English defaults to every-other-line.
+Don't copy one language's density into the other.
+⚠️ Rhyming every line doesn't mean reusing the same rhyme word — pick another word in the family.
+
 ---
 
 ## 3. Line count & meter — never default to 4 lines
@@ -303,7 +318,9 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 **Craft**
 - [ ] Tags are Suno-standard English, bracketed
-- [ ] Chorus rhyme family consistent; verse scheme stated
+- [ ] Chorus rhyme family consistent; verse scheme stated; **density meets the default (§2)** —
+      chorus has no unrhymed line, verse at most one and not the last
+- [ ] No repeated rhyme word used twice as the line-ending
 - [ ] Syllable + **stress** aligned within sections
 - [ ] Read **aloud** (not silently) — no tongue-twisters, no forced rhymes
 - [ ] **Hook meets all five points**: chorus line 1, shorter than neighbours, open vowels,
