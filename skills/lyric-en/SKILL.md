@@ -239,6 +239,33 @@ so changing it dismantles the hook itself.
 
 ---
 
+### What gives way when things conflict
+
+Formal metrics fight each other, and they fight the quality goal. **The priority order is fixed**:
+
+> **private voice > sings like speech > rhyme > syllable alignment**
+
+**Hard constraints that never yield** (they aren't in the ranking): the per-line syllable cap
+(one breath), the line-count floor, equal line counts for repeats of the same function, tag format.
+
+| Conflict | Who wins |
+| --- | --- |
+| A line only he would say, but it's too long | **Keep the line**; tighten the lines around it |
+| A line that reads perfectly but doesn't rhyme | **Keep the line**; change the rhyme word or the neighbours |
+| Perfect rhyme, awkward line | The rhyme gives way |
+| Even syllables, but it reads fake | Alignment gives way (ragged edges are wanted anyway) |
+
+⚠️ **Never sacrifice a line that already passed the private-voice test just to fix a formal metric.**
+
+Actual case (2026-10-31, 《疯狂动物园》): `我说 哥 周一还得交周报` was rewritten to
+`我烦恼 周一汇报还得交` to force an AABB pattern in the bridge — **but 报 and 好 are both in the
+same rhyme family, so that line never needed to change.** The most human line in the whole song was
+damaged for no real gain, and the self-check still passed it.
+
+**If you must touch such a line, state why it's worth it in the change table.** No reason, no change.
+
+---
+
 ## 5. Common failure modes
 
 | Problem | Symptom | Fix |
