@@ -257,7 +257,12 @@ so changing it dismantles the hook itself.
 **The root cause of AI-sounding lyrics is averaging** — if anyone could have written it, it belongs to no one. Hold these at the drafting stage; don't leave it for a post-write fix.
 
 - **Three questions per line**: can a camera film it? would it still work in a different song? is there one detail nobody else would write?
-- **≥ 3 concrete nouns per verse**; **≤ 3 abstract emotion words** in the whole song
+- **≥ 3 concrete nouns per verse** (a *floor*, not a target); **≤ 3 abstract emotion words** in the whole song
+- ⚠️ **Details must chain, not pile up**: every line picks up from the one before, and the last line
+  completes an action or a turn. Counting nouns is the fastest way to write a shot-list instead of a
+  lyric (this actually happened — see `lyric-naturalness` rule 1).
+  Tests: **the deletion test** (delete any line — does the next one still connect? if yes, nothing was
+  connected) and **the subject test** (are 6 lines carrying 6 unrelated subjects?)
 - **≥ 1 contemporary object**: 12% battery, a delivery note, a read receipt, the last train, a locker pickup code
 - **Generic imagery must be qualified**: not "rain" — "the kind of rain that flips your umbrella"
 - **Vary line length**: keep the opening lines aligned, then let **one line (usually the last)** run clearly longer or shorter as a landing line. Never all lines equal (fake), never all over the place (unsingable)
@@ -283,6 +288,8 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 **Naturalness (§6)**
 - [ ] **≥ 3 concrete nouns per verse**; ≤ 3 abstract emotion words in the whole song
+- [ ] **Details chain, they don't pile up** — passes the deletion test and the subject test,
+      not one object per line
 - [ ] ≥ 1 contemporary object; generic imagery is qualified
 - [ ] At least one line only this person would say (**veto item**); line lengths vary
 
@@ -306,7 +313,7 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 - **Craft, Line count and Format groups must pass in full** — these are errors, not scores.
   There is no "mostly fine": a Chinese tag, validation at the template BPM, or an overwritten
   file is wrong, full stop
-- **Naturalness**: pass **≥ 8 of 10** on `skills/lyric-naturalness/SKILL.md`, and the
+- **Naturalness**: pass **≥ 9 of 11** on `skills/lyric-naturalness/SKILL.md`, and the
   **private-voice** item is a veto — fail it and the lyric fails regardless of the rest
 
 ---
