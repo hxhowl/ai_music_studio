@@ -316,6 +316,11 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 ## 7. Self-check before delivery
 
+> ⚠️ **In the delivered file, list only what failed**: if everything passes, write one sentence
+> ("all 11 naturalness items pass; the private-voice line is '…'").
+> **Don't tick every box, don't print a score like 11/11** — see `AGENTS.md` §7 item 13.
+> The checklist is for you to run, not for the user to read; they asked for lyrics.
+
 **Craft**
 - [ ] Tags are Suno-standard English, bracketed
 - [ ] Chorus rhyme family consistent; verse scheme stated; **density meets the default (§2)** —
@@ -406,11 +411,16 @@ second lyric line
 ## 2. Structure & Line Count   ← lines per section, why (ACTUAL BPM + job + duration)
                               ← actual BPM and its source (user-specified / template default)
                               ← if it differs from the template typical BPM, what changed
-## 3. Rhyme Check
+## 3. Rhyme Check               ← family + density (how many lines go unrhymed, and where)
 ## 4. Imagery & Rhyme Design   ← image cluster + why this family (write it when lyric-imagery-rhyme was used)
 ## 5. Design Notes
-## 6. Self-Check
+## 6. Self-Check               ← **list only what failed + one-line verdict**;
+                               ← no ticking every box, no score like 11/11
 ```
+
+> ⚠️ **Length rule**: sections 2–6 together must not exceed the length of section 1 (the lyrics).
+> Across seven real revisions the commentary ran 61–69% of the file — the reader had to page through
+> a full screen of justification before reaching the song (`AGENTS.md` §7 item 13).
 
 ---
 
