@@ -182,7 +182,7 @@ close-mic, Rhodes, muted bass, brush snare, 92 BPM, tape saturation, sparse intr
 
 **基础规范**
 - [ ] 中英双语齐全（4 段）
-- [ ] Suno 版：标签串、≤15 标签、≤200 字符、无自相矛盾
+- [ ] Suno 版：标签串、≤15 标签、≤200 字符、**主风格唯一 + 辅助 ≤ 1**、无自相矛盾
 - [ ] 秒响版：中文长句，**九要素覆盖 ≥ 7 项**（照 `references/platform-miaoxiang.md` 第二节）
 - [ ] 乐器 3–5 件，每件带演奏法或器材
 - [ ] **人声三件套齐全**：音区 + 音色 + 唱法（`female vocals` / `male vocals` 不得单独出现）

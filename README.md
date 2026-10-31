@@ -114,7 +114,7 @@
 | `agents/` | 两个助理角色的定义本体与职责边界 |
 | `skills/` | 八个可加载 skill：2 个角色入口 + 作词 ×4 + 作曲 ×2 |
 | `.workbuddy/skills` | 软链 → `../skills`，保证技能被发现（勿删） |
-| `references/` | 去 AI 味词库、编曲差异化词库、结构与句数决策库、韵字表、Suno 标签库、秒响规范等静态参考 |
+| `references/` | 去 AI 味词库、编曲差异化词库、**九维定参表**、结构与句数决策库、韵字表、Suno 标签库、秒响规范等静态参考 |
 | `examples/` | `001-empty-subway.md`（完整交付长什么样）、`002-versioning.md`（新版文件该怎么写） |
 | `outputs/{歌曲名}/` | 交付物落盘处（每首歌一个文件夹，**带版本号，不覆盖**；不进 git） |
 
@@ -153,7 +153,7 @@
    以及至少一句"只有这个人会说"的话。判据见 `skills/lyric-naturalness/SKILL.md` 的 10 条检测清单
 8. **反同质化（作曲）**：出歌雷同的病根是"安全词组合"（`dreamy ethereal melancholic` 这类词被用烂，
    模型响应已收敛到平均值）。提示词必须有**编曲事件**、**专属锚点**、**录音质感**。
-   判据见 `skills/production-antislop/SKILL.md` 的 10 条检测清单
+   判据见 `skills/production-antislop/SKILL.md` 的 11 条检测清单
 
 ## 交付物命名
 
@@ -186,7 +186,7 @@ outputs/{歌曲名}/
 ## 平台支持
 
 - **Suno** — 英文标签串，≤15 标签 / ≤200 字符
-- **秒响 Sway** — 中文长句，按九要素写（风格 / 人声 / 发声 / 咬字 / 节奏 / 配器 / 旋律走向 / 入声时机 / 录音质感）
+- **秒响 Sway** — 中文长句，按九要素写（要素清单见 `references/platform-miaoxiang.md` 第二节，本文件不重复枚举）
 
 ## 想加东西？
 
@@ -201,6 +201,7 @@ outputs/{歌曲名}/
 | 新的韵字 / 韵族 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |
 | 新的段落模板 | `references/song-structure.md` 第六节（唯一事实源，**不要**在 skill 里另存副本） |
+| 改九维的维度 / 阈值 | `references/production-params.md`（唯一事实源，两个 skill 都从这里取） |
 | 完整工作流样例 | `examples/` |
 
-改完记得同步更新 `AGENTS.md` 里的索引表。
+改完记得同步更新 `AGENTS.md` **第 2 节的目录地图**（不是第 6 节的 skill 索引——那张表只列 skill）。

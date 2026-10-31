@@ -146,7 +146,7 @@ The verse usually stays: 6 lines fits the 10–20 sec band from 70 to 140 BPM.
 
 English is stress-timed. Align **both**:
 
-| Section | Syllables / line |
+| Section | Syllables / line (85 BPM baseline) |
 | --- | --- |
 | Verse | 8–12 |
 | Chorus | 7–12 |
@@ -160,7 +160,10 @@ English is stress-timed. Align **both**:
 - ❌ "A**lone** I **walk** in the **night**" — fights the pulse unless intended
 
 **Syllables move with BPM too**: the table above assumes ~85 BPM. The real constraint is one breath —
-at 120–140 BPM cap lines at **6–9 syllables**, at 160+ at **5–7**. Full table: `references/song-structure.md` §2.
+at **90–110 BPM → 10–13 syllables**, 120–140 → **8–11**, 160+ → **6–8**.
+English caps are **1.2–1.5× the Chinese character counts** (English carries more syllables per bar,
+but consonants cap its throughput, so the multiplier shrinks as tempo rises).
+Full table: `references/song-structure.md` §2.
 
 ### Mixed language
 
@@ -173,7 +176,7 @@ singing language**.
 | Counting | English parts by syllable; a **whole Chinese line** by characters (1 character ≈ 1 syllable) |
 | Rhyme | English parts follow their rhyme family; Chinese words don't join it — **don't expect cross-language rhymes** |
 | Placement | Hook, the last chorus line, or the pre-chorus lift — the spot must be **fixed and repeat 2–3 times** |
-| Singability | Chinese parts still need **tone-to-melody** care (see `lyric-zh` on 倒字), or the meaning gets misheard |
+| Singability | Chinese parts still need **tone-to-melody** care — see `lyric-zh` §2 on 倒字 (*dàozì*: a word sung on the wrong melodic contour is heard as a different word), or the meaning gets misheard |
 
 ⚠️ Three traps:
 1. **No full foreign-language sections** — it breaks syllable alignment and rhyme density
@@ -211,9 +214,12 @@ singing language**.
 
 **Division of labour**: verse = **images** (concrete nouns, actions); chorus = **attitude** (emotion + repetition); bridge = **the turn** (what verse and chorus never said).
 
-**V2 must move one step beyond V1**: equal line counts (same melody) don't mean the content may repeat.
-V1 sets the scene, V2 advances it — shift the time ("three days later"), shift the perspective
-(from "I" to "you"), or let an object planted in V1 change by V2 (V1: "phone at 4%" → V2: "it died").
+**Each later verse must move one step beyond the previous one** (not just V2 — T3 and T6 have three verses):
+equal line counts (same melody) don't mean the content may repeat.
+V1 sets the scene, V2 advances it — shift the time ("three days later"),
+**shift what is being observed** (V1 watches her own hands, V2 watches his;
+⚠️ the observed *object* shifts, **not the narrative person** — POV stays one throughout,
+only the bridge may switch), or let an object planted in V1 change by V2 (V1: "phone at 4%" → V2: "it died").
 ⚠️ Just rephrasing V1 is exactly what `lyric-naturalness` check #9 catches as "repetition in new words".
 
 **How to build a hook** (having one isn't enough — it has to be memorable and singable):
@@ -221,12 +227,15 @@ V1 sets the scene, V2 advances it — shift the time ("three days later"), shift
 | Point | Rule |
 | --- | --- |
 | **Placement** | **First line of the chorus** (heard first), then repeated at the last line or in `[Post-Chorus]` to close the loop |
-| **Length** | **Shorter than the surrounding lines** — if the chorus runs 8 syllables, make the hook 5–6 |
+| **Length** | **Shorter than the surrounding lines** — if the chorus runs 8 syllables, make the hook 5–6 (the hook is the one exception to the ±2 alignment rule) |
 | **Open vowels** | Prefer open vowels (ah / ay / oh); closed ones (ee / oo) don't carry and get swallowed |
-| **Repetition** | Repeat verbatim 2–3 times, **unchanged**; vary lines 2–3 instead, never the hook |
+| **Repetition** | Repeat verbatim 2–3 times, **unchanged**; if the three choruses vary, vary **line 4** (the standard variation slot in a 6-line chorus), never the hook |
 | **Content** | It's the title or a near-paraphrase of it; **no abstract emotion words** ("it'll be okay" doesn't stick) |
 
-⚠️ A hook that changes all three times is no hook. Leave the variation to the middle lines.
+⚠️ A hook that changes all three times is no hook. Leave the variation to **line 4**
+(the standard variation slot in a 6-line chorus) — don't touch lines 1–3: line 2 *develops* the hook,
+so changing it dismantles the hook itself.
+(See `references/song-structure.md` §4 for the full 6-line chorus layout.)
 
 ---
 
@@ -264,7 +273,11 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 - [ ] Tags are Suno-standard English, bracketed
 - [ ] Chorus rhyme family consistent; verse scheme stated
 - [ ] Syllable + **stress** aligned within sections
-- [ ] Read aloud — no tongue-twisters, no forced rhymes
+- [ ] Read **aloud** (not silently) — no tongue-twisters, no forced rhymes
+- [ ] **Hook meets all five points**: chorus line 1, shorter than neighbours, open vowels,
+      verbatim 2–3×, and it is the title
+- [ ] **Each later verse advances** (new time / new observed object / a planted object changed),
+      not a rephrase of the previous one
 - [ ] Verse gives images, chorus gives attitude, bridge gives the turn
 - [ ] No artist names, brands, or unpronounceable proper nouns
 
@@ -276,7 +289,10 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 **Line count (§3)**
 - [ ] **Not every section is 4 lines** — counts derived from BPM + emotional job, not the minimum
 - [ ] **Validation used the ACTUAL BPM, not the template's typical BPM** (typical-BPM validation returns a false pass)
-- [ ] Chorus meets the line floor for its job; under the 22-sec ceiling; whole song 2:00–3:30
+- [ ] Chorus meets the line floor for its job (**hard floor**); whole song 2:00–3:30
+- [ ] If the chorus runs past 22 sec, it is **stated and handled** (cut a line / convert to repeats) —
+      22 sec is a soft ceiling (T4's final chorus is 22.6s and still a valid template), so going over
+      isn't an error; going over silently is
 - [ ] **Repeats of the same function have equal line counts** (V1=V2, C1=C2); verse and chorus differ
 - [ ] Delivery states template, actual BPM and its source, lines per section, and any adjustment vs the template
 

@@ -149,7 +149,7 @@
 {bpm} BPM, {production}
 
 古风（⚠️ 别用「古筝+二胡+戏腔+大混响」——那正是 `production-antislop` 的反面例子）：
-guofeng, pentatonic, {vocal 音区}, clear tone, no vibrato, dry close-mic,
+guofeng, pentatonic, female alto, clear tone, no vibrato, dry close-mic,
 yangqin, xiao, muted upright bass, 808 sub bass, {bpm} BPM, sparse, dark
 Exclude：no operatic vocal, no heavy reverb
 

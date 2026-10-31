@@ -104,7 +104,7 @@
 往前走 出口越来越近
 近到能听见 地面的风声
 
-[Bridge]
+[Breakdown]
 其实也没有那么难撑
 只是忽然想有人等
 想有人问我一句 今天疼不疼
@@ -183,8 +183,8 @@
 ⚠️ 不要为了凑够 15 秒把副歌写成 9 句——9 句对流行歌偏长。
 **更优解是 8 句 + Post-Chorus 尾缀**：用重复补时长，而不是把副歌写长。
 主歌要跟着改：本例主歌是 **4 句**，85 BPM 下 11.3 秒（合格），
-但 120 BPM 下只有 **8.0 秒，掉出 10 秒下限** → 需补到 5 句
-（6 句主歌才在 70–140 BPM 全程落在 10–20 秒区间内）。
+但 120 BPM 下只有 **8.0 秒，掉出 10 秒下限** → 需补到 **5 句**（120 BPM 下 10.0 秒，刚好回到下限）。
+（一般规律：6 句主歌在 **80–140 BPM** 落在 10–20 秒区间内；70 BPM 时 6 句 = 20.6 秒略超上限，要降到 5 句。）
 
 **句数关系**（判断维度是**功能**不是位置）：
 - **同功能重复段必须相等**：V1=V2=4、PC1=PC2=3、C1=C2=C3=6 —— 同旋律，句数一变就唱不了
@@ -249,9 +249,9 @@
 
 **Style of Music — 直接粘贴**
 ```
-dream pop, empty subway station at 2am, female alto, breathy, close-mic, felt piano, muted upright bass, brush snare, chamber strings, 70s tape saturation, 85 BPM, sparse intro, dynamic contrast
+dream pop, empty subway station at 2am, female alto, breathy, near-spoken, close-mic, felt piano, muted bass, brush snare, chamber strings, 70s tape saturation, 85 BPM, sparse intro, dynamic contrast
 ```
-（13 个标签 / 194 字符，单行，可直接粘贴）
+（14 个标签 / 199 字符，单行，可直接粘贴 —— 都贴着上限，说明取舍是必要的）
 
 **中文说明**
 
@@ -260,16 +260,17 @@ dream pop, empty subway station at 2am, female alto, breathy, close-mic, felt pi
 | `dream pop` | 唯一主风格，定混响与音色基调 |
 | `empty subway station at 2am` | **场景化情绪词**，替代裸情绪词 `melancholic`（黑名单词） |
 | `female alto` | 女声中低音区 —— 比 `female vocals` 多一个音区决定 |
-| `breathy` | 气声，贴合疲惫感 |
+| `breathy` | 气声（**音色**），贴合疲惫感 |
+| `near-spoken` | 近独白（**唱法**）—— 人声三件套的第三件；主歌像说话，副歌才展开 |
 | `close-mic` | 近讲，耳边私密感（**空间**质感） |
 | `felt piano` | **专属锚点**：呢垫钢琴，闷而软，不是通用 `piano` |
-| `muted upright bass` | 闷音立式贝斯，冷且克制 |
+| `muted bass` | 闷音贝斯，冷且克制（字符预算下省略"立式"，秒响版仍写全"闷音立式贝斯"） |
 | `brush snare` | 刷鼓，避免军鼓的"打点感" |
 | `chamber strings` | 室内乐四重奏编制 —— 比 `strings` 亲密得多，不会变罐头弦乐 |
 | `70s tape saturation` | **年代 + 质感**，一个标签给两个维度 |
 | `85 BPM` | 慢速，贴合疲惫感 |
 | `sparse intro` | 事件一：引子极简 |
-| `dynamic contrast` | 事件二：动态对比（配合歌词里的 `[Bridge]`；若换成 `[Breakdown]` 断崖感更强） |
+| `dynamic contrast` | 事件二：动态对比（配合歌词里的 `[Breakdown]`） |
 
 **Exclude Styles**
 ```
@@ -284,7 +285,9 @@ no autotune, no vocoder, no choir, no saxophone, no four-on-the-floor
 | 载体 | 内容 |
 | --- | --- |
 | Style 字段 | 只放动态词：`sparse intro`、`dynamic contrast` |
-| **歌词结构标签** | 真正的事件落点：`[Intro]`（12 秒纯器乐）、`[Bridge]`（抽掉节奏组）、`[Outro]`（渐退）。<br>若要进一步强调断崖感，可把 `[Bridge]` 换成 `[Breakdown]` |
+| **歌词结构标签** | 真正的事件落点：`[Breakdown]`（桥段抽掉节奏组，断崖）。<br>⚠️ `[Intro]` `[Outro]` `[Verse]` `[Chorus]` `[Bridge]` 是**普通结构标记**，任何歌都有，**不算事件**——把它们当事件会让"≥1 条事件"这条红线自动满足 |
+
+> 本例歌词里桥段用的是 `[Breakdown]`（不是 `[Bridge]`），就是为了把"抽掉节奏组"这条事件落到标签上。
 
 ⚠️ 把"副歌前抽掉鼓"直接写进 Style 字段是常见错误 —— Suno 读不懂长句。
 
@@ -322,22 +325,23 @@ Modern urban pop ballad with a dream-pop sheen. Adult female vocal, low-mid regi
 
 ## 第 8 步：设计说明 + 待确认
 
-### 差异化自检（`production-antislop` 10 条）
+### 差异化自检（`production-antislop` 11 条）
 
 | 检测项 | 本例如何满足 |
 | --- | --- |
 | 裸情绪词 ≤ 2 个 | **0 个**。`melancholic` 换成 `empty subway station at 2am` |
-| 无安全词黑名单词汇 | 已剔除 `dreamy` `ethereal` `intimate` `warm analog` 等泛词 |
-| **≥ 1 条编曲事件** | 前 12 秒纯器乐入声 / 主歌鼓组半速 / 桥段抽空 4 秒 / 尾奏渐退 |
-| **≥ 1 个专属锚点** | `felt piano`（器材）+ `70s tape saturation`（质感）+ 低频持续音（反差） |
+| 无安全词黑名单词汇 | 已剔除 `dreamy` `ethereal` 等；`warm` `intimate` **裸用**无效，本例写的是带器材的 `warm analog` |
+| **≥ 1 条编曲事件** | 前 12 秒纯器乐入声 / 主歌鼓组半速 / `[Breakdown]` 抽空 4 秒 / 尾奏渐退 |
+| **≥ 1 个专属锚点** | **`felt piano`（演奏法器材）**，出现在主歌与副歌的铺底。<br>⚠️ 只算**这一件**：`70s tape saturation` 是质感（另一条红线）、低频持续音是色彩（本例因字符预算让给了秒响版）——锚点加多了不是反差，是风格混乱 |
 | 质感 ≥ 2 项 | 空间 `close-mic` + 年代介质 `70s tape saturation` + 录音方式（秒响版：单支铝带麦克风同期） |
 | 乐器全带演奏法/器材 | 呢垫电钢琴 / 闷音立式贝斯 / brush 军鼓 / 室内乐弦乐 |
 | 能量曲线有落点 | sparse intro → 主歌半速 → 副歌全员 → **桥段断崖** → 末次副歌顶点 → 渐退 |
 | Exclude 有针对性 | 针对"都市抒情最可能塌成的样子"：auto-tune / 合唱 / 萨克斯 / 四踩 |
 | 秒响人声四项齐全 | 音区（中低音）+ 发声（气声起句）+ 咬字（轻）+ 句尾（干净收音） |
+| **Suno 人声三件套齐全** | 音区 `female alto` + 音色 `breathy` + 唱法 `near-spoken`（`female vocals` 不得单独出现） |
 | 换掉任一标签会不同 | 换掉 `felt piano` 就变成通用钢琴抒情；换掉 `chamber strings` 就变罐头弦乐 |
 
-**10/10 通过**。
+**11/11 通过**。
 
 ### 对照：安全词写法长什么样
 

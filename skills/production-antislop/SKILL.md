@@ -39,7 +39,7 @@ description: 编曲提示词反套路与去同质化。诊断"安全词组合"�
 
 | 平台 | 怎么落 |
 | --- | --- |
-| **Suno** | Style 字段写不下长句。事件落在：① 歌词**结构标签**（`[Instrumental Break]` `[Breakdown]` `[Drop]` `[Guitar Solo]` `[whisper]`）；② Style 里的**动态词**（`sparse intro` `building` `dynamic contrast`）；③ 元标签 `[Style: ...]` |
+| **Suno** | Style 字段写不下长句。事件落在：① 歌词**结构标签**（`[Instrumental Break]` `[Breakdown]` `[Drop]` `[Guitar Solo]` `[whisper]` `[falsetto]`）；② Style 里的**动态词**（`sparse intro` `building` `dynamic contrast`）；③ 元标签 `[Style: ...]`。<br>⚠️ `[Verse]` `[Chorus]` `[Bridge]` `[Intro]` `[Outro]` 是普通结构标记，**不算事件** |
 | **秒响** | **直接写中文时间轴**。这是秒响相对 Suno 最大的优势区，不用白不用 |
 
 **最好用的一招**：桥段或最后一次副歌前做一次**"抽空"**——留 2–4 秒只剩人声，再全员进入。
@@ -148,7 +148,7 @@ guzheng, erhu, strings, cinematic, spacious reverb
 
 **改后**
 ```
-guofeng, pentatonic, female vocals, clear tone, no vibrato, dry close-mic,
+guofeng, pentatonic, female alto, clear tone, no vibrato, dry close-mic,
 yangqin, xiao, muted upright bass, 808 sub bass, 76 BPM, sparse, dark
 ```
 > 换掉古筝二胡（用 `yangqin` `xiao`）、`dry close-mic` 拿掉大混响、
