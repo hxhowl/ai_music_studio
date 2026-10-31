@@ -305,6 +305,10 @@ damaged for no real gain, and the self-check still passed it.
   lyric (this actually happened — see `lyric-naturalness` rule 1).
   Tests: **the deletion test** (delete any line — does the next one still connect? if yes, nothing was
   connected) and **the subject test** (are 6 lines carrying 6 unrelated subjects?)
+- **Keep one through-line object**: at least one object appears **≥ 2 times and its state changes**
+  (still on the lanyard → chewed up → still there). A brand-new object every section passes
+  every per-section check yet leaves the song with no spine — objects must **carry the story**,
+  not decorate it
 - **≥ 1 contemporary object**: 12% battery, a delivery note, a read receipt, the last train, a locker pickup code
 - **Generic imagery must be qualified**: not "rain" — "the kind of rain that flips your umbrella"
 - **Vary line length**: keep the opening lines aligned, then let **one line (usually the last)** run clearly longer or shorter as a landing line. Never all lines equal (fake), never all over the place (unsingable)
@@ -320,6 +324,15 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 > ("all 11 naturalness items pass; the private-voice line is '…'").
 > **Don't tick every box, don't print a score like 11/11** — see `AGENTS.md` §7 item 13.
 > The checklist is for you to run, not for the user to read; they asked for lyrics.
+
+**Overall arc — check these four first (if they fail, perfect lines don't matter)**
+- [ ] **Narrative line**: the song traces an emotional change from first line to last
+      (⚠️ a change of *scene* is not a change of *emotion*)
+- [ ] **Line-to-line relation**: pick 3 pairs of adjacent lines; for each you can name the relation
+      (cause / escalation / turn / contrast). "They're all describing X" means it's a list, not a lyric
+- [ ] **The chorus is inevitable**: it's forced out by the verse, not a new topic
+- [ ] **Each section's last line travels further than its first** (there's an arc inside a section too)
+- [ ] **One object appears ≥ 2 times and its state has changed** (a through-line, not decoration)
 
 **Craft**
 - [ ] Tags are Suno-standard English, bracketed
@@ -364,7 +377,7 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 **Pass mark**
 
-- **Craft, Line count and Format groups must pass in full** — these are errors, not scores.
+- **Overall arc, Craft, Line count and Format groups must pass in full** — these are errors, not scores.
   There is no "mostly fine": a Chinese tag, validation at the template BPM, or an overwritten
   file is wrong, full stop
 - **Naturalness**: pass **≥ 9 of 11** on `skills/lyric-naturalness/SKILL.md`, and the
