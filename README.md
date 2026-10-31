@@ -150,7 +150,7 @@
    照抄 T2 副歌 6 句 + 120 BPM 只有 12 秒，而用模板的 95 BPM 去校验会误判「合格」。
    见 `references/song-structure.md` 第八节
 7. **反平均化（作词）**：AI 味的病根是"谁都能写出来"。歌词必须有可拍照的细节、当代生活物件，
-   以及至少一句"只有这个人会说"的话。判据见 `skills/lyric-naturalness/SKILL.md` 的 11 条检测清单
+   以及至少一句"只有这个人会说"的话。**这些是方向不是门槛**；卡壳时的判据见 `skills/lyric-naturalness/SKILL.md` 的诊断表
 8. **反同质化（作曲）**：出歌雷同的病根是"安全词组合"（`dreamy ethereal melancholic` 这类词被用烂，
    模型响应已收敛到平均值）。提示词必须有**编曲事件**、**专属锚点**、**录音质感**。
    判据见 `skills/production-antislop/SKILL.md` 的 11 条检测清单

@@ -318,14 +318,30 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 ---
 
-## 7. Self-check before delivery
+## 7. Delivery check
 
-> ⚠️ **In the delivered file, list only what failed**: if everything passes, write one sentence
-> ("all 11 naturalness items pass; the private-voice line is '…'").
-> **Don't tick every box, don't print a score like 11/11** — see `AGENTS.md` §7 item 13.
-> The checklist is for you to run, not for the user to read; they asked for lyrics.
+### Only these five are gates — **wrong is wrong**, regardless of how good the writing is
 
-**Overall arc — check these four first (if they fail, perfect lines don't matter)**
+- [ ] **Section tags**: Suno-standard English, bracketed, own line, no Chinese inside
+- [ ] **Formatting**: lyrics in a code block, one line per lyric line, **no blank lines between
+      lines**, one blank line between sections
+- [ ] **Versioning**: revisions wrote a **new file** with a version number (v1 for the first too);
+      the original was not overwritten
+- [ ] **Structural sanity**: repeats of the same function have equal line counts (V1=V2, C1=C2);
+      **validation used the ACTUAL BPM, not the template's typical BPM**
+- [ ] **Singable**: no artist names, brands, or unpronounceable proper nouns
+
+> If all pass, write one sentence — **don't tick every box** (`AGENTS.md` §7 item 13).
+> **Nothing outside these five is a gate.**
+
+### Below is the diagnostic table — **consult it when stuck, not as a delivery gate**
+
+> This is "what good lyrics look like", **not "what counts as acceptable lyrics"**.
+> **If it flows, don't read this.** Open it only when something feels off and you can't name it.
+> ⚠️ Treating these as gates is what makes a model optimise for conditions instead of writing a good
+> song — a mistake made for real on 2026-10-31.
+
+**Overall arc (start here if it "doesn't hold together")**
 - [ ] **Narrative line**: the song traces an emotional change from first line to last
       (⚠️ a change of *scene* is not a change of *emotion*)
 - [ ] **Line-to-line relation**: pick 3 pairs of adjacent lines; for each you can name the relation
@@ -334,8 +350,7 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 - [ ] **Each section's last line travels further than its first** (there's an arc inside a section too)
 - [ ] **One object appears ≥ 2 times and its state has changed** (a through-line, not decoration)
 
-**Craft**
-- [ ] Tags are Suno-standard English, bracketed
+**Line craft (open when it "doesn't read like a lyric")**
 - [ ] Chorus rhyme family consistent; verse scheme stated; **density meets the default (§2)** —
       chorus has no unrhymed line, verse at most one and not the last
 - [ ] No repeated rhyme word used twice as the line-ending
@@ -346,23 +361,22 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 - [ ] **Each later verse advances** (new time / new observed object / a planted object changed),
       not a rephrase of the previous one
 - [ ] Verse gives images, chorus gives attitude, bridge gives the turn
-- [ ] No artist names, brands, or unpronounceable proper nouns
 
-**Naturalness (§6)**
+**Naturalness (open when it "reads like AI"), §6**
 - [ ] **≥ 3 concrete nouns per verse**; ≤ 3 abstract emotion words in the whole song
 - [ ] **Details chain, they don't pile up** — passes the deletion test and the subject test,
       not one object per line
 - [ ] ≥ 1 contemporary object; generic imagery is qualified
-- [ ] At least one line only this person would say (**veto item**); line lengths vary
+- [ ] At least one line only this person would say; line lengths vary
+      (highest-priority signal here — it marks what's most worth fixing, it doesn't fail the song)
 
-**Line count (§3)**
+**Line count (open when "the structure feels off"), §3**
 - [ ] **Not every section is 4 lines** — counts derived from BPM + emotional job, not the minimum
-- [ ] **Validation used the ACTUAL BPM, not the template's typical BPM** (typical-BPM validation returns a false pass)
-- [ ] Chorus meets the line floor for its job (**hard floor**); whole song 2:00–3:30
+- [ ] Chorus meets the line floor for its job; whole song 2:00–3:30
 - [ ] If the chorus runs past 22 sec, it is **stated and handled** (cut a line / convert to repeats) —
       22 sec is a soft ceiling (T4's final chorus is 22.6s and still a valid template), so going over
       isn't an error; going over silently is
-- [ ] **Repeats of the same function have equal line counts** (V1=V2, C1=C2); verse and chorus differ
+- [ ] Verse and chorus differ in line count
 - [ ] **The chorus hasn't eaten the song**: chorus time ≤ 40% of total (≤ 50% for hook/clip templates), ≤ 4 choruses
 - [ ] **The template's rationale matches the actual structure** — if you picked T4 "final chorus extended",
       it really is extended; don't leave the two disconnected
@@ -370,18 +384,12 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
       not chorus after chorus
 - [ ] Delivery states template, actual BPM and its source, lines per section, and any adjustment vs the template
 
-**Format & versioning (§8, §9)**
-- [ ] Lyrics inside a code block, one line per lyric line, **no blank lines between lines**, one blank line between sections
-- [ ] Revisions wrote a **new file** with a version number; the original was not overwritten
-- [ ] New version states what changed, what didn't, and the previous file path
+**On the "pass mark"**
 
-**Pass mark**
-
-- **Overall arc, Craft, Line count and Format groups must pass in full** — these are errors, not scores.
-  There is no "mostly fine": a Chinese tag, validation at the template BPM, or an overwritten
-  file is wrong, full stop
-- **Naturalness**: pass **≥ 9 of 11** on `skills/lyric-naturalness/SKILL.md`, and the
-  **private-voice** item is a veto — fail it and the lyric fails regardless of the rest
+Only the five gates at the top have a pass mark. **The diagnostic table has no pass mark** —
+it's a toolbox, not an exam. Anything it turns up goes through the rewrite flow in
+`lyric-naturalness`; the **private-voice** item is the highest-priority signal there,
+but it doesn't fail the song.
 
 ---
 
