@@ -345,6 +345,11 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
       22 sec is a soft ceiling (T4's final chorus is 22.6s and still a valid template), so going over
       isn't an error; going over silently is
 - [ ] **Repeats of the same function have equal line counts** (V1=V2, C1=C2); verse and chorus differ
+- [ ] **The chorus hasn't eaten the song**: chorus time ≤ 40% of total (≤ 50% for hook/clip templates), ≤ 4 choruses
+- [ ] **The template's rationale matches the actual structure** — if you picked T4 "final chorus extended",
+      it really is extended; don't leave the two disconnected
+- [ ] With ≥ 3 choruses there is a lift or a gap somewhere (pre-chorus / instrumental / strip-out),
+      not chorus after chorus
 - [ ] Delivery states template, actual BPM and its source, lines per section, and any adjustment vs the template
 
 **Format & versioning (§8, §9)**
