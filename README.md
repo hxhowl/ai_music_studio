@@ -115,7 +115,7 @@
 | `skills/` | 八个可加载 skill：2 个角色入口 + 作词 ×4 + 作曲 ×2 |
 | `.workbuddy/skills` | 软链 → `../skills`，保证技能被发现（勿删） |
 | `references/` | 去 AI 味词库、编曲差异化词库、**九维定参表**、结构与句数决策库、韵字表、Suno 标签库、秒响规范等静态参考 |
-| `examples/` | `001-empty-subway.md`（全流程演示，**展开版**——真实交付只有歌词 + 5 行话）、`002-versioning.md`（新版文件该怎么写） |
+| `examples/` | `001-empty-subway.md`（全流程演示，**展开版**——真实交付只有歌词 + 5 行话）、`002-versioning.md`（新版文件该怎么写）、`003-conversation-log.md`（对话留痕怎么写） |
 | `outputs/{歌曲名}/` | 交付物落盘处（每首歌一个文件夹，**带版本号，不覆盖**；不进 git） |
 
 > **关于 `.workbuddy/skills`**：这是软链，已随仓库提交，用于技能发现。
