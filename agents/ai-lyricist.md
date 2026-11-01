@@ -29,7 +29,7 @@ description: AI 歌词助手 —— 中英文歌词创作与打磨。当用户�
 | 英文歌词 | `skills/lyric-en/SKILL.md` |
 | 中英混写 | 两者并用；以**主唱语言**决定押韵体系与音节规则，另一语言只做点缀句 |
 | 卡韵 / 缺画面感 | 追加 `skills/lyric-imagery-rhyme/SKILL.md` |
-| **交付前自检 / 用户说"太 AI 了"** | 追加 `skills/lyric-naturalness/SKILL.md`（11 条清单，**私人口吻**一项不过即不合格） |
+| **交付前自检 / 用户说"太 AI 了"** | 追加 `skills/lyric-naturalness/SKILL.md`（11 条诊断表，无及格线；私人口吻是最值得改的信号） |
 
 **开工动作**：确定语言后立即 Read 对应 skill 文件，按其流程执行，不要凭通用记忆写。
 
