@@ -23,7 +23,7 @@
 | `[Instrumental Break]` | 纯器乐间奏 | ★★ |
 | `[Guitar Solo]` / `[Solo]` | 独奏段 | ★ |
 | `[Hook]` / `[Refrain]` | 反复句 | ★★ |
-| `[Breakdown]` / `[Drop]` | 电子乐段落 | ★ |
+| `[Breakdown]` / `[Drop]` | 电子乐段落 / **编曲事件落点** | ★ |
 | `[Outro]` | 尾奏 | ★★★ |
 | `[End]` | 结束标记 | ★ |
 
@@ -57,7 +57,7 @@
 | 乡村 | `country` `country pop` `bluegrass` |
 | 影视 | `film score` `trailer music` `hybrid orchestral` `string section + taiko + distorted bass` |
 
-### ② 情绪 / 氛围（裸情绪词 ≤ 2 个）
+### ② 情绪 / 氛围（裸情绪词越少越好）
 
 **可用的**：`nostalgic` `bittersweet` `hopeful` `uplifting` `euphoric` `triumphant` `heroic` `tense` `suspenseful` `dark` `brooding` `mysterious` `haunting` `tender` `yearning` `longing` `lonely` `wistful` `angry` `aggressive` `intense` `playful` `whimsical` `romantic` `sensual` `serene` `meditative` `grand` `anthemic`
 
@@ -69,6 +69,7 @@
 > *`cinematic` 只在影视/氛围类里有效，流行歌里是泛词。
 
 > **具体化技巧**：`lonely` → `lonely, empty subway station at 2am`（情绪词后接场景，效果显著更好）
+> ⚠️ **不要数「用了几个」**——写成数字就会被当成指标去凑，凑完还是平均化。判据是有没有场景支撑。
 
 ### ③ 人声（性别 + 音色 + 语言）
 
@@ -77,7 +78,7 @@
 | 性别 | `male vocals` `female vocals` `duet` `choir` `group vocals` `instrumental, no vocals` |
 | 音区 | `deep male vocals` `baritone` `tenor` `alto` `soprano` `falsetto` `high-pitched` |
 | 音色 | `breathy` `husky` `raspy` `gravelly` `smooth` `silky` `crisp` `powerful` `delicate` `airy` `clear` `nasal` `resonant` |
-| 唱法 | `belting` `whisper` `spoken word` `rap` `chant` `operatic` `vibrato` `ad-libs` `harmonies` `layered vocals` |
+| 唱法 | `belting` `whisper` **`near-spoken`** `spoken word` `rap` `chant` `operatic` `vibrato` `ad-libs` |
 | 语言 | `mandarin` `cantonese` `english` `japanese` `korean` `mixed language` |
 
 ### ④ 乐器（只点 3–5 件，**每件优先写演奏法或器材**）
@@ -113,10 +114,10 @@
 | 录音质感 | `lo-fi` `tape saturation` `vinyl crackle` `warm analog` `crisp digital` `raw` `polished` |
 | 空间 | `reverb-heavy` `dry` `intimate close-mic` `spacious` `cathedral reverb` `ambient` |
 | 年代 | `80s` `90s` `70s` `60s` `retro` `vintage` `modern production` `bedroom pop` |
+| 响度动态 | `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` |
 
 > ⚠️ 年代词**必须配器材**才有效（`80s, gated reverb drums`）。单写 `80s` / `retro` / `vintage` 是泛词，
 > 见 `references/production-lexicon.md` 第一节。
-| 响度动态 | `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` |
 
 ### ⑧ 地域 / 场景
 

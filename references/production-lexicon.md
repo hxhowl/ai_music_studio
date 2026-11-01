@@ -1,7 +1,7 @@
 # 编曲差异化词库
 
 > 供 `skills/production-antislop/SKILL.md` 与 `skills/song-prompt-builder/SKILL.md` 取词使用。
-> 核心用途：**当提示词写成了"安全词排列组合"时，从本表取一个专属锚点替换掉。**
+> 核心用途：**当提示词写成了「安全词排列组合」时，从本表取一个反差元素替换掉。**
 
 ---
 
@@ -102,15 +102,18 @@
 | `muted trumpet` / `Harmon mute` | 弱音小号，爵士夜色 |
 | `breathy flute` | 气声长笛 |
 
-### 人声（必须三件套：音区 + 音色 + 唱法）
+### 人声（三件套：音区 + 音色 + 唱法）
+
+**三件套的选项闭集只在 `references/suno-tags.md` §2③ 一处**（本文件以前另存了一份，
+结果两边的音区/音色/唱法三项都不一样——`mezzo` 只有这边有、`near-spoken` 只有那边有）。
+**去那里取词，这里只补 suno-tags 没有的两个维度：**
 
 | 维度 | 选项 |
 | --- | --- |
-| 音区 | `deep male` `baritone` `tenor` `alto` `mezzo` `soprano` `falsetto` |
-| 音色 | `breathy` `husky` `raspy` `gravelly` `silky` `nasal` `resonant` `thin` |
-| 唱法 | `belting` `whisper` `spoken word` `chant` `vibrato` `yodel` `scat` `ad-libs` |
 | 织体 | `solo` `layered harmonies` `stacked vocals` `call and response` `unison doubling` |
 | 处理 | `dry close-mic` `slapback delay` `no reverb` `doubled vocal` `telephone-effect` |
+
+> ⚠️ `close-mic` 属于「空间」，不是唱法——它可以写，但**不能拿它顶三件套里的唱法**。
 
 ---
 
@@ -148,7 +151,7 @@
 
 | 写法 | 指向 |
 | --- | --- |
-| `slapback delay` |  slap 回声，50-60s、摇滚abilly |
+| `slapback delay` | slap 回声，50–60 年代、rockabilly |
 | `spring reverb` | 弹簧混响，吉他音箱 |
 | `plate reverb` | 铁板混响，光滑 |
 | `cathedral reverb` | 大教堂，宏大 |
@@ -251,8 +254,8 @@
 
 | 用户说 | 默认会得到 | 破除法 |
 | --- | --- | --- |
-| 古风 | 古筝 + 二胡 + 大混响 + 戏腔 | 换乐器（`yangqin` `xiao`）、降混响（`dry` `close-mic`）、加反差（`808 sub bass`） |
-| 民谣 | 吉他扫弦 + 口琴 + 温暖 | 换演奏法（`fingerpicked`）、换质感（`single-mic live take`）、去掉口琴 |
+| 古风 | 古筝 + 二胡 + 大混响 + 戏腔 | 换乐器（`tremolo picked yangqin`、`breathy xiao` —— **带演奏法**）、降混响（`dry close-mic`）、加反差（`808 sub bass`） |
+| 民谣 | 吉他扫弦 + 口琴 + 温暖 | 换演奏法（`fingerpicked nylon-string guitar`）、换质感（`single-mic live take`）、去掉口琴 |
 | 电子 | 四踩 + drop + 亮合成器 | 换节奏（`broken beat` `half-time`）、换音色（`FM bells` `granular pads`） |
 | 抒情 | 钢琴 + 弦乐 + 高潮 | 换编制（`chamber strings`）、换空间（`dry` `close-mic`）、加事件（副歌前抽空） |
 | 说唱 | 808 + hi-hat + 阴暗 | 换采样质感（`vinyl crackle`）、换 bass（`upright bass`）、加乐器（`Rhodes`） |
