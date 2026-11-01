@@ -346,9 +346,7 @@ Making it a condition would force padding or cutting lines just to hit seconds.
 field, i.e. to prompts. Lyrics have no character limit. Don't mix the two sides up.
 
 ⚠️ **The per-line syllable cap is NOT one of them** — it's a reference, not a hard limit.
-It used to be written as "must be satisfied no matter what", and the result was a model that kept
-asking to cut syllables and damaged better lines. **Sacrificing a line to hit a syllable count is
-the wrong trade.**
+**Sacrificing a line to hit a syllable count is the wrong trade.**
 
 | Conflict | Who wins |
 | --- | --- |
@@ -433,8 +431,8 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 ### Check conditions 1–5 of `AGENTS.md` §4
 
-This file **does not restate them** — conditions live in one place only (four copies had begun
-to drift). Go read those five: **versioning / section tags / formatting / structural sanity / singable**.
+This file **does not restate them** — conditions live in one place only.
+Go read those five: **versioning / section tags / formatting / structural sanity / singable**.
 
 > If all pass, write one sentence — no ticking, no score. **Nothing outside those five is a gate.**
 

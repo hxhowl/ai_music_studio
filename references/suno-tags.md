@@ -1,7 +1,7 @@
 # Suno 标签速查库
 
 > 供 `skills/song-prompt-builder/SKILL.md` 第 2 步取标签使用。
-> **结构标签（第一节）是 `lyric-zh` / `lyric-en` 的唯一事实源**，两个 skill 不再各存一份副本。
+> **结构标签（第一节）是 `lyric-zh` / `lyric-en` 的唯一事实源**，两个 skill 都不另存副本。
 > **Style of Music 字段硬约束**：≤ 15 个标签、≤ 200 字符、主风格唯一、乐器 3–5 件。
 >
 > **取词优先级**：能用**演奏法 / 器材**就不用类别名（`brush snare` > `drums`）。
