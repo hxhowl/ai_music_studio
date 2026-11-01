@@ -115,7 +115,8 @@
 ### ⑤ 节奏 / 速度
 
 `slow` `mid-tempo` `uptempo` `fast` `driving` `laid-back` `half-time` `four-on-the-floor` `swing` `syncopated` `polyrhythmic`
-**BPM 直写**：`72 BPM` `85 BPM` `128 BPM` `140 BPM`
+**BPM 直写**：优先**区间** `85-92 BPM` `120-128 BPM`——区间给生成器留调整余地，单值等于替它定死了；
+单值 `92 BPM` 只在用户明确指定时用。
 
 ### ⑥ 调性（不确定就不写）
 
@@ -166,28 +167,28 @@
 
 紧凑流行：
 {genre}, {sub-genre}, {mood1}, {mood2}, {vocal 音区}, {vocal 音色}, {vocal 唱法},
-{inst1}, {inst2}, {inst3}, {bpm} BPM, {production}, {era}
+{inst1}, {inst2}, {inst3}, {BPM 区间}, {production}, {era}
 
 纯音乐：
 {genre}, instrumental, no vocals, {mood}, {inst1}, {inst2}, {inst3},
-{bpm} BPM, {production}
+{BPM 区间}, {production}
 
 古风（⚠️ 别用「古筝+二胡+戏腔+大混响」——那正是 `production-antislop` 的反面例子）：
 guofeng, pentatonic, {vocal 音区}, {vocal 音色}, {vocal 唱法}, close-mic, {空间与介质},
 yangqin, {演奏法}, breathy xiao, muted upright bass, {反差乐器},
-{bpm} BPM, sparse, dark
+{BPM 区间}, sparse, dark
 Exclude：no operatic vocal, no heavy reverb, no vibrato
 ⚠️ **这是骨架不是配方**：`{反差乐器}` 必须自己挑（古风里能形成反差的重型/电子音色），
 乐器名后面必须跟演奏法。直接抄下来就成了新的罐头。
 
 电子舞曲（⚠️ 除非明确要四踩罐头，否则不写 four-on-the-floor）：
 {edm sub-genre}, {mood}, {vocal 音区}, {vocal 音色}, {vocal 唱法},
-synth bass, 808 drums, saw lead, {bpm} BPM, broken beat, {production}
+synth bass, 808 drums, saw lead, {BPM 区间}, broken beat, {production}
 Exclude：no four-on-the-floor
 
 说唱：
 {hip-hop sub}, {mood}, {vocal 音区}, {vocal 音色}, rap,
-{inst1}, {inst2}, {inst3}, {bpm} BPM, {production}
+{inst1}, {inst2}, {inst3}, {BPM 区间}, {production}
 Exclude：no singing, no autotune
 ```
 

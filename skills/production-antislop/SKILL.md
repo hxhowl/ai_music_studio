@@ -121,7 +121,7 @@ piano, strings, 85 BPM, beautiful
 ```
 dream pop, minor key, empty subway station at 2am, female alto, breathy,
 near-spoken, close-mic, felt piano, muted bass, brush snare, tape hiss,
-85 BPM, sparse intro, building, dynamic contrast
+85-92 BPM, sparse intro, building, dynamic contrast
 Exclude: no saxophone, no wide reverb, no choir
 ```
 > 情绪词只剩 1 个且带场景；**3 件乐器**全带演奏法或器材；人声三件套齐（`female alto` 音区 +
@@ -141,7 +141,7 @@ indie folk, male vocals, acoustic guitar, warm, nostalgic, 92 BPM
 ```
 indie folk, fingerpicked nylon-string guitar, upright bass, brushed snare,
 male baritone, breathy, near-spoken, dry, single-mic live take,
-92 BPM, sparse intro, dynamic contrast
+90-96 BPM, sparse intro, dynamic contrast
 Exclude: no harmonica, no string section, no big reverb
 ```
 **改后（歌词里配结构标签，这才是事件真正的落点）**
@@ -167,7 +167,7 @@ guzheng, erhu, strings, cinematic, spacious reverb
 ```
 guofeng, pentatonic, female alto, clear tone, near-spoken, dry,
 vintage ribbon mic, yangqin, tremolo picked, breathy xiao, muted upright bass,
-808 sub bass, 76 BPM, sparse, dark
+808 sub bass, 72-80 BPM, sparse, dark
 Exclude: no operatic vocal, no heavy reverb, no vibrato
 ```
 > 换掉古筝二胡（扬琴 + 箫，且都带演奏法）、`dry` + `vintage ribbon mic` 拿掉大混响、
@@ -190,7 +190,7 @@ Exclude: no operatic vocal, no heavy reverb, no vibrato
 现代都市抒情流行，成年女声中低音区，气声起句，咬字轻，句尾收音干净。电钢琴铺底（带轻微磁带抖动），
 闷音立式贝斯，brush 军鼓；旋律以级进为主，句尾下行收住；前 12 秒只有电钢琴入声，主歌鼓组半速进入，
 第二段副歌起加入室内乐弦乐四重奏；桥段抽掉全部节奏乐器，留 4 秒纯人声干声，
-再全员进入最后一次副歌；尾奏逐层退去，最后一句气声收尾。约 85 BPM，
+再全员进入最后一次副歌；尾奏逐层退去，最后一句气声收尾。约 82–88 BPM，
 录音室单支铝带麦克风同期录制，70 年代磁带饱和，房间混响很短。完整旋律演唱。不要 auto-tune，不要合唱。
 ```
 > 时间轴完整（12 秒引子 / 半速 / 第二段副歌加弦乐 / 桥段抽空 4 秒 / 尾奏渐退）；

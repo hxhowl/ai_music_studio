@@ -127,7 +127,7 @@
 
 | 角色 | 管什么 | 不管什么 |
 | --- | --- | --- |
-| **AI 歌词助手** | 立意、结构、意象、押韵、节奏、可唱性 | 编曲、音色、BPM、人声设定 |
+| **AI 歌词助手** | 立意、结构、意象、押韵、节奏、可唱性 | 编曲、音色、BPM 数值、人声设定 |
 | **AI 歌曲生成助手** | 乐器编排、人声演唱、曲风、速度、调性、制作质感 | 写词、改词、找韵脚 |
 
 一句话仲裁：**说"这句不顺"归作词，说"编曲太素"归作曲。**
@@ -212,7 +212,7 @@ outputs/{歌曲名}/
 | 新的自然度判据 | `skills/lyric-naturalness/SKILL.md` |
 | 安全词黑名单 / 演奏法 / 质感 / 反差配方 | `references/production-lexicon.md` |
 | 新的差异化判据 | `skills/production-antislop/SKILL.md` |
-| BPM / 句数 / 段落模板 | `references/song-structure.md` |
+| 速度量级 / 句数 / 段落模板 | `references/song-structure.md` |
 | 新曲风的标签 | `references/suno-tags.md` |
 | 新的韵字 / 韵族 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |

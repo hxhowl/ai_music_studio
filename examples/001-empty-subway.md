@@ -73,7 +73,10 @@
 理由：**T1 是九个模板里最紧凑的一个**，各加一句让它铺得开一点——
 PC 3 句的爬升更够，Outro 4 句让渐退不显仓促。
 
-**BPM = 85**，来源：模板典型值（用户没指定，取 T1 典型值并声明）。
+**速度 = 慢**（用户没指定，按 T1 的量级定）。
+
+作词侧**只记量级，不记数字**——BPM 是编曲决策，写进歌词档会让角色二照着用，等于把速度定死了。
+出提示词时（⑧）再把它收敛成区间。
 
 > 「依据」列指 `references/song-structure.md` 的小节号。
 
@@ -275,7 +278,7 @@ V2 要**推进一层**：换观察对象（从"我"看到"你留下的那首歌"
 **Style of Music（直接粘贴）**
 
 ```
-dream pop, empty subway station at 2am, female alto, breathy, near-spoken, close-mic, felt piano, muted bass, brush snare, chamber strings, 70s tape saturation, 85 BPM, sparse intro, dynamic contrast
+dream pop, empty subway station 2am, female alto, breathy, near-spoken, close-mic, felt piano, muted bass, brush snare, chamber strings, 70s tape saturation, 85-92 BPM, sparse intro, dynamic contrast
 ```
 
 （14 个标签 / 199 字符，单行，可直接粘贴 —— 都贴着上限，说明取舍是必要的）
@@ -305,7 +308,7 @@ no autotune, no vocoder, no choir, no saxophone, no four-on-the-floor
 | `brush snare` | 刷鼓，避免军鼓的"打点感" |
 | `chamber strings` | 室内乐四重奏编制 —— 比 `strings` 亲密得多，不会变罐头弦乐 |
 | `70s tape saturation` | **年代 + 质感**，一个标签给两个维度 |
-| `85 BPM` | 慢速，贴合疲惫感 |
+| `85-92 BPM` | 慢速**区间**——留 7 拍余地给生成器微调，比写死 `85 BPM` 更容易出对的版本 |
 | `sparse intro` | 动态词：引子极简 |
 | `dynamic contrast` | 动态词：动态对比（配合歌词里的 `[Breakdown]`） |
 
@@ -333,7 +336,7 @@ no autotune, no vocoder, no choir, no saxophone, no four-on-the-floor
 现代都市抒情流行，略带 dream pop 质感，成年女声中低音区，副歌可上行至真声高音；
 气声起句，咬字轻，句尾收音干净不拖泥带水；主歌接近独白，副歌转为舒展的实声。
 呢垫电钢琴铺底，闷音立式贝斯，brush 军鼓，弦乐为室内乐四重奏编制、从第二段副歌才进入。
-旋律以级进为主，副歌首句跳进后逐级回落，句尾不做装饰音。约 85 BPM。
+旋律以级进为主，副歌首句跳进后逐级回落，句尾不做装饰音。约 82–88 BPM。
 前 12 秒只有电钢琴与低频持续音（地铁在地下的嗡鸣），人声第 12 秒进入；
 主歌鼓组半速进入；桥段抽掉全部节奏乐器，留 4 秒纯人声干声、只留低频持续音垫底，
 再全员进入最后一次副歌；尾奏逐层退去，最后一句气声收尾。
@@ -362,7 +365,7 @@ no autotune, no vocoder, no choir, no saxophone, no four-on-the-floor
 （上面那个代码块）
 
 ---
-我用了 T1 抒情 ballad，85 BPM，副歌 6 句（这首要堆情绪，4 句不够）。
+我用了 T1 抒情 ballad，速度慢（提示词里给 85–92 BPM），副歌 6 句（这首要堆情绪，4 句不够）。
 桥段用了 [Breakdown] 而不是 [Bridge]——那条停顿是全曲唯一的断点。
 偷一句你自己的话当落点："我会假装说 还行"，改词时请别动这句。
 ```

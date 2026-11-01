@@ -23,7 +23,7 @@
 | --- | --- | --- |
 | 定义 | `agents/ai-lyricist.md` | `agents/ai-song-producer.md` |
 | 管 | 立意 / 结构 / 意象 / 押韵 / 可唱性 | 配器 / 人声 / 曲风 / 速度 / 调性 / 质感 |
-| 不碰 | 编曲、音色、**BPM 设定**、人声设定<br>（没给 BPM 时可按模板典型值写词，标注为临时值） | 写词、改词、找韵脚 |
+| 不碰 | 编曲、音色、**BPM 数值**、人声设定<br>（只用「慢 / 中 / 快」判断句子长短；具体速度与区间归角色二） | 写词、改词、找韵脚 |
 
 **仲裁**（用户没点名时按这个判）：
 
@@ -136,7 +136,7 @@
 
 | 想解决 | 去哪 |
 | --- | --- |
-| 句数怎么算、段落模板 T1–T9、BPM 与字数的关系 | `references/song-structure.md` |
+| 句数怎么算、段落模板 T1–T9、速度与字数的关系 | `references/song-structure.md` |
 | 押什么辙、韵字 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 「太 AI 了」、流水账、不像歌词、不成篇 | `skills/lyric-naturalness/SKILL.md`（七条法则 + 范例 + 诊断表）|
 | 缺画面、卡韵 | `skills/lyric-imagery-rhyme/SKILL.md` |

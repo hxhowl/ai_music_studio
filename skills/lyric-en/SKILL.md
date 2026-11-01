@@ -34,17 +34,20 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 > and the subject relation, *not* from tempo.
 > **`references/song-structure.md` §2, §3, §4**.
 
-| Template | Style | Typical BPM |
+| Template | Style | Tempo band |
 | --- | --- | --- |
-| T1 | Ballad | 85 |
-| T2 | Standard pop | 95 |
-| T3 | Story folk | 90 |
-| T4 | Build (final chorus extended) | 85 |
-| T5 | Short-form (60–90 sec; the only short template) | 100 |
-| T6 | Rap-led (verse carries the song) | 90 |
-| T7 | Long-line (2 bars per line) | 90 |
-| T8 | EDM / dance (instrumental-heavy) | 128 |
-| T9 | R&B / neo-soul (long chorus) | 92 |
+| T1 | Ballad | slow |
+| T2 | Standard pop | mid |
+| T3 | Story folk | mid |
+| T4 | Build (final chorus extended) | slow |
+| T5 | Short-form (60–90 sec; the only short template) | fast |
+| T6 | Rap-led (verse carries the song) | mid |
+| T7 | Long-line (2 bars per line) | mid |
+| T8 | EDM / dance (instrumental-heavy) | fast |
+| T9 | R&B / neo-soul (long chorus) | mid |
+
+> **No BPM numbers here on purpose** — the lyric side only needs a tempo band to judge line length.
+> Numbers and ranges belong to the production side (`song-structure.md` §6 maps bands to syllables).
 
 **Four-step narrowing — don't take the familiar one** (offering nine templates with no selection rule means the first one gets picked):
 
@@ -59,9 +62,9 @@ in the table. Test it against four things: **every section has a job / the choru
 long songs need air / the energy moves** (the four tests at the end of §3 in
 `references/song-structure.md`). Meet those and any order works; miss them and no template saves it.
 
-**A template gives**: which sections, in what order, how many repeats; advice on optional sections; a typical BPM as default.
-**It does not give**: line counts (they come from how much the emotion needs to say), BPM (it moves
-with the user's request), or total runtime.
+**A template gives**: which sections, in what order, how many repeats; advice on optional sections; a tempo band (not a number).
+**It does not give**: line counts (they come from how much the emotion needs to say), BPM numbers or
+ranges (production side), or total runtime.
 
 Don't add optional sections by default: Pre-Chorus may be dropped in T3/T4/T5; Bridge can be an instrumental break in T5/T6.
 Be able to say **why** you chose this template (if asked — don't volunteer it).
@@ -172,7 +175,7 @@ Given a range with no selection rule, the model picks the minimum — so every s
 | Step | What | Where |
 | --- | --- | --- |
 | ① Pick template | Narrow to T1–T9 in four steps; **don't take the familiar one** | §3 |
-| ② Set BPM | Use the user's if given; else take the **template's typical BPM** | §2 |
+| ② Set tempo band | Keep the user's number if they gave one; otherwise pick **slow / mid / fast** — **no numbers** (ranges belong to production) | §6 |
 | ③ Count lines | **Count what you wrote**, then check it against the emotional job's range | §4 |
 | ④ Check relations | Repeats equal; verse / pre-chorus / chorus differ | §5 |
 
@@ -245,7 +248,7 @@ singing language**.
 **Rule of thumb**: within a section, corresponding lines should match in syllable count (roughly) AND stress position. Stress matters more.
 **Long-line styles: length lives in syllables, not line count** — 4 long lines feel like 8 normal ones.
 
-**Explainable if asked** (don't volunteer it, see `AGENTS.md` §4 delivery form): which template (T1–T9) and why; the actual BPM and its source; lines per section and why.
+**Explainable if asked** (don't volunteer it, see `AGENTS.md` §4 delivery form): which template (T1–T9) and why; the tempo band; lines per section and why.
 **Don't deliver a duration calculation.** The user asked for structure, not an arithmetic table.
 
 ---
@@ -282,8 +285,8 @@ singing language**.
    six parallel shots instead of a lyric)
 
 ④ **Set the structure (backwards from the chorus)**
-   Template skeleton (T1–T9, **skeleton only**) + lines per section + BPM
-   Line counts come from the emotional job (chorus) and the subject relation (verse); BPM only changes line length, not counts
+Template skeleton (T1–T9, **skeleton only**) + lines per section + tempo band
+Line counts come from the emotional job (chorus) and the subject relation (verse); tempo only changes line length, not counts
 
 ⑤ **Pick the rhyme family (changeable later)**
    See where the chorus naturally lands and **use that**; switch if it fights you.
@@ -482,7 +485,7 @@ Go read those five: **versioning / section tags / formatting / structural sanity
       it really is extended; don't leave the two disconnected
 - [ ] With ≥ 3 choruses there is a lift or a gap somewhere (pre-chorus / instrumental / strip-out),
       not chorus after chorus
-- [ ] Be able to say (if asked) which template, the BPM and its source, lines per section — **don't volunteer it**
+- [ ] Be able to say (if asked) which template, the tempo band, lines per section — **don't volunteer it**
 
 **On the "pass mark"**
 
@@ -531,7 +534,7 @@ second lyric line
 ## Lyrics                   ← code block, copy-paste ready
 
 ---
-**One line each**: what you chose (template / BPM), what changed, what still bothers you —
+**One line each**: what you chose (template / tempo band), what changed, what still bothers you —
 **five lines max**.
 ```
 
@@ -541,7 +544,7 @@ second lyric line
 
 | They ask | You give |
 | --- | --- |
-| "Why this structure?" | template, actual BPM and its source, why that many lines |
+| "Why this structure?" | template, tempo band and why, lines per section |
 | "How does the rhyme work?" | family + density (how many lines unrhymed, and where) |
 | "What imagery did you use?" | image cluster + why this family |
 | "Did you self-check?" | only what **failed**; all clear = one sentence |
