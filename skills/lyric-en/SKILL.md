@@ -113,6 +113,12 @@ State **why** you chose this template.
 | Bridge | may switch family; density may loosen | up to 1/3 | at the switch |
 | Outro | a broken rhyme to close is allowed | — | last line |
 
+> ⚠️ **Anadiplosis (chaining) may leave one line unrhymed — that's a device, not loose density.**
+> When a line opens on the previous line's final word ("...getting **closer** / **closer** than I can
+> hear"), it has to land in a different family to make the chain work.
+> **The test is strict**: the next line must actually open with that word. Otherwise it's an ordinary
+> broken rhyme and the table above applies.
+
 ⚠️ English and Chinese differ here on purpose: Chinese defaults to **rhyming every line** because it
 doesn't lean on word stress to hold the pulse; English defaults to every-other-line.
 Don't copy one language's density into the other.
@@ -121,7 +127,8 @@ by **how it sounds**, not by a poetry manual:
 
 | Case | Verdict |
 | --- | --- |
-| **Two adjacent lines** end on the same word | **Lazy — fix it.** Back-to-back, the ear catches it instantly |
+| **Two adjacent lines** end on the same word, different structure | **Lazy — fix it.** Back-to-back, the ear catches it instantly |
+| Two adjacent lines end on the same word, but it's **parallel structure** (identical frame, one word swapped) | **It's a device — keep it** — "wait three more minutes / hold three more minutes". The repetition is the escalation.<br>Test: strip the final word — is the rest of the two lines built the same way? Then it's parallelism |
 | Same word 2+ lines apart, **deliberately echoing** | **It's a device — keep it** (chorus question/answer, hook refrain, anaphora) |
 | Same word 2+ lines apart, just out of words | Audible but tolerable; swap for another word in the family if you can |
 | The **same word 3+ times** in one section | Thin no matter the spacing — fix it |
