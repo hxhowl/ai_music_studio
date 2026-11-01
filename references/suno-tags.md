@@ -49,7 +49,7 @@
 | --- | --- |
 | 流行 | `pop` `indie pop` `synth-pop` `dream pop` `electropop` `city pop` `k-pop` `j-pop` `c-pop` |
 | 民谣 | `folk` `indie folk` `folk rock` `americana` `acoustic` `singer-songwriter` |
-| 中国风 | `chinese style` `guofeng` `ancient style` `pentatonic` `erhu` `guzheng` `chinese opera vocal` |
+| 中国风 | `chinese style` `guofeng` `ancient style` `pentatonic` `chinese folk` |
 | 摇滚 | `rock` `indie rock` `alternative rock` `punk` `post-rock` `shoegaze` `grunge` `metal` `progressive rock` |
 | 电子 | `edm` `house` `deep house` `techno` `synthwave` `future bass` `dubstep` `drum and bass` `trance` `lo-fi` |
 | 嘻哈 | `hip-hop` `trap` `boom bap` `lo-fi hip hop` `drill` `conscious rap` |
@@ -58,7 +58,7 @@
 | 氛围 | `ambient` `cinematic`* `orchestral` `post-rock` `new age` `drone` `soundscape` |
 | 拉丁 | `latin` `reggaeton` `salsa` `bossa nova` `samba` `flamenco` |
 | 乡村 | `country` `country pop` `bluegrass` |
-| 影视 | `film score` `trailer music` `hybrid orchestral` `string section + taiko + distorted bass` |
+| 影视 | `film score` `trailer music` `hybrid orchestral` `epic orchestral` |
 
 ### ② 情绪 / 氛围（裸情绪词越少越好）
 
@@ -82,10 +82,10 @@
 | 音区 | `deep male vocals` `baritone` `tenor` `alto` `soprano` `falsetto` `high-pitched` |
 | 音色 | `breathy` `husky` `raspy` `gravelly` `smooth` `silky` `crisp` `powerful` `delicate` `airy` `clear` `nasal` `resonant` |
 | 唱法 | `belting` `whisper` **`near-spoken`** `spoken word` `rap` `chant` `operatic` |
-
-> ⚠️ **唱法只认上表这几个。** `vibrato` 是装饰、`ad-libs` 是即兴填充、`harmonies` 是织体——
-> 它们可以单独写，但**不能顶三件套里的"唱法"这一位**。
 | 语言 | `mandarin` `cantonese` `english` `japanese` `korean` `mixed language` |
+
+> ⚠️ **唱法只认上表那几个。** `vibrato` 是装饰、`ad-libs` 是即兴填充、`harmonies` 是织体——
+> 它们可以单独写，但**不能顶三件套里的"唱法"这一位**。
 
 > 💡 **性别与音区可以连写**：`female alto` / `male baritone`。闭集里的音区词
 > 是"音区那半截"，单独写 `alto` 也行，但连上性别信息更多。
@@ -128,7 +128,10 @@
 | 录音质感 | `lo-fi` `tape saturation` `vinyl crackle` `warm analog` `crisp digital` `raw` `polished` |
 | 空间 | `reverb-heavy` `dry` `close-mic` `intimate close-mic` `spacious` `cathedral reverb` `ambient` |
 | 年代 | `80s` `90s` `70s` `60s` `retro` `vintage` `modern production` `bedroom pop` |
-| 响度动态 | `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` `sparse intro` `dynamic contrast` `slow build` |
+| 响度 / 动态 | `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` `sparse intro` `dynamic contrast` `slow build` |
+
+> ⚠️ **「响度 / 动态」这一行不算质感。** 条件 10 的质感只认**年代 / 录音方式 / 空间与介质**三行——
+> `sparse intro` `building` 这类是**动态词**，用来承载编曲事件，拿它们顶质感等于条件白过。
 
 > ⚠️ 年代词**必须配器材**才有效（`80s, gated reverb drums`）。单写 `80s` / `retro` / `vintage` 是泛词，
 > 见 `references/production-lexicon.md` 第一节。
@@ -166,7 +169,7 @@
 {bpm} BPM, {production}
 
 古风（⚠️ 别用「古筝+二胡+戏腔+大混响」——那正是 `production-antislop` 的反面例子）：
-guofeng, pentatonic, {vocal 音区}, {vocal 音色}, {vocal 唱法}, dry close-mic,
+guofeng, pentatonic, {vocal 音区}, {vocal 音色}, {vocal 唱法}, dry close-mic, {录音方式},
 yangqin, {演奏法}, breathy xiao, muted upright bass, {反差乐器},
 {bpm} BPM, sparse, dark
 Exclude：no operatic vocal, no heavy reverb, no vibrato
@@ -180,7 +183,8 @@ Exclude：no four-on-the-floor
 
 说唱：
 {hip-hop sub}, {mood}, {vocal 音区}, {vocal 音色}, rap,
-{inst1}, {inst2}, {inst3}, {bpm} BPM, {production}, no singing
+{inst1}, {inst2}, {inst3}, {bpm} BPM, {production}
+Exclude：no singing, no autotune
 ```
 
 ---

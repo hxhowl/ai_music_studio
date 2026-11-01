@@ -199,7 +199,7 @@ same failure as writing to a syllable quota.
 - **Repeats of the same function must be equal** (V1=V2, C1=C2, PC1=PC2) — same melody; unequal counts are unsingable
 - **Verse ↔ pre-chorus ↔ chorus should differ** — the same count everywhere is structural "AI symmetry"
 - Bridge / outro **may match** those (one-off sections with their own melody)
-- ⚠️ Never write "adjacent sections must not have equal line counts" — followed literally, V1 and V2 end up different, but they share one melody and can't be
+- ⚠️ **Judge by function, not position** — judging by position writes V1 and V2 with different counts, but they share one melody and can't be sung.
 
 ### Stress & breath
 
@@ -336,8 +336,8 @@ Formal metrics fight each other, and they fight the quality goal. **The priority
 
 > **private voice > sings like speech > rhyme > syllable alignment**
 
-**Conditions that never yield** (only these four; everything else gives way):
-tag format, equal line counts for repeats of the same function, singability.
+**Conditions that never yield** (only these five; everything else gives way):
+versioning, tag format, formatting, equal line counts for repeats of the same function, singability.
 
 ⚠️ **Duration is not in this list** — it varies by genre (90-sec punk, 5-min post-rock).
 Making it a condition would force padding or cutting lines just to hit seconds.
@@ -401,7 +401,7 @@ damaged for no real gain, and the self-check still passed it.
 
 ---
 
-## 6. Naturalness red lines (prevent while drafting)
+## 6. Naturalness — watch it while drafting (a direction, not a red line)
 
 **The root cause of AI-sounding lyrics is averaging** — if anyone could have written it, it belongs to no one. Hold these at the drafting stage; don't leave it for a post-write fix.
 
@@ -477,7 +477,7 @@ Go read those five: **versioning / section tags / formatting / structural sanity
 **Line count (open when "the structure feels off"), §3**
 - [ ] **Not every section is 4 lines** — counts come from the emotional job, not the minimum
 - [ ] Verse and chorus differ in line count (equal is fine — T2/T7 do it; then pre-chorus and energy contrast have to tell them apart)
-- [ ] **The chorus hasn't eaten the song**: ≤ 4 choruses, and something sits between them (they don't run back to back)
+- [ ] **The chorus hasn't eaten the song**: ≤ 4 choruses; two adjacent choruses **must differ in something** (final one extended / swapped for `[Post-Chorus]` / one line changed) — adjacent is fine, identical is not
 - [ ] **The template's rationale matches the actual structure** — if you picked T4 "final chorus extended",
       it really is extended; don't leave the two disconnected
 - [ ] With ≥ 3 choruses there is a lift or a gap somewhere (pre-chorus / instrumental / strip-out),

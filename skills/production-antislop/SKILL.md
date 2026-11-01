@@ -36,9 +36,9 @@ description: 编曲提示词反套路与去同质化。诊断"安全词组合"�
 **参考**：裸情绪词要少，且每个都带场景限定、或直接换成质感词。
 （不用数"几个以内"——写成数字就会有人去数，数完还是平均化）
 
-### 2. 写事件，不只写属性 —— 至少 1 条时间轴指令
+### 2. 写事件，不只写属性 —— 一条"第 X 段发生 Y"的指令
 
-提示词最好有至少一条**"在第 X 段发生 Y"**的指令——它是参考，不是门槛，但漏了最容易出罐头歌。
+提示词里最好有一条**"在第 X 段发生 Y"**的指令——它是参考，不是门槛，但漏了最容易出罐头歌。
 
 | 平台 | 怎么落 |
 | --- | --- |
@@ -166,12 +166,12 @@ guzheng, erhu, strings, cinematic, spacious reverb
 **改后**
 ```
 guofeng, pentatonic, female alto, clear tone, near-spoken, dry close-mic,
-yangqin, tremolo picked, breathy xiao, muted upright bass, 808 sub bass,
-76 BPM, sparse, dark
+vintage ribbon mic, yangqin, tremolo picked, breathy xiao, muted upright bass,
+808 sub bass, 76 BPM, sparse, dark
 Exclude: no operatic vocal, no heavy reverb, no vibrato
 ```
-> 换掉古筝二胡（扬琴 + 箫，且都带演奏法）、`dry close-mic` 拿掉大混响、`no vibrato` 放进 Exclude、
-> **`808 sub bass` 是反差锚点**——古的变重的。这一件乐器，比十个情绪词都管用。
+> 换掉古筝二胡（扬琴 + 箫，且都带演奏法）、`dry close-mic` + `vintage ribbon mic` 拿掉大混响、
+> `no vibrato` 放进 Exclude、**`808 sub bass` 是反差锚点**——古的变重的。这一件乐器，比十个情绪词都管用。
 
 ---
 
@@ -195,9 +195,8 @@ Exclude: no operatic vocal, no heavy reverb, no vibrato
 ```
 > 时间轴完整（12 秒引子 / 半速 / 第二段副歌加弦乐 / 桥段抽空 4 秒 / 尾奏渐退）；
 > 质感具体到"单支铝带麦克风同期录制 + 磁带饱和"。
-> > ⚠️ 注意区分：**「桥段抽掉全部节奏乐器」是编曲事件**，**不是锚点**；
-> 而质感（「单支铝带麦克风 + 70 年代磁带饱和」）是**条件 10 要求的质感**，也**不算锚点**——
-> 它本来就必须有。
+> ⚠️ 注意区分：**「桥段抽掉全部节奏乐器」是编曲事件**，**不是锚点**；
+> 而质感（同上）是**条件 10 已经要求的**，也**不算锚点**。
 > **本例确实没有反差音色**，这是可以的：反差是参考项，不是条件。硬凑一个反而破坏风格。
 
 ---
@@ -236,7 +235,7 @@ Exclude: no operatic vocal, no heavy reverb, no vibrato
 ② 诊断  判断病型：太素？太像别人？还是太乱？
 ③ 去词  用 `references/production-lexicon.md` 第一节替换安全词
 ④ 加锚  从 `references/production-lexicon.md` 第四节反差配方取一件，或从其第二、三节取演奏法/质感
-⑤ 补事件  加至少一条时间轴指令，确认落在正确的平台位置
+⑤ 补事件  加一条时间轴指令，确认落在正确的平台位置
 ⑥ 定质感  补齐年代 / 录音方式 / 空间与介质
 ⑦ 复检  过一遍下面的病历本（不判合格，只找病）
 ```
@@ -250,7 +249,7 @@ Exclude: no operatic vocal, no heavy reverb, no vibrato
 | 阶段 | 用谁 |
 | --- | --- |
 | 构建提示词时预防 | `skills/song-prompt-builder/SKILL.md` 的「第 1.5 步：差异化（参考）」 |
-| 写完自检 | **本 skill**（检测清单） |
+| 写完自检 | **本 skill**（病历本） |
 | 用户说"都一个样""太套路" | **本 skill**（改写流程） |
 | 取替换词 | `references/production-lexicon.md` |
 | 取标签 | `references/suno-tags.md` |

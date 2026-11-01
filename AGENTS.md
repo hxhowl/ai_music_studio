@@ -61,7 +61,8 @@
 ```
 
 > **本文件只给顺序，不给做法**——做法写在这里，等于给同一套规则做副本，必然漂移。
-> 三处流程（本文件 / `ai-lyricist` / `lyric-zh`·`lyric-en`）必须一致，改一处同步其余两处。
+> **作词段 ⓪–⑦ 三处必须一致**（本文件 / `ai-lyricist` / `lyric-zh`·`lyric-en`），改一处同步其余两处；
+> ⑧ 出提示词、⑨ 落盘是交接与产出，只在本文件出现。
 
 ---
 
@@ -148,8 +149,8 @@
 朋克 / 短歌 90 秒–2:00；氛围 / post-rock 3:30–5:00，长的更多。
 用户给了目标就跟用户，没给就按类型取常见区间。
 ⚠️ **不要为了落进某个区间去加句或砍句**。判断"太短"的标准不是秒数，是**情绪有没有堆起来**。
-⚠️ **不要算。** `240 ÷ BPM` 那一套已经不做了——"一句占 1 小节"只是假设，实际有长音、休止、
-拖尾、切分，算到小数点后一位是伪精度，还会变成"凑秒数"的目标。结构见 `references/song-structure.md`。
+⚠️ **不要算。** "一句占 1 小节"只是假设——实际有长音、休止、拖尾、切分，
+按 BPM 推秒数是伪精度，还会变成"凑秒数"的目标。结构见 `references/song-structure.md`。
 
 **关于字数**（**不是上限**）：一口气能唱多少取决于旋律、断句、停顿、谁来唱，**±2 字完全正常**。
 **不要为了压字数改掉一个更好的句子**——它超了 1–2 字但更顺、更像人话，就留着它。
@@ -169,7 +170,7 @@
 | `song-prompt-builder` | 出 Suno / 秒响提示词 |
 | `production-antislop` | 出歌雷同、没特点 |
 
-**8 份 references**（`references/{名}.md`）：`anti-ai-lexicon`（去 AI 味词库）、`production-lexicon`（演奏法/质感/反差/事件句）、
+**9 份 references**（`references/{名}.md`）：`anti-ai-lexicon`（去 AI 味词库）、`production-lexicon`（演奏法/质感/反差/事件句）、
 `production-params`（九维）、`song-structure`（结构句数）、`suno-tags`（标签库）、
 `platform-miaoxiang`（秒响规范）、`rhyme-zh` / `rhyme-en`（韵表）、`logging`（记录规则）。
 
