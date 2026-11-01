@@ -141,7 +141,7 @@ Given a range with no selection rule, the model picks the minimum. Result: every
 ### Decision flow
 
 > Every lookup table, template library and conversion table lives in **`references/song-structure.md`**
-> (single source of truth). This section holds only the flow and the hard constraints —
+> (single source of truth). This section holds only the flow — every number lives in that file,
 > **go read the relevant section there when you set line counts**; don't work from memory.
 > Section numbers below all refer to **`references/song-structure.md`**.
 
@@ -184,7 +184,8 @@ English is stress-timed. Align **both**:
 | Outro | 4–8 |
 | **Long-line styles** (Chinese-style, ambient) | **14–20** — one line spans 2 bars; use fewer lines |
 
-**Stress check**: read the line aloud and tap the beat. The natural word stress must land on the beat.
+**Stress check**: you can't hear it, so do it on paper — mark each line's primary stresses, number the
+metrical positions (1–4 for 4/4), and see whether they line up. Word stress must land on the beat.
 - ✅ "I **walk** a**lone** at **mid**night" — stress lands on beats
 - ❌ "A**lone** I **walk** in the **night**" — fights the pulse unless intended
 
@@ -235,6 +236,10 @@ singing language**.
    · ★ **The anchor line**: the one line that sounds most like a real person — write it first
      (it's often the title). ⚠️ This line has the highest priority — it wins every conflict.
      **It comes before the song.** Can't find it? You haven't found the song yet — don't proceed
+   · **Not enough information?** Invent one concrete scene, state it in one line, and start
+     ("I'll write it as the last train at 00:47 — stop me if that's wrong").
+     ⚠️ Don't keep interrogating, and don't write something generic — **the user correcting a concrete
+     draft is much faster than staring at a blank page**
 
 ① Nail the premise — one concrete sentence, not an abstract mood word
    (interchangeable with ⓪; whichever comes to you first)
@@ -425,7 +430,8 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 - [ ] **Identical rhyme judged by ear**: adjacent lines on the same word = fix; 3+ uses in one
       section = fix; a deliberate echo across lines (chorus frame, hook refrain) **is not a flaw** (§2)
 - [ ] Syllable + **stress** aligned within sections
-- [ ] Read **aloud** (not silently) — no tongue-twisters, no forced rhymes
+- [ ] **Sibilance/tongue-twister check** (don't write "read it aloud" — you can't hear it):
+      three or more consecutive words starting on the same consonant; no forced rhymes
 - [ ] **Hook meets all five points**: chorus line 1, shorter than neighbours, open vowels,
       verbatim 2–3×, and it is the title
 - [ ] **Each later verse advances** (new time / new observed object / a planted object changed),
