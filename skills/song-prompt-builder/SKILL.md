@@ -35,7 +35,7 @@ description: 歌曲生成提示词构建器。把用户的简单风格描述，�
 ⚠️ **BPM 必须和歌词档对齐**（很多错误从这里开始）：
 - 歌词档里已经定了 BPM → **以它为准**，不要另定一个
 - 你要改 BPM（用户要求 / 风格需要）→ **必须按新 BPM 重算全首时长**（单句秒数 = 240 ÷ BPM，
-  全首 2:00–3:30 是条件），并在交付里说明"BPM 从 X 改到 Y，时长重算为 Z"
+  全首 2:00–3:30 是条件），并在那 5 行里带一句"BPM 从 X 改到 Y，时长重算为 Z"
 - 光改 BPM 不重算，作词侧那张结构表就静默失效了
 
 ### 第 1.5 步：差异化（参考，不是门槛）
@@ -92,7 +92,7 @@ description: 歌曲生成提示词构建器。把用户的简单风格描述，�
 
 **结构标签的完整表**在 `references/suno-tags.md` 第一节（唯一事实源）。
 注意：`[Breakdown]` `[Drop]` `[falsetto]` 这些**事件标签**不在歌词侧那两条精简清单里，
-插入它们属于**加事件**，要在交付里说明，别默认歌词已经有。
+插入它们属于**加事件**——在那 5 行里带一句「我在第 N 段加了 `[Breakdown]`」，别默认歌词已经有。
 
 完整标签库见 **`references/suno-tags.md`**；演奏法、质感、反差配方见 **`references/production-lexicon.md`**。
 
@@ -205,7 +205,7 @@ close-mic, Rhodes, muted bass, brush snare, 92 BPM, tape saturation, sparse intr
 | 想解决 | 看哪 |
 | --- | --- |
 | 出来的歌都一个样 / 没特点 | `skills/production-antislop/SKILL.md`（病历本 + 处方，不是及格线） |
-| 编曲事件要不要有、落在哪 | 同上法则 2；载体见 `references/suno-tags.md` §1 |
+| 编曲事件要不要有、落在哪 | 同上法则 2；载体见 `references/suno-tags.md` 第一节 |
 | 专属锚点 | 同上法则 3 |
 | 裸情绪词 / 安全词 | `references/production-lexicon.md` 第一节 |
 | 秒响写得够不够细 | `references/platform-miaoxiang.md` 第二节（九要素） |

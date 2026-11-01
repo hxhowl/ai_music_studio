@@ -315,8 +315,10 @@ Formal metrics fight each other, and they fight the quality goal. **The priority
 > **private voice > sings like speech > rhyme > syllable alignment**
 
 **Conditions that never yield** (only these four; everything else gives way):
-equal line counts for repeats of the same function, whole song 2:00–3:30, tag format,
-Suno ≤200 characters.
+tag format, equal line counts for repeats of the same function, whole song 2:00–3:30, singability.
+
+⚠️ **"Suno ≤200 characters" is NOT a lyric-side condition** — that limit applies to the Style
+field, i.e. to prompts. Lyrics have no character limit. Don't mix the two sides up.
 
 ⚠️ **The per-line syllable cap is NOT one of them** — it's a reference, not a hard limit.
 It used to be written as "must be satisfied no matter what", and the result was a model that kept
