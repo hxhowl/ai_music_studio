@@ -125,13 +125,17 @@
 
 | 类别 | 标签 |
 | --- | --- |
-| 录音质感 | `lo-fi` `tape saturation` `vinyl crackle` `warm analog` `crisp digital` `raw` `polished` |
-| 空间 | `reverb-heavy` `dry` `close-mic` `intimate close-mic` `spacious` `cathedral reverb` `ambient` |
+| 录音方式 / 质感 | `close-mic` `intimate close-mic` `single-mic live take` `lo-fi` `tape saturation` `vinyl crackle` `warm analog` `crisp digital` `raw` `polished` |
+| 空间与介质 | `reverb-heavy` `dry` `no reverb` `spacious` `cathedral reverb` `spring reverb` `plate reverb` `ambient` |
 | 年代 | `80s` `90s` `70s` `60s` `retro` `vintage` `modern production` `bedroom pop` |
 | 响度 / 动态 | `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` `sparse intro` `dynamic contrast` `slow build` |
 
-> ⚠️ **「响度 / 动态」这一行不算质感。** 条件 10 的质感只认**年代 / 录音方式 / 空间与介质**三行——
-> `sparse intro` `building` 这类是**动态词**，用来承载编曲事件，拿它们顶质感等于条件白过。
+> ⚠️ **前三个维度才叫质感**（条件 10 要的是这三个里占两个）。年代、录音方式、空间与介质是**三件不同的事**——
+> `close-mic` 属**录音方式**（话筒距离），`dry` / `reverb` 属**空间**，`tape hiss` 属**介质**。
+> `dry close-mic` 这种复合标签同时覆盖方式和空间，可以算两项。
+
+> ⚠️ **「响度 / 动态」这一行不算质感。** `sparse intro` `building` 这类是**动态词**，用来承载编曲事件，
+> 拿它们顶质感等于条件白过。
 
 > ⚠️ 年代词**必须配器材**才有效（`80s, gated reverb drums`）。单写 `80s` / `retro` / `vintage` 是泛词，
 > 见 `references/production-lexicon.md` 第一节。
@@ -169,7 +173,7 @@
 {bpm} BPM, {production}
 
 古风（⚠️ 别用「古筝+二胡+戏腔+大混响」——那正是 `production-antislop` 的反面例子）：
-guofeng, pentatonic, {vocal 音区}, {vocal 音色}, {vocal 唱法}, dry close-mic, {录音方式},
+guofeng, pentatonic, {vocal 音区}, {vocal 音色}, {vocal 唱法}, close-mic, {空间与介质},
 yangqin, {演奏法}, breathy xiao, muted upright bass, {反差乐器},
 {bpm} BPM, sparse, dark
 Exclude：no operatic vocal, no heavy reverb, no vibrato

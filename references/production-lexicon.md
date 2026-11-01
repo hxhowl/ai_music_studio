@@ -112,7 +112,8 @@
 | 织体 | `solo` `layered harmonies` `stacked vocals` `call and response` `unison doubling` |
 | 处理 | `dry close-mic` `slapback delay` `no reverb` `doubled vocal` `telephone-effect` |
 
-> ⚠️ `close-mic` 属于「空间」，不是唱法——它可以写，但**不能拿它顶三件套里的唱法**。
+> ⚠️ `close-mic` 属于「**录音方式**」（话筒距离），不是唱法——它可以写，但**不能拿它顶三件套里的唱法**。
+> 条件是三件套里"唱法"那一件，`close-mic` 顶不了。
 
 ---
 

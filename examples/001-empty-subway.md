@@ -299,7 +299,7 @@ no autotune, no vocoder, no choir, no saxophone, no four-on-the-floor
 | `female alto` | 女声中低音区 —— 比 `female vocals` 多一个音区决定 |
 | `breathy` | 气声（**音色**），贴合疲惫感 |
 | `near-spoken` | 近独白（**唱法**）—— 三件套的第三件；主歌像说话，副歌才展开 |
-| `close-mic` | 近讲（**空间**质感），耳边私密感 |
+| `close-mic` | 近讲（**录音方式**：话筒距离），耳边私密感 |
 | `felt piano` | 呢垫钢琴，闷而软，不是通用 `piano` |
 | `muted bass` | 闷音贝斯，冷且克制（字符预算下省略"立式"，秒响版仍写全） |
 | `brush snare` | 刷鼓，避免军鼓的"打点感" |

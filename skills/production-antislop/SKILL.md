@@ -125,7 +125,7 @@ near-spoken, close-mic, felt piano, muted bass, brush snare, tape hiss,
 Exclude: no saxophone, no wide reverb, no choir
 ```
 > 情绪词只剩 1 个且带场景；**3 件乐器**全带演奏法或器材；人声三件套齐（`female alto` 音区 +
-> `breathy` 音色 + `near-spoken` 唱法）——⚠️ `close-mic` 是空间不是唱法，不能顶这一位；
+> `breathy` 音色 + `near-spoken` 唱法）——⚠️ `close-mic` 是**录音方式**（话筒距离），不是唱法，不能顶这一位；
 > `close-mic` + `tape hiss` 定质感；`sparse intro` + `building` + `dynamic contrast` 给能量曲线。
 > ⚠️ **本例没有反差音色**——那是参考项，不是条件。硬凑一件反而破坏风格。
 
@@ -140,7 +140,7 @@ indie folk, male vocals, acoustic guitar, warm, nostalgic, 92 BPM
 **改后（Style）**
 ```
 indie folk, fingerpicked nylon-string guitar, upright bass, brushed snare,
-male baritone, breathy, near-spoken, dry close-mic, single-mic live take,
+male baritone, breathy, near-spoken, dry, single-mic live take,
 92 BPM, sparse intro, dynamic contrast
 Exclude: no harmonica, no string section, no big reverb
 ```
@@ -165,12 +165,12 @@ guzheng, erhu, strings, cinematic, spacious reverb
 
 **改后**
 ```
-guofeng, pentatonic, female alto, clear tone, near-spoken, dry close-mic,
+guofeng, pentatonic, female alto, clear tone, near-spoken, dry,
 vintage ribbon mic, yangqin, tremolo picked, breathy xiao, muted upright bass,
 808 sub bass, 76 BPM, sparse, dark
 Exclude: no operatic vocal, no heavy reverb, no vibrato
 ```
-> 换掉古筝二胡（扬琴 + 箫，且都带演奏法）、`dry close-mic` + `vintage ribbon mic` 拿掉大混响、
+> 换掉古筝二胡（扬琴 + 箫，且都带演奏法）、`dry` + `vintage ribbon mic` 拿掉大混响、
 > `no vibrato` 放进 Exclude、**`808 sub bass` 是反差锚点**——古的变重的。这一件乐器，比十个情绪词都管用。
 
 ---
