@@ -360,7 +360,7 @@ damaged for no real gain, and the self-check still passed it.
 | Problem | Symptom | Fix |
 | --- | --- | --- |
 | Forced rhyme | "the light of my sight" | Rewrite so the rhyme word is the *only* right word |
-| Stress clash | Right syllables, wrong accents | Retap the beat, move the word |
+| Stress clash | Right syllables, wrong accents | Re-mark the stresses and count beats again, then move the word |
 | Abstract pile-up | lonely, broken, lost, hollow | Swap for concrete: cold coffee, unread text |
 | Dead chorus | Every line is new | Put hook at line 1, repeat 2–3x |
 | POV drift | I / you / he mixed | Keep one; bridge may switch |
