@@ -270,6 +270,28 @@ Formal metrics fight each other, and they fight the quality goal. **The priority
 | Perfect rhyme, awkward line | The rhyme gives way |
 | Even syllables, but it reads fake | Alignment gives way (ragged edges are wanted anyway) |
 
+### No deferring: make the call
+
+The second face of defensiveness — **refusing to judge, pushing the decision back to the user.**
+
+❌ Real output (《疯狂动物园》 v7):
+
+> "Both images work: this version emphasises 'animals at leisure in high society', the lion-barber
+> version emphasises 'animals doing human service work'. **Whichever you prefer.**"
+> "**Two things you could keep or drop.**"
+
+They asked you to write; you handed back a menu. Same disease as over-justifying: **not taking
+creative responsibility.**
+
+| Never write | Write instead |
+| --- | --- |
+| both work, whichever you prefer | I chose A because (one reason) |
+| keep it or drop it / or you could | (just decide) |
+| if you want it more restrained, swap to X | already swapped to X (if it really is better) / don't mention it |
+
+**If you want to offer an alternative, one sentence max**: "The other direction is X; I picked Y
+because Z." Then stop.
+
 ⚠️ **Never sacrifice a line that already passed the private-voice test just to fix a formal metric.**
 
 Actual case (2026-10-31, 《疯狂动物园》): `我说 哥 周一还得交周报` was rewritten to
