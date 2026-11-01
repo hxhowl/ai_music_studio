@@ -426,22 +426,29 @@ second lyric line
 ```markdown
 # Lyrics · "{Title}" v1        ← v1 is explicit; no "first version omits it" special case
 
-> Version note: what changed vs. previous; path to previous file
+> Previous: outputs/{song}/…-v0-20260101.md    ← write "none" for the first version
 
-## 1. Lyrics                   ← code block, copy-paste ready
-## 2. Structure & Line Count   ← lines per section, why (ACTUAL BPM + job + duration)
-                              ← actual BPM and its source (user-specified / template default)
-                              ← if it differs from the template typical BPM, what changed
-## 3. Rhyme Check               ← family + density (how many lines go unrhymed, and where)
-## 4. Imagery & Rhyme Design   ← image cluster + why this family (write it when lyric-imagery-rhyme was used)
-## 5. Design Notes
-## 6. Self-Check               ← **list only what failed + one-line verdict**;
-                               ← no ticking every box, no score like 11/11
+## Lyrics                   ← code block, copy-paste ready
+
+---
+**One line each**: what you chose (template / BPM), what changed, what still bothers you —
+**five lines max**.
 ```
 
-> ⚠️ **Length rule**: sections 2–6 together must not exceed the length of section 1 (the lyrics).
-> Across seven real revisions the commentary ran 61–69% of the file — the reader had to page through
-> a full screen of justification before reaching the song (`AGENTS.md` §7 「交付形态」).
+**That's it.** They asked for a song, not a case file.
+
+### Expand only when asked
+
+| They ask | You give |
+| --- | --- |
+| "Why this structure?" | template, actual BPM and its source, why that many lines |
+| "How does the rhyme work?" | family + density (how many lines unrhymed, and where) |
+| "What imagery did you use?" | image cluster + why this family |
+| "Did you self-check?" | only what **failed**; all clear = one sentence |
+
+⚠️ **Don't volunteer the expansions.** Across seven real revisions the commentary ran 61–69% of the
+file — the reader had to page through a full screen of justification before reaching the song
+(`AGENTS.md` §7 「交付形态」).
 
 ---
 
