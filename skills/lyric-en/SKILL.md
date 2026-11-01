@@ -116,7 +116,21 @@ State **why** you chose this template.
 ⚠️ English and Chinese differ here on purpose: Chinese defaults to **rhyming every line** because it
 doesn't lean on word stress to hold the pulse; English defaults to every-other-line.
 Don't copy one language's density into the other.
-⚠️ Rhyming every line doesn't mean reusing the same rhyme word — pick another word in the family.
+⚠️ **Rhyming every line doesn't mean reusing the same rhyme word.** But judge "identical rhyme"
+by **how it sounds**, not by a poetry manual:
+
+| Case | Verdict |
+| --- | --- |
+| **Two adjacent lines** end on the same word | **Lazy — fix it.** Back-to-back, the ear catches it instantly |
+| Same word 2+ lines apart, **deliberately echoing** | **It's a device — keep it** (chorus question/answer, hook refrain, anaphora) |
+| Same word 2+ lines apart, just out of words | Audible but tolerable; swap for another word in the family if you can |
+| The **same word 3+ times** in one section | Thin no matter the spacing — fix it |
+
+> Traditional Chinese prosody forbids repeating a rhyme word anywhere in a stanza, adjacent or not —
+> that's an exam rule, and pop songs don't obey it. Listeners don't count how many times "zoo" shows
+> up; they hear it immediately when two lines in a row land on it.
+> Real case: 「这是不是个动物园 / … / 这是疯狂的动物园」— the same character 3 lines apart, forming a
+> question-and-answer frame. **That's structure, not a flaw. Don't "fix" it.**
 
 ---
 
@@ -408,7 +422,8 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 **Line craft (open when it "doesn't read like a lyric")**
 - [ ] Chorus rhyme family consistent; verse scheme stated; **density meets the default (§2)** —
       chorus has no unrhymed line, verse at most one and not the last
-- [ ] No repeated rhyme word used twice as the line-ending
+- [ ] **Identical rhyme judged by ear**: adjacent lines on the same word = fix; 3+ uses in one
+      section = fix; a deliberate echo across lines (chorus frame, hook refrain) **is not a flaw** (§2)
 - [ ] Syllable + **stress** aligned within sections
 - [ ] Read **aloud** (not silently) — no tongue-twisters, no forced rhymes
 - [ ] **Hook meets all five points**: chorus line 1, shorter than neighbours, open vowels,
