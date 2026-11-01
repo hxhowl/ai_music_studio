@@ -48,7 +48,7 @@ ai_music_studio/
 │   ├── platform-miaoxiang.md          ← 秒响（Sway）提示词规范
 │   ├── rhyme-zh.md                    ← 中文十三辙 + 常用韵字表
 │   └── rhyme-en.md                    ← 英文押韵体系 + 韵族词表
-├── examples/                          ← 001 完整交付样例、002 版本化范本（新版文件该怎么写）
+├── examples/                          ← 001 全流程演示（展开版）、002 版本化范本
 └── outputs/                           ← 交付物落盘处（不进 git）
     └── {歌曲名}/                      ← 每首歌一个文件夹，歌词与提示词都放里面
         ├── {歌曲名}-lyrics-v{N}-YYYYMMDD.md

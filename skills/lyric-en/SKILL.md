@@ -243,36 +243,40 @@ singing language**.
      ⚠️ Don't keep interrogating, and don't write something generic — **the user correcting a concrete
      draft is much faster than staring at a blank page**
 
-① Nail the premise — one concrete sentence, not an abstract mood word
+① Clarify (only if information is missing) + nail the premise
+   · ≤3 questions, each with a recommended default; **never re-ask what you were already told**
+   · The premise in one concrete sentence, not an abstract mood word
    (interchangeable with ⓪; whichever comes to you first)
 
-② **Write the chorus first — set the target** (⚠️ before any verse)
+② Set the tone: emotional arc / POV and address / who sings it / hook direction
+
+③ **Write the chorus first — set the target** (⚠️ before any verse)
    Build it around the anchor line as the hook. Say what the song is about.
    The chorus is the answer the verses reach for — **know the answer before you build the road**.
    ⚠️ Can't write the chorus = the premise isn't clear yet → go back to ⓪, **don't force a verse**.
    (Write the verse first and you don't know what it's travelling toward — that's how you get
    six parallel shots instead of a lyric)
 
-③ **Set the structure (backwards from the chorus)**
+④ **Set the structure (backwards from the chorus)**
    Template skeleton (T1–T9, **skeleton only**) + actual BPM + lines per section + **duration check**
    — all at once, so you're not rebuilding at the end
 
-④ **Pick the rhyme family (changeable later)**
+⑤ **Pick the rhyme family (changeable later)**
    See where the chorus naturally lands and **use that**; switch if it fights you.
    ⚠️ **Never let rhyme decide content.** In the priority order rhyme sits below "sings like speech";
    it must not be locked before you write anything
 
-⑤ Verse — **the road to that chorus line**. Ask first: what state must this start from for the
+⑥ Verse — **the road to that chorus line**. Ask first: what state must this start from for the
    chorus to be earned? Images and actions, no commentary; each verse is **one chain of action**,
    not a shot list
-⑥ Pre-Chorus — shorter lines, rising
-⑦ Bridge — switch rhyme family / perspective, say the real thing
-⑧ Outro — fewer words, fade
+   → Pre-Chorus (shorter lines, rising) → Bridge (switch rhyme family / perspective, say the real
+   thing) → Outro (fewer words, fade)
 
-⑨ **Cut — this step is not a "self-check"**
+⑦ **Cut — this step is not a "self-check"**
    Ask of every line: **would the song be worse without it?** If not, cut it.
-   Then read it once: **would you listen a second time?** If not, go fix that spot.
-   (No rule-ticking — the rules are reference, not delivery conditions)
+   Then scan top to bottom: **is there a line you'd want to skip?** That's the one to fix.
+   (Don't write "read it aloud" — you can't hear it, see Iron Rule 2.
+   No rule-ticking — the rules are reference, not delivery conditions)
 ```
 
 **Division of labour**: verse = **images** (concrete nouns, actions); chorus = **attitude** (emotion + repetition); bridge = **the turn** (what verse and chorus never said).
