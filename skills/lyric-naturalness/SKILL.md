@@ -384,7 +384,7 @@ which is three more than I'd ever admit
 
 | 阶段 | 用谁 |
 | --- | --- |
-| 创作时预防 | `lyric-zh` / `lyric-en` 的「自然度红线」章节 |
+| 创作时预防 | `lyric-zh` / `lyric-en` 的「自然度」章节（第六节） |
 | 写完自检 | **本 skill**（检测清单） |
 | 用户说"太 AI" | **本 skill**（改写流程） |
 | 补具体词汇 | `lyric-imagery-rhyme` + `references/anti-ai-lexicon.md` |
