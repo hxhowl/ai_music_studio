@@ -152,7 +152,7 @@ Given a range with no selection rule, the model picks the minimum. Result: every
 | ③ Count lines | `sec/line ≈ 240 ÷ ACTUAL BPM`; chorus floor then comes from its emotional job | §2, §4 |
 | ④ Validate | Chorus duration, whole-song duration, line-count relations | §2, §5, §8 |
 
-### Three hard constraints
+### Three things that trip people up (① and ③ are conditions; ② is a reference)
 
 **① A template gives the skeleton; recalculate line counts at the actual BPM.**
 Measured: T2's 6-line chorus at 120 BPM = 12 sec, below the floor.
@@ -160,10 +160,12 @@ Measured: T2's 6-line chorus at 120 BPM = 12 sec, below the floor.
 At 120 BPM the fix is **8 lines + `[Post-Chorus]`**, not 9 lines (a 9-line chorus is overlong for pop).
 The verse usually stays: 6 lines fits the 10–20 sec band from 70 to 140 BPM.
 
-**② Chorus 15–22 sec, whole song 2:00–3:30 — but the two constraints are asymmetric.**
-- **The line floor is hard**: build 6–8, one-punch 4, needs-3-variations 6 (full table: `song-structure.md` §4)
-- **The seconds floor is soft**: 15 sec is an empirical band measured at 85 BPM. At high BPM **keep the lines and let the seconds fall short** — cutting lines to hit seconds destroys information and fixes the wrong thing. Buy time with `[Post-Chorus]` or another repeat
+**② A chorus usually runs 15–22 sec — but this is a reference, not a floor.**
+- 15 sec is an empirical band measured at 85 BPM, not a constant. At high BPM **keep the lines and let
+  the seconds fall short** — cutting lines to hit a number destroys information and fixes the wrong thing.
+  Buy time with `[Post-Chorus]` or another repeat
 - A narrative-tag chorus (folk, rap) may run as short as 10 sec; it builds memory through repetitions
+- **What is actually checked is the whole song's 2:00–3:30** (condition 4), not the chorus's line count
 
 **③ Line-count relations go by function, not position.**
 - **Repeats of the same function must be equal** (V1=V2, C1=C2, PC1=PC2) — same melody; unequal counts are unsingable
@@ -373,17 +375,19 @@ damaged for no real gain, and the self-check still passed it.
 **The root cause of AI-sounding lyrics is averaging** — if anyone could have written it, it belongs to no one. Hold these at the drafting stage; don't leave it for a post-write fix.
 
 - **Three questions per line**: can a camera film it? would it still work in a different song? is there one detail nobody else would write?
-- **≥ 3 concrete nouns per verse** (a *floor*, not a target); **≤ 3 abstract emotion words** in the whole song
+- **Details a camera could film — but don't count them.** Hitting some noun quota is how you end up
+  with a shot-list; the number is not the point
 - ⚠️ **Details must chain, not pile up**: every line picks up from the one before, and the last line
   completes an action or a turn. Counting nouns is the fastest way to write a shot-list instead of a
   lyric (this actually happened — see `lyric-naturalness` rule 1).
   Tests: **the deletion test** (delete any line — does the next one still connect? if yes, nothing was
   connected) and **the subject test** (are 6 lines carrying 6 unrelated subjects?)
-- **Keep one through-line object**: at least one object appears **≥ 2 times and its state changes**
+- **Keep one through-line object**: bring the same object back **once, and change its state**
   (still on the lanyard → chewed up → still there). A brand-new object every section passes
   every per-section check yet leaves the song with no spine — objects must **carry the story**,
   not decorate it
-- **≥ 1 contemporary object**: 12% battery, a delivery note, a read receipt, the last train, a locker pickup code
+- **A contemporary object**: 12% battery, a delivery note, a read receipt, the last train, a locker pickup code
+  (not something that could equally sit in a song from 1990)
 - **Generic imagery must be qualified**: not "rain" — "the kind of rain that flips your umbrella"
 - **Vary line length**: keep the opening lines aligned, then let **one line (usually the last)** run clearly longer or shorter as a landing line. Never all lines equal (fake), never all over the place (unsingable)
 - **Heavier emotion, lighter wording**: not "I miss you till I cry" — "your toothbrush is still in the cup"
@@ -394,19 +398,12 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 ## 7. Delivery check
 
-### Only these five are gates — **wrong is wrong**, regardless of how good the writing is
+### Check conditions 1–5 of `AGENTS.md` §7
 
-- [ ] **Section tags**: Suno-standard English, bracketed, own line, no Chinese inside
-- [ ] **Formatting**: lyrics in a code block, one line per lyric line, **no blank lines between
-      lines**, one blank line between sections
-- [ ] **Versioning**: revisions wrote a **new file** with a version number (v1 for the first too);
-      the original was not overwritten
-- [ ] **Structural sanity**: repeats of the same function have equal line counts (V1=V2, C1=C2);
-      **whole song 2:00–3:30** (computed with the actual BPM)
-- [ ] **Singable**: no artist names, brands, or unpronounceable proper nouns
+This file **does not restate them** — conditions live in one place only (four copies had begun
+to drift). Go read those five: **versioning / section tags / formatting / structural sanity / singable**.
 
-> If all pass, write one sentence — **don't tick every box** (`AGENTS.md` §7 「交付形态」).
-> **Nothing outside these five is a gate.**
+> If all pass, write one sentence — no ticking, no score. **Nothing outside those five is a gate.**
 
 ### Below is the diagnostic table — **consult it when stuck, not as a delivery gate**
 
@@ -422,7 +419,7 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
       (cause / escalation / turn / contrast). "They're all describing X" means it's a list, not a lyric
 - [ ] **The chorus is inevitable**: it's forced out by the verse, not a new topic
 - [ ] **Each section's last line travels further than its first** (there's an arc inside a section too)
-- [ ] **One object appears ≥ 2 times and its state has changed** (a through-line, not decoration)
+- [ ] **One object comes back once and its state has changed** (a through-line, not decoration)
 
 **Line craft (open when it "doesn't read like a lyric")**
 - [ ] Chorus rhyme family consistent; verse scheme stated; **density meets the default (§2)** —
@@ -439,10 +436,10 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 - [ ] Verse gives images, chorus gives attitude, bridge gives the turn
 
 **Naturalness (open when it "reads like AI"), §6**
-- [ ] **≥ 3 concrete nouns per verse**; ≤ 3 abstract emotion words in the whole song
+- [ ] Details a camera could film — **not counted** (counting is what produces a shot-list)
 - [ ] **Details chain, they don't pile up** — passes the deletion test and the subject test,
       not one object per line
-- [ ] ≥ 1 contemporary object; generic imagery is qualified
+- [ ] A contemporary object is present; generic imagery is qualified
 - [ ] At least one line only this person would say; line lengths vary
       (highest-priority signal here — it marks what's most worth fixing, it doesn't fail the song)
 
