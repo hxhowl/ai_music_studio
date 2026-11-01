@@ -331,7 +331,7 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
       **validation used the ACTUAL BPM, not the template's typical BPM**
 - [ ] **Singable**: no artist names, brands, or unpronounceable proper nouns
 
-> If all pass, write one sentence — **don't tick every box** (`AGENTS.md` §7 item 13).
+> If all pass, write one sentence — **don't tick every box** (`AGENTS.md` §7 「交付形态」).
 > **Nothing outside these five is a gate.**
 
 ### Below is the diagnostic table — **consult it when stuck, not as a delivery gate**
@@ -441,7 +441,7 @@ second lyric line
 
 > ⚠️ **Length rule**: sections 2–6 together must not exceed the length of section 1 (the lyrics).
 > Across seven real revisions the commentary ran 61–69% of the file — the reader had to page through
-> a full screen of justification before reaching the song (`AGENTS.md` §7 item 13).
+> a full screen of justification before reaching the song (`AGENTS.md` §7 「交付形态」).
 
 ---
 
