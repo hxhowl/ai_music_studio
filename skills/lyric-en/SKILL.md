@@ -23,11 +23,11 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 2. **`[Breakdown]` `[Drop]` `[whisper]` `[falsetto]` are where arrangement events land**, not just structural markers (Suno's Style field can't parse sentences)
 3. **Instrumental-only sections carry the tag and nothing else** — one blank line after, no prose underneath
 
-### Templates (skeleton only — line counts are computed at source)
+### Templates (skeleton only)
 
-> ⚠️ Line counts are deliberately **not listed here**. They must be computed at the ACTUAL BPM (§3);
-> copying a number off a table is the most common failure. Full calculations, selection rules and the
-> measured 120 BPM case: **`references/song-structure.md` §6, §7, §8**.
+> ⚠️ Line counts are deliberately **not listed here** — they come from the **emotional job** (§4)
+> and the subject relation, *not* from tempo. Templates, selection rules and line-count decisions:
+> **`references/song-structure.md` §2, §3, §4**.
 
 | Template | Style | Typical BPM |
 | --- | --- | --- |
@@ -136,7 +136,12 @@ by **how it sounds**, not by a poetry manual:
 
 ## 3. Line count & meter — never default to 4 lines
 
-Given a range with no selection rule, the model picks the minimum. Result: every section is 4 lines — the whole song runs ~1:51 (below the 2:00 floor), the chorus arrives and leaves in 11 seconds, **so the emotion never has time to land**. Equal line counts across sections is structural "AI symmetry." **Line count is calculated, not guessed.**
+Given a range with no selection rule, the model picks the minimum — so every section gets 4 lines. Two reasons why that fails:
+
+- **A 4-line chorus**: one pass of the hook and it's gone. Nothing sticks. Building emotion needs at least 6 lines — line 1 plants it, line 2 opens it, line 3 pushes it
+- **Equal counts everywhere (4/4/4/4)**: structural "AI symmetry." Real songs run a longer chorus than verse (ballads) or a shorter one (story songs) — **they almost never match**
+
+**Line count comes from how much the emotion needs to say — not from seconds.**
 
 ### Decision flow
 
@@ -149,8 +154,11 @@ Given a range with no selection rule, the model picks the minimum. Result: every
 | --- | --- | --- |
 | ① Pick template | Narrow to T1–T9 in four steps; **don't take the familiar one** | §7 |
 | ② Set BPM | Use the user's if given; else take the **template's typical BPM** and state it | §8 |
-| ③ Count lines | `sec/line ≈ 240 ÷ ACTUAL BPM`; chorus floor then comes from its emotional job | §2, §4 |
-| ④ Validate | Chorus duration, whole-song duration, line-count relations | §2, §5, §8 |
+| ③ Set line counts | Chorus from its **emotional job**, verse from the **subject relation** | §4 |
+| ④ Check relations | Repeats equal; verse / pre-chorus / chorus differ | §5 |
+
+> ⚠️ **Line count is decided by how much the emotion needs to say — not calculated.**
+> Deriving it from seconds means every section is padding, and no line has a reason to exist.
 
 ### Three things that trip people up (① and ③ are conditions; ② is a reference)
 
@@ -174,18 +182,9 @@ The verse usually stays: 6 lines fits the 10–20 sec band from 70 to 140 BPM.
 - Bridge / outro **may match** those (one-off sections with their own melody)
 - ⚠️ Never write "adjacent sections must not have equal line counts" — followed literally, V1 and V2 end up different, but they share one melody and can't be
 
-### Syllables & stress
+### Stress & breath
 
-English is stress-timed. Align **both**:
-
-| Section | Syllables / line (**reference range**, 85 BPM baseline) |
-| --- | --- |
-| Verse | 8–12 |
-| Chorus | 7–12 |
-| Pre-Chorus | 5–8 |
-| Bridge | 6–10 |
-| Outro | 4–8 |
-| **Long-line styles** (Chinese-style, ambient) | **14–20** — one line spans 2 bars; use fewer lines |
+English is stress-timed, so **stress placement matters more than syllable count**:
 
 **Stress check**: you can't hear it, so do it on paper — mark each line's primary stresses, number the
 metrical positions (1–4 for 4/4), and see whether they line up. Word stress must land on the beat.
@@ -198,11 +197,13 @@ metrical positions (1–4 for 4/4), and see whether they line up. Word stress mu
 > (the most human line in the song) was rewritten to `我烦恼 周一汇报还得交` to cut syllables and
 > force an AABB — zero gain, pure loss, and the self-check still passed it.
 
-**Syllables move with BPM too**: the table above assumes ~85 BPM. The practical limit is one breath —
-at **90–110 BPM → 10–13 syllables**, 120–140 → **8–11**, 160+ → **6–8**.
-English caps are **1.2–1.5× the Chinese character counts** (English carries more syllables per bar,
-but consonants cap its throughput, so the multiplier shrinks as tempo rises).
-Full table: `references/song-structure.md` §2.
+### Line length: no table, one test
+
+**A line has to be singable in one breath.** That's the whole rule.
+
+- Faster songs naturally carry shorter lines; slower songs can stretch
+- Long-line styles (Chinese-style, ambient) span 2 bars — roughly twice the syllables of a normal line
+- **No syllable table.** Syllable count is a *result* of tempo and phrasing, not a target to write toward
 
 ### Mixed language
 
@@ -222,10 +223,11 @@ singing language**.
 2. **Don't add a language for flavour** — the borrowed line must say something English can't
 3. **Section tags are unaffected** — they stay English regardless
 
-**Rule of thumb**: within a section, corresponding lines must match syllable count within ±2 AND stress position.
-**Long-line styles: check total syllables, not lines** — target **45–90 syllables in the chorus**.
+**Rule of thumb**: within a section, corresponding lines should match in syllable count (roughly) AND stress position. Stress matters more.
+**Long-line styles: length lives in syllables, not line count** — 4 long lines feel like 8 normal ones.
 
-**State at delivery**: which template (T1–T9) and why; **the actual BPM and its source** (user-specified / template default); lines per section and why (ACTUAL BPM + emotional job + duration check); if it differs from the template typical BPM, what changed.
+**Explainable if asked** (don't volunteer it, see `AGENTS.md` §4 delivery form): which template (T1–T9) and why; the actual BPM and its source; lines per section and why.
+**Don't deliver a duration calculation.** The user asked for structure, not an arithmetic table.
 
 ---
 
@@ -261,8 +263,8 @@ singing language**.
    six parallel shots instead of a lyric)
 
 ④ **Set the structure (backwards from the chorus)**
-   Template skeleton (T1–T9, **skeleton only**) + actual BPM + lines per section + **duration check**
-   — all at once, so you're not rebuilding at the end
+   Template skeleton (T1–T9, **skeleton only**) + lines per section + BPM
+   Line counts come from the emotional job (chorus) and the subject relation (verse); BPM only changes line length, not counts
 
 ⑤ **Pick the rhyme family (changeable later)**
    See where the chorus naturally lands and **use that**; switch if it fights you.
@@ -456,13 +458,9 @@ to drift). Go read those five: **versioning / section tags / formatting / struct
       (highest-priority signal here — it marks what's most worth fixing, it doesn't fail the song)
 
 **Line count (open when "the structure feels off"), §3**
-- [ ] **Not every section is 4 lines** — counts derived from BPM + emotional job, not the minimum
-- [ ] Whole-song duration sits in the normal band for its genre (≈2:00–3:30 for a standard single, 60–90s for a clip)
-- [ ] If the chorus runs past 22 sec, it is **stated and handled** (cut a line / convert to repeats) —
-      22 sec is a soft ceiling (T4's final chorus is 22.6s and still a valid template), so going over
-      isn't an error; going over silently is
+- [ ] **Not every section is 4 lines** — counts come from the emotional job, not the minimum
 - [ ] Verse and chorus differ in line count
-- [ ] **The chorus hasn't eaten the song**: chorus time ≤ 40% of total (≤ 50% for hook/clip templates), ≤ 4 choruses
+- [ ] **The chorus hasn't eaten the song**: ≤ 4 choruses, and something sits between them (they don't run back to back)
 - [ ] **The template's rationale matches the actual structure** — if you picked T4 "final chorus extended",
       it really is extended; don't leave the two disconnected
 - [ ] With ≥ 3 choruses there is a lift or a gap somewhere (pre-chorus / instrumental / strip-out),

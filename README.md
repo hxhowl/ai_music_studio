@@ -217,7 +217,7 @@ outputs/{歌曲名}/
 | 新曲风的标签 | `references/suno-tags.md` |
 | 新的韵字 / 韵族 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |
-| 新的段落模板 | `references/song-structure.md` 第六节（唯一事实源，**不要**在 skill 里另存副本） |
+| 新的段落模板 | `references/song-structure.md` 第二节（唯一事实源，**不要**在 skill 里另存副本） |
 | 改九维的维度 / 阈值 | `references/production-params.md`（唯一事实源，两个 skill 都从这里取） |
 | 完整工作流样例 | `examples/` |
 
