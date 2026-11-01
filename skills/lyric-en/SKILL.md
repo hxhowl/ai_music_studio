@@ -214,23 +214,44 @@ singing language**.
 ## 4. Writing flow
 
 ```
-⓪ **Lock the scene boundary** (before writing anything): what time / where / what the person is
-   doing / what objects actually exist there
-   e.g. not "lonely" — "00:47, last train, three people in the carriage, phone at 4%"
-   This decides the material for the whole song. Skip it and you write lines that fit any song,
-   which then has to be fixed afterwards by `lyric-naturalness`.
-   Detail: `lyric-imagery-rhyme` mode A step 1
+⓪ **Lock the scene + write the anchor line** (before anything else)
+   · Scene boundary: what time / where / what the person is doing / what objects actually exist
+     e.g. not "lonely" — "00:47, last train, three people in the carriage, phone at 4%"
+     Skip it and you write lines that fit any song
+   · ★ **The anchor line**: the one line that sounds most like a real person — write it first
+     (it's often the title). ⚠️ This line has the highest priority — it wins every conflict.
+     **It comes before the song.** Can't find it? You haven't found the song yet — don't proceed
+
 ① Nail the premise — one concrete sentence, not an abstract mood word
-② Pick a template (T1–T9, §1 four steps, **skeleton only**) → set the actual BPM → set line counts (§3)
-   Output a table: which template, actual BPM and its source, lines per section, target seconds, why
-③ Pick rhyme family for the chorus; lock it
-④ Take images and rhyme candidates **within the ⓪ boundary** (call `lyric-imagery-rhyme`)
-⑤ Verse — concrete nouns + verbs, no commentary
+   (interchangeable with ⓪; whichever comes to you first)
+
+② **Write the chorus first — set the target** (⚠️ before any verse)
+   Build it around the anchor line as the hook. Say what the song is about.
+   The chorus is the answer the verses reach for — **know the answer before you build the road**.
+   ⚠️ Can't write the chorus = the premise isn't clear yet → go back to ⓪, **don't force a verse**.
+   (Write the verse first and you don't know what it's travelling toward — that's how you get
+   six parallel shots instead of a lyric)
+
+③ **Set the structure (backwards from the chorus)**
+   Template skeleton (T1–T9, **skeleton only**) + actual BPM + lines per section + **duration check**
+   — all at once, so you're not rebuilding at the end
+
+④ **Pick the rhyme family (changeable later)**
+   See where the chorus naturally lands and **use that**; switch if it fights you.
+   ⚠️ **Never let rhyme decide content.** In the priority order rhyme sits below "sings like speech";
+   it must not be locked before you write anything
+
+⑤ Verse — **the road to that chorus line**. Ask first: what state must this start from for the
+   chorus to be earned? Images and actions, no commentary; each verse is **one chain of action**,
+   not a shot list
 ⑥ Pre-Chorus — shorter lines, rising
-⑦ Chorus — hook at line OPENING, written to the line count decided in ②, leave a variation slot
-⑧ Bridge — switch rhyme family / perspective, say the real thing
-⑨ Outro — fewer words, fade
-⑩ Self-check (includes line count + duration, §7)
+⑦ Bridge — switch rhyme family / perspective, say the real thing
+⑧ Outro — fewer words, fade
+
+⑨ **Cut — this step is not a "self-check"**
+   Ask of every line: **would the song be worse without it?** If not, cut it.
+   Then read it once: **would you listen a second time?** If not, go fix that spot.
+   (No rule-ticking — the rules are reference, not delivery conditions)
 ```
 
 **Division of labour**: verse = **images** (concrete nouns, actions); chorus = **attitude** (emotion + repetition); bridge = **the turn** (what verse and chorus never said).
