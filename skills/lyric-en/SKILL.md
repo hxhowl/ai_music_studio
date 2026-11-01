@@ -50,7 +50,8 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 
 1. **Scale**: clip / short-form (about a minute) → **T5 only**; a full song → the rest
 2. **What carries the song**: chorus-led (emotional, cathartic) → T1/T4/T9; verse-led (narrative, rap) → T3/T6; balanced → T2; instrumental-led → T8
-3. **How many choruses, do they vary**: three with variation → 6 lines; final must peak → extend to 8 (T4); chorus only restates the title → 4
+3. **How many choruses, do they vary**: three with variation → T1/T2/T4; final must peak → T4;
+   chorus only restates the title → T3/T6 (**no line counts here** — write the chorus, then count; see §4)
 4. **Genre overrides**: long-line / Chinese-style → T7; EDM → T8; R&B → T9; rap → T6
 
 **None of the nine fit? Build your own.** Order sections by what this song needs, not by what's
@@ -63,7 +64,7 @@ long songs need air / the energy moves** (the four tests at the end of §3 in
 with the user's request), or total runtime.
 
 Don't add optional sections by default: Pre-Chorus may be dropped in T3/T4/T5; Bridge can be an instrumental break in T5/T6.
-State **why** you chose this template.
+Be able to say **why** you chose this template (if asked — don't volunteer it).
 
 ---
 
@@ -170,15 +171,15 @@ Given a range with no selection rule, the model picks the minimum — so every s
 
 | Step | What | Where |
 | --- | --- | --- |
-| ① Pick template | Narrow to T1–T9 in four steps; **don't take the familiar one** | §7 |
-| ② Set BPM | Use the user's if given; else take the **template's typical BPM** and state it | §8 |
+| ① Pick template | Narrow to T1–T9 in four steps; **don't take the familiar one** | §3 |
+| ② Set BPM | Use the user's if given; else take the **template's typical BPM** | §2 |
 | ③ Count lines | **Count what you wrote**, then check it against the emotional job's range | §4 |
 | ④ Check relations | Repeats equal; verse / pre-chorus / chorus differ | §5 |
 
 > ⚠️ **Line count is decided by how much the emotion needs to say — not calculated.**
 > Deriving it from seconds means every section is padding, and no line has a reason to exist.
 
-### Three things that trip people up (① and ③ are conditions; ② is a reference)
+### Three things that trip people up
 
 **① A template gives the skeleton — line counts come from writing, not from the template.**
 The numbers in the table are that template's *typical shape*, not a spec.
@@ -186,13 +187,13 @@ Write the chorus first, then **count what came out** and check it against §4's 
 **Don't decide the line count before the chorus exists.** Filling a pre-set number of slots is the
 same failure as writing to a syllable quota.
 
-**② A chorus usually runs 15–22 sec — but this is a reference, not a floor.**
-- 15 sec is an empirical band measured at 85 BPM, not a constant. At high BPM **keep the lines and let
-  the seconds fall short** — cutting lines to hit a number destroys information and fixes the wrong thing.
-  Buy time with `[Post-Chorus]` or another repeat
-- A narrative-tag chorus (folk, rap) may run as short as 10 sec; it builds memory through repetitions
+**② A chorus runs as long as it takes to land the emotion — that's the only test.**
+- Cutting lines to hit a duration destroys information; **adding lines to reach one is the same mistake in
+  reverse.** If the chorus feels short, the fix is usually a `[Post-Chorus]` or another repeat — a new
+  section, not a longer chorus
+- A narrative-tag chorus (folk, rap) can be much shorter; it builds memory through repetitions
 - **Duration is not a condition** — it follows the genre (90-sec punk and 5-min post-rock are both fine).
-  The reference ranges are in `AGENTS.md` §5. What condition 4 checks is *equal line counts*, not length
+  Reference ranges are in `AGENTS.md` §5. What condition 4 checks is *equal line counts*, not length
 
 **③ Line-count relations go by function, not position.**
 - **Repeats of the same function must be equal** (V1=V2, C1=C2, PC1=PC2) — same melody; unequal counts are unsingable
@@ -317,7 +318,7 @@ only the bridge may switch), or let an object planted in V1 change by V2 (V1: "p
 | Point | Rule |
 | --- | --- |
 | **Placement** | **First line of the chorus** (heard first), then repeated at the last line or in `[Post-Chorus]` to close the loop |
-| **Length** | **Shorter than the surrounding lines** — if the chorus runs 8 syllables, make the hook 5–6 (the hook is the one exception to the ±2 alignment rule) |
+| **Length** | **Usually shorter than the surrounding lines** — if the chorus runs 8, try 5–6. Not a rule: the hook can be the longest line if it's the most memorable (it's the exception to the ±2 alignment rule) |
 | **Open vowels** | Prefer open vowels (ah / ay / oh); closed ones (ee / oo) don't carry and get swallowed |
 | **Repetition** | Repeat verbatim 2–3 times, **unchanged**; if the three choruses vary, vary **line 4** (the standard variation slot in a 6-line chorus), never the hook |
 | **Content** | It's the title or a near-paraphrase of it; **no abstract emotion words** ("it'll be okay" doesn't stick) |
@@ -483,7 +484,7 @@ to drift). Go read those five: **versioning / section tags / formatting / struct
       it really is extended; don't leave the two disconnected
 - [ ] With ≥ 3 choruses there is a lift or a gap somewhere (pre-chorus / instrumental / strip-out),
       not chorus after chorus
-- [ ] Delivery states template, actual BPM and its source, lines per section, and any adjustment vs the template
+- [ ] Be able to say (if asked) which template, the BPM and its source, lines per section — **don't volunteer it**
 
 **On the "pass mark"**
 
@@ -575,7 +576,8 @@ outputs/{song}/
 - Date = **the day of the revision**, not the first version's date. Date goes last so files sort by type + version
 - A prompt file must state **which lyrics version it was built from** (by path) in its header — that link lives in the header, not the filename. Do not embed the lyrics version in the prompt filename: the two iterate at different rates (one lyrics version may carry prompts v1–v5), and embedding two versions creates two "prompts-v1" files
 - **Never overwrite** — revisions always create a **new file**: the user may want to go back, overwriting kills A/B comparison, and the version chain *is* the song's creative record
-- Every new version must state: **what changed** (a per-item table is best), **what did not change**, **path to the previous file**, why, and **options considered and rejected**
+- Every new version must state: **what changed** (a per-item table is best), **path to the previous file**, and why.
 
-See `examples/002-versioning.md` for the header + "changed / not changed" table format.
+**Do not write "what did not change" or "options considered and rejected"** — that's self-justification.
+Revisions that only touch wording need nothing beyond the change table. Format: `examples/002-versioning.md`.
 (`outputs/` is git-ignored — never reference a specific file inside it from a committed file; the link breaks after clone.)

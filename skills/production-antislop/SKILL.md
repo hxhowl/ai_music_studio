@@ -120,11 +120,13 @@ piano, strings, 85 BPM, beautiful
 **改后**
 ```
 dream pop, minor key, empty subway station at 2am, female alto, breathy,
-close-mic, felt piano, muted bass, brush snare, tape hiss,
+near-spoken, close-mic, felt piano, muted bass, brush snare, tape hiss,
 85 BPM, sparse intro, building, dynamic contrast
+Exclude: no saxophone, no wide reverb, no choir
 ```
-> 情绪词只剩 1 个且带场景；**3 件乐器**全带演奏法或器材；`close-mic` + `tape hiss` 定质感；
-> `sparse intro` + `building` + `dynamic contrast` 给能量曲线。
+> 情绪词只剩 1 个且带场景；**3 件乐器**全带演奏法或器材；人声三件套齐（`female alto` 音区 +
+> `breathy` 音色 + `near-spoken` 唱法）——⚠️ `close-mic` 是空间不是唱法，不能顶这一位；
+> `close-mic` + `tape hiss` 定质感；`sparse intro` + `building` + `dynamic contrast` 给能量曲线。
 > ⚠️ **本例没有反差音色**——那是参考项，不是条件。硬凑一件反而破坏风格。
 
 ### 例 2 · 只有属性 → 有事件
@@ -139,7 +141,8 @@ indie folk, male vocals, acoustic guitar, warm, nostalgic, 92 BPM
 ```
 indie folk, fingerpicked nylon-string guitar, upright bass, brushed snare,
 male baritone, breathy, near-spoken, dry close-mic, single-mic live take,
-92 BPM, sparse intro, breakdown
+92 BPM, sparse intro, dynamic contrast
+Exclude: no harmonica, no string section, no big reverb
 ```
 **改后（歌词里配结构标签，这才是事件真正的落点）**
 ```
@@ -202,7 +205,7 @@ Exclude: no operatic vocal, no heavy reverb, no vibrato
 ## 这份清单是病历本，不是及格线
 
 > ⚠️ **它不判合格，也不设"≥8 项"。** 交付条件只有 `AGENTS.md` 第 4 节的第 1、6–11 条那七条。
-> 这里查的是"听起来像不像罐头"——**只有你或用户觉得"这歌没特点"时才逐条对**。
+> 这里查的是"听起来像不像罐头"——**只有用户说"没特点"时才逐条对**（你判不了听感）。
 > 对得上几条不重要，重要的是找到病在哪、换掉它。
 
 **通用症状**
@@ -219,7 +222,7 @@ Exclude: no operatic vocal, no heavy reverb, no vibrato
 
 1. 这个标签能不能被同风格的另 10 首歌直接拿去用？能 → 它是通用词
 2. 提示词里有没有一件**不该出现在这个风格**的乐器？（古风里的 808、民谣里的失真）
-3. 换掉某个标签，**其余标签能替代它吗**？能 → 它是冗余标签，不构成特点
+3. 这个标签提供的信息，**是不是已经被别的标签覆盖了**？是 → 冗余，不构成特点
 
 反差不反差，最终要**用户听了才算**——你没有听觉输入，别替他下"这首够抓耳"的结论。
 你能做的是上面那三条可查的线索，以及**把你的选择说清楚**（一行，不是一份证据清单）。
@@ -246,7 +249,7 @@ Exclude: no operatic vocal, no heavy reverb, no vibrato
 
 | 阶段 | 用谁 |
 | --- | --- |
-| 构建提示词时预防 | `skills/song-prompt-builder/SKILL.md` 的「第 1.5 步：反套路红线」 |
+| 构建提示词时预防 | `skills/song-prompt-builder/SKILL.md` 的「第 1.5 步：差异化（参考）」 |
 | 写完自检 | **本 skill**（检测清单） |
 | 用户说"都一个样""太套路" | **本 skill**（改写流程） |
 | 取替换词 | `references/production-lexicon.md` |

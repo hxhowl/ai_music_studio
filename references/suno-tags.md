@@ -28,6 +28,9 @@
 | `[End]` | 结束标记 | ★ |
 
 **元标签**（写在歌词开头或段落内）：`[Style: ...]` `[Exclude: ...]` `[Title: ...]`
+
+> ⚠️ 这三个要**改歌词文件**，属作词侧落笔——角色二只提供内容，由角色一或用户插入。
+> 作曲侧自己往词里写 = 越界（`agents/ai-song-producer.md` 边界）。
 **演唱指示**：`[whisper]` `[falsetto]` `[rap]` `[spoken]` `[chant]` `[ad-lib]`
 **和声**：`[harmony]` `[background vocals]` `[backing vocals]`
 
@@ -78,7 +81,10 @@
 | 性别 | `male vocals` `female vocals` `duet` `choir` `group vocals` `instrumental, no vocals` |
 | 音区 | `deep male vocals` `baritone` `tenor` `alto` `soprano` `falsetto` `high-pitched` |
 | 音色 | `breathy` `husky` `raspy` `gravelly` `smooth` `silky` `crisp` `powerful` `delicate` `airy` `clear` `nasal` `resonant` |
-| 唱法 | `belting` `whisper` **`near-spoken`** `spoken word` `rap` `chant` `operatic` `vibrato` `ad-libs` |
+| 唱法 | `belting` `whisper` **`near-spoken`** `spoken word` `rap` `chant` `operatic` |
+
+> ⚠️ **唱法只认上表这几个。** `vibrato` 是装饰、`ad-libs` 是即兴填充、`harmonies` 是织体——
+> 它们可以单独写，但**不能顶三件套里的"唱法"这一位**。
 | 语言 | `mandarin` `cantonese` `english` `japanese` `korean` `mixed language` |
 
 > 💡 **性别与音区可以连写**：`female alto` / `male baritone`。闭集里的音区词
@@ -89,6 +95,10 @@
 
 > ⚠️ 下表每行开头的裸类别名（`piano` `bass` `drums` `strings` 等）**只在确实想不出演奏法时兜底**，
 > 单独出现等于没描述（`production-antislop` 会指出这一点，但不判合格）。演奏法库见 `references/production-lexicon.md` 第二节。
+>
+> 💡 **乐器标签 = 类别（本表）+ 演奏法（lexicon 第二节）的组合**，不是固定字符串。
+> 所以 `brush snare`、`felt piano`、`fingerpicked nylon-string guitar` 都不在本表里，但都合法——
+> 校验时查**类别**在不在表里 + **有没有演奏法修饰**，不要要求整串匹配。
 
 | 类别 | 标签 |
 | --- | --- |
@@ -116,9 +126,9 @@
 | 类别 | 标签 |
 | --- | --- |
 | 录音质感 | `lo-fi` `tape saturation` `vinyl crackle` `warm analog` `crisp digital` `raw` `polished` |
-| 空间 | `reverb-heavy` `dry` `intimate close-mic` `spacious` `cathedral reverb` `ambient` |
+| 空间 | `reverb-heavy` `dry` `close-mic` `intimate close-mic` `spacious` `cathedral reverb` `ambient` |
 | 年代 | `80s` `90s` `70s` `60s` `retro` `vintage` `modern production` `bedroom pop` |
-| 响度动态 | `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` |
+| 响度动态 | `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` `sparse intro` `dynamic contrast` `slow build` |
 
 > ⚠️ 年代词**必须配器材**才有效（`80s, gated reverb drums`）。单写 `80s` / `retro` / `vintage` 是泛词，
 > 见 `references/production-lexicon.md` 第一节。
