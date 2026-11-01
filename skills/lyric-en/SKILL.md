@@ -23,10 +23,15 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 2. **`[Breakdown]` `[Drop]` `[whisper]` `[falsetto]` are where arrangement events land**, not just structural markers (Suno's Style field can't parse sentences)
 3. **Instrumental-only sections carry the tag and nothing else** — one blank line after, no prose underneath
 
-### Templates (skeleton only)
+### Templates (starting points, not a menu)
 
-> ⚠️ Line counts are deliberately **not listed here** — they come from the **emotional job** (§4)
-> and the subject relation, *not* from tempo. Templates, selection rules and line-count decisions:
+> ⚠️ **These nine are where to start, not the set of options.** Real songs go far beyond them —
+> AABA, chorus-first, through-composed, five-verse folk ballads, two-chorus short forms.
+> **Change them, combine them, or design your own**; the table only helps when you don't know
+> where to begin.
+>
+> Line counts are deliberately **not listed here** — they come from the **emotional job** (§4)
+> and the subject relation, *not* from tempo.
 > **`references/song-structure.md` §2, §3, §4**.
 
 | Template | Style | Typical BPM |
@@ -43,10 +48,15 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 
 **Four-step narrowing — don't take the familiar one** (offering nine templates with no selection rule means the first one gets picked):
 
-1. **Target length**: 60–90 sec → **T5 only**; 2:00–3:30 → the rest
+1. **Scale**: clip / short-form (about a minute) → **T5 only**; a full song → the rest
 2. **What carries the song**: chorus-led (emotional, cathartic) → T1/T4/T9; verse-led (narrative, rap) → T3/T6; balanced → T2; instrumental-led → T8
 3. **How many choruses, do they vary**: three with variation → 6 lines; final must peak → extend to 8 (T4); chorus only restates the title → 4
 4. **Genre overrides**: long-line / Chinese-style → T7; EDM → T8; R&B → T9; rap → T6
+
+**None of the nine fit? Build your own.** Order sections by what this song needs, not by what's
+in the table. Test it against four things: **every section has a job / the chorus repeats enough /
+long songs need air / the energy moves** (the four tests at the end of §3 in
+`references/song-structure.md`). Meet those and any order works; miss them and no template saves it.
 
 **A template gives**: which sections, in what order, how many repeats; advice on optional sections; a typical BPM as default.
 **It does not give**: line counts (they come from how much the emotion needs to say), BPM (it moves
