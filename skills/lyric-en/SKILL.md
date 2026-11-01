@@ -49,7 +49,8 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 4. **Genre overrides**: long-line / Chinese-style → T7; EDM → T8; R&B → T9; rap → T6
 
 **A template gives**: which sections, in what order, how many repeats; advice on optional sections; a typical BPM as default.
-**It does not give**: line counts (they move with BPM), BPM (it moves with the user's request), or total runtime.
+**It does not give**: line counts (they come from how much the emotion needs to say), BPM (it moves
+with the user's request), or total runtime.
 
 Don't add optional sections by default: Pre-Chorus may be dropped in T3/T4/T5; Bridge can be an instrumental break in T5/T6.
 State **why** you chose this template.
@@ -154,14 +155,14 @@ Given a range with no selection rule, the model picks the minimum — so every s
 
 > Every lookup table, template library and conversion table lives in **`references/song-structure.md`**
 > (single source of truth). This section holds only the flow — every number lives in that file,
-> **go read the relevant section there when you set line counts**; don't work from memory.
+> **go read the relevant section there when you check line counts**; don't work from memory.
 > Section numbers below all refer to **`references/song-structure.md`**.
 
 | Step | What | Where |
 | --- | --- | --- |
 | ① Pick template | Narrow to T1–T9 in four steps; **don't take the familiar one** | §7 |
 | ② Set BPM | Use the user's if given; else take the **template's typical BPM** and state it | §8 |
-| ③ Set line counts | Chorus from its **emotional job**, verse from the **subject relation** | §4 |
+| ③ Count lines | **Count what you wrote**, then check it against the emotional job's range | §4 |
 | ④ Check relations | Repeats equal; verse / pre-chorus / chorus differ | §5 |
 
 > ⚠️ **Line count is decided by how much the emotion needs to say — not calculated.**
@@ -169,11 +170,11 @@ Given a range with no selection rule, the model picks the minimum — so every s
 
 ### Three things that trip people up (① and ③ are conditions; ② is a reference)
 
-**① A template gives the skeleton; recalculate line counts at the actual BPM.**
-Measured: T2's 6-line chorus at 120 BPM = 12 sec, below the floor.
-⚠️ **Validate with the actual BPM too** — checking against the template's 95 BPM returns 15.2 sec and a false pass.
-At 120 BPM the fix is **8 lines + `[Post-Chorus]`**, not 9 lines (a 9-line chorus is overlong for pop).
-The verse usually stays: 6 lines fits the 10–20 sec band from 70 to 140 BPM.
+**① A template gives the skeleton — line counts come from writing, not from the template.**
+The numbers in the table are that template's *typical shape*, not a spec.
+Write the chorus first, then **count what came out** and check it against §4's ranges — that's all.
+**Don't decide the line count before the chorus exists.** Filling a pre-set number of slots is the
+same failure as writing to a syllable quota.
 
 **② A chorus usually runs 15–22 sec — but this is a reference, not a floor.**
 - 15 sec is an empirical band measured at 85 BPM, not a constant. At high BPM **keep the lines and let
