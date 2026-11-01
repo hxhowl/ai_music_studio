@@ -83,7 +83,7 @@
 ### ④ 乐器（只点 3–5 件，**每件优先写演奏法或器材**）
 
 > ⚠️ 下表每行开头的裸类别名（`piano` `bass` `drums` `strings` 等）**只在确实想不出演奏法时兜底**，
-> 单独出现会被 `production-antislop` 判为不合格。演奏法库见 `references/production-lexicon.md` 第二节。
+> 单独出现等于没描述（`production-antislop` 会指出这一点，但不判合格）。演奏法库见 `references/production-lexicon.md` 第二节。
 
 | 类别 | 标签 |
 | --- | --- |

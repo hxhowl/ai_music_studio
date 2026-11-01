@@ -149,7 +149,7 @@ ai_music_studio/
 | `lyric-imagery-rhyme` | 缺画面感、押韵卡壳、想换韵 | 意象关联词组矩阵 + 押韵推荐字表 |
 | `lyric-naturalness` | "太 AI 了""不够自然""像模板"、交付前自检 | 自然度诊断 + 改写 + 11 条诊断表 |
 | `song-prompt-builder` | 需要 Suno / 秒响 提示词 | 中文 + 英文两份可粘贴提示词 |
-| `production-antislop` | "出来的歌都一个样""太套路""没特点"、提示词交付前自检 | 差异化诊断 + 改写 + 11 条检测清单 |
+| `production-antislop` | "出来的歌都一个样""太套路""没特点"、提示词交付前自检 | 差异化诊断 + 改写（病历本 + 处方，不是及格线）|
 
 调用顺序不是固定的：`lyric-imagery-rhyme` 可以在写词任何阶段被反复调用。
 
