@@ -195,7 +195,7 @@
 
 | 平台 | 编曲事件怎么落 |
 | --- | --- |
-| **Suno** | Style 字段写不下长句。事件落在：① **歌词的结构标签**（`[Instrumental Break]` `[Breakdown]` `[Drop]` `[Guitar Solo]` `[whisper]`）；② Style 里的**动态词**（`building` `sparse intro` `dynamic contrast` `slow build`）；③ 元标签 `[Style: ...]` |
+| **Suno** | Style 字段写不下长句。事件落在：① **歌词的结构标签**（`[Instrumental Break]` `[Breakdown]` `[Drop]` `[Guitar Solo]` `[whisper]` `[falsetto]`）；② Style 里的**动态词**（`building` `sparse intro` `dynamic contrast` `slow build`）；③ 元标签 `[Style: ...]` |
 | **秒响** | **直接写中文时间轴**，这是秒响相对 Suno 最大的优势区 |
 
 ### 中文事件句库（秒响用）
@@ -234,7 +234,7 @@
 | 结构 | 能量 | Suno 写法 | 秒响写法 |
 | --- | --- | --- | --- |
 | Intro | 最低 | `sparse` `ambient intro` | "前 12 秒只有电钢琴" |
-| Verse 1 | 低 | `intimate` `minimal` | "主歌只有贝斯和刷鼓，接近独白" |
+| Verse 1 | 低 | `intimate close-mic` `minimal` | "主歌只有贝斯和刷鼓，接近独白" |
 | Pre-Chorus | 爬升 | `building` `riser` | "预副歌加入弦乐，逐渐加密" |
 | Chorus 1 | 高 | `anthemic` `wide` | "副歌全员进入，和声叠两层" |
 | Verse 2 | 回落 | `sparse` | "第二段主歌重新收窄，只留贝斯" |

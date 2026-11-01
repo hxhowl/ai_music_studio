@@ -55,7 +55,7 @@
 | 氛围 | `ambient` `cinematic`* `orchestral` `post-rock` `new age` `drone` `soundscape` |
 | 拉丁 | `latin` `reggaeton` `salsa` `bossa nova` `samba` `flamenco` |
 | 乡村 | `country` `country pop` `bluegrass` |
-| 影视 | `film score` `epic orchestral` `trailer music` `hybrid orchestral` |
+| 影视 | `film score` `trailer music` `hybrid orchestral` `string section + taiko + distorted bass` |
 
 ### ② 情绪 / 氛围（裸情绪词 ≤ 2 个）
 
@@ -76,7 +76,7 @@
 | --- | --- |
 | 性别 | `male vocals` `female vocals` `duet` `choir` `group vocals` `instrumental, no vocals` |
 | 音区 | `deep male vocals` `baritone` `tenor` `alto` `soprano` `falsetto` `high-pitched` |
-| 音色 | `breathy` `husky` `raspy` `gravelly` `smooth` `silky` `crisp` `powerful` `delicate` `airy` `warm` `clear` `nasal` `resonant` |
+| 音色 | `breathy` `husky` `raspy` `gravelly` `smooth` `silky` `crisp` `powerful` `delicate` `airy` `clear` `nasal` `resonant` |
 | 唱法 | `belting` `whisper` `spoken word` `rap` `chant` `operatic` `vibrato` `ad-libs` `harmonies` `layered vocals` |
 | 语言 | `mandarin` `cantonese` `english` `japanese` `korean` `mixed language` |
 
@@ -110,7 +110,7 @@
 
 | 类别 | 标签 |
 | --- | --- |
-| 录音质感 | `lo-fi` `tape saturation` `vinyl crackle` `warm analog` `crisp digital` `raw` `polished` `radio-ready` |
+| 录音质感 | `lo-fi` `tape saturation` `vinyl crackle` `warm analog` `crisp digital` `raw` `polished` |
 | 空间 | `reverb-heavy` `dry` `intimate close-mic` `spacious` `cathedral reverb` `ambient` |
 | 年代 | `80s` `90s` `70s` `60s` `retro` `vintage` `modern production` `bedroom pop` |
 

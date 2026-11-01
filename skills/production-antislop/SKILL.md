@@ -232,7 +232,7 @@ Exclude: no operatic vocal, no heavy reverb, no vibrato
 ③ 去词  用 `references/production-lexicon.md` 第一节替换安全词
 ④ 加锚  从第四节反差配方表取一件，或从第二、三节取演奏法/质感
 ⑤ 补事件  加至少一条时间轴指令，确认落在正确的平台位置
-⑥ 定质感  补齐年代 / 录音方式 / 空间
+⑥ 定质感  补齐年代 / 录音方式 / 空间与介质
 ⑦ 复检  过一遍检测清单
 ```
 
