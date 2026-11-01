@@ -287,7 +287,7 @@ V1 sets the scene, V2 advances it — shift the time ("three days later"),
 **shift what is being observed** (V1 watches her own hands, V2 watches his;
 ⚠️ the observed *object* shifts, **not the narrative person** — POV stays one throughout,
 only the bridge may switch), or let an object planted in V1 change by V2 (V1: "phone at 4%" → V2: "it died").
-⚠️ Just rephrasing V1 is exactly what `lyric-naturalness` check #9 catches as "repetition in new words".
+⚠️ Just rephrasing V1 is exactly what the "each later verse advances" item in `lyric-naturalness` catches as "repetition in new words".
 
 **How to build a hook** (having one isn't enough — it has to be memorable and singable):
 
