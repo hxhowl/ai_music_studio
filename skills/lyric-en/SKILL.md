@@ -165,7 +165,8 @@ The verse usually stays: 6 lines fits the 10–20 sec band from 70 to 140 BPM.
   the seconds fall short** — cutting lines to hit a number destroys information and fixes the wrong thing.
   Buy time with `[Post-Chorus]` or another repeat
 - A narrative-tag chorus (folk, rap) may run as short as 10 sec; it builds memory through repetitions
-- **What is actually checked is the whole song's 2:00–3:30** (condition 4), not the chorus's line count
+- **Duration is not a condition** — it follows the genre (90-sec punk and 5-min post-rock are both fine).
+  The reference ranges are in `AGENTS.md` §5. What condition 4 checks is *equal line counts*, not length
 
 **③ Line-count relations go by function, not position.**
 - **Repeats of the same function must be equal** (V1=V2, C1=C2, PC1=PC2) — same melody; unequal counts are unsingable
@@ -315,7 +316,10 @@ Formal metrics fight each other, and they fight the quality goal. **The priority
 > **private voice > sings like speech > rhyme > syllable alignment**
 
 **Conditions that never yield** (only these four; everything else gives way):
-tag format, equal line counts for repeats of the same function, whole song 2:00–3:30, singability.
+tag format, equal line counts for repeats of the same function, singability.
+
+⚠️ **Duration is not in this list** — it varies by genre (90-sec punk, 5-min post-rock).
+Making it a condition would force padding or cutting lines just to hit seconds.
 
 ⚠️ **"Suno ≤200 characters" is NOT a lyric-side condition** — that limit applies to the Style
 field, i.e. to prompts. Lyrics have no character limit. Don't mix the two sides up.
@@ -406,7 +410,7 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 
 ## 7. Delivery check
 
-### Check conditions 1–5 of `AGENTS.md` §7
+### Check conditions 1–5 of `AGENTS.md` §4
 
 This file **does not restate them** — conditions live in one place only (four copies had begun
 to drift). Go read those five: **versioning / section tags / formatting / structural sanity / singable**.
@@ -453,7 +457,7 @@ to drift). Go read those five: **versioning / section tags / formatting / struct
 
 **Line count (open when "the structure feels off"), §3**
 - [ ] **Not every section is 4 lines** — counts derived from BPM + emotional job, not the minimum
-- [ ] Chorus meets the line floor for its job; whole song 2:00–3:30
+- [ ] Whole-song duration sits in the normal band for its genre (≈2:00–3:30 for a standard single, 60–90s for a clip)
 - [ ] If the chorus runs past 22 sec, it is **stated and handled** (cut a line / convert to repeats) —
       22 sec is a soft ceiling (T4's final chorus is 22.6s and still a valid template), so going over
       isn't an error; going over silently is
@@ -529,7 +533,7 @@ second lyric line
 
 ⚠️ **Don't volunteer the expansions.** Across seven real revisions the commentary ran 61–69% of the
 file — the reader had to page through a full screen of justification before reaching the song
-(`AGENTS.md` §7 「交付形态」).
+(`AGENTS.md` §4 「交付形态」).
 
 ---
 
