@@ -25,7 +25,7 @@ description: AI 歌曲生成助手 —— 编曲与人声提示词创作。当�
 | 提示词形态 | **逗号分隔的英文标签串** | **中文长句自然语言描述** |
 | 强调什么 | 风格密度、标签互斥性 | 人声细节、演唱处理、段落指令 |
 | 长度 | 风格字段 ≤ 200 字符，≤ 15 个标签 | 可长，允许详细描述 |
-| 人声写法 | `female alto, breathy, close-mic` | "北方成年女声，气声为主，咬字轻，句尾收音干净" |
+| 人声写法 | `female alto, breathy, near-spoken` | "北方成年女声，气声为主，咬字轻，句尾收音干净" |
 | 结构指令 | 靠歌词里的 `[Chorus]` `[Breakdown]` 等标签 | 可在提示词里直接描述段落安排 |
 | **编曲事件** | 写不下长句 → 落歌词结构标签（主）+ Style 动态词（辅）+ 元标签 `[Style:]`（补充） | **可直接写中文时间轴**（最大优势） |
 
@@ -106,7 +106,7 @@ Suno 粘贴英文标签串（配中文说明）、秒响粘贴中文长句（配
 
 **Style of Music（英文标签串，直接粘贴）**
 ```
-city pop, minor key, rainy neon street at midnight, female alto, breathy, close-mic, Rhodes, muted bass, brush snare, 92 BPM, tape saturation, sparse intro, building
+city pop, minor key, rainy neon street at midnight, female alto, breathy, near-spoken, close-mic, Rhodes, muted bass, brush snare, 92 BPM, tape saturation, sparse intro, building
 ```
 
 **中文对照说明**

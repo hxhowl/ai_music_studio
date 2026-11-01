@@ -138,7 +138,9 @@
 
 ```
 通用占位规则：`{vocal 音区}` `{vocal 音色}` `{vocal 唱法}` **三件必须全填**
-（`female alto` + `breathy` + `close-mic` 这种），只写 `female vocals` 等于没描述。
+（`female alto` + `breathy` + `near-spoken` 这种），只写 `female vocals` 等于没描述。
+⚠️ **三件套的第三件是"唱法"**（音区 / 音色 / **唱法**，见 §3 表）。
+`close-mic` 不是唱法，它属"空间"，可以写但要归位，不能拿它顶唱法。
 
 紧凑流行：
 {genre}, {sub-genre}, {mood1}, {mood2}, {vocal 音区}, {vocal 音色}, {vocal 唱法},

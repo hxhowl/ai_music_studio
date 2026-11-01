@@ -292,7 +292,8 @@ no autotune, no vocoder, no choir, no saxophone, no four-on-the-floor
 
 **字符预算的真实取舍**：`sub bass drone`（地铁在地下的低频嗡鸣）是最贴题的反差音色，
 但加上会超 200 字符上限。取舍结果：**反差元素放到秒响版与歌词结构标签承载**，
-Suno 版用「演奏法器材（`felt piano`）+ 质感设定（`70s tape saturation`）」满足锚点要求。
+Suno 版不硬塞反差音色（那条放到秒响版），**锚点就靠 `felt piano` 一件**；
+`70s tape saturation` 是质感（条件 5 要求），不是锚点——两件事别混。
 这比硬塞进 200 字符更稳。
 
 ---
