@@ -362,7 +362,7 @@ Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow:
 - [ ] **Versioning**: revisions wrote a **new file** with a version number (v1 for the first too);
       the original was not overwritten
 - [ ] **Structural sanity**: repeats of the same function have equal line counts (V1=V2, C1=C2);
-      **validation used the ACTUAL BPM, not the template's typical BPM**
+      **whole song 2:00–3:30** (computed with the actual BPM)
 - [ ] **Singable**: no artist names, brands, or unpronounceable proper nouns
 
 > If all pass, write one sentence — **don't tick every box** (`AGENTS.md` §7 「交付形态」).
