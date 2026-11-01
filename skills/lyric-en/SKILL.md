@@ -161,7 +161,7 @@ The verse usually stays: 6 lines fits the 10–20 sec band from 70 to 140 BPM.
 
 English is stress-timed. Align **both**:
 
-| Section | Syllables / line (85 BPM baseline) |
+| Section | Syllables / line (**reference range**, 85 BPM baseline) |
 | --- | --- |
 | Verse | 8–12 |
 | Chorus | 7–12 |
@@ -174,7 +174,13 @@ English is stress-timed. Align **both**:
 - ✅ "I **walk** a**lone** at **mid**night" — stress lands on beats
 - ❌ "A**lone** I **walk** in the **night**" — fights the pulse unless intended
 
-**Syllables move with BPM too**: the table above assumes ~85 BPM. The real constraint is one breath —
+> ⚠️ **This is a reference, not a cap.** How much fits in one breath depends on the melody, the
+> phrasing, the pauses and who's singing — **±2 is completely normal**.
+> **Never damage a better line to hit a syllable count.** Real case: `我说 哥 周一还得交周报`
+> (the most human line in the song) was rewritten to `我烦恼 周一汇报还得交` to cut syllables and
+> force an AABB — zero gain, pure loss, and the self-check still passed it.
+
+**Syllables move with BPM too**: the table above assumes ~85 BPM. The practical limit is one breath —
 at **90–110 BPM → 10–13 syllables**, 120–140 → **8–11**, 160+ → **6–8**.
 English caps are **1.2–1.5× the Chinese character counts** (English carries more syllables per bar,
 but consonants cap its throughput, so the multiplier shrinks as tempo rises).
@@ -260,8 +266,14 @@ Formal metrics fight each other, and they fight the quality goal. **The priority
 
 > **private voice > sings like speech > rhyme > syllable alignment**
 
-**Hard constraints that never yield** (they aren't in the ranking): the per-line syllable cap
-(one breath), the line-count floor, equal line counts for repeats of the same function, tag format.
+**Conditions that never yield** (only these four; everything else gives way):
+equal line counts for repeats of the same function, whole song 2:00–3:30, tag format,
+Suno ≤200 characters.
+
+⚠️ **The per-line syllable cap is NOT one of them** — it's a reference, not a hard limit.
+It used to be written as "must be satisfied no matter what", and the result was a model that kept
+asking to cut syllables and damaged better lines. **Sacrificing a line to hit a syllable count is
+the wrong trade.**
 
 | Conflict | Who wins |
 | --- | --- |
