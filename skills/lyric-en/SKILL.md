@@ -459,7 +459,7 @@ to drift). Go read those five: **versioning / section tags / formatting / struct
 
 **Line count (open when "the structure feels off"), §3**
 - [ ] **Not every section is 4 lines** — counts come from the emotional job, not the minimum
-- [ ] Verse and chorus differ in line count
+- [ ] Verse and chorus differ in line count (equal is fine — T2/T7 do it; then pre-chorus and energy contrast have to tell them apart)
 - [ ] **The chorus hasn't eaten the song**: ≤ 4 choruses, and something sits between them (they don't run back to back)
 - [ ] **The template's rationale matches the actual structure** — if you picked T4 "final chorus extended",
       it really is extended; don't leave the two disconnected
