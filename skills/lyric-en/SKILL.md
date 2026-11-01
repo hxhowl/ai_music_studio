@@ -243,8 +243,10 @@ singing language**.
      ⚠️ Don't keep interrogating, and don't write something generic — **the user correcting a concrete
      draft is much faster than staring at a blank page**
 
-① Clarify (only if information is missing) + nail the premise
-   · ≤3 questions, each with a recommended default; **never re-ask what you were already told**
+① Clarify + nail the premise
+   · **Only ask what you cannot default** (language). Style / mood / POV: pick a concrete default,
+     restate it in one line, and start writing
+   · Never re-ask what you were already told; don't invent questions to fill the step
    · The premise in one concrete sentence, not an abstract mood word
    (interchangeable with ⓪; whichever comes to you first)
 
