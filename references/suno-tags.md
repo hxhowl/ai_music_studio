@@ -81,6 +81,10 @@
 | 唱法 | `belting` `whisper` **`near-spoken`** `spoken word` `rap` `chant` `operatic` `vibrato` `ad-libs` |
 | 语言 | `mandarin` `cantonese` `english` `japanese` `korean` `mixed language` |
 
+> 💡 **性别与音区可以连写**：`female alto` / `male baritone`。闭集里的音区词
+> 是"音区那半截"，单独写 `alto` 也行，但连上性别信息更多。
+> ⚠️ 只有 `female vocals` / `male vocals`（不带音区、音色、唱法）时才算"没描述"。
+
 ### ④ 乐器（只点 3–5 件，**每件优先写演奏法或器材**）
 
 > ⚠️ 下表每行开头的裸类别名（`piano` `bass` `drums` `strings` 等）**只在确实想不出演奏法时兜底**，
