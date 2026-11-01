@@ -151,9 +151,12 @@
 {bpm} BPM, {production}
 
 古风（⚠️ 别用「古筝+二胡+戏腔+大混响」——那正是 `production-antislop` 的反面例子）：
-guofeng, pentatonic, female alto, clear tone, no vibrato, dry close-mic,
-yangqin, xiao, muted upright bass, 808 sub bass, {bpm} BPM, sparse, dark
-Exclude：no operatic vocal, no heavy reverb
+guofeng, pentatonic, {vocal 音区}, {vocal 音色}, {vocal 唱法}, dry close-mic,
+yangqin, {演奏法}, breathy xiao, muted upright bass, {反差乐器},
+{bpm} BPM, sparse, dark
+Exclude：no operatic vocal, no heavy reverb, no vibrato
+⚠️ **这是骨架不是配方**：`{反差乐器}` 必须自己挑（古风里能形成反差的重型/电子音色），
+乐器名后面必须跟演奏法。直接抄下来就成了新的罐头。
 
 电子舞曲（⚠️ 除非明确要四踩罐头，否则不写 four-on-the-floor）：
 {edm sub-genre}, {mood}, {vocal 音区}, {vocal 音色}, {vocal 唱法},

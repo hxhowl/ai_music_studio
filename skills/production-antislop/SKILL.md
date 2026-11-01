@@ -114,7 +114,7 @@ dream pop, melancholic, dreamy, ethereal, female vocals, breathy,
 piano, strings, 85 BPM, beautiful
 ```
 > 4 个情绪词（`melancholic` `dreamy` `ethereal` `beautiful`）全是黑名单词；乐器全是类别名；零质感；零事件；`beautiful` 不是音乐参数。
-> 换掉任意两个词，出来几乎一样。
+> 这 10 个词里，没有一个是只有这首歌才会用的——全部可替换成同风格的其他词。
 
 **改后**
 ```
@@ -122,8 +122,9 @@ dream pop, minor key, empty subway station at 2am, female alto, breathy,
 close-mic, felt piano, muted bass, brush snare, tape hiss,
 85 BPM, sparse intro, building, dynamic contrast
 ```
-> 情绪词只剩 1 个且带场景；4 件乐器全带演奏法；`close-mic` + `tape hiss` 定质感；
-> `sparse intro` + `building` + `dynamic contrast` 给能量曲线；`felt piano` 是专属锚点。
+> 情绪词只剩 1 个且带场景；**3 件乐器**全带演奏法或器材；`close-mic` + `tape hiss` 定质感；
+> `sparse intro` + `building` + `dynamic contrast` 给能量曲线。
+> ⚠️ **本例没有反差音色**——那是参考项，不是条件。硬凑一件反而破坏风格。
 
 ### 例 2 · 只有属性 → 有事件
 
@@ -135,8 +136,9 @@ indie folk, male vocals, acoustic guitar, warm, nostalgic, 92 BPM
 
 **改后（Style）**
 ```
-indie folk, fingerpicked nylon-string guitar, upright bass, male baritone,
-dry close-mic, single-mic live take, 92 BPM, sparse intro, breakdown
+indie folk, fingerpicked nylon-string guitar, upright bass, brushed snare,
+male baritone, breathy, near-spoken, dry close-mic, single-mic live take,
+92 BPM, sparse intro, breakdown
 ```
 **改后（歌词里配结构标签，这才是事件真正的落点）**
 ```
@@ -159,10 +161,12 @@ guzheng, erhu, strings, cinematic, spacious reverb
 
 **改后**
 ```
-guofeng, pentatonic, female alto, clear tone, no vibrato, dry close-mic,
-yangqin, xiao, muted upright bass, 808 sub bass, 76 BPM, sparse, dark
+guofeng, pentatonic, female alto, clear tone, near-spoken, dry close-mic,
+yangqin, tremolo picked, breathy xiao, muted upright bass, 808 sub bass,
+76 BPM, sparse, dark
+Exclude: no operatic vocal, no heavy reverb, no vibrato
 ```
-> 换掉古筝二胡（用 `yangqin` `xiao`）、`dry close-mic` 拿掉大混响、
+> 换掉古筝二胡（扬琴 + 箫，且都带演奏法）、`dry close-mic` 拿掉大混响、`no vibrato` 放进 Exclude、
 > **`808 sub bass` 是反差锚点**——古的变重的。这一件乐器，比十个情绪词都管用。
 
 ---
