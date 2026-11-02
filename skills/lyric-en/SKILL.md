@@ -174,9 +174,12 @@ No full foreign sections, don't add a language for flavour, **don't expect cross
    Then scan top to bottom: **is there a line you'd want to skip?** That's the one to fix.
    (Don't write "read it aloud" — you can't hear it, see Iron Rule 2.
    No rule-ticking — the rules are reference, not delivery conditions)
+
+   Then **check each line for looseness**: write a tighter version, compare what the cut lost.
+   When nothing more can be cut, stop (`skills/lyric-naturalness/SKILL.md`).
 ```
 
-**Division of labour**: verse = **images** (concrete nouns, actions); chorus = **attitude** (emotion + repetition); bridge = **the turn** (what verse and chorus never said).
+**Division of labour**: verse = **specific** (one scene, one action, one moment — never explain the emotion); chorus = **universal** (turn that specific thing into what everyone has felt — never add new plot); bridge = **the turn** (what verse and chorus never said).
 
 **Each later verse must move one step beyond the previous one** (not just V2 — narrative and rap songs often have three):
 equal line counts (same melody) don't mean the content may repeat.
@@ -191,7 +194,7 @@ only the bridge may switch), or let an object planted in V1 change by V2 (V1: "p
 | Point | Rule |
 | --- | --- |
 | **Placement** | **First line of the chorus** (heard first), then repeated at the last line or in `[Post-Chorus]` to close the loop |
-| **Length** | **Usually shorter than the surrounding lines** — if the chorus runs 8, try 5–6. Not a rule: the hook can be the longest line if it's the most memorable (it's the exception to the ±2 alignment rule) |
+| **Length** | **Usually shorter than the surrounding lines** — if the chorus runs 8, try 5–6. Not a rule: the hook can be the longest line if it's the most memorable (it's the exception to the roughly-equal-length guideline) |
 | **Open vowels** | Prefer open vowels (ah / ay / oh); closed ones (ee / oo) don't carry and get swallowed |
 | **Repetition** | Repeat verbatim 2–3 times, **unchanged**; if the three choruses vary, vary **line 4** (the standard variation slot in a 6-line chorus), never the hook |
 | **Content** | It's the title or a near-paraphrase of it; **no abstract emotion words** ("it'll be okay" doesn't stick) |
