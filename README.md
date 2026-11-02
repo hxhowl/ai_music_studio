@@ -209,7 +209,7 @@ outputs/{歌曲名}/
 | 想加 | 放哪 |
 | --- | --- |
 | AI 味黑名单 / 具象替换词 | `references/anti-ai-lexicon.md` |
-| 新的自然度判据 | `skills/lyric-naturalness/SKILL.md` |
+| 新的变换动作（删主语 / 删交代 / 并句 / 删到不能再删 / 挪镜头） | `skills/lyric-naturalness/SKILL.md` |
 | 安全词黑名单 / 演奏法 / 质感 / 反差配方 | `references/production-lexicon.md` |
 | 新的差异化判据 | `skills/production-antislop/SKILL.md` |
 | 速度量级 / 句数 / 段落模板 | `references/song-structure.md` |

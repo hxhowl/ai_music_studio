@@ -315,7 +315,7 @@ V1 sets the scene, V2 advances it — shift the time ("three days later"),
 **shift what is being observed** (V1 watches her own hands, V2 watches his;
 ⚠️ the observed *object* shifts, **not the narrative person** — POV stays one throughout,
 only the bridge may switch), or let an object planted in V1 change by V2 (V1: "phone at 4%" → V2: "it died").
-⚠️ Just rephrasing V1 is exactly what the "each later verse advances" item in `lyric-naturalness` catches as "repetition in new words".
+⚠️ Just rephrasing V1 is still repetition — the verse must move (new time / new observed object / a planted object changed), not restate.
 
 **How to build a hook** (having one isn't enough — it has to be memorable and singable):
 
@@ -433,30 +433,22 @@ The fastest way to write something that reads like a diary entry instead of a so
 
 ---
 
-## 6. Naturalness — watch it while drafting (a direction, not a red line)
+## 6. Naturalness — three sights to keep in view (all of them point at *less*)
 
-**The root cause of AI-sounding lyrics is averaging** — if anyone could have written it, it belongs to no one. Hold these at the drafting stage; don't leave it for a post-write fix.
+**The root cause of AI-sounding lyrics is averaging** — if anyone could have written it, it belongs to no one.
 
-- **Three questions per line**: can a camera film it? would it still work in a different song? is there one detail nobody else would write?
-- **Details a camera could film — but don't count them.** Hitting some noun quota is how you end up
-  with a shot-list; the number is not the point
-- ⚠️ **Details need a line through them, not a pile**: action chaining / the eye moving / one object in
-  two states — any of those is a line. Counting nouns is the fastest way to write a shot-list instead of
-  a lyric (this actually happened — see `lyric-naturalness` rule 1).
-  **Diagnostic only, don't execute while drafting**: **the deletion test** (delete any line — does the
-  next one still connect?) and **the subject check** (can you supply a subject for each line, and is it
-  the *same* one? — supplying it isn't the same as writing it out)
-- **Keep one through-line object**: bring the same object back **once, and change its state**
-  (still on the lanyard → chewed up → still there). A brand-new object every section passes
-  every per-section check yet leaves the song with no spine — objects must **carry the story**,
-  not decorate it
-- **A contemporary object**: 12% battery, a delivery note, a read receipt, the last train, a locker pickup code
-  (not something that could equally sit in a song from 1990)
-- **Generic imagery must be qualified**: not "rain" — "the kind of rain that flips your umbrella"
-- **Vary line length**: keep the opening lines aligned, then let **one line (usually the last)** run clearly longer or shorter as a landing line. Never all lines equal (fake), never all over the place (unsingable)
-- **Heavier emotion, lighter wording**: not "I miss you till I cry" — "your toothbrush is still in the cup"
+Only three things to watch while drafting:
 
-Replacement words: `references/anti-ai-lexicon.md`. Full rules and rewrite flow: `skills/lyric-naturalness/SKILL.md`.
+1. **Could a camera film it?** You can't film "loneliness", you can film "your toothbrush still in the cup".
+   Same for imagery: not "rain" — "the kind of rain that flips your umbrella"
+2. **Heavier emotion, lighter wording** — not "I miss you till I cry", but "I never deleted it"
+3. **One object comes back once, and its state has changed** (still on the lanyard → chewed up → still there)
+
+⚠️ These are **sights, not a checklist** — look at them when you're stuck, don't walk through them one by one.
+
+Still not reading like a person? Go to the **five rewrites** in `skills/lyric-naturalness/SKILL.md`
+(drop the subject / drop the explaining / merge lines / cut the last line).
+Replacement words: `references/anti-ai-lexicon.md`.
 
 ---
 
@@ -524,9 +516,7 @@ Go read those five: **versioning / section tags / formatting / structural sanity
 **On the "pass mark"**
 
 Only the five gates at the top have a pass mark. **The diagnostic table has no pass mark** —
-it's a toolbox, not an exam. Anything it turns up goes through the rewrite flow in
-`lyric-naturalness`; the **private-voice** item is the highest-priority signal there,
-but it doesn't fail the song.
+it's a toolbox, not an exam. Anything it turns up goes through the five rewrites in `lyric-naturalness`.
 
 ---
 
