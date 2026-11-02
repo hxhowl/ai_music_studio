@@ -10,6 +10,7 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 1. **Section tags are Suno-standard English**, bracketed, on their own line.
 2. Lyrics are **sung, not read**. Every line must be singable in one breath.
 3. Stress alignment matters more than syllable count in English — a line with the right syllable count and the wrong stress pattern is unsingable.
+4. **One action per line.** A line that packs three clauses (subject–verb, subject–verb, subject–verb) is a prose sentence, not a lyric. Structures that need a pause to finish — comparative clauses (`earlier than my sigh`), stacked pre-modifiers (`my overhead-eave school uniform`) — leave nowhere for the breath to land.
 
 ---
 
@@ -393,6 +394,34 @@ damaged for no real gain, and the self-check still passed it.
 
 ## 5. Common failure modes
 
+### A lyric line is not a prose sentence
+
+The fastest way to write something that reads like a diary entry instead of a song:
+**transcribe the scene with full clauses.** Two people in a scene makes it worse — it turns into dialogue.
+
+| Prose | Lyric |
+| --- | --- |
+| The rain really came down, so you pulled me under the eaves | School uniform held up — that was our eave |
+| You said it would rain, and I left my umbrella in the classroom | Only said it wouldn't rain, didn't argue |
+| You carried the noodles over and stood by the door | One bowl of noodles, standing by the door |
+
+**Three checkable differences:**
+
+1. **How many actions in one line** — prose packs two or three clauses; a lyric lands one
+2. **Whether the subject is stated** — English usually needs it, but **don't give every action its own
+   "I… you…"**; when two actions share one subject, let them share it
+3. **Conjunctions** — `so` / `because` / `and then` in a lyric line means you're narrating events
+
+**One talking head, not two.** Don't alternate dialogue; **juxtapose two actions from the same side**:
+
+❌ `You said it would rain, I left my umbrella in class` — two subjects, two actions, ping-pong
+✅ `Only said it wouldn't rain, didn't argue` — one side, two actions; the other person shows up in "didn't argue"
+
+> **Test**: two or more subject switches in one line = prose. Keep the pronouns only where the
+> *relationship itself* is the content (`You're my most accurate forecast`, `Others watch clouds, I watch your eyes`).
+
+### Everything else
+
 | Problem | Symptom | Fix |
 | --- | --- | --- |
 | Forced rhyme | "the light of my sight" | Rewrite so the rhyme word is the *only* right word |
@@ -400,7 +429,7 @@ damaged for no real gain, and the self-check still passed it.
 | Abstract pile-up | lonely, broken, lost, hollow | Swap for concrete: cold coffee, unread text |
 | Dead chorus | Every line is new | Put hook at line 1, repeat 2–3x |
 | POV drift | I / you / he mixed | Keep one; bridge may switch |
-| Unsungable | Too many syllables in one breath | Split or cut |
+| Unsungable | Too many syllables in one breath, or a comparative clause that needs a pause to finish | Split or cut |
 
 ---
 
@@ -480,7 +509,7 @@ Go read those five: **versioning / section tags / formatting / structural sanity
 **Line count (open when "the structure feels off"), §3**
 - [ ] **Not every section is 4 lines** — counts come from the emotional job, not the minimum
 - [ ] Verse and chorus differ in line count (equal is fine — T2/T7 do it; then pre-chorus and energy contrast have to tell them apart)
-- [ ] **The chorus hasn't eaten the song**: ≤ 4 choruses; two adjacent choruses **must differ in something** (final one extended / swapped for `[Post-Chorus]` / one line changed) — adjacent is fine, identical is not
+- [ ] **The chorus hasn't eaten the song**: ≤ 4 choruses — that's the only hard half. Two identical adjacent choruses are fine; the difference can come from performance and arrangement. **Never change a better line just to make the second chorus differ**
 - [ ] **The template's rationale matches the actual structure** — if you picked T4 "final chorus extended",
       it really is extended; don't leave the two disconnected
 - [ ] With ≥ 3 choruses there is a lift or a gap somewhere (pre-chorus / instrumental / strip-out),
