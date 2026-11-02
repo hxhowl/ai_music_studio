@@ -212,7 +212,8 @@ outputs/{歌曲名}/
 | 新的判定（施动者 / 解释词 / 末句结论） | `skills/lyric-naturalness/SKILL.md` |
 | 安全词黑名单 / 演奏法 / 质感 / 反差配方 | `references/production-lexicon.md` |
 | 新的差异化判据 | `skills/production-antislop/SKILL.md` |
-| 速度量级 / 句数 / 段落模板 | `references/song-structure.md` |
+| 速度量级 / 句数 / 段落骨架 | `references/song-structure.md` |
+| **作词的外部基准**（工序 / 分工 / 人称 / 押韵 / 四测试） | `references/lyric-craft.md` |
 | 新曲风的标签 | `references/suno-tags.md` |
 | 新的韵字 / 韵族 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |

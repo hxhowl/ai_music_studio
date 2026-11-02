@@ -52,7 +52,7 @@
 ① 澄清            只问无法替他默认的（语言 / 平台）；风格、情绪、视角给具体默认值并一句话复述
 ② 定调性          情绪弧线 / 视角 / 叙事时态 / 听众
 ③ 先写副歌        定靶心。副歌是主歌的答案；写不出 → 退回 ⓪，不许硬写主歌
-④ 定结构          按副歌倒推：模板骨架 + 可选段落去留；**句数是从副歌数出来的，不预先定**
+④ 定形状          副歌写出来之后才做：数句数、看主歌关系；骨架去 references 对照，**不是九选一**
 ⑤ 定韵（可改）    看副歌自然落在哪个辙；不要让韵决定内容
 ⑥ 写主歌 → 后段   主歌是"怎么走到副歌那句话"的过程；每段成一条动作链，不是镜头清单
 ⑦ 删              逐句问"删掉它歌更差吗"；再问"有哪一句你会想跳过"
@@ -136,7 +136,8 @@
 
 | 想解决 | 去哪 |
 | --- | --- |
-| 句数怎么算、段落模板 T1–T9、速度与字数的关系 | `references/song-structure.md` |
+| 句数怎么算、段落骨架、速度与字数的关系 | `references/song-structure.md` |
+| **作词的外部基准**（工序、分工、人称、押韵、四测试） | `references/lyric-craft.md` |
 | 押什么辙、韵字 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 「太 AI 了」、流水账、不像歌词、像作文 | `skills/lyric-naturalness/SKILL.md`（三条判定：施动者 / 解释词 / 末句结论）|
 | 缺画面、卡韵 | `skills/lyric-imagery-rhyme/SKILL.md` |
@@ -170,7 +171,7 @@
 | `song-prompt-builder` | 出 Suno / 秒响提示词 |
 | `production-antislop` | 出歌雷同、没特点 |
 
-**9 份 references**（`references/{名}.md`）：`anti-ai-lexicon`（去 AI 味词库）、`production-lexicon`（演奏法/质感/反差/事件句）、
+**10 份 references**（`references/{名}.md`）：`lyric-craft`（作词外部基准）、`anti-ai-lexicon`（去 AI 味词库）、`production-lexicon`（演奏法/质感/反差/事件句）、
 `production-params`（九维）、`song-structure`（结构句数）、`suno-tags`（标签库）、
 `platform-miaoxiang`（秒响规范）、`rhyme-zh` / `rhyme-en`（韵表）、`logging`（记录规则）。
 

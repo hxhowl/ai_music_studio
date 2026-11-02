@@ -52,7 +52,7 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 
 **Four-step narrowing — don't take the familiar one** (offering nine templates with no selection rule means the first one gets picked):
 
-1. **Scale**: clip / short-form (about a minute) → **T5 only**; a full song → the rest
+1. **Scale**: clip / short-form (about a minute) → T5-like; a full song → the rest
 2. **What carries the song**: chorus-led (emotional, cathartic) → T1/T4/T9; verse-led (narrative, rap) → T3/T6; balanced → T2; instrumental-led → T8
 3. **How many choruses, do they vary**: three with variation → T1/T2/T4; final must peak → T4;
    chorus only restates the title → T3/T6 (**no line counts here** — write the chorus, then count; see §4)
