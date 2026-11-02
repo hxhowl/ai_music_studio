@@ -176,7 +176,7 @@ Given a range with no selection rule, the model picks the minimum — so every s
 
 | Step | What | Where |
 | --- | --- | --- |
-| ① Pick template | Narrow to T1–T9 in four steps; **don't take the familiar one** | §3 |
+| ① Name the shape | The chorus exists; see which existing shape it resembles (**naming, not choosing**) | §3 |
 | ② Set tempo band | Keep the user's number if they gave one; otherwise pick **slow / mid / fast** — **no numbers** (ranges belong to production) | §6 |
 | ③ Count lines | **Count what you wrote**, then ask how much this needs to say | §4 |
 | ④ Check relations | Repeats equal; verse / pre-chorus / chorus differ | §5 |
@@ -250,7 +250,7 @@ singing language**.
 **Rule of thumb**: within a section, corresponding lines should match in syllable count (roughly) AND stress position. Stress matters more.
 **Long-line styles: length lives in syllables, not line count** — 4 long lines feel like 8 normal ones.
 
-**Explainable if asked** (don't volunteer it, see `AGENTS.md` §4 delivery form): which template (T1–T9) and why; the tempo band; lines per section and why.
+**Explainable if asked** (don't volunteer it, see `AGENTS.md` §4 delivery form): which shape it turned out to be and why; the tempo band; lines per section and why.
 **Don't deliver a duration calculation.** The user asked for structure, not an arithmetic table.
 
 ---
