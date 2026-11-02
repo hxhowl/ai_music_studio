@@ -300,7 +300,7 @@ AI 味的病根是"平均化"——写出来的东西所有人都能写，那它
 
 ⚠️ 这三条是**准星，不是清单**——写到哪儿卡住才看，不要逐条对着改。
 
-写完不确定"这算不算歌词" → 走 `skills/lyric-naturalness/SKILL.md` 的三条判定。
+写完不确定"这算不算歌词" → 走 `skills/lyric-naturalness/SKILL.md`（先问"这话是谁说的"，再三条判定）。
 该找什么具体东西 → `references/anti-ai-lexicon.md`（取材方向 / 当代物件 / 陈词怎么判）。
 
 ---

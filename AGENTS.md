@@ -142,7 +142,7 @@
 | **作词的外部基准**（工序、分工、人称、押韵、四测试） | `references/lyric-craft.md` |
 | 押什么辙、韵字、重韵判定 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 「哪里不对但说不上来」 | `references/lyric-diagnostics.md`（诊断表 + 症状→处方，**卡壳才查**）|
-| 「太 AI 了」、流水账、不像歌词、像作文 | `skills/lyric-naturalness/SKILL.md`（三条判定：施动者 / 解释词 / 末句结论）|
+| 「太 AI 了」、不像歌词、像作文、像文案 | `skills/lyric-naturalness/SKILL.md`（先问"这话是谁说的"，再三条判定）|
 | 缺画面、卡韵 | `skills/lyric-imagery-rhyme/SKILL.md` |
 | 编曲雷同、提示词没特点 | `skills/production-antislop/SKILL.md` |
 | Suno 标签怎么写 | `references/suno-tags.md` |

@@ -98,7 +98,7 @@ broken heart / time heals all / set me free
 | 心动 | 怦然心动 | 记住对方随口说的口味；多买了一份 |
 | 放不下 | 我始终放不下 | 没改的密码；相册里没删的照片 |
 | 等一个人 | 我在等你回来 | 电梯一停就抬头；听见楼道脚步 |
-| 时间流逝 | 时光荏苒 | 相册弹出"去年今日"；会员到期提醒 |
+| 时间流逝 | 时光荏苒 | "去年今日"那张还没删；会员到期前一天 |
 | 假装没事 | 我强颜欢笑 | 朋友圈照发；但不回消息 |
 | 关系结束 | 我们走到了尽头 | 还没还的钥匙；留在柜子里的东西 |
 
@@ -115,7 +115,7 @@ broken heart / time heals all / set me free
 | smitten | my heart skipped | memorised their usual order; bought one extra |
 | can't let go | I can't let go | the password never changed; the photo still in the album |
 | waiting | I wait for you | looking up every time the lift stops; footsteps in the hall |
-| time passing | time goes by | the photo app's "one year ago"; a membership expiry notice |
+| time passing | time goes by | the "one year ago" photo still there; the day before a membership lapses |
 | pretending fine | I'm fine, really | posting like nothing happened; not replying |
 | it's over | we're finished | the key never returned; things left in the cupboard |
 
@@ -124,6 +124,10 @@ broken heart / time heals all / set me free
 ## F. 当代生活物件库（时代标记）
 
 > 用一两个就够了，**不用凑数**——凑出来的物件和凑出来的名词是同一回事。
+>
+> ⚠️ **界面可以当素材，不能当句子的主角。** `屏幕暗下去` 可以（人在看着它暗）；
+> `"对方正在输入"闪了一下` 不行（那是一行字在闪）。区别：前者是场景里的一个东西，
+> 后者是一串字符串——**唱一句引号里的字，等于念标识牌**。
 
 **通讯**：微信置顶 / 已读不回 / 撤回 / 免打扰 / 朋友圈三天可见 / 58 秒语音条 / 群聊设免打扰
 
