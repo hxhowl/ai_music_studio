@@ -257,23 +257,17 @@ dead chorus, POV drift, unsingable lines).
 
 ---
 
-## 6. Naturalness — three sights to keep in view (all of them point at *less*)
+## 6. Naturalness — one thing to hold while drafting
 
-**The root cause of AI-sounding lyrics is averaging** — if anyone could have written it, it belongs to no one.
+**Heavier emotion, lighter wording** — not "I miss you till I cry", but "I never deleted it".
 
-Only three things to watch while drafting:
+The rest lives where it belongs; this file doesn't restate it:
 
-1. **Could a camera film it?** You can't film "loneliness", you can film one specific action or object.
-   **Adjectives are the writer evaluating; nouns and verbs are the thing itself** — cut the evaluation, keep the thing.
-   What to go find: the source table in `references/anti-ai-lexicon.md` (**read it for direction, don't copy the sentences**)
-2. **Heavier emotion, lighter wording** — not "I miss you till I cry", but "I never deleted it"
-3. **One object comes back once, and its state has changed** (still on the lanyard → chewed up → still there)
-
-⚠️ These are **sights, not a checklist** — look at them when you're stuck, don't walk through them one by one.
-
-Not sure it is condensed enough? Do the **delete pass** in `skills/lyric-naturalness/SKILL.md`.
-What concrete thing to go find: `references/anti-ai-lexicon.md` (source directions / contemporary
-objects / how to judge a cliché).
+| Question | Go to |
+| --- | --- |
+| Which words are empty / clichéd / need qualifying | `references/anti-ai-lexicon.md` |
+| Is this line condensed enough (did the words buy anything) | `skills/lyric-naturalness/SKILL.md` |
+| "Something's off and I can't name it" | `references/lyric-diagnostics.md` |
 
 ---
 

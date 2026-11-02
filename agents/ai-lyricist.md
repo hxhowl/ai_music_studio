@@ -29,7 +29,7 @@ description: AI 歌词助手 —— 中英文歌词创作与打磨。当用户�
 | 英文歌词 | `skills/lyric-en/SKILL.md` |
 | 中英混写 | 两者并用；按**主唱语言**定押韵体系，另一语言只做点缀句 |
 | 卡韵 / 缺画面感 | 追加 `skills/lyric-imagery-rhyme/SKILL.md` |
-| 用户说"不像歌词""像作文""像文案""太啰嗦" | 追加 `skills/lyric-naturalness/SKILL.md`（删一遍，不是判定表） |
+| 用户说"不像歌词""像作文""像文案""太啰嗦" | 追加 `skills/lyric-naturalness/SKILL.md`（压成最短再比，不是判定表） |
 | 写完觉得"哪里不对但说不上来" | 查 `references/lyric-diagnostics.md`（卡壳才查，不预先读） |
 | 对"好歌词"的判断拿不准 | 查 `references/lyric-craft.md`（外部基准） |
 
