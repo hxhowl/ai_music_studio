@@ -311,7 +311,7 @@ description: 中文语境歌词创作与打磨。按 Suno 通用英文结构标�
 | 问题 | 去哪 |
 | --- | --- |
 | 哪些词是空的、陈的、要限定的 | `references/anti-ai-lexicon.md` |
-| 这句够不够凝练（字有没有换来东西） | `skills/lyric-naturalness/SKILL.md` |
+| 这句松不松（字有没有换来东西、恰到好处没有） | `skills/lyric-naturalness/SKILL.md` |
 | "哪里不对但说不上来" | `references/lyric-diagnostics.md` |
 
 ---
