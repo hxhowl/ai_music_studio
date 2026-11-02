@@ -50,7 +50,7 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 > **No BPM numbers here on purpose** — the lyric side only needs a tempo band to judge line length.
 > Numbers and ranges belong to the production side (`song-structure.md` §6 maps bands to syllables).
 
-**Four-step narrowing — don't take the familiar one** (offering nine templates with no selection rule means the first one gets picked):
+**Four ways to describe the shape — after it exists.** This is naming, not choosing; the chorus is already written.
 
 1. **Scale**: clip / short-form (about a minute) → T5-like; a full song → the rest
 2. **What carries the song**: chorus-led (emotional, cathartic) → T1/T4/T9; verse-led (narrative, rap) → T3/T6; balanced → T2; instrumental-led → T8
@@ -135,9 +135,10 @@ Be able to say **why** you chose this template (if asked — don't volunteer it)
 > **The test is strict**: the next line must actually open with that word. Otherwise it's an ordinary
 > broken rhyme and the table above applies.
 
-⚠️ English and Chinese differ here on purpose: Chinese defaults to **rhyming every line** because it
-doesn't lean on word stress to hold the pulse; English defaults to every-other-line.
-Don't copy one language's density into the other.
+⚠️ English and Chinese differ on purpose: Chinese leans on rhyme harder (it doesn't use word stress
+to hold the pulse), English defaults to every-other-line in verses.
+But in both: **the chorus locks the rhyme, the verse can loosen. Rhyme is a memory aid, not the goal** —
+industry consensus is "rhyme is not required"; when you drop it, use repetition or a ring phrase instead.
 ⚠️ **Rhyming every line doesn't mean reusing the same rhyme word.** But judge "identical rhyme"
 by **how it sounds**, not by a poetry manual:
 
@@ -177,7 +178,7 @@ Given a range with no selection rule, the model picks the minimum — so every s
 | --- | --- | --- |
 | ① Pick template | Narrow to T1–T9 in four steps; **don't take the familiar one** | §3 |
 | ② Set tempo band | Keep the user's number if they gave one; otherwise pick **slow / mid / fast** — **no numbers** (ranges belong to production) | §6 |
-| ③ Count lines | **Count what you wrote**, then check it against the emotional job's range | §4 |
+| ③ Count lines | **Count what you wrote**, then ask how much this needs to say | §4 |
 | ④ Check relations | Repeats equal; verse / pre-chorus / chorus differ | §5 |
 
 > ⚠️ **Line count is decided by how much the emotion needs to say — not calculated.**
@@ -282,21 +283,28 @@ singing language**.
    Build it around the anchor line as the hook. Say what the song is about.
    The chorus is the answer the verses reach for — **know the answer before you build the road**.
    ⚠️ Can't write the chorus = the premise isn't clear yet → go back to ⓪, **don't force a verse**.
-   (Write the verse first and you don't know what it's travelling toward — that's how you get
-   six parallel shots instead of a lyric)
+   ⚠️ **Never start the song from line 1.** This is the most consistent point across practitioners
+   ("Start with the hook, not the first line" — see `references/lyric-craft.md` §1).
+   ⚠️ **The chorus is the universal half**: the verse gives one specific scene, the chorus turns it
+   into something everyone has felt. If the verse already says "I'm sad", the chorus has nothing to lift.
 
-④ **Set the structure (backwards from the chorus)**
-Template skeleton (T1–T9, **skeleton only**) + lines per section + tempo band
-Line counts come from the emotional job (chorus) and the subject relation (verse); tempo only changes line length, not counts
+④ **Set the shape — only after the chorus exists**
+   Count the chorus lines you actually wrote, then decide how the verse relates to it
+   (narrative ≥ / lyrical ≤). Tempo sets a band, not line numbers.
+   For the skeleton, compare against `song-structure.md` §2–3 — those are **shapes that already exist,
+   not nine options to pick from**. Build your own if none fit.
+   **Structure is a result of writing, not a premise for it.**
 
 ⑤ **Pick the rhyme family (changeable later)**
    See where the chorus naturally lands and **use that**; switch if it fights you.
    ⚠️ **Never let rhyme decide content.** In the priority order rhyme sits below "sings like speech";
    it must not be locked before you write anything
 
-⑥ Verse — **the road to that chorus line**. Ask first: what state must this start from for the
-   chorus to be earned? Images and actions, no commentary; each verse is **one chain of action**,
-   not a shot list
+⑥ Verse — **the picture, not the road**. Ask first: what state must this start from for the
+   chorus to be earned? Concrete images and actions, no commentary.
+   One thing should run through it (eye line / one action / one object). **Juxtaposition is fine** —
+   a list is not: a list is six things with no line through them (`lyric-craft.md` §3).
+   ⚠️ Keep the verse **specific**. Generality belongs in the chorus.
    → Pre-Chorus (shorter lines, rising) → Bridge (switch rhyme family / perspective, say the real
    thing) → Outro (fewer words, fade)
 
@@ -503,7 +511,7 @@ Go read those five: **versioning / section tags / formatting / structural sanity
       (highest-priority signal here — it marks what's most worth fixing, it doesn't fail the song)
 
 **Line count (open when "the structure feels off"), §3**
-- [ ] **Not every section is 4 lines** — counts come from the emotional job, not the minimum
+- [ ] **Not every section is 4 lines** — counts come from how much needs saying, not the minimum
 - [ ] Verse and chorus differ in line count (equal is fine — T2/T7 do it; then pre-chorus and energy contrast have to tell them apart)
 - [ ] **The chorus hasn't eaten the song**: ≤ 4 choruses — that's the only hard half. Two identical adjacent choruses are fine; the difference can come from performance and arrangement. **Never change a better line just to make the second chorus differ**
 - [ ] **The template's rationale matches the actual structure** — if you picked T4 "final chorus extended",
