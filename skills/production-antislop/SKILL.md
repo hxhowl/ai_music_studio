@@ -30,7 +30,7 @@ description: 编曲提示词反套路与去同质化。诊断"安全词组合"�
 
 `references/production-lexicon.md` 第一节列了黑名单。两类处理：
 
-- **场景化**：`lonely` → `lonely, empty subway station at 2am`（情绪词后接具体场景）
+- **场景化**：情绪词后面接**这个场景的边角**（几点、在哪、旁边有什么），不接形容词
 - **转质感**：`dreamy` → `half-speed tape, washed-out reverb`（换成可执行的声音参数）
 
 **参考**：裸情绪词要少，且每个都带场景限定、或直接换成质感词。
@@ -139,7 +139,7 @@ indie folk, male vocals, acoustic guitar, warm, nostalgic, 92 BPM
 
 **改后（Style）**
 ```
-indie folk, fingerpicked nylon-string guitar, upright bass, brushed snare,
+indie folk, fingerpicked nylon-string guitar, upright bass, brush snare,
 male baritone, breathy, near-spoken, dry, single-mic live take,
 90-96 BPM, sparse intro, dynamic contrast
 Exclude: harmonica, string section, big reverb
@@ -188,8 +188,9 @@ Exclude: operatic vocal, heavy reverb, vibrato
 **改后**
 ```
 现代都市抒情流行，成年女声中低音区，气声起句，咬字轻，句尾收音干净。电钢琴铺底（带轻微磁带抖动），
-闷音立式贝斯，brush 军鼓；旋律以级进为主，句尾下行收住；前 12 秒只有电钢琴入声，主歌鼓组半速进入，
-第二段副歌起加入室内乐弦乐四重奏；桥段抽掉全部节奏乐器，留 4 秒纯人声干声，
+闷音立式贝斯，brush 军鼓；旋律以级进为主，句尾下行收住；前 12 秒只有电钢琴与低频持续音，
+第 12 秒人声进入，主歌鼓组半速进入，第二段副歌起加入室内乐弦乐四重奏；桥段抽掉全部节奏乐器，
+留 4 秒纯人声干声，
 再全员进入最后一次副歌；尾奏逐层退去，最后一句气声收尾。约 85–92 BPM，
 录音室单支铝带麦克风同期录制，70 年代磁带饱和，房间混响很短。完整旋律演唱。不要 auto-tune，不要合唱。
 ```

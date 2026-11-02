@@ -43,8 +43,9 @@
 | `[Outro]` | 尾奏 | ★★★ |
 | `[End]` | 结束标记，**写在歌词最后一行** | ★ |
 
-**`[End]` 什么时候加**：要"唱完立刻收住、不再多弹一段尾奏"就加——不加时模型常在尾奏多 noodle
-10–20 秒。需要渐弱收尾就不要加。
+**`[End]` 什么时候加**：写在歌词最后一行，意思是"歌词到此结束，别再往后加"。
+不加时模型常在尾奏多 noodle 10–20 秒。它**不改变你已经写的那几句尾奏**——
+要渐弱，就把渐弱写进尾奏那几句，最后补一个 `[End]` 收住，两者不冲突。
 
 **元标签**（写在歌词开头或段落内）：`[Style: ...]` `[Exclude: ...]` `[Title: ...]`
 
@@ -74,8 +75,8 @@
 | 电子 | `edm` `house` `deep house` `techno` `synthwave` `future bass` `dubstep` `drum and bass` `trance` `lo-fi` |
 | 嘻哈 | `hip-hop` `trap` `boom bap` `lo-fi hip hop` `drill` `conscious rap` |
 | R&B / 灵魂 | `r&b` `neo-soul` `soul` `motown` `funk` `gospel` |
-| 爵士 | `jazz` `smooth jazz` `bebop` `bossa nova` `swing` `nu jazz` |
-| 氛围 | `ambient` `cinematic`* `orchestral` `post-rock` `new age` `drone` `soundscape` |
+| 爵士 | `jazz` `smooth jazz` `bebop` `swing` `nu jazz` |
+| 氛围 | `ambient` `cinematic`* `orchestral` `new age` `drone` `soundscape` |
 | 拉丁 | `latin` `reggaeton` `salsa` `bossa nova` `samba` `flamenco` |
 | 乡村 | `country` `country pop` `bluegrass` |
 | 影视 | `film score` `trailer music` `hybrid orchestral` `epic orchestral` |
@@ -91,7 +92,8 @@
 > 判据是：它描述的是"这张唱片怎么录的"（有效）还是"听起来感觉如何"（无效）。
 > *`cinematic` 只在影视/氛围类里有效，流行歌里是泛词。
 
-> **具体化技巧**：`lonely` → `lonely, empty subway station at 2am`（情绪词后接场景，效果显著更好）
+> **具体化技巧**：情绪词后面接**这个场景的边角**（几点、在哪、旁边有什么），不要接形容词。
+> 具体写成什么，取决于这首歌的场景——**别照抄任何一个现成例子**，那会变成下一个安全词组合。
 > ⚠️ **不要数「用了几个」**——写成数字就会被当成指标去凑，凑完还是平均化。判据是有没有场景支撑。
 
 ### ③ 人声（性别 + 音色 + 语言）
@@ -125,12 +127,12 @@
 | 键盘 | `piano` `rhodes` `electric piano` `organ` `hammond organ` `synth pads` `analog synth` `arp synth` |
 | 吉他 | `acoustic guitar` `electric guitar` `clean guitar` `distorted guitar` `fingerpicked guitar` `slide guitar` `12-string guitar` |
 | 贝斯 | `bass` `upright bass` `synth bass` `808 bass` `slap bass` `sub bass` |
-| 鼓组 | `drums` `drum machine` `808 drums` `brush drums` `taiko drums` `four-on-the-floor` `breakbeat` `tight drums` `loose drums` |
+| 鼓组 | `drums` `drum machine` `808 drums` `brush drums` `taiko drums` `breakbeat` `tight drums` `loose drums` |
 | 弦乐 | `strings` `string section` `violin` `cello` `pizzicato` `orchestral strings` |
 | 管乐 | `brass` `horn section` `trumpet` `saxophone` `trombone` `flute` `clarinet` `oboe` |
 | 中国乐器 | `erhu` `guzheng` `pipa` `dizi` `xiao` `sheng` `Chinese percussion` `yangqin` |
 | 打击 | `shaker` `tambourine` `congas` `bongos` `hand claps` `finger snaps` `woodblock` |
-| 电子音色 | `saw lead` `FM bells` `granular pads` `vinyl crackle` `tape hiss` `dub delay` |
+| 电子音色 | `saw lead` `FM bells` `granular pads` `dub delay` |
 
 ### ⑤ 节奏 / 速度
 
@@ -144,19 +146,21 @@
 
 ### ⑦ 制作质感 / 年代
 
-| 类别 | 标签 |
+**三行 = 条件 10 的三个维度**（选其中两行即可，别跨行混算）：
+
+| 维度 | 标签 |
 | --- | --- |
-| 录音方式 / 质感 | `close-mic` `intimate close-mic` `single-mic live take` `lo-fi` `tape saturation` `vinyl crackle` `warm analog` `crisp digital` `raw` `polished` |
-| 空间与介质 | `reverb-heavy` `dry` `spacious` `cathedral reverb` `spring reverb` `plate reverb` `ambient` |
-| 年代 | `80s` `90s` `70s` `60s` `retro` `vintage` `modern production` `bedroom pop` |
-| 响度 / 动态 | `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` `sparse intro` `dynamic contrast` `slow build` |
+| **录音方式**（话筒距离 / 录制手法） | `close-mic` `intimate close-mic` `single-mic live take` `room mics` `direct-in` `re-amped` |
+| **空间与介质**（房间感 / 载体） | `dry` `reverb-heavy` `spacious` `cathedral reverb` `spring reverb` `plate reverb` `ambient` `tape hiss` `tape saturation` `vinyl crackle` `lo-fi` |
+| **年代** | `80s` `90s` `70s` `60s` `modern production`；`retro` `vintage` 单用是泛词，必须配器材 |
 
-> ⚠️ **前三个维度才叫质感**（条件 10 要的是这三个里占两个）。年代、录音方式、空间与介质是**三件不同的事**——
-> `close-mic` 属**录音方式**（话筒距离），`dry` / `reverb` 属**空间**，`tape hiss` 属**介质**。
-> `dry close-mic` 这种复合标签同时覆盖方式和空间，可以算两项。
+**不算质感的第四类**（不属于上面任何一行，别拿它顶条件 10）：
+`dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` `sparse intro` `dynamic contrast` `slow build`——这些是**动态词**，用来承载编曲事件。
 
-> ⚠️ **「响度 / 动态」这一行不算质感。** `sparse intro` `building` 这类是**动态词**，用来承载编曲事件，
-> 拿它们顶质感等于条件白过。
+> ⚠️ **不要用合写去凑两项。** 条件 10 数的是**维度**，不是字符串里有没有空格——
+> `dry close-mic` 拆开就是 `dry`（空间与介质）+ `close-mic`（录音方式）；写成一个标签也行，
+> 但你得**说得出这两件事各自是什么**，否则老实拆成两个。
+> **动态词（`sparse intro` `building`…）不管写几个，都不构成质感维度。**
 
 > ⚠️ 年代词**必须配器材**才有效（`80s, gated reverb drums`）。单写 `80s` / `retro` / `vintage` 是泛词，
 > 见 `references/production-lexicon.md` 第一节。

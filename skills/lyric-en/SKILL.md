@@ -136,7 +136,7 @@ No full foreign sections, don't add a language for flavour, **don't expect cross
      Can't find it? Keep going. It shows up once the chorus works; if the chorus doesn't have it,
      the song doesn't have it
    · **Not enough information?** Invent one concrete scene, state it in one line, and start
-     ("I'll write it as the last train at 00:47 — stop me if that's wrong").
+     ("I'll write it as a Tuesday-night hospital corridor — stop me if that's wrong").
      ⚠️ Don't keep interrogating, and don't write something generic — **the user correcting a concrete
      draft is much faster than staring at a blank page**
 
@@ -203,14 +203,14 @@ only the bridge may switch), or let an object planted in V1 change by V2 (V1: "p
 | Point | Rule |
 | --- | --- |
 | **Placement** | **First line of the chorus** (heard first), then repeated at the last line or in `[Post-Chorus]` to close the loop |
-| **Length** | **Usually shorter than the surrounding lines** — if the chorus runs 8, try 5–6. Not a rule: the hook can be the longest line if it's the most memorable (it's the exception to the roughly-equal-length guideline) |
+| **Length** | **Usually shorter than the surrounding lines** — if the surrounding lines run 8 syllables, aim for 5–6. Not a rule: the hook can be the longest line if it's the most memorable (it's the exception to the roughly-equal-length guideline) |
 | **Open vowels** | Prefer open vowels (ah / ay / oh); closed ones (ee / oo) don't carry and get swallowed |
-| **Repetition** | Repeat verbatim 2–3 times, **unchanged**; if the three choruses vary, vary **line 4** (the standard variation slot in a 6-line chorus), never the hook |
+| **Repetition** | Repeat verbatim 2–3 times, **unchanged**; if the three choruses vary, vary **line 4** in a 6-line chorus (**line 3** in a 4-line one), never the hook |
 | **Content** | It's the title or a near-paraphrase of it; **no abstract emotion words** ("it'll be okay" doesn't stick) |
 
-⚠️ A hook that changes all three times is no hook. Leave the variation to **line 4**
-(the standard variation slot in a 6-line chorus) — don't touch lines 1–3: line 2 *develops* the hook,
-so changing it dismantles the hook itself.
+⚠️ A hook that changes all three times is no hook. In a **6-line** chorus leave the variation to
+**line 4** — don't touch lines 1–3: line 2 *develops* the hook, so changing it dismantles the hook itself.
+(A 4-line chorus varies **line 3** — see `song-structure.md` §4.3.)
 (See `references/song-structure.md` §4 for the full 6-line chorus layout.)
 
 ---
@@ -231,7 +231,7 @@ so it yields to "singable".
 ⚠️ **Duration is not in this list** — it varies by genre (90-sec punk, 5-min post-rock).
 Making it a condition would force padding or cutting lines just to hit seconds.
 
-⚠️ **"Suno ≤200 characters" is NOT a lyric-side condition** — that limit applies to the Style
+⚠️ **Suno's Style character limit is NOT a lyric-side condition** — it applies to the Style
 field, i.e. to prompts. Lyrics have no character limit. Don't mix the two sides up.
 
 ⚠️ **The per-line syllable cap is NOT one of them** — it's a reference, not a hard limit.

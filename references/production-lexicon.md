@@ -17,7 +17,7 @@
 | `melancholic` `sad` | 太泛，情绪落不到编曲上 | `minor key`, `slow decay`, `dissonant strings` |
 | `emotional` | 无法转成编曲决策 | 写成具体事件："副歌前抽掉所有伴奏" |
 | `epic` `cinematic` | 触发固定的大编制套路 | 写明编制：`string section + taiko + distorted bass` |
-| `catchy` `radio-ready` | 平台不理解"抓耳"是什么 | `four-on-the-floor`, `anthemic chorus`, `stacked harmonies` |
+| `catchy` `radio-ready` | 平台不理解"抓耳"是什么 | 写成能执行的东西：`anthemic chorus`, `stacked harmonies`, 或干脆写一条事件（副歌前抽空 2 拍） |
 | `female vocals` 单独出现 | 等于没描述 | 必配音区 + 音色 + 唱法（见下） |
 | `piano` `guitar` `drums` `strings` | 类别名，不是音色 | 换成**演奏法 + 器材**（见第二节） |
 | `80s` `retro` `vintage` 单用 | 太宽泛 | 写明器材：`analog synth`, `gated reverb drums`, `tape saturation` |
@@ -110,7 +110,7 @@
 | 维度 | 选项 |
 | --- | --- |
 | 织体 | `solo` `layered harmonies` `stacked vocals` `call and response` `unison doubling` |
-| 处理 | `dry close-mic` `slapback delay` `doubled vocal` `telephone-effect` |
+| 处理 | `dry`（空间） `close-mic`（录音方式） `slapback delay` `doubled vocal` `telephone-effect` |
 
 > ⚠️ `close-mic` 属于「**录音方式**」（话筒距离），不是唱法——它可以写，但**不能拿它顶三件套里的唱法**。
 > 条件是三件套里"唱法"那一件，`close-mic` 顶不了。
