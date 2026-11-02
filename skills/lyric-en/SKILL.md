@@ -245,20 +245,38 @@ The fastest way to write something that reads like a diary entry instead of a so
 | You said it would rain, and I left my umbrella in the classroom | Only said it wouldn't rain, didn't argue |
 | You carried the noodles over and stood by the door | One bowl of noodles, standing by the door |
 
-**Three checkable differences:**
+**No checklist can compute "does this read like a lyric."** What you can see is whether the line says
+**one situation**, or narrates **two things that happened in order**:
 
-1. **How many actions in one line** — prose packs two or three clauses; a lyric lands one
-2. **Whether the subject is stated** — English usually needs it, but **don't give every action its own
-   "I… you…"**; when two actions share one subject, let them share it
-3. **Conjunctions** — `so` / `because` / `and then` in a lyric line means you're narrating events
+| | The relation between the two actions | Result |
+| --- | --- | --- |
+| `You said it would rain, I left my umbrella in class` | sequential (so → therefore) | plot. The listener waits for what happens next |
+| `越过山丘 虽然已白了头` | simultaneous (the cost) | a situation. The two actions lock together |
+| `我送你离开 千里之外` | two sides of one thing | a situation |
 
-**One talking head, not two.** Don't alternate dialogue; **juxtapose two actions from the same side**:
+⚠️ **Don't count pronouns, and don't count actions.** Two actors is common in good lines —
+`我送你离开 千里之外`, `天青色等烟雨 而我在等你`; one actor with two events is too — `越过山丘 虽然已白了头`.
+**Counting can't decide this.**
 
-❌ `You said it would rain, I left my umbrella in class` — two subjects, two actions, ping-pong
+**Devices that turn a line into a situation** (devices, not rules):
+
+- **Leave the subject out most of the time** — recoverable, but it doesn't need saying
+- **Use fewer sequencing conjunctions** — `so` / `then` / `because` string two lines into a plot;
+  ⚠️ **contrast words are not the same** (`though` / `but` / `while`) — they make tension, not sequence
+- **The other person doesn't need an action to be present**: `Only said it wouldn't rain, didn't argue` —
+  they didn't speak, but they're there
+
+**Legal shapes** (all fine, don't force them): noun juxtaposition / verb with the subject dropped /
+fragment / repetition.
+
+**Two people: don't alternate dialogue.** Ping-pong is a script; **juxtapose two actions from the same side**:
+
+❌ `You said it would rain, I left my umbrella in class` — one action from you, one from me, glued by "so"
 ✅ `Only said it wouldn't rain, didn't argue` — one side, two actions; the other person shows up in "didn't argue"
 
-> **Test**: two or more subject switches in one line = prose. Keep the pronouns only where the
-> *relationship itself* is the content (`You're my most accurate forecast`, `Others watch clouds, I watch your eyes`).
+> **When the relationship itself is the content, the pronoun has to stay**: `You're my most accurate forecast`,
+> `Others watch clouds, I watch your eyes`. Removing it removes the relationship.
+> **That's the only case to keep it.**
 
 ### Everything else — symptoms → fixes
 
