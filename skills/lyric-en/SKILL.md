@@ -26,7 +26,7 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 
 ### Shape: write it first, name it later
 
-> ⚠️ **Never pick a template before writing.** Practitioners agree: **write the chorus first, the
+> ⚠️ **Never fix the structure before writing.** Practitioners agree: **write the chorus first, the
 > structure follows.** The chorus is the only part anyone hears repeatedly; the verse exists to
 > deliver it. Laying out sections first = paving a road before you know the destination.
 
@@ -119,13 +119,22 @@ No full foreign sections, don't add a language for flavour, **don't expect cross
 ## 4. Writing flow
 
 ```
-⓪ **Lock the scene + write the anchor line** (before anything else)
+⓪ **Lock the scene + who is speaking + the anchor line** (before anything else)
    · Scene boundary: what time / where / what the person is doing / what objects actually exist
      e.g. not "lonely" — "00:47, last train, three people in the carriage, phone at 4%"
      Skip it and you write lines that fit any song
-   · ★ **The anchor line**: the one line that sounds most like a real person — write it first
-     (it's often the title). ⚠️ This line has the highest priority — it wins every conflict.
-     **It comes before the song.** Can't find it? You haven't found the song yet — don't proceed
+   · **Who is speaking** (more important than the scene — answer all four):
+     (1) who this person is (**their situation**, not their job)
+     (2) who they're talking to (present / absent)
+     (3) when they're saying it (how long after)
+     (4) **what they want out of saying it** (to convince the other / to convince themselves / just to say it)
+     ⚠️ The fourth one sets the tone. Without it you get "a writer describing a relationship",
+     not "a person talking".
+   · ★ **The anchor line**: the one line that sounds most like a real person
+     (it's often the title, and the seed of the hook). ⚠️ Highest priority — it wins every conflict.
+     ⚠️ **But it does not have to happen at ⓪** — it's the same thing as the chorus in ③.
+     Can't find it? Keep going. It shows up once the chorus works; if the chorus doesn't have it,
+     the song doesn't have it
    · **Not enough information?** Invent one concrete scene, state it in one line, and start
      ("I'll write it as the last train at 00:47 — stop me if that's wrong").
      ⚠️ Don't keep interrogating, and don't write something generic — **the user correcting a concrete
@@ -167,7 +176,7 @@ No full foreign sections, don't add a language for flavour, **don't expect cross
    a list is not: a list is six things with no line through them (`lyric-craft.md` §3).
    ⚠️ Keep the verse **specific**. Generality belongs in the chorus.
    → Pre-Chorus (shorter lines, rising) → Bridge (switch rhyme family / perspective, say the real
-   thing) → Outro (fewer words, fade)
+   thing) → Outro (stop — don't summarize)
 
 ⑦ **Cut — this step is not a "self-check"**
    Ask of every line: **would the song be worse without it?** If not, cut it.
@@ -357,7 +366,7 @@ second lyric line
 ## Lyrics                   ← code block, copy-paste ready
 
 ---
-**One line each**: what you chose (template / tempo band), what changed, what still bothers you —
+**One line each**: what you chose (section layout / tempo band), what changed, what still bothers you —
 **five lines max**.
 ```
 
@@ -367,7 +376,7 @@ second lyric line
 
 | They ask | You give |
 | --- | --- |
-| "Why this structure?" | template, tempo band and why, lines per section |
+| "Why this structure?" | section layout, tempo band and why, lines per section |
 | "How does the rhyme work?" | family + density (how many lines unrhymed, and where) |
 | "What imagery did you use?" | image cluster + why this family |
 | "Did you self-check?" | only what **failed**; all clear = one sentence |
