@@ -180,7 +180,7 @@ autotune, vocoder, choir, saxophone, four-on-the-floor
 > 人声三件套落在 `female alto`（音区）+ `breathy`（音色）+ `near-spoken`（唱法）；
 > 质感靠 `close-mic`（录音方式）+ `70s tape saturation`（年代）。
 
-**编曲事件的落点**：Suno 的 Style 字段写不下长句，事件只能落在歌词标签上——本例桥段用
+**编曲事件的落点**：Style 是整首的全局描述，**没有"第几段"这个概念**，所以事件只能落在歌词标签上——本例桥段用
 `[Breakdown]` 而不是 `[Bridge]`，就是把"抽掉节奏组"落到了标签上；Style 里只放动态词。
 ⚠️ `[Intro]` `[Verse]` `[Chorus]` 是普通结构标记，任何歌都有，**不算事件**。
 

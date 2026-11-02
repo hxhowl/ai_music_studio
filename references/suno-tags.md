@@ -184,7 +184,7 @@
 
 ---
 
-## 三、Exclude Styles（负向提示，必填）
+## 三、Exclude Styles（负向提示，**建议填，不是条件**）
 
 **写纯词，不写 `no`。** 这个字段本身就是"要排除的风格"，加 `no` 等于给它一个叫 `no autotune` 的风格名。
 
@@ -204,7 +204,7 @@
 通用占位规则：`{vocal 音区}` `{vocal 音色}` `{vocal 唱法}` **三件必须全填**
 （`female alto` + `breathy` + `near-spoken` 这种），只写 `female vocals` 等于没描述。
 ⚠️ **三件套的第三件是"唱法"**（音区 / 音色 / **唱法**，见第二节 ③人声表）。
-`close-mic` 不是唱法，它属"空间"，可以写但要归位，不能拿它顶唱法。
+`close-mic` 不是唱法，它属**录音方式**（话筒距离，见 ⑦），可以写但不要拿它顶唱法。
 
 紧凑流行：
 {genre}, {sub-genre}, {mood1}, {mood2}, {vocal 音区}, {vocal 音色}, {vocal 唱法},

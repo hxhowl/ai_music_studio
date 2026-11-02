@@ -161,8 +161,9 @@
 | `wow and flutter` | 磁带速度抖动，走音感 |
 | `bitcrushed` / `lo-fi digital` | 数字失真 |
 | `sidechain compression` | 侧链压缩，舞曲抽吸感 |
-| `wall of sound` | 声墙，密集 |
-| `sparse` / `minimal` | 极简、留白 |
+
+> ⚠️ `sparse` `minimal` `wall of sound` `dynamic` `building` 这些是**动态词**，不是质感——
+> 它们承载编曲事件（那是参考项，不是条件），**不构成条件 10 的维度**。别拿它们凑"三项里选两项"。
 
 ---
 
@@ -198,7 +199,7 @@
 
 | 平台 | 编曲事件怎么落 |
 | --- | --- |
-| **Suno** | Style 字段写不下长句。事件落在：① **歌词的结构标签**（`[Instrumental Break]` `[Breakdown]` `[Drop]` `[Guitar Solo]` `[whisper]` `[falsetto]`）；② Style 里的**动态词**（`building` `sparse intro` `dynamic contrast` `slow build`）；③ 元标签 `[Style: ...]` |
+| **Suno** | Style 是全局描述，没有"第几段"这个概念。事件落在：① **歌词的结构标签**（`[Instrumental Break]` `[Breakdown]` `[Drop]` `[Guitar Solo]` `[whisper]` `[falsetto]`）；② Style 里的**动态词**（`building` `sparse intro` `dynamic contrast` `slow build`）；③ 元标签 `[Style: ...]` |
 | **秒响** | **直接写中文时间轴**，这是秒响相对 Suno 最大的优势区 |
 
 ### 中文事件句库（秒响用）

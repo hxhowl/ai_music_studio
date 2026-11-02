@@ -10,7 +10,7 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 1. **Section tags are Suno-standard English**, bracketed, on their own line.
 2. Lyrics are **sung, not read**. Every line must be singable in one breath.
 3. Stress alignment matters more than syllable count in English — a line with the right syllable count and the wrong stress pattern is unsingable.
-4. **One action per line.** A line that packs three clauses (subject–verb, subject–verb, subject–verb) is a prose sentence, not a lyric. Structures that need a pause to finish — comparative clauses (`earlier than my sigh`), stacked pre-modifiers (`my overhead-eave school uniform`) — leave nowhere for the breath to land.
+4. **One situation per line, not two things in sequence.** A line that narrates "then this happened, so then that happened" is prose. ⚠️ **Don't count actors or actions** — two actors is common in good lines (`我送你离开 千里之外`); one actor with two simultaneous actions is fine too. Structures that need a pause to finish — comparative clauses (`earlier than my sigh`), stacked pre-modifiers (`my overhead-eave school uniform`) — leave nowhere for the breath to land.
 
 ---
 
@@ -21,7 +21,7 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.md` §1 — single source; both lyric skills read from it, so don't keep a second copy here. Three things to remember:
 
 1. **English, bracketed, own line**: `[Intro]` `[Verse]` `[Pre-Chorus]` `[Chorus]` `[Post-Chorus]` `[Bridge]` `[Instrumental Break]` `[Outro]` `[End]`
-2. **`[Breakdown]` `[Drop]` `[whisper]` `[falsetto]` are where arrangement events land**, not just structural markers (Suno's Style field can't parse sentences)
+2. **`[Breakdown]` `[Drop]` `[whisper]` `[falsetto]` are where arrangement events land**, not just structural markers (Suno's Style is a whole-song description — it has no notion of "which section")
 3. **Instrumental-only sections carry the tag and nothing else** — one blank line after, no prose underneath
 
 ### Shape: write it first, name it later
@@ -87,8 +87,9 @@ One question decides it: **how many breaths does this take to say?**
 
 Given a range with no rule, the model picks the minimum, so every section gets 4 lines. Two things go wrong:
 - **A 4-line chorus**: one pass of the hook and it's gone. Nothing sticks
-- **Equal counts everywhere (4/4/4/4)**: structural "AI symmetry." A chorus is usually longer than the
-  verse (ballads) or shorter (story songs) — **they almost never match**
+- **Equal counts everywhere (4/4/4/4)**: structural "AI symmetry." Verse and chorus **being equal is fine**,
+  but when *every* section matches you lose length as a way to tell them apart — ballads usually run
+  longer in the chorus, story songs longer in the verse
 
 **Only one thing here is a condition** (`AGENTS.md` §4, condition 4): **repeats of the same function must
 have equal line counts** — V1=V2, C1=C2, PC1=PC2. Judge by **function, not position**: judging by
@@ -101,11 +102,11 @@ position writes V1 and V2 with different counts, but they share one melody and c
 **Line length: a line has to be singable in one breath.** No syllable table —
 syllable count is a *result* of tempo and phrasing, not a target.
 
-**But within a section, corresponding lines must be roughly equal in length.** They sing the same
-melody; a syllable or two apart is fine, **half the length is not** — a 6-character line cannot fill
-a 12-character slot no matter how good it is alone. This is **relative** (lines against each other),
-not an absolute table. ⚠️ Exception: the hook and the section's landing line may run clearly shorter —
-that's design, not an accident.
+**But within a section, corresponding lines (other than the last) must be roughly equal in length.**
+They sing the same melody; a syllable or two apart is fine, **half the length is not** — a 6-character
+line cannot fill a 12-character slot no matter how good it is alone. This is **relative** (lines against
+each other), not an absolute table. ⚠️ Exception: the hook and the section's landing line may run clearly
+**shorter or longer** — a landing line often gets an extra half-bar.
 ⚠️ **Never damage a better line to hit a syllable count.** Real case: `我说 哥 周一还得交周报` (the most
 human line in the song) was rewritten to `我烦恼 周一汇报还得交` to cut syllables and force an AABB —
 zero gain, pure loss, and the self-check still passed it.
@@ -255,7 +256,6 @@ The fastest way to write something that reads like a diary entry instead of a so
 | --- | --- |
 | The rain really came down, so you pulled me under the eaves | School uniform held up — that was our eave |
 | You said it would rain, and I left my umbrella in the classroom | Only said it wouldn't rain, didn't argue |
-| You carried the noodles over and stood by the door | One bowl of noodles, standing by the door |
 
 **No checklist can compute "does this read like a lyric."** What you can see is whether the line says
 **one situation**, or narrates **two things that happened in order**:
@@ -361,7 +361,7 @@ second lyric line
 ```markdown
 # Lyrics · "{Title}" v1        ← v1 is explicit; no "first version omits it" special case
 
-> Previous: outputs/{song}/…-v0-20260101.md    ← write "none" for the first version
+> Previous: outputs/{song}/…-lyrics-v1-20260101.md    ← write "none" for the first version
 
 ## Lyrics                   ← code block, copy-paste ready
 
