@@ -42,14 +42,14 @@ description: 编曲提示词反套路与去同质化。诊断"安全词组合"�
 
 | 平台 | 怎么落 |
 | --- | --- |
-| **Suno** | Style 字段写不下长句。事件落在：① 歌词**结构标签**（`[Instrumental Break]` `[Breakdown]` `[Drop]` `[Guitar Solo]` `[whisper]` `[falsetto]`）；② Style 里的**动态词**（`sparse intro` `building` `dynamic contrast`）；③ 元标签 `[Style: ...]`。<br>⚠️ `[Verse]` `[Chorus]` `[Bridge]` `[Intro]` `[Outro]` 是普通结构标记，**不算事件** |
+| **Suno** | Style 没有段落概念，事件只能落在：① 歌词**结构标签**（`[Instrumental Break]` `[Breakdown]` `[Drop]` `[Guitar Solo]` `[whisper]` `[falsetto]`）；② Style 里的**动态词**（`sparse intro` `building` `dynamic contrast`）；③ 元标签 `[Style: ...]`。<br>⚠️ `[Verse]` `[Chorus]` `[Bridge]` `[Intro]` `[Outro]` 是普通结构标记，**不算事件** |
 | **秒响** | **直接写中文时间轴**。这是秒响相对 Suno 最大的优势区，不用白不用 |
 
 **最好用的一招**：桥段或最后一次副歌前做一次**"抽空"**——留 2–4 秒只剩人声，再全员进入。
 留白之后的爆发，比一路堆满有力得多。
 
-> ⚠️ 常见错误：把"副歌前抽掉鼓"塞进 Suno 的 Style 字段。它读不懂长句，
-> 正确做法是写 `dynamic contrast` + 在歌词里插 `[Breakdown]`。
+> ⚠️ 常见错误：把"副歌前抽掉鼓"塞进 Suno 的 Style 字段。它不生效——**Style 是全局描述，
+> 没有"第几段"这个概念**。正确做法是写 `dynamic contrast` + 在歌词里插 `[Breakdown]`。
 
 ### 3. 反差音色（参考 —— 这是审美判断，不是条件）
 

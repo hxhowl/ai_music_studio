@@ -31,7 +31,7 @@ description: 中文语境歌词创作与打磨。按 Suno 通用英文结构标�
 完整标签表（常用度、元标签、演唱指示）见 `references/suno-tags.md` 第一节 —— 唯一来源，不要在这里另存一份。写词只需记住三条：
 
 1. **英文、方括号、独占一行**：`[Intro]` `[Verse]` `[Pre-Chorus]` `[Chorus]` `[Post-Chorus]` `[Bridge]` `[Instrumental Break]` `[Outro]` `[End]`
-2. **`[Breakdown]` `[Drop]` `[whisper]` `[falsetto]` 是编曲事件的落点**，不只是结构标记（Suno 的 Style 字段读不懂长句，事件只能落在歌词标签里）
+2. **`[Breakdown]` `[Drop]` `[whisper]` `[falsetto]` 是编曲事件的落点**，不只是结构标记（Suno 的 Style 是整首的全局描述，没有"第几段"这个概念，事件只能落在歌词标签里）
 3. **纯器乐段只写标签**，标签后空一行，不写说明文字
 
 ### 结构：先写出来，再定形状

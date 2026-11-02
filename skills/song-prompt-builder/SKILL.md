@@ -62,8 +62,8 @@ description: 歌曲生成提示词构建器。把用户的简单风格描述，�
 ```
 
 **这一步要守的**（编号对应 `AGENTS.md` 第 4 节，**以那边为准**）：
-- **≤ 1000 字符**（条件 6；V4.5 起，V4 及更早 200）；**主风格放第一个**（第一个标签权重最高）
-- 标签 8–15 个是经验值，**不是平台限制**——超 20 个开始互相矛盾
+- **≤ 1000 字符**（条件 6；V4.5 起，V4 及更早 200）；**主风格放第一个**（越靠前权重越高）
+- 实用区间是 **8–15 个标签 / 150–300 字符**——不是平台限制，是经验：超过约 200 字符后，后面的词会稀释前面的
 - 主风格**唯一**，辅助风格最多 1 个（条件 7）
 - 乐器 3–5 件，**每件带演奏法或器材**（条件 8；`brush snare` 而非 `drums`）
 - **人声三件套**：音区 + 音色 + 唱法（条件 9）；纯音乐显式写 `instrumental, no vocals`
@@ -82,7 +82,9 @@ description: 歌曲生成提示词构建器。把用户的简单风格描述，�
 | **歌词结构标签（主）** | 这才是事件真正的落点：`[Instrumental Break]` `[Breakdown]` `[Drop]` `[Guitar Solo]` `[whisper]` `[falsetto]` |
 | 元标签 `[Style: ...]` | 补充载体，写在歌词开头；主用上面两种 |
 
-> ⚠️ 把"副歌前抽掉鼓"写进 Style 字段 → Suno 读不懂。正确写法：Style 给 `dynamic contrast`，歌词里插 `[Breakdown]`。
+> ⚠️ 把"副歌前抽掉鼓"写进 Style 字段 → 不生效：**Style 是整首的全局描述，没有"第几段"这个概念**。
+> 正确写法：Style 给 `dynamic contrast`，歌词里插 `[Breakdown]`。
+> 但反过来也别矫枉过正——**描述性短语 Style 是读得懂的**（`close-mic'd and barely above a whisper` 就有效）。
 
 **标签归你加，词归角色一。** 界线只有一条：
 **你可以插入 / 移动结构标签（`[Breakdown]` `[End]` `[whisper]`…），不能改动任何一个字。**
@@ -195,7 +197,7 @@ close-mic, Rhodes, muted bass, brush snare, 88-96 BPM, tape saturation, sparse i
 | 副歌不炸 | 缺能量对比 | Style 给 `dynamic contrast` + `sparse intro`；主歌与副歌的差异落在**歌词结构标签**（`[Verse]` / `[Chorus]` / `[Breakdown]`）——Suno 的 Style 是单一字段，不支持段落级标签 |
 | 意外出现人声 | 没声明纯音乐 | 写 `instrumental, no vocals` |
 | **都一个样** | 安全词组合、无专属锚点 | 走 `production-antislop`：加反差音色 / 编曲事件 / 具体质感 |
-| **事件没生效** | 长句塞进了 Suno Style 字段 | Suno 读不懂长句 → 落歌词结构标签 `[Breakdown]`，Style 里只留 `dynamic contrast` |
+| **事件没生效** | 把"第几段做什么"写进了 Style | Style 没有段落概念 → 事件落歌词结构标签 `[Breakdown]`，Style 里只留 `dynamic contrast` |
 
 **定向调参原则**：只改出问题的那一维，其余不动，方便用户 A/B 对比。
 
