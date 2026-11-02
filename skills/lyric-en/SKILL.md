@@ -446,8 +446,7 @@ Only three things to watch while drafting:
 
 ⚠️ These are **sights, not a checklist** — look at them when you're stuck, don't walk through them one by one.
 
-Still not reading like a person? Go to the **five rewrites** in `skills/lyric-naturalness/SKILL.md`
-(drop the subject / drop the explaining / merge lines / cut the last line).
+Not sure it reads as a lyric at all? Run the **three checks** in `skills/lyric-naturalness/SKILL.md`.
 Replacement words: `references/anti-ai-lexicon.md`.
 
 ---
@@ -516,7 +515,7 @@ Go read those five: **versioning / section tags / formatting / structural sanity
 **On the "pass mark"**
 
 Only the five gates at the top have a pass mark. **The diagnostic table has no pass mark** —
-it's a toolbox, not an exam. Anything it turns up goes through the five rewrites in `lyric-naturalness`.
+it's a toolbox, not an exam. Anything it turns up goes through the three checks in `lyric-naturalness`.
 
 ---
 

@@ -138,7 +138,7 @@
 | --- | --- |
 | 句数怎么算、段落模板 T1–T9、速度与字数的关系 | `references/song-structure.md` |
 | 押什么辙、韵字 | `references/rhyme-zh.md` / `rhyme-en.md` |
-| 「太 AI 了」、流水账、不像歌词、像作文 | `skills/lyric-naturalness/SKILL.md`（谁在说话 + 五个变换）|
+| 「太 AI 了」、流水账、不像歌词、像作文 | `skills/lyric-naturalness/SKILL.md`（三条判定：施动者 / 解释词 / 末句结论）|
 | 缺画面、卡韵 | `skills/lyric-imagery-rhyme/SKILL.md` |
 | 编曲雷同、提示词没特点 | `skills/production-antislop/SKILL.md` |
 | Suno 标签怎么写 | `references/suno-tags.md` |
