@@ -271,7 +271,7 @@ Only three things to watch while drafting:
 
 ⚠️ These are **sights, not a checklist** — look at them when you're stuck, don't walk through them one by one.
 
-Not sure it reads as a lyric at all? Run the **three checks** in `skills/lyric-naturalness/SKILL.md`.
+Not sure it is condensed enough? Do the **delete pass** in `skills/lyric-naturalness/SKILL.md`.
 What concrete thing to go find: `references/anti-ai-lexicon.md` (source directions / contemporary
 objects / how to judge a cliché).
 

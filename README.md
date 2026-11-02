@@ -209,7 +209,7 @@ outputs/{歌曲名}/
 | 想加 | 放哪 |
 | --- | --- |
 | 该找什么具体东西 / 陈词怎么判 / 当代物件库 | `references/anti-ai-lexicon.md` |
-| 新的判定（施动者 / 解释词 / 末句结论） | `skills/lyric-naturalness/SKILL.md` |
+| 凝练检查的动作（删一遍看损失） | `skills/lyric-naturalness/SKILL.md` |
 | 安全词黑名单 / 演奏法 / 质感 / 反差配方 | `references/production-lexicon.md` |
 | 新的差异化判据 | `skills/production-antislop/SKILL.md` |
 | 速度量级 / 句数 / 段落骨架 | `references/song-structure.md` |

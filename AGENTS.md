@@ -142,7 +142,7 @@
 | **作词的外部基准**（工序、分工、人称、押韵、四测试） | `references/lyric-craft.md` |
 | 押什么辙、韵字、重韵判定 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 「哪里不对但说不上来」 | `references/lyric-diagnostics.md`（诊断表 + 症状→处方，**卡壳才查**）|
-| 「太 AI 了」、不像歌词、像作文、像文案 | `skills/lyric-naturalness/SKILL.md`（先问"这话是谁说的"，再三条判定）|
+| 「太 AI 了」、不像歌词、像作文、像文案、太啰嗦 | `skills/lyric-naturalness/SKILL.md`（**删一遍**，看损失什么）|
 | 缺画面、卡韵 | `skills/lyric-imagery-rhyme/SKILL.md` |
 | 编曲雷同、提示词没特点 | `skills/production-antislop/SKILL.md` |
 | Suno 标签怎么写 | `references/suno-tags.md` |
@@ -170,7 +170,7 @@
 | `ai-lyricist` / `ai-song-producer` | 角色入口，负责路由与边界 |
 | `lyric-zh` / `lyric-en` | 写中文 / 英文歌词（二选一，按主唱语言） |
 | `lyric-imagery-rhyme` | 缺画面、卡韵 |
-| `lyric-naturalness` | 「太 AI 了」、写完自查 |
+| `lyric-naturalness` | 「太 AI 了」、够不够凝练（删一遍） |
 | `song-prompt-builder` | 出 Suno / 秒响提示词 |
 | `production-antislop` | 出歌雷同、没特点 |
 
