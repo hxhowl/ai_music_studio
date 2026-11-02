@@ -110,7 +110,7 @@
 | 维度 | 选项 |
 | --- | --- |
 | 织体 | `solo` `layered harmonies` `stacked vocals` `call and response` `unison doubling` |
-| 处理 | `dry close-mic` `slapback delay` `no reverb` `doubled vocal` `telephone-effect` |
+| 处理 | `dry close-mic` `slapback delay` `doubled vocal` `telephone-effect` |
 
 > ⚠️ `close-mic` 属于「**录音方式**」（话筒距离），不是唱法——它可以写，但**不能拿它顶三件套里的唱法**。
 > 条件是三件套里"唱法"那一件，`close-mic` 顶不了。
@@ -155,7 +155,7 @@
 | `spring reverb` | 弹簧混响，吉他音箱 |
 | `plate reverb` | 铁板混响，光滑 |
 | `cathedral reverb` | 大教堂，宏大 |
-| `dry` / `no reverb` | 干声，压迫、真实 |
+| `dry` | 干声，压迫、真实 |
 | `tape saturation` / `tape hiss` | 磁带饱和/嘶声 |
 | `vinyl crackle` | 黑胶噪点 |
 | `wow and flutter` | 磁带速度抖动，走音感 |

@@ -173,7 +173,7 @@ dream pop, empty subway station 2am, female alto, breathy, near-spoken, close-mi
 **Exclude Styles**
 
 ```
-no autotune, no vocoder, no choir, no saxophone, no four-on-the-floor
+autotune, vocoder, choir, saxophone, four-on-the-floor
 ```
 
 > 一行中文：主风格选 dream pop 是因为它自带"空旷 + 混响"，不用另加空间效果；

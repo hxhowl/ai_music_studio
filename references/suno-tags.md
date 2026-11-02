@@ -2,11 +2,27 @@
 
 > 供 `skills/song-prompt-builder/SKILL.md` 第 2 步取标签使用。
 > **结构标签（第一节）是 `lyric-zh` / `lyric-en` 的唯一事实源**，两个 skill 都不另存副本。
-> **Style of Music 字段硬约束**：≤ 15 个标签、≤ 200 字符、主风格唯一、乐器 3–5 件。
+> **Style of Music 字段**：≤ 1000 字符（V4.5 起）、主风格唯一、乐器 3–5 件；标签 8–15 个是经验区间。
+> 上限、顺序、截断行为见下面第〇节。
 >
 > **取词优先级**：能用**演奏法 / 器材**就不用类别名（`brush snare` > `drums`）。
 > 演奏法、质感、反差配方、编曲事件句库见 **`references/production-lexicon.md`**；
 > 安全词黑名单（`dreamy` `ethereal` 等）同见该文件第一节。
+
+---
+
+## 〇、Style 字段怎么读（先看这个）
+
+| 项 | 值 | 性质 |
+| --- | --- | --- |
+| 字符上限 | **1000**（V4.5 / V5 / V5.5）；V4 及更早 200 | 平台限制。**超了 App 静默截断、不报错**——必须自己数 |
+| 标签个数 | 8–15 个好用；超 20 个开始互相矛盾 | **经验值，不是平台限制** |
+| 顺序 | **第一个标签权重最高。** 混合曲风时放前面的那个赢 | 平台行为 → **主风格永远放第一个** |
+| 分隔 | 英文逗号 + 半角空格；不写句子、不加句号 | 格式 |
+
+⚠️ **预算是用来买"只有这首歌才有"的东西的。** 曲风 / 人声三件套 / 三件乐器 / BPM / 两项质感
+是每条提示词都要有的骨架，写完就占 120–150 字符；剩下的额度留给**一句具体场景、一件反差音色、
+一个录像质感**——那才是决定它像不像另一首歌的部分，而不是骨架再堆两层。
 
 ---
 
@@ -25,12 +41,16 @@
 | `[Hook]` / `[Refrain]` | 反复句 | ★★ |
 | `[Breakdown]` / `[Drop]` | 电子乐段落 / **编曲事件落点** | ★ |
 | `[Outro]` | 尾奏 | ★★★ |
-| `[End]` | 结束标记 | ★ |
+| `[End]` | 结束标记，**写在歌词最后一行** | ★ |
+
+**`[End]` 什么时候加**：要"唱完立刻收住、不再多弹一段尾奏"就加——不加时模型常在尾奏多 noodle
+10–20 秒。需要渐弱收尾就不要加。
 
 **元标签**（写在歌词开头或段落内）：`[Style: ...]` `[Exclude: ...]` `[Title: ...]`
 
-> ⚠️ 这三个要**改歌词文件**，属作词侧落笔——角色二只提供内容，由角色一或用户插入。
-> 作曲侧自己往词里写 = 越界（`agents/ai-song-producer.md` 边界）。
+> ⚠️ 这三个也落在歌词文件里。**角色二可以直接插入标签**，但**不能改动一个词**——
+> 标签归作曲侧，词归作词侧，界线就这一条（`agents/ai-song-producer.md` 边界）。
+> 插入后歌词要出新版本（`AGENTS.md` 条件 1）。
 **演唱指示**：`[whisper]` `[falsetto]` `[rap]` `[spoken]` `[chant]` `[ad-lib]`
 **和声**：`[harmony]` `[background vocals]` `[backing vocals]`
 
@@ -127,7 +147,7 @@
 | 类别 | 标签 |
 | --- | --- |
 | 录音方式 / 质感 | `close-mic` `intimate close-mic` `single-mic live take` `lo-fi` `tape saturation` `vinyl crackle` `warm analog` `crisp digital` `raw` `polished` |
-| 空间与介质 | `reverb-heavy` `dry` `no reverb` `spacious` `cathedral reverb` `spring reverb` `plate reverb` `ambient` |
+| 空间与介质 | `reverb-heavy` `dry` `spacious` `cathedral reverb` `spring reverb` `plate reverb` `ambient` |
 | 年代 | `80s` `90s` `70s` `60s` `retro` `vintage` `modern production` `bedroom pop` |
 | 响度 / 动态 | `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` `sparse intro` `dynamic contrast` `slow build` |
 
@@ -149,11 +169,15 @@
 
 ## 三、Exclude Styles（负向提示，必填）
 
+**写纯词，不写 `no`。** 这个字段本身就是"要排除的风格"，加 `no` 等于给它一个叫 `no autotune` 的风格名。
+
 常用排除项：
 
-`no autotune` `no vocoder` `no distortion` `no saxophone` `no brass` `no electronic drums` `no choir` `no rap` `no screaming` `no heavy reverb` `no synth` `no acoustic guitar` `no claps`
+`autotune` `vocoder` `distortion` `saxophone` `brass` `electronic drums` `choir` `rap` `screaming` `heavy reverb` `synth` `acoustic guitar` `claps` `four-on-the-floor`
 
-**写法**：与 Style 字段同格式，逗号分隔英文标签。
+**写法**：与 Style 字段同格式，英文逗号分隔；**≤ 200 字符**（这一项在所有版本都是 200，比 Style 小得多）。
+
+**该写什么**：不是"我不喜欢的"，是**这个风格最可能的失败形态**（见 `production-antislop` 法则 6）。
 
 ---
 
@@ -177,19 +201,19 @@
 guofeng, pentatonic, {vocal 音区}, {vocal 音色}, {vocal 唱法}, close-mic, {空间与介质},
 yangqin, {演奏法}, breathy xiao, muted upright bass, {反差乐器},
 {BPM 区间}, sparse, dark
-Exclude：no operatic vocal, no heavy reverb, no vibrato
+Exclude：operatic vocal, heavy reverb, vibrato
 ⚠️ **这是骨架不是配方**：`{反差乐器}` 必须自己挑（古风里能形成反差的重型/电子音色），
 乐器名后面必须跟演奏法。直接抄下来就成了新的罐头。
 
 电子舞曲（⚠️ 除非明确要四踩罐头，否则不写 four-on-the-floor）：
 {edm sub-genre}, {mood}, {vocal 音区}, {vocal 音色}, {vocal 唱法},
 synth bass, 808 drums, saw lead, {BPM 区间}, broken beat, {production}
-Exclude：no four-on-the-floor
+Exclude：four-on-the-floor
 
 说唱：
 {hip-hop sub}, {mood}, {vocal 音区}, {vocal 音色}, rap,
 {inst1}, {inst2}, {inst3}, {BPM 区间}, {production}
-Exclude：no singing, no autotune
+Exclude：singing, autotune
 ```
 
 ---

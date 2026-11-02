@@ -96,12 +96,12 @@ description: 编曲提示词反套路与去同质化。诊断"安全词组合"�
 
 | 需求 | 最可能的失败形态 | 该排除 |
 | --- | --- | --- |
-| 古风 | 变成大混响戏腔罐头 | `no operatic vocal, no heavy reverb` |
-| 民谣 | 加了口琴和弦乐糖精 | `no harmonica, no string section` |
-| 抒情 | 变成 auto-tune 电音 | `no autotune, no vocoder` |
-| 电子 | 变成四踩罐头舞曲 | `no four-on-the-floor` |
-| 摇滚 | 变成金属嘶吼 | `no screaming, no metal` |
-| 极简 | 被自动填满 | `no choir, no brass, no stacked harmonies` |
+| 古风 | 变成大混响戏腔罐头 | `operatic vocal, heavy reverb` |
+| 民谣 | 加了口琴和弦乐糖精 | `harmonica, string section` |
+| 抒情 | 变成 auto-tune 电音 | `autotune, vocoder` |
+| 电子 | 变成四踩罐头舞曲 | `four-on-the-floor` |
+| 摇滚 | 变成金属嘶吼 | `screaming, metal` |
+| 极简 | 被自动填满 | `choir, brass, stacked harmonies` |
 
 ---
 
@@ -122,7 +122,7 @@ piano, strings, 85 BPM, beautiful
 dream pop, minor key, empty subway station at 2am, female alto, breathy,
 near-spoken, close-mic, felt piano, muted bass, brush snare, tape hiss,
 85-92 BPM, sparse intro, building, dynamic contrast
-Exclude: no saxophone, no wide reverb, no choir
+Exclude: saxophone, wide reverb, choir
 ```
 > 情绪词只剩 1 个且带场景；**3 件乐器**全带演奏法或器材；人声三件套齐（`female alto` 音区 +
 > `breathy` 音色 + `near-spoken` 唱法）——⚠️ `close-mic` 是**录音方式**（话筒距离），不是唱法，不能顶这一位；
@@ -142,7 +142,7 @@ indie folk, male vocals, acoustic guitar, warm, nostalgic, 92 BPM
 indie folk, fingerpicked nylon-string guitar, upright bass, brushed snare,
 male baritone, breathy, near-spoken, dry, single-mic live take,
 90-96 BPM, sparse intro, dynamic contrast
-Exclude: no harmonica, no string section, no big reverb
+Exclude: harmonica, string section, big reverb
 ```
 **改后（歌词里配结构标签，这才是事件真正的落点）**
 ```
@@ -168,10 +168,10 @@ guzheng, erhu, strings, cinematic, spacious reverb
 guofeng, pentatonic, female alto, clear tone, near-spoken, dry,
 vintage ribbon mic, yangqin, tremolo picked, breathy xiao, muted upright bass,
 808 sub bass, 72-80 BPM, sparse, dark
-Exclude: no operatic vocal, no heavy reverb, no vibrato
+Exclude: operatic vocal, heavy reverb, vibrato
 ```
 > 换掉古筝二胡（扬琴 + 箫，且都带演奏法）、`dry` + `vintage ribbon mic` 拿掉大混响、
-> `no vibrato` 放进 Exclude、**`808 sub bass` 是反差锚点**——古的变重的。这一件乐器，比十个情绪词都管用。
+> `vibrato` 放进 Exclude、**`808 sub bass` 是反差锚点**——古的变重的。这一件乐器，比十个情绪词都管用。
 
 ---
 
