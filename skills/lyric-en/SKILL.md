@@ -440,11 +440,12 @@ The fastest way to write something that reads like a diary entry instead of a so
 - **Three questions per line**: can a camera film it? would it still work in a different song? is there one detail nobody else would write?
 - **Details a camera could film — but don't count them.** Hitting some noun quota is how you end up
   with a shot-list; the number is not the point
-- ⚠️ **Details must chain, not pile up**: every line picks up from the one before, and the last line
-  completes an action or a turn. Counting nouns is the fastest way to write a shot-list instead of a
-  lyric (this actually happened — see `lyric-naturalness` rule 1).
-  Tests: **the deletion test** (delete any line — does the next one still connect? if yes, nothing was
-  connected) and **the subject test** (are 6 lines carrying 6 unrelated subjects?)
+- ⚠️ **Details need a line through them, not a pile**: action chaining / the eye moving / one object in
+  two states — any of those is a line. Counting nouns is the fastest way to write a shot-list instead of
+  a lyric (this actually happened — see `lyric-naturalness` rule 1).
+  **Diagnostic only, don't execute while drafting**: **the deletion test** (delete any line — does the
+  next one still connect?) and **the subject check** (can you supply a subject for each line, and is it
+  the *same* one? — supplying it isn't the same as writing it out)
 - **Keep one through-line object**: bring the same object back **once, and change its state**
   (still on the lanyard → chewed up → still there). A brand-new object every section passes
   every per-section check yet leaves the song with no spine — objects must **carry the story**,
@@ -476,15 +477,18 @@ Go read those five: **versioning / section tags / formatting / structural sanity
 > song — a mistake made for real on 2026-10-31.
 
 **Overall arc (start here if it "doesn't hold together")**
-- [ ] **Narrative line**: the song traces an emotional change from first line to last
-      (⚠️ a change of *scene* is not a change of *emotion*)
-- [ ] **Line-to-line relation**: pick 3 pairs of adjacent lines; for each you can name the relation
-      (cause / escalation / turn / contrast). "They're all describing X" means it's a list, not a lyric
+- [ ] **A direction**: the emotion or situation moves from first line to last
+      (⚠️ a change of *scene* is not a change of *emotion*). It does **not** have to be a story —
+      the eye moving downward (lift → corridor → neck → bed) counts
+- [ ] **Lines are held together by something**: pick 3 pairs of adjacent lines; for each you can name
+      the relation (cause / escalation / turn / contrast, **or juxtaposition** — two sides of one scene).
+      ⚠️ **Juxtaposition is not a list.** A list is six unrelated things with no line through them
 - [ ] **The chorus is inevitable**: it's forced out by the verse, not a new topic
-- [ ] **Each section's last line travels further than its first** (there's an arc inside a section too)
+- [ ] **Each section ends somewhere** — its last line stops at a place; it may travel further than the first, or simply settle
 - [ ] **One object comes back once and its state has changed** (a through-line, not decoration)
 
 **Line craft (open when it "doesn't read like a lyric")**
+- [ ] **Not every line says "who did what"** — two or more subject switches in a line is a prose sentence
 - [ ] Chorus rhyme family consistent; verse scheme stated; **density meets the default (§2)** —
       chorus has no unrhymed line, verse at most one and not the last
 - [ ] **Identical rhyme judged by ear**: adjacent lines on the same word = fix; 3+ uses in one
@@ -500,8 +504,9 @@ Go read those five: **versioning / section tags / formatting / structural sanity
 
 **Naturalness (open when it "reads like AI"), §6**
 - [ ] Details a camera could film — **not counted** (counting is what produces a shot-list)
-- [ ] **Details chain, they don't pile up** — passes the deletion test and the subject test,
-      not one object per line
+- [ ] **Details have a line through them, not a pile** — passes the deletion test, and you can supply
+      the same subject for each line (supply it — don't write it out), not one object per line
+- [ ] **Not every line says "who did what"** — two or more subject switches in a line is prose
 - [ ] A contemporary object is present; generic imagery is qualified
 - [ ] At least one line only this person would say; line lengths vary
       (highest-priority signal here — it marks what's most worth fixing, it doesn't fail the song)
