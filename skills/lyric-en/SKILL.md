@@ -28,16 +28,16 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 
 > ⚠️ **Never pick a template before writing.** Practitioners agree: **write the chorus first, the
 > structure follows.** The chorus is the only part anyone hears repeatedly; the verse exists to
-> deliver it. Picking a skeleton first = paving a road before you know the destination.
+> deliver it. Laying out sections first = paving a road before you know the destination.
 
 **Before you write, decide one thing only**: is this short (a clip / short-form) or a full song.
 Everything else waits until the chorus exists.
 
 **Come back to the shape afterwards** — compare against `references/song-structure.md` §2–3.
-Those T1–T9 are **shapes that already exist, not nine options to pick from**; build your own if none fit.
+§2–3 give the section list and the common orderings — **patterns, not options to pick from**; build your own if none fit.
 
 A shape is good if it passes four things: **every section has a job / the chorus repeats enough /
-long songs need air / the energy moves.** Meet those and any order works; miss them and no template saves it.
+long songs need air / the energy moves.** Meet those and any order works; miss them and no arrangement saves it.
 
 ---
 
@@ -152,8 +152,8 @@ No full foreign sections, don't add a language for flavour, **don't expect cross
 ④ **Set the shape — only after the chorus exists**
    Count the chorus lines you actually wrote, then decide how the verse relates to it
    (narrative ≥ / lyrical ≤). Tempo sets a band, not line numbers.
-   For the skeleton, compare against `song-structure.md` §2–3 — those are **shapes that already exist,
-   not nine options to pick from**. Build your own if none fit.
+   For the section layout, read `song-structure.md` §2–3 — common orderings, **not options to pick
+   from**. Build your own if none fit.
    **Structure is a result of writing, not a premise for it.**
 
 ⑤ **Pick the rhyme family (changeable later)**
@@ -178,7 +178,7 @@ No full foreign sections, don't add a language for flavour, **don't expect cross
 
 **Division of labour**: verse = **images** (concrete nouns, actions); chorus = **attitude** (emotion + repetition); bridge = **the turn** (what verse and chorus never said).
 
-**Each later verse must move one step beyond the previous one** (not just V2 — T3 and T6 have three verses):
+**Each later verse must move one step beyond the previous one** (not just V2 — narrative and rap songs often have three):
 equal line counts (same melody) don't mean the content may repeat.
 V1 sets the scene, V2 advances it — shift the time ("three days later"),
 **shift what is being observed** (V1 watches her own hands, V2 watches his;
