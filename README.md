@@ -207,7 +207,7 @@ outputs/{歌曲名}/
 ## 平台支持
 
 - **Suno** — 英文标签串，≤ 1000 字符（V4.5 起）、标签 8–15 个，主风格放第一个
-- **秒响 Sway** — 中文长句，按九要素写（要素清单见 `references/platform-miaoxiang.md` 第二节，本文件不重复枚举）
+- **秒响 Sway** — 中文长句，≤ 1000 字符（含换行与标点）；按九要素查漏 + 按优先级写（见 `references/platform-miaoxiang.md`，本文件不重复枚举）
 
 ## 想加东西？
 
