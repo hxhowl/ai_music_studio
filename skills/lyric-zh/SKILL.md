@@ -397,5 +397,4 @@ outputs/{歌曲名}/
 
 - 改动一律新文件，**绝不覆盖**；首版也写 v1；新版本写明改了什么 + 上一版路径 + 为什么
 - 每轮对话在 `outputs/{歌曲名}/{歌曲名}-log.md` **追加两行**（格式见 `references/logging.md`），**别贴进回复**
-- 文件头与改动对照表范本：`examples/002-versioning.md`
-- `outputs/` 不进版本库 —— skill 里**不要引用**其中的具体文件，clone 后必然断链
+- 文件头与改动对照表范本：`examples/002-versioning.md`；`outputs/` 不进版本库，别引用里面的具体文件
