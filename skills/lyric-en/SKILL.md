@@ -98,8 +98,14 @@ position writes V1 and V2 with different counts, but they share one melody and c
 `references/song-structure.md`. Count after the chorus exists (step ④), then relate the verse to it
 (narrative ≥ / lyrical ≤).
 
-**Line length: a line has to be singable in one breath.** That's the whole rule. No syllable table —
+**Line length: a line has to be singable in one breath.** No syllable table —
 syllable count is a *result* of tempo and phrasing, not a target.
+
+**But within a section, corresponding lines must be roughly equal in length.** They sing the same
+melody; a syllable or two apart is fine, **half the length is not** — a 6-character line cannot fill
+a 12-character slot no matter how good it is alone. This is **relative** (lines against each other),
+not an absolute table. ⚠️ Exception: the hook and the section's landing line may run clearly shorter —
+that's design, not an accident.
 ⚠️ **Never damage a better line to hit a syllable count.** Real case: `我说 哥 周一还得交周报` (the most
 human line in the song) was rewritten to `我烦恼 周一汇报还得交` to cut syllables and force an AABB —
 zero gain, pure loss, and the self-check still passed it.
@@ -205,6 +211,10 @@ Formal metrics fight each other, and they fight the quality goal. **The priority
 
 **Conditions that never yield** (only these five; everything else gives way):
 versioning, tag format, formatting, equal line counts for repeats of the same function, singability.
+
+⚠️ **"Corresponding lines roughly equal within a section" is a relative constraint, not a syllable
+quota.** It compares lines against each other, never against a table — and it sits last in the order,
+so it yields to "singable".
 
 ⚠️ **Duration is not in this list** — it varies by genre (90-sec punk, 5-min post-rock).
 Making it a condition would force padding or cutting lines just to hit seconds.
