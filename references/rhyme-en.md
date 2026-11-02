@@ -1,7 +1,35 @@
 # English Rhyme Reference
 
-> Word banks for `skills/lyric-imagery-rhyme/SKILL.md` mode B (English).
+> Word banks for `skills/lyric-imagery-rhyme/SKILL.md` mode B (English),
+> and the rhyme-system tables `skills/lyric-en/SKILL.md` §2 points at.
 > Syllable counts in parentheses. Perfect rhymes listed first, then slant, then multi-syllabic.
+
+---
+
+## Schemes (quick pick)
+
+| Scheme | Pattern | Feel |
+| --- | --- | --- |
+| **AABB** | Couplets | Simple, folk, nursery-solid |
+| **ABAB** | Alternating | Forward motion, classic pop |
+| **ABCB** | 2nd/4th only | Relaxed, conversational |
+| **AABA** | Three same + turn | Vintage, jazzy |
+| **AAAA** | Monorhyme | Driving, rap / chant |
+
+## Types
+
+| Type | Definition | Example |
+| --- | --- | --- |
+| **Perfect** | Identical vowel + coda | night / light |
+| **Slant (near)** | Approximate | bridge / inch |
+| **Assonance** | Vowel match only | time / light |
+| **Consonance** | Coda match only | bill / wall |
+| **Internal** | Rhyme inside the line | "I **crash** and I **burn**" |
+| **Multi-syllabic** | 2+ syllables | "mo**tiva**tion" / "ele**va**tion" |
+| **Rich** | Same spelling, diff. meaning | lie (deceive) / lie (recline) |
+
+Multi-syllabic rhyme reads as high craft — use it in rap or the final verse.
+Avoid forcing: "the **light** of my **sight**" is filler.
 
 ---
 

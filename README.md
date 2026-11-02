@@ -114,7 +114,7 @@
 | `agents/` | 两个助理角色的定义本体与职责边界 |
 | `skills/` | 八个可加载 skill：2 个角色入口 + 作词 ×4 + 作曲 ×2 |
 | `.workbuddy/skills` | 软链 → `../skills`，保证技能被发现（勿删） |
-| `references/` | 去 AI 味词库、编曲差异化词库、**九维定参表**、结构与句数决策库、韵字表、Suno 标签库、秒响规范、**记录规则（`logging.md`）** 等静态参考 |
+| `references/` | 作词外部基准、**诊断表**、去 AI 味词库、编曲差异化词库、**九维定参表**、结构与句数决策库、韵字表、Suno 标签库、秒响规范、**记录规则（`logging.md`）** 等静态参考 |
 | `examples/` | `001-empty-subway.md`（全流程演示，**展开版**——真实交付只有歌词 + 5 行话）、`002-versioning.md`（新版文件该怎么写）、`003-conversation-log.md`（对话留痕怎么写） |
 | `outputs/{歌曲名}/` | 交付物落盘处（每首歌一个文件夹，**带版本号，不覆盖**；不进 git） |
 
@@ -215,7 +215,8 @@ outputs/{歌曲名}/
 | 速度量级 / 句数 / 段落骨架 | `references/song-structure.md` |
 | **作词的外部基准**（工序 / 分工 / 人称 / 押韵 / 四测试） | `references/lyric-craft.md` |
 | 新曲风的标签 | `references/suno-tags.md` |
-| 新的韵字 / 韵族 | `references/rhyme-zh.md` / `rhyme-en.md` |
+| 新的韵字 / 韵族 / 重韵判定 | `references/rhyme-zh.md` / `rhyme-en.md` |
+| 新的"症状 → 处方" | `references/lyric-diagnostics.md`（**是参考不是门槛**） |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |
 | 新的段落模板 | `references/song-structure.md` 第二节（唯一事实源，**不要**在 skill 里另存副本） |
 | 改九维的维度 / 阈值 | `references/production-params.md`（唯一事实源，两个 skill 都从这里取） |

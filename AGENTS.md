@@ -140,7 +140,8 @@
 | --- | --- |
 | 句数怎么算、段落骨架、速度与字数的关系 | `references/song-structure.md` |
 | **作词的外部基准**（工序、分工、人称、押韵、四测试） | `references/lyric-craft.md` |
-| 押什么辙、韵字 | `references/rhyme-zh.md` / `rhyme-en.md` |
+| 押什么辙、韵字、重韵判定 | `references/rhyme-zh.md` / `rhyme-en.md` |
+| 「哪里不对但说不上来」 | `references/lyric-diagnostics.md`（诊断表 + 症状→处方，**卡壳才查**）|
 | 「太 AI 了」、流水账、不像歌词、像作文 | `skills/lyric-naturalness/SKILL.md`（三条判定：施动者 / 解释词 / 末句结论）|
 | 缺画面、卡韵 | `skills/lyric-imagery-rhyme/SKILL.md` |
 | 编曲雷同、提示词没特点 | `skills/production-antislop/SKILL.md` |
@@ -173,7 +174,8 @@
 | `song-prompt-builder` | 出 Suno / 秒响提示词 |
 | `production-antislop` | 出歌雷同、没特点 |
 
-**10 份 references**（`references/{名}.md`）：`lyric-craft`（作词外部基准）、`anti-ai-lexicon`（去 AI 味词库）、`production-lexicon`（演奏法/质感/反差/事件句）、
+**11 份 references**（`references/{名}.md`）：`lyric-craft`（作词外部基准）、`lyric-diagnostics`（诊断表）、
+`anti-ai-lexicon`（去 AI 味词库）、`production-lexicon`（演奏法/质感/反差/事件句）、
 `production-params`（九维）、`song-structure`（结构句数）、`suno-tags`（标签库）、
 `platform-miaoxiang`（秒响规范）、`rhyme-zh` / `rhyme-en`（韵表）、`logging`（记录规则）。
 
