@@ -5,6 +5,9 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 
 # English Lyric Writing
 
+> **Premise** (what a lyric is, and why every rule below follows from it): `references/lyric-craft.md` §0.
+> One person, in a particular situation, saying something to someone — set to music.
+
 ## Iron Rules
 
 1. **Section tags are Suno-standard English**, bracketed, on their own line.
@@ -58,16 +61,13 @@ a family, don't read it up front.**
 ⚠️ **Rhyme is a memory aid, not the goal.** Industry consensus is "rhyme is not required" — when you drop
 it, use repetition, a ring phrase, or the melody instead. Sacrificing a good line for a rhyme is a net loss.
 
-⚠️ **Rhyming every line doesn't mean reusing the same word.** One thing is always wrong: **two adjacent
-lines ending on the same word with different structure** — the ear catches it instantly.
-Parallel structure (identical frame, one word swapped: "wait three more minutes / hold three more
-minutes") and deliberate echoes (chorus question/answer, hook refrain) are **devices — keep them.**
-Case: 「这是不是个动物园 / … / 这是疯狂的动物园」 — the same word 3 lines apart, forming a
-question-and-answer frame. **That's structure, not a flaw. Don't "fix" it.**
+⚠️ **Rhyming every line doesn't mean reusing the same word.** Always wrong: **two adjacent lines ending on
+the same word with different structure.** Always fine: parallel structure ("wait three more minutes / hold
+three more minutes") and deliberate echoes (chorus Q&A, hook refrain) — devices, keep them.
+Case: 「这是不是个动物园 / … / 这是疯狂的动物园」 — same word 3 lines apart, a Q&A frame, not a flaw.
 
-⚠️ English and Chinese differ on purpose: Chinese leans on rhyme harder (it doesn't use word stress to
-hold the pulse), English is comfortable with every-other-line in verses. Don't copy one density into the
-other.
+⚠️ English and Chinese differ on purpose: Chinese leans on rhyme harder (no word stress to hold the
+pulse); English is fine with every-other-line verses. Don't copy one density into the other.
 
 ### English has no 倒字, it has stress
 
@@ -112,8 +112,8 @@ human line in the song) was rewritten to `我烦恼 周一汇报还得交` to cu
 zero gain, pure loss, and the self-check still passed it.
 
 **Mixed language**: structure follows the **main singing language**; a whole foreign line counts by
-syllable (1 character ≈ 1 syllable). Put it in the hook / last chorus line, fixed and repeated 2–3 times.
-No full foreign sections, don't add a language for flavour, **don't expect cross-language rhymes**.
+syllable. Put it in the hook or last chorus line, fixed and repeated 2–3 times. No full foreign sections,
+**don't expect cross-language rhymes**.
 
 ---
 
@@ -176,6 +176,8 @@ No full foreign sections, don't add a language for flavour, **don't expect cross
    One thing should run through it (eye line / one action / one object). **Juxtaposition is fine** —
    a list is not: a list is six things with no line through them (`lyric-craft.md` §3).
    ⚠️ Keep the verse **specific**. Generality belongs in the chorus.
+   ⚠️ **A section walks toward one place** — cover the first three lines and read the last: does it
+   stand on its own? If not, that line is just the last line.
    → Pre-Chorus (shorter lines, rising) → Bridge (switch rhyme family / perspective, say the real
    thing) → Outro (stop — don't summarize)
 
@@ -191,13 +193,11 @@ No full foreign sections, don't add a language for flavour, **don't expect cross
 
 **Division of labour**: verse = **specific** (one scene, one action, one moment — never explain the emotion); chorus = **universal** (turn that specific thing into what everyone has felt — never add new plot); bridge = **the turn** (what verse and chorus never said).
 
-**Each later verse must move one step beyond the previous one** (not just V2 — narrative and rap songs often have three):
-equal line counts (same melody) don't mean the content may repeat.
-V1 sets the scene, V2 advances it — shift the time ("three days later"),
-**shift what is being observed** (V1 watches her own hands, V2 watches his;
-⚠️ the observed *object* shifts, **not the narrative person** — POV stays one throughout,
-only the bridge may switch), or let an object planted in V1 change by V2 (V1: "phone at 4%" → V2: "it died").
-⚠️ Just rephrasing V1 is still repetition — the verse must move (new time / new observed object / a planted object changed), not restate.
+**Each later verse must move one step beyond the previous one** (not just V2 — narrative and rap songs
+often have three): equal counts don't mean the content may repeat. V1 sets the scene, V2 advances it —
+shift the time ("three days later"), **shift what is observed** (⚠️ the *object*, **not the narrative
+person** — POV stays one throughout), or let an object planted in V1 change by V2 ("phone at 4%" → "it died").
+⚠️ Rephrasing V1 is still repetition — the verse must move, not restate.
 
 **How to build a hook** (having one isn't enough — it has to be memorable and singable):
 
@@ -211,8 +211,7 @@ only the bridge may switch), or let an object planted in V1 change by V2 (V1: "p
 
 ⚠️ A hook that changes all three times is no hook. In a **6-line** chorus leave the variation to
 **line 4** — don't touch lines 1–3: line 2 *develops* the hook, so changing it dismantles the hook itself.
-(A 4-line chorus varies **line 3** — see `song-structure.md` §4.3.)
-(See `references/song-structure.md` §4 for the full 6-line chorus layout.)
+(A 4-line chorus varies **line 3**; full layout in `references/song-structure.md` §4.3–4.4.)
 
 ---
 
@@ -225,18 +224,17 @@ Formal metrics fight each other, and they fight the quality goal. **The priority
 **Conditions that never yield** (only these five; everything else gives way):
 versioning, tag format, formatting, equal line counts for repeats of the same function, singability.
 
-⚠️ **"Corresponding lines roughly equal within a section" is a relative constraint, not a syllable
-quota.** It compares lines against each other, never against a table — and it sits last in the order,
-so it yields to "singable".
+⚠️ **"Corresponding lines roughly equal within a section" is relative, not a syllable quota** — lines
+against each other, never against a table; it sits last, so it yields to "singable".
 
-⚠️ **Duration is not in this list** — it varies by genre (90-sec punk, 5-min post-rock).
-Making it a condition would force padding or cutting lines just to hit seconds.
+⚠️ **Duration is not in this list** — it varies by genre (90-sec punk, 5-min post-rock); making it a
+condition forces padding or cutting lines just to hit seconds.
 
-⚠️ **Suno's Style character limit is NOT a lyric-side condition** — it applies to the Style
-field, i.e. to prompts. Lyrics have no character limit. Don't mix the two sides up.
+⚠️ **Suno's Style character limit is NOT a lyric-side condition** — it applies to prompts. Lyrics have
+no character limit. Don't mix the two sides up.
 
-⚠️ **The per-line syllable cap is NOT one of them** — it's a reference, not a hard limit.
-**Sacrificing a line to hit a syllable count is the wrong trade.**
+⚠️ **The per-line syllable cap is NOT one of them** — reference, not a hard limit. **Sacrificing a line
+to hit a syllable count is the wrong trade.**
 
 | Conflict | Who wins |
 | --- | --- |
@@ -249,8 +247,8 @@ field, i.e. to prompts. Lyrics have no character limit. Don't mix the two sides 
 
 ### A lyric line is not a prose sentence
 
-The fastest way to write something that reads like a diary entry instead of a song:
-**transcribe the scene with full clauses.** Two people in a scene makes it worse — it turns into dialogue.
+The fastest way to sound like a diary entry instead of a song: **transcribe the scene with full clauses.**
+Two people in the scene makes it worse — it becomes dialogue.
 
 | Prose | Lyric |
 | --- | --- |
@@ -278,8 +276,7 @@ The fastest way to write something that reads like a diary entry instead of a so
 - **The other person doesn't need an action to be present**: `Only said it wouldn't rain, didn't argue` —
   they didn't speak, but they're there
 
-**Legal shapes** (all fine, don't force them): noun juxtaposition / verb with the subject dropped /
-fragment / repetition.
+**Legal shapes** (all fine, don't force them): noun juxtaposition / dropped subject / fragment / repetition.
 
 **Two people: don't alternate dialogue.** Ping-pong is a script; **juxtapose two actions from the same side**:
 
@@ -323,8 +320,8 @@ Go read those five: **versioning / section tags / formatting / structural sanity
 ### Everything else — consult when stuck, **not a delivery gate**
 
 The four symptom groups ("doesn't hold together", "doesn't read like a lyric", "too AI", "wrong shape")
-live in `references/lyric-diagnostics.md`. **If it's flowing, don't look.** Treating it as a checklist
-is how you end up optimizing for the checklist instead of writing a good song.
+live in `references/lyric-diagnostics.md`. **If it's flowing, don't look** — a checklist you always pass
+just teaches you to optimize for the checklist.
 
 ---
 
@@ -381,9 +378,8 @@ second lyric line
 | "What imagery did you use?" | image cluster + why this family |
 | "Did you self-check?" | only what **failed**; all clear = one sentence |
 
-⚠️ **Don't volunteer the expansions.** Across seven real revisions the commentary ran 61–69% of the
-file — the reader had to page through a full screen of justification before reaching the song
-(`AGENTS.md` §4 「交付形态」).
+⚠️ **Don't volunteer the expansions.** In seven real revisions the commentary ran 61–69% of the file —
+a full screen of justification before the reader reached the song (`AGENTS.md` §4).
 
 ---
 
@@ -397,9 +393,8 @@ outputs/{song}/
   {song}-prompts-v1-20261030.md
 ```
 
-- Revisions always create a **new file**, never overwrite; v1 is explicit; each new version states
-  **what changed** + **path to the previous file** + why
-- Append **two lines** per round to `outputs/{song}/{song}-log.md` — format in `references/logging.md`.
-  **Don't paste the log into the reply**
-- Header + change-table template: `examples/002-versioning.md`
+- Revisions always create a **new file**, never overwrite; each new version states **what changed** +
+  **path to the previous file** + why. Template: `examples/002-versioning.md`
+- Append **two lines** per round to `outputs/{song}/{song}-log.md` (`references/logging.md`);
+  **don't paste the log into the reply**
 - `outputs/` is git-ignored — **never reference a specific file inside it** from a committed file
