@@ -10,10 +10,14 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 
 ## Iron Rules
 
+> Not all four sit on the same level: 1–3 map to conditions 2 and 5 (missing them is an error);
+> 4 is a **symptom check**, not a gate — no test can compute "does this read like a lyric" (§5),
+> and a line can pass every count and still be bad.
+
 1. **Section tags are Suno-standard English**, bracketed, on their own line.
 2. Lyrics are **sung, not read**. Every line must be singable in one breath.
 3. Stress alignment matters more than syllable count in English — a line with the right syllable count and the wrong stress pattern is unsingable.
-4. **One situation per line, not two things in sequence.** A line that narrates "then this happened, so then that happened" is prose. ⚠️ **Don't count actors or actions** — two actors is common in good lines (`我送你离开 千里之外`); one actor with two simultaneous actions is fine too. Structures that need a pause to finish — comparative clauses (`earlier than my sigh`), stacked pre-modifiers (`my overhead-eave school uniform`) — leave nowhere for the breath to land.
+4. **One situation per line, not two things in sequence.** A line that narrates "then this happened, so then that happened" is prose. ⚠️ **Don't count actors or actions** — two actors is common in good lines (`我送你离开 千里之外`); one actor with two simultaneous actions is fine too. Structures that need a pause to finish — comparative clauses (`earlier than my sigh`), stacked pre-modifiers (`my overhead-eave school uniform`), conditional clauses (`if you ever come back, then I'll…`) — leave nowhere for the breath to land.
 
 ---
 
@@ -39,8 +43,10 @@ Everything else waits until the chorus exists.
 **Come back to the shape afterwards** — `references/song-structure.md` §2–3 give the section list and the
 common orderings (**patterns, not options**); build your own if none fit.
 
-A shape is good if it passes four things: **every section has a job / the chorus repeats enough /
-long songs need air / the energy moves.** Meet those and any order works; miss them and no arrangement saves it.
+A shape is judged by four things — **every section has a job / the chorus repeats enough /
+long songs need air / the energy moves** (`references/song-structure.md` §3).
+**They measure quality; they are not delivery gates**: meeting all four won't save a song with
+nothing to say, and no arrangement makes up for the missing section.
 
 ---
 
@@ -279,8 +285,10 @@ the scene makes it worse — it becomes dialogue.
 ❌ `You said it would rain, I left my umbrella in class` — one action from you, one from me, glued by "so"
 ✅ `Only said it wouldn't rain, didn't argue` — one side, two actions; the other person shows up in "didn't argue"
 
-> **When the relationship itself is the content, the pronoun must stay**: `You're my most accurate forecast`,
-> `Others watch clouds, I watch your eyes`. Removing it removes the relationship — the only case to keep it.
+> **A pronoun that carries the point of view stays**, in two cases: **the relationship itself is the
+> content** (`You're my most accurate forecast`, `Others watch clouds, I watch your eyes`), or
+> **cutting it leaves nobody in the frame** (`我会假装说 还行`). One test: cut it — is this still a
+> line somebody is saying?
 
 ### Beyond "is it a lyric"
 
@@ -316,6 +324,14 @@ This file **does not restate them** — conditions live in one place only.
 Go read those five: **versioning / section tags / formatting / equal line counts / singable**.
 
 > If all pass, write one sentence — no ticking, no score. **Nothing outside those five is a gate.**
+
+### Two of the four outside tests you can actually run
+
+The other two need a human: **hum-back test** (can they hum the chorus 20 minutes later) and
+**stranger's face** — you can't hear and can't see, don't pretend you ran them.
+
+1. **Chorus only**: read just the chorus. Do you know what the song is about? If not, the chorus isn't doing its job.
+2. **One line as a title**: is there a line short enough to be a title and strong enough to carry the whole song?
 
 ### Everything else — consult when stuck, **not a delivery gate**
 

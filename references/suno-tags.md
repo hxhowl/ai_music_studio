@@ -128,8 +128,9 @@
 
 ### ④ 乐器（只点 3–5 件，**每件优先写演奏法或器材**）
 
-> ⚠️ 下表每行开头的裸类别名（`piano` `bass` `drums` `strings` 等）**只在确实想不出演奏法时兜底**，
-> 单独出现等于没描述（`production-antislop` 会指出这一点，但不判合格）。演奏法库见 `references/production-lexicon.md` 第二节。
+> ⚠️ 下表每行开头是**类别**（`piano` `bass` `drums` `strings` 等）。**类别名不能单独出现**——
+> 条件 8 要的是每件乐器都带演奏法或器材。想不出演奏法时，往**具体器材**退一步
+> （`Rhodes`、`upright bass`、`808 drums`），不要退回裸类别名。演奏法库见 `references/production-lexicon.md` 第二节。
 >
 > 💡 **乐器标签 = 类别（本表）+ 演奏法（lexicon 第二节）的组合**，不是固定字符串。
 > 所以 `brush snare`、`felt piano`、`fingerpicked nylon-string guitar` 都不在本表里，但都合法——
@@ -165,7 +166,7 @@
 | --- | --- |
 | **录音方式**（话筒距离 / 录制手法） | `close-mic` `intimate close-mic` `single-mic live take` `room mics` `direct-in` `re-amped` |
 | **空间与介质**（房间感 / 载体） | `dry` `reverb-heavy` `spacious` `cathedral reverb` `spring reverb` `plate reverb` `ambient` `tape hiss` `tape saturation` `vinyl crackle` `lo-fi` |
-| **年代** | `80s` `90s` `70s` `60s` `modern production`；`retro` `vintage` 单用是泛词，必须配器材 |
+| **年代** | `80s` `90s` `70s` `60s` `modern production`；`retro` `vintage` 单用是泛词，配上器材才立得住 |
 
 **不算质感的第四类**（不属于上面任何一行，别拿它顶条件 10）：
 `dynamic` `compressed` `wall of sound` `sparse` `minimal` `dense` `building` `sparse intro` `dynamic contrast` `slow build`——这些是**动态词**，用来承载编曲事件。
@@ -175,8 +176,8 @@
 > 但你得**说得出这两件事各自是什么**，否则老实拆成两个。
 > **动态词（`sparse intro` `building`…）不管写几个，都不构成质感维度。**
 
-> ⚠️ 年代词**必须配器材**才有效（`80s, gated reverb drums`）。单写 `80s` / `retro` / `vintage` 是泛词，
-> 见 `references/production-lexicon.md` 第一节。
+> ⚠️ 年代词**单独写是泛词**，配上器材才立得住（`80s, gated reverb drums`）。
+> 单写 `80s` / `retro` / `vintage` 仍然算一个年代维度，但它没告诉模型任何具体的音色，见 `references/production-lexicon.md` 第一节。
 
 ### ⑧ 地域 / 场景
 
@@ -219,8 +220,8 @@ guofeng, pentatonic, {vocal 音区}, {vocal 音色}, {vocal 唱法}, close-mic, 
 yangqin, {演奏法}, breathy xiao, muted upright bass, {反差乐器},
 {BPM 区间}, sparse, dark
 Exclude：operatic vocal, heavy reverb, vibrato
-⚠️ **这是骨架不是配方**：`{反差乐器}` 必须自己挑（古风里能形成反差的重型/电子音色），
-乐器名后面必须跟演奏法。直接抄下来就成了新的罐头。
+⚠️ **这是骨架不是配方**：`{反差乐器}` 要自己挑（古风里能形成反差的重型/电子音色），
+乐器名后面要跟演奏法（条件 8）。直接抄下来就成了新的罐头。
 
 电子舞曲（⚠️ 除非明确要四踩罐头，否则不写 four-on-the-floor）：
 {edm sub-genre}, {mood}, {vocal 音区}, {vocal 音色}, {vocal 唱法},

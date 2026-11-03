@@ -41,19 +41,19 @@ Avoid forcing: "the **light** of my **sight**" is filler.
 **Phrase-level**: mid**night**, good**night**, hold on **tight**, out of **sight**, serve me **right**
 
 ### -ay (1 syl)
-**Perfect**: day say way may pay stay play gray/gray spray stray clay fray tray sway slay
+**Perfect**: day say way may pay stay play gray/grey spray stray clay fray tray sway slay
 **Slant**: rain again pain plain chain main train flame* came* same* blame* shame*
-**Multi**: a**way** (2), yester**day** (3), yester**day** (3), a**gain** (2), re**main** (2), ex**plain** (2)
+**Multi**: a**way** (2), yester**day** (3), a**gain** (2), re**main** (2), ex**plain** (2)
 **Phrase-level**: walk a**way**, can't **stay**, yester**day**, fade a**way**, lost my **way**
 
 ### -ow (1 syl)
-**Perfect**: low slow go(2) show snow glow grow blow know throw flow though dough crow bow row tow woe foe
+**Perfect**: low slow go show snow glow grow blow know throw flow though dough crow bow row tow woe foe
 **Slant**: home alone stone bone loan own phone known thrown
 **Multi**: a**lone** (2), be**low** (2), shad**ow** (2), win**dow** (2), yel**low** (2), tomor**row** (3)
 **Phrase-level**: let it **go**, don't **know**, watch it **grow**, on my **own**, go it a**lone**
 
 ### -art / -eart (1 syl)
-**Perfect**: heart art part start smart chart dart cart heart apart restart
+**Perfect**: heart art part start smart chart dart cart apart restart
 **Slant**: dark spark mark bark stark hard guard yard car far star
 **Multi**: a**part** (2), to**night**(-ight), de**part** (2), bro**ken**(-en)
 **Phrase-level**: fall a**part**, from the **start**, my **heart**, work of **art**, torn a**part**
@@ -63,13 +63,15 @@ Avoid forcing: "the **light** of my **sight**" is filler.
 **Slant**: enough* tough* rough* blood* flood* does* comes*
 **Phrase-level**: head a**bove**, all I **need is love**, not e**nough**, rise a**bove**
 
-### -ime / -ine (1 syl)
+### -ime and -ine (1 syl) — 两族，别跨族押
+> 斜杠前是 `-ime`，斜杠后是 `-ine`。`time` 与 `line` 不押，取词时别混。
 **Perfect**: time crime climb rhyme chime lime slime prime sublime / line fine shine mine nine pine vine wine sign decline design combine
 **Slant**: mind find kind blind behind remind
 **Multi**: re**mind** (2), be**hind** (2), de**sign** (2), com**bine** (2), de**cline** (2), me-mor-**ies**(3)
 **Phrase-level**: on my **mind**, in **time**, left be**hind**, fall in **line**, one more **time**
 
-### -ong / -one (1 syl)
+### -ong and -one (1 syl) — 两族，别跨族押
+> 斜杠前是 `-ong`，斜杠后是 `-one`。`long` 与 `alone` 不押，取词时别混。
 **Perfect**: long strong wrong song along belong / alone stone bone tone phone home loan known grown shown thrown
 **Slant**: wrong* gone* done* one* won* sun* son*
 **Multi**: a**lone** (2), be**long** (2), sing a**long** (3)
@@ -79,7 +81,7 @@ Avoid forcing: "the **light** of my **sight**" is filler.
 **Perfect**: seen been green clean mean lean queen machine* dream* seem* team* scream*
 **Slant**: dream seem team stream scream beam
 **Multi**: be**tween** (2), un**seen** (2), fif**teen** (2), ro**mantic**(-)
-**Phrase-level**: in-be**tween** (3), go-ing **green**, have **seen**, in-be**tween** (3)
+**Phrase-level**: in-be**tween** (3), go-ing **green**, have **seen**
 
 ### -ain (1 syl)
 **Perfect**: rain pain train chain main plain gain brain stain strain drain grain vain cane lane crane
