@@ -93,7 +93,9 @@ stresses, number the metrical positions (1–4 in 4/4), and check they line up.
 One question decides it: **how many breaths does this take to say?**
 
 Given a range with no rule, the model takes the minimum, so every section gets 4 lines. Two failures:
-- **A 4-line chorus**: one pass of the hook and it's gone. Nothing sticks
+- **A 4-line chorus**: when there's more to say, it runs out of room — the hook gets one pass and
+  there's nowhere left to develop it (⚠️ **if the whole thought fits in one breath, 4 is exactly
+  right**; clips and short-form songs are supposed to be that short)
 - **Equal counts everywhere (4/4/4/4)**: structural "AI symmetry." Verse and chorus **being equal is fine**,
   but when *every* section matches you lose length as a way to tell them apart — ballads usually run
   longer in the chorus, story songs longer in the verse
@@ -221,9 +223,13 @@ person** — POV stays one throughout), or let an object planted in V1 change by
 
 ### What gives way when things conflict
 
-Formal metrics fight each other, and they fight the quality goal. **The priority order is fixed**:
+Formal metrics fight each other, and they fight the quality goal. **The formal-metric order is fixed**:
 
 > **private voice > sings like speech > rhyme > syllable alignment**
+
+⚠️ That order covers **form only**. When the clash is between two quality goals (don't explain /
+verse specific vs chorus universal / a line leaves something hanging), use the six-layer order in
+`references/lyric-craft.md` §8 — its first item is "somebody is in the room talking".
 
 **Conditions that never yield** (only these five; everything else gives way):
 versioning, tag format, formatting, equal line counts for repeats of the same function, singability.
