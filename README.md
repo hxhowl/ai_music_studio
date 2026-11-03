@@ -222,8 +222,8 @@ outputs/{歌曲名}/
 | 新的韵字 / 韵族 / 重韵判定 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 新的"症状 → 处方" | `references/lyric-diagnostics.md`（**是参考不是门槛**） |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |
-| 新的骨架 / 新的段落配置 | `references/song-structure.md` 第二节（唯一事实源，**不要**在 skill 里另存副本） |
-| 改九维的维度 / 阈值 | `references/production-params.md`（唯一事实源，两个 skill 都从这里取） |
+| 新的骨架 / 新的段落配置 | `references/song-structure.md` 第二节（**不要**在 skill 里另存副本） |
+| 改九维的维度 / 阈值 | `references/production-params.md`（两个 skill 都从这里取） |
 | 完整工作流样例 | `examples/` |
 
 改完记得同步更新 `AGENTS.md` **第 6 节「文件在哪」**（skill 表、references 清单、examples 那一行都要对）。

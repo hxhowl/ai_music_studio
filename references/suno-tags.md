@@ -1,7 +1,7 @@
 # Suno 标签速查库
 
 > 供 `skills/song-prompt-builder/SKILL.md` 第 2 步取标签使用。
-> **结构标签（第一节）是 `lyric-zh` / `lyric-en` 的唯一事实源**，两个 skill 都不另存副本。
+> 结构标签表在第一节，`lyric-zh` / `lyric-en` 引用这里。
 > **Style of Music 字段**：≤ 1000 字符（V4.5 起）、主风格唯一、乐器 3–5 件；标签 8–15 个是经验区间。
 > 上限、顺序、截断行为见下面第〇节。
 >
@@ -104,7 +104,7 @@
 **可用的**：`nostalgic` `bittersweet` `hopeful` `uplifting` `euphoric` `triumphant` `heroic` `tense` `suspenseful` `dark` `brooding` `mysterious` `haunting` `tender` `yearning` `longing` `lonely` `wistful` `angry` `aggressive` `intense` `playful` `whimsical` `romantic` `sensual` `serene` `meditative` `grand` `anthemic`
 
 > ⚠️ **不要用（安全词黑名单）**：完整清单与逐词替代写法见
-> **`references/production-lexicon.md` 第一节**（唯一事实源，本文件不存副本）。
+> **`references/production-lexicon.md` 第一节**。
 > 头号三个：`dreamy` `ethereal` `melancholic`。
 > **`warm` / `intimate` 单独当情绪词同样无效**，但**带器材时有效且推荐**（`warm analog`、`intimate close-mic`）——
 > 判据是：它描述的是"这张唱片怎么录的"（有效）还是"听起来感觉如何"（无效）。

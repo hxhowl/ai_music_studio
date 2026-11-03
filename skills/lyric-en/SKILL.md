@@ -45,10 +45,8 @@ Everything else waits until the chorus exists.
 **Come back to the shape afterwards** — `references/song-structure.md` §2–3 give the section list and the
 common orderings (**patterns, not options**); build your own if none fit.
 
-A shape is judged by four things — **every section has a job / the chorus repeats enough /
-long songs need air / the energy moves** (`references/song-structure.md` §3).
-**They measure quality; they are not delivery gates**: meeting all four won't save a song with
-nothing to say, and no arrangement makes up for the missing section.
+A shape is judged by four things (`song-structure.md` §3) — **they measure quality, not delivery
+gates**; meeting all four won't save a song with nothing to say.
 
 ---
 
@@ -231,20 +229,13 @@ Formal metrics fight each other, and they fight the quality goal. **The formal-m
 verse specific vs chorus universal / a line leaves something hanging), use the six-layer order in
 `references/lyric-craft.md` §8 — its first item is "somebody is in the room talking".
 
-**Conditions that never yield** (only these five; everything else gives way):
-versioning, tag format, formatting, equal line counts for repeats of the same function, singability.
+**Conditions 1–5 don't yield**; everything else can. Three things that get mistaken for conditions:
+**duration** (it varies by genre; it isn't right or wrong), **syllable counts** (a result, not a
+target), and **Suno's Style limit** (it governs prompts, not lyrics). Make any of them a rule and you
+will pad or cut lines just to hit a number.
 
-⚠️ **"Corresponding lines roughly equal within a section" is relative, not a syllable quota** — lines
-against each other, never against a table; it sits last, so it yields to "singable".
-
-⚠️ **Duration is not in this list** — it varies by genre (90-sec punk, 5-min post-rock); making it a
-condition forces padding or cutting lines just to hit seconds.
-
-⚠️ **Suno's Style character limit is NOT a lyric-side condition** — it applies to prompts. Lyrics have
-no character limit. Don't mix the two sides up.
-
-⚠️ **The per-line syllable cap is NOT one of them** — reference, not a hard limit. **Sacrificing a line
-to hit a syllable count is the wrong trade.**
+⚠️ **"Corresponding lines roughly equal within a section" is relative** — lines against each other,
+never against a table; it sits last, so it yields to "singable".
 
 | Conflict | Who wins |
 | --- | --- |
