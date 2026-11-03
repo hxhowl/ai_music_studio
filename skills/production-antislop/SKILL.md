@@ -28,7 +28,7 @@ description: 编曲提示词反套路与去同质化。诊断"安全词组合"�
 
 ### 1. 去安全词 —— 情绪词不能裸用
 
-`references/production-lexicon.md` 第一节列了黑名单。两类处理：
+`references/production-lexicon.md` §1 列了黑名单。两类处理：
 
 - **场景化**：情绪词后面接**这个场景的边角**（几点、在哪、旁边有什么），不接形容词
 - **转质感**：`dreamy` → `half-speed tape, washed-out reverb`（换成可执行的声音参数）
@@ -70,7 +70,7 @@ description: 编曲提示词反套路与去同质化。诊断"安全词组合"�
 > 它们已经由条件 8 / 10 要求，**不是额外的差异化**。把它们当锚点，等于一条指令抵两条红线，
 > 自检永远通过，却什么都没多做。
 
-配方表见 `references/production-lexicon.md` 第四节。
+配方表见 `references/production-lexicon.md` §4。
 
 ### 4. 质感维度必填 —— 年代 / 录音方式 / 空间与介质，三选二
 
@@ -203,14 +203,14 @@ Exclude: operatic vocal, heavy reverb, vibrato
 
 ## 这份清单是病历本，不是及格线
 
-> ⚠️ **它不判合格，也不设"≥8 项"。** 交付条件只有 `AGENTS.md` 第 4 节的第 1、6–11 条那七条。
+> ⚠️ **它不判合格，也不设"≥8 项"。** 交付条件只有 `AGENTS.md` 条件 1、6–11 那七条。
 > 这里查的是"听起来像不像罐头"——**只有用户说"没特点"时才逐条对**（你判不了听感）。
 > 对得上几条不重要，重要的是找到病在哪、换掉它。
 
 **通用症状**
 
 - 裸情绪词（`dreamy` 这类）撑场面，没有落到编曲上
-- 安全词出现（完整黑名单见 `references/production-lexicon.md` 第一节；头号三个 `dreamy` `ethereal` **`melancholic`**）
+- 安全词出现（完整黑名单见 `references/production-lexicon.md` §1；头号三个 `dreamy` `ethereal` **`melancholic`**）
 - 全曲没有一条**时间轴指令**（哪段抽空、哪段进弦乐），只有静态属性
 - 核心乐器全是类别名（`piano` `drums` `strings` 单独出现）
 - 能量曲线没有落点（哪段低谷、哪段顶点），只写 `dynamic`
@@ -233,8 +233,8 @@ Exclude: operatic vocal, heavy reverb, vibrato
 ```
 ① 标记  通读提示词，圈出：安全词 / 裸类别乐器 / 静态属性 / 空泛 Exclude
 ② 诊断  判断病型：太素？太像别人？还是太乱？
-③ 去词  用 `references/production-lexicon.md` 第一节替换安全词
-④ 加锚  从 `references/production-lexicon.md` 第四节反差配方取一件，或从其第二、三节取演奏法/质感
+③ 去词  用 `references/production-lexicon.md` §1 替换安全词
+④ 加锚  从 `references/production-lexicon.md` §4 反差配方取一件，或从其 §2–3 取演奏法/质感
 ⑤ 补事件  加一条时间轴指令，确认落在正确的平台位置
 ⑥ 定质感  补齐年代 / 录音方式 / 空间与介质
 ⑦ 复检  过一遍下面的病历本（不判合格，只找病）

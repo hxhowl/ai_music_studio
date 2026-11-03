@@ -132,11 +132,11 @@
 
 一句话仲裁：**说"这句不顺"归作词，说"编曲太素"归作曲。**
 
-## 全部条件只有 11 条（`AGENTS.md` 第 4 节）
+## 全部条件只有 11 条（`AGENTS.md` §4）
 
 判据是「**能不能机械判定**」。能机械判定的结果才当条件，其余全是参考材料。
 
-> **条件只在 `AGENTS.md` 第 4 节定义**，各个 skill 只引用不复述。下面是**给人看的摘要**——
+> **条件只在 `AGENTS.md` §4 定义**，各个 skill 只引用不复述。下面是**给人看的摘要**——
 > 两边不一致时，**以 `AGENTS.md` 为准**（这份摘要的唯一作用是你不用读 AI 文档也能知道有哪 11 条）。
 
 **通用**
@@ -222,7 +222,7 @@ outputs/{歌曲名}/
 | 新的韵字 / 韵族 / 重韵判定 | `references/rhyme-zh.md` / `rhyme-en.md` |
 | 新的"症状 → 处方" | `references/lyric-diagnostics.md`（**是参考不是门槛**） |
 | 新平台 | 新建 `references/platform-{平台}.md` + 在 `song-prompt-builder` 加一节 |
-| 新的骨架 / 新的段落配置 | `references/song-structure.md` 第二节（**不要**在 skill 里另存副本） |
+| 新的骨架 / 新的段落配置 | `references/song-structure.md` §2 （**不要**在 skill 里另存副本） |
 | 改九维的维度 / 阈值 | `references/production-params.md`（两个 skill 都从这里取） |
 | 完整工作流样例 | `examples/` |
 

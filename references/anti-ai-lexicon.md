@@ -119,5 +119,5 @@ airpods case / food delivery note / package locker code / 12% battery
 ⚠️ **不要反过来用**：不是"多找几个没人写过的细节"，那是比谁更怪。
 方向永远是**那件东西当时在这个场景里做了什么**——不是"找一个能代表情绪的东西"（作文的象征手法）。
 
-> 整段有没有人味、每句松不松，不在这份文件里：前者看 `references/lyric-craft.md` 第七节，
+> 整段有没有人味、每句松不松，不在这份文件里：前者看 `references/lyric-craft.md` §7，
 > 后者看 `skills/lyric-naturalness/SKILL.md`。

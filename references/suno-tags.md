@@ -1,17 +1,17 @@
 # Suno 标签速查库
 
 > 供 `skills/song-prompt-builder/SKILL.md` 第 2 步取标签使用。
-> 结构标签表在第一节，`lyric-zh` / `lyric-en` 引用这里。
+> 结构标签表在 §1，`lyric-zh` / `lyric-en` 引用这里。
 > **Style of Music 字段**：≤ 1000 字符（V4.5 起）、主风格唯一、乐器 3–5 件；标签 8–15 个是经验区间。
-> 上限、顺序、截断行为见下面第〇节。
+> 上限、顺序、截断行为见下面 §0。
 >
 > **取词优先级**：能用**演奏法 / 器材**就不用类别名（`brush snare` > `drums`）。
 > 演奏法、质感、反差配方、编曲事件句库见 **`references/production-lexicon.md`**；
-> 安全词黑名单（`dreamy` `ethereal` 等）同见该文件第一节。
+> 安全词黑名单（`dreamy` `ethereal` 等）同见该文件 §1。
 
 ---
 
-## 〇、Style 字段怎么读（先看这个）
+## 0. Style 字段怎么读（先看这个）
 
 | 项 | 值 | 性质 |
 | --- | --- | --- |
@@ -40,7 +40,7 @@
 
 ---
 
-## 一、结构标签（写在歌词里，不是 Style 字段）
+## 1. 结构标签（写在歌词里，不是 Style 字段）
 
 | 标签 | 含义 | 常用度 |
 | --- | --- | --- |
@@ -80,7 +80,7 @@
 
 ---
 
-## 二、Style of Music 标签库
+## 2. Style of Music 标签库
 
 ### ① 流派 / 曲风（选 1 主 + ≤1 辅）
 
@@ -104,7 +104,7 @@
 **可用的**：`nostalgic` `bittersweet` `hopeful` `uplifting` `euphoric` `triumphant` `heroic` `tense` `suspenseful` `dark` `brooding` `mysterious` `haunting` `tender` `yearning` `longing` `lonely` `wistful` `angry` `aggressive` `intense` `playful` `whimsical` `romantic` `sensual` `serene` `meditative` `grand` `anthemic`
 
 > ⚠️ **不要用（安全词黑名单）**：完整清单与逐词替代写法见
-> **`references/production-lexicon.md` 第一节**。
+> **`references/production-lexicon.md` §1**。
 > 头号三个：`dreamy` `ethereal` `melancholic`。
 > **`warm` / `intimate` 单独当情绪词同样无效**，但**带器材时有效且推荐**（`warm analog`、`intimate close-mic`）——
 > 判据是：它描述的是"这张唱片怎么录的"（有效）还是"听起来感觉如何"（无效）。
@@ -135,9 +135,9 @@
 
 > ⚠️ 下表每行开头是**类别**（`piano` `bass` `drums` `strings` 等）。**类别名不能单独出现**——
 > 条件 8 要的是每件乐器都带演奏法或器材。想不出演奏法时，往**具体器材**退一步
-> （`Rhodes`、`upright bass`、`808 drums`），不要退回裸类别名。演奏法库见 `references/production-lexicon.md` 第二节。
+> （`Rhodes`、`upright bass`、`808 drums`），不要退回裸类别名。演奏法库见 `references/production-lexicon.md` §2。
 >
-> 💡 **乐器标签 = 类别（本表）+ 演奏法（lexicon 第二节）的组合**，不是固定字符串。
+> 💡 **乐器标签 = 类别（本表）+ 演奏法（lexicon §2）的组合**，不是固定字符串。
 > 所以 `brush snare`、`felt piano`、`fingerpicked nylon-string guitar` 都不在本表里，但都合法——
 > 校验时查**类别**在不在表里 + **有没有演奏法修饰**，不要要求整串匹配。
 
@@ -182,7 +182,7 @@
 > **动态词（`sparse intro` `building`…）不管写几个，都不构成质感维度。**
 
 > ⚠️ 年代词**单独写是泛词**，配上器材才立得住（`80s, gated reverb drums`）。
-> 单写 `80s` / `retro` / `vintage` 仍然算一个年代维度，但它没告诉模型任何具体的音色，见 `references/production-lexicon.md` 第一节。
+> 单写 `80s` / `retro` / `vintage` 仍然算一个年代维度，但它没告诉模型任何具体的音色，见 `references/production-lexicon.md` §1。
 
 ### ⑧ 地域 / 场景
 
@@ -190,7 +190,7 @@
 
 ---
 
-## 三、Exclude Styles（负向提示，**建议填，不是条件**）
+## 3. Exclude Styles（负向提示，**建议填，不是条件**）
 
 **写纯词，不写 `no`。** 这个字段本身就是"要排除的风格"，加 `no` 等于给它一个叫 `no autotune` 的风格名。
 
@@ -205,12 +205,12 @@ V4.5 起 Style 放宽到 1000，Exclude 没动——**真正的窄口是这一�
 
 ---
 
-## 四、配方模板（可直接套）
+## 4. 配方模板（可直接套）
 
 ```
 通用占位规则：`{vocal 音区}` `{vocal 音色}` `{vocal 唱法}` **三件必须全填**
 （`female alto` + `breathy` + `near-spoken` 这种），只写 `female vocals` 等于没描述。
-⚠️ **三件套的第三件是"唱法"**（音区 / 音色 / **唱法**，见第二节 ③人声表）。
+⚠️ **三件套的第三件是"唱法"**（音区 / 音色 / **唱法**，见 §2 ③人声表）。
 `close-mic` 不是唱法，它属**录音方式**（话筒距离，见 ⑦），可以写但不要拿它顶唱法。
 
 紧凑流行：
@@ -242,7 +242,7 @@ Exclude：singing, autotune
 
 ---
 
-## 五、常见错误
+## 5. 常见错误
 
 | 错误 | 后果 | 正确做法 |
 | --- | --- | --- |
