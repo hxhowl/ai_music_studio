@@ -10,16 +10,12 @@ description: 英文语境歌词创作与打磨。按 Suno 通用英文结构标�
 
 ## Iron Rules
 
-> Not all four sit on the same level: 1–3 map to conditions 2 and 5 (missing them is an error);
-> 4 is a **symptom check**, not a gate — no test can compute "does this read like a lyric" (§5),
-> and a line can pass every count and still be bad.
-
 1. **Section tags are Suno-standard English**, bracketed, on their own line.
 2. Lyrics are **sung, not read**. Every line must be singable **within one breath** — judged by
 **delivery density, not BPM**: a held ballad line can run long; a rap line carries 10–20 syllables
 because it's subdivided into sixteenths, but it still needs breath points.
 3. Stress alignment matters more than syllable count in English — a line with the right syllable count and the wrong stress pattern is unsingable.
-4. **One situation per line, not two things in sequence.** A line that narrates "then this happened, so then that happened" is prose. ⚠️ **Don't count actors or actions** — two actors is common in good lines (`我送你离开 千里之外`); one actor with two simultaneous actions is fine too. Structures that need a pause to finish — comparative clauses (`earlier than my sigh`), stacked pre-modifiers (`my overhead-eave school uniform`), conditional clauses (`if you ever come back, then I'll…`) — leave nowhere for the breath to land.
+4. **One situation per line, not two things in sequence.** A line that narrates "then this happened, so then that happened" is prose. ⚠️ **Don't count actors or actions** — two actors is common in good lines (`我送你离开 千里之外`); one actor with two simultaneous actions is fine too. Structures that need a pause to finish — comparative clauses (`earlier than my sigh`), stacked pre-modifiers (`my overhead-eave school uniform`), conditional clauses (`if you ever come back, then I'll…`) — leave nowhere for the breath to land. ⚠️ **This last one is a symptom check, not a gate** — no test can compute "does this read like a lyric", and a line can pass every count and still be bad (§5).
 
 ---
 
