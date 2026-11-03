@@ -36,8 +36,8 @@ Full table (frequency ratings, meta tags, delivery tags): `references/suno-tags.
 **Before you write, decide one thing only**: is this short (a clip / short-form) or a full song.
 Everything else waits until the chorus exists.
 
-**Come back to the shape afterwards** — compare against `references/song-structure.md` §2–3.
-§2–3 give the section list and the common orderings — **patterns, not options to pick from**; build your own if none fit.
+**Come back to the shape afterwards** — `references/song-structure.md` §2–3 give the section list and the
+common orderings (**patterns, not options**); build your own if none fit.
 
 A shape is good if it passes four things: **every section has a job / the chorus repeats enough /
 long songs need air / the energy moves.** Meet those and any order works; miss them and no arrangement saves it.
@@ -46,10 +46,9 @@ long songs need air / the energy moves.** Meet those and any order works; miss t
 
 ## 2. Rhyme & tone
 
-**There are two judgments only**: lock the chorus, loosen the verse; and never let two adjacent lines
-end on the same word (different structure). Everything else — schemes, rhyme types, family word banks,
-identical-rhyme cases, cross-family rules — is in `references/rhyme-en.md`. **Look it up when choosing
-a family, don't read it up front.**
+**Two judgments only**: lock the chorus, loosen the verse; never let two adjacent lines end on the same
+word (different structure). Schemes, rhyme types, word banks, identical-rhyme cases, cross-family rules →
+`references/rhyme-en.md`. **Look it up when choosing a family, don't read it up front.**
 
 | Section | Density |
 | --- | --- |
@@ -58,8 +57,8 @@ a family, don't read it up front.**
 | Pre-chorus | either; an unrhymed last line makes a good lift |
 | Bridge / outro | may switch family entirely — that's an audible turn |
 
-⚠️ **Rhyme is a memory aid, not the goal.** Industry consensus is "rhyme is not required" — when you drop
-it, use repetition, a ring phrase, or the melody instead. Sacrificing a good line for a rhyme is a net loss.
+⚠️ **Rhyme is a memory aid, not the goal** — "rhyme is not required"; when you drop it use repetition, a
+ring phrase, or the melody instead. Sacrificing a good line for a rhyme is a net loss.
 
 ⚠️ **Rhyming every line doesn't mean reusing the same word.** Always wrong: **two adjacent lines ending on
 the same word with different structure.** Always fine: parallel structure ("wait three more minutes / hold
@@ -85,7 +84,7 @@ stresses, number the metrical positions (1–4 in 4/4), and check they line up.
 **A line count comes from how much this needs to say — not from seconds.**
 One question decides it: **how many breaths does this take to say?**
 
-Given a range with no rule, the model picks the minimum, so every section gets 4 lines. Two things go wrong:
+Given a range with no rule, the model takes the minimum, so every section gets 4 lines. Two failures:
 - **A 4-line chorus**: one pass of the hook and it's gone. Nothing sticks
 - **Equal counts everywhere (4/4/4/4)**: structural "AI symmetry." Verse and chorus **being equal is fine**,
   but when *every* section matches you lose length as a way to tell them apart — ballads usually run
@@ -95,18 +94,16 @@ Given a range with no rule, the model picks the minimum, so every section gets 4
 have equal line counts** — V1=V2, C1=C2, PC1=PC2. Judge by **function, not position**: judging by
 position writes V1 and V2 with different counts, but they share one melody and can't be sung.
 
-**Everything else is reference** — skeletons, typical counts per section, tempo-vs-length →
-`references/song-structure.md`. Count after the chorus exists (step ④), then relate the verse to it
-(narrative ≥ / lyrical ≤).
+**Everything else is reference** — skeletons, typical counts, tempo-vs-length → `song-structure.md`.
+Count after the chorus exists (④), then relate the verse to it (narrative ≥ / lyrical ≤).
 
 **Line length: a line has to be singable in one breath.** No syllable table —
 syllable count is a *result* of tempo and phrasing, not a target.
 
-**But within a section, corresponding lines (other than the last) must be roughly equal in length.**
-They sing the same melody; a syllable or two apart is fine, **half the length is not** — a 6-character
-line cannot fill a 12-character slot no matter how good it is alone. This is **relative** (lines against
-each other), not an absolute table. ⚠️ Exception: the hook and the section's landing line may run clearly
-**shorter or longer** — a landing line often gets an extra half-bar.
+**But within a section, corresponding lines must be roughly equal in length** — except the **hook** and the
+**landing line**, which may run clearly shorter or longer (a landing line often gets an extra half-bar).
+They sing the same melody, so **half the length cannot be filled** — a 6-syllable line won't stretch over
+a 12-syllable slot. Relative (lines against each other), never a table.
 ⚠️ **Never damage a better line to hit a syllable count.** Real case: `我说 哥 周一还得交周报` (the most
 human line in the song) was rewritten to `我烦恼 周一汇报还得交` to cut syllables and force an AABB —
 zero gain, pure loss, and the self-check still passed it.
@@ -122,7 +119,7 @@ syllable. Put it in the hook or last chorus line, fixed and repeated 2–3 times
 ```
 ⓪ **Lock the scene + who is speaking + the anchor line** (before anything else)
    · Scene boundary: what time / where / what the person is doing / what objects actually exist
-     e.g. not "lonely" — "00:47, last train, three people in the carriage, phone at 4%"
+     e.g. not "lonely" — "5:40pm, closing time, mop bucket by the door, phone still on the counter"
      Skip it and you write lines that fit any song
    · **Who is speaking** (more important than the scene — answer all four):
      (1) who this person is (**their situation**, not their job)
@@ -136,10 +133,9 @@ syllable. Put it in the hook or last chorus line, fixed and repeated 2–3 times
      ⚠️ **But it does not have to happen at ⓪** — it's the same thing as the chorus in ③.
      Can't find it? Keep going. It shows up once the chorus works; if the chorus doesn't have it,
      the song doesn't have it
-   · **Not enough information?** Invent one concrete scene, state it in one line, and start
-     ("I'll write it as a Tuesday-night hospital corridor — stop me if that's wrong").
-     ⚠️ Don't keep interrogating, and don't write something generic — **the user correcting a concrete
-     draft is much faster than staring at a blank page**
+   · **Not enough information?** Invent one concrete scene, state it in one line, and start ("I'll write it
+     as a Tuesday-night hospital corridor — stop me if that's wrong"). ⚠️ Don't keep interrogating and don't
+     write something generic — **correcting a concrete draft is faster than staring at a blank page**
 
 ① Clarify + nail the premise
    · **Only ask what you cannot default** (language). Style / mood / POV: pick a concrete default,
@@ -247,8 +243,8 @@ to hit a syllable count is the wrong trade.**
 
 ### A lyric line is not a prose sentence
 
-The fastest way to sound like a diary entry instead of a song: **transcribe the scene with full clauses.**
-Two people in the scene makes it worse — it becomes dialogue.
+The fastest way to sound like a diary entry: **transcribe the scene with full clauses.** Two people in
+the scene makes it worse — it becomes dialogue.
 
 | Prose | Lyric |
 | --- | --- |
@@ -271,8 +267,8 @@ Two people in the scene makes it worse — it becomes dialogue.
 **Devices that turn a line into a situation** (devices, not rules):
 
 - **Leave the subject out most of the time** — recoverable, but it doesn't need saying
-- **Use fewer sequencing conjunctions** — `so` / `then` / `because` string two lines into a plot;
-  ⚠️ **contrast words are not the same** (`though` / `but` / `while`) — they make tension, not sequence
+- **Use fewer sequencing conjunctions** — `so` / `then` / `because` string lines into a plot; ⚠️ contrast
+  words (`though` / `but` / `while`) are not the same — they make tension, not sequence
 - **The other person doesn't need an action to be present**: `Only said it wouldn't rain, didn't argue` —
   they didn't speak, but they're there
 
@@ -283,9 +279,13 @@ Two people in the scene makes it worse — it becomes dialogue.
 ❌ `You said it would rain, I left my umbrella in class` — one action from you, one from me, glued by "so"
 ✅ `Only said it wouldn't rain, didn't argue` — one side, two actions; the other person shows up in "didn't argue"
 
-> **When the relationship itself is the content, the pronoun has to stay**: `You're my most accurate forecast`,
-> `Others watch clouds, I watch your eyes`. Removing it removes the relationship.
-> **That's the only case to keep it.**
+> **When the relationship itself is the content, the pronoun must stay**: `You're my most accurate forecast`,
+> `Others watch clouds, I watch your eyes`. Removing it removes the relationship — the only case to keep it.
+
+### Beyond "is it a lyric"
+
+- **It leaves something hanging** — `故事的小黄花 从出生那年就飘着`: drifted where? Nothing left = explanation.
+- **It has tension inside** — `越过山丘` × `已白了头` (arrival × cost). ⚠️ "Good" standards, not gates.
 
 ### Everything else — symptoms → fixes
 
@@ -303,7 +303,7 @@ The rest lives where it belongs; this file doesn't restate it:
 | Question | Go to |
 | --- | --- |
 | Which words are empty / clichéd / need qualifying | `references/anti-ai-lexicon.md` |
-| Is this line condensed enough (did the words buy anything) | `skills/lyric-naturalness/SKILL.md` |
+| Is this line **loose** — do the words buy what it says? | `skills/lyric-naturalness/SKILL.md` |
 | "Something's off and I can't name it" | `references/lyric-diagnostics.md` |
 
 ---
@@ -313,7 +313,7 @@ The rest lives where it belongs; this file doesn't restate it:
 ### Check conditions 1–5 of `AGENTS.md` §4
 
 This file **does not restate them** — conditions live in one place only.
-Go read those five: **versioning / section tags / formatting / structural sanity / singable**.
+Go read those five: **versioning / section tags / formatting / equal line counts / singable**.
 
 > If all pass, write one sentence — no ticking, no score. **Nothing outside those five is a gate.**
 
@@ -321,7 +321,7 @@ Go read those five: **versioning / section tags / formatting / structural sanity
 
 The four symptom groups ("doesn't hold together", "doesn't read like a lyric", "too AI", "wrong shape")
 live in `references/lyric-diagnostics.md`. **If it's flowing, don't look** — a checklist you always pass
-just teaches you to optimize for the checklist.
+teaches you to optimize for the checklist.
 
 ---
 
